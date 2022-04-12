@@ -64,3 +64,100 @@
     display: none;
   }
 }
+
+// ? Large phone / small tablet
+
+@include small {
+  .phone-icon {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+  }
+
+  .phone-number {
+    display: none;
+  }
+}
+
+// ? Tablet
+
+@include medium {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Small Desktop
+
+@include large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Medium Desktop
+
+@include extra-large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Large Desktop
+
+@include extra-extra-large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 13rem;
+    margin-left: 1rem;
+  }
+}
