@@ -1,4 +1,3 @@
-@import "./variables.module";
-@import "./mixins.module";
-@import "./reset.module";
-@import "./fonts.scss";
+// Global styles are imported at the top of each stylesheet
+
+@import "../Components/Header/header.module.scss";

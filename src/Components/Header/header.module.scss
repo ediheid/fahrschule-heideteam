@@ -1,12 +1,66 @@
+@import "../../Styling/global.scss";
+
 .header-container {
   height: 8rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-img-link {
   width: 10rem;
   margin-left: 0.8rem;
+}
+
+.header-right-content {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-container {
+  color: lighten($logo-green, 5%);
+
+  margin: 0 0.8rem 0 0.5rem;
+
+  z-index: 1000;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.phone-icon {
+  color: lighten($logo-green, 5%);
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.phone-number {
+  color: $logo-green;
+  font-family: $montserrat-semi-bold-font-family;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+// Media Queries
+
+// ? Phone
+
+@include x-small {
+  .phone-icon {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+  }
+
+  .phone-number {
+    display: none;
+  }
 }
