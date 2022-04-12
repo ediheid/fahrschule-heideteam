@@ -8,6 +8,7 @@ import {
 
 // Views / Components
 import Home from "./Views/Home/Home";
+import Header from "./Components/Header/Header";
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Router>
         {/* // Todo: Scroll to top will go here */}
         {/* // Todo: Nav will go here */}
-
+        <Header />
         <main>
           <Routes>
             <Route path="/" exact element={<Home />} />
