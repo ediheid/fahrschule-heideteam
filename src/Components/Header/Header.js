@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MobileNav from "../Navbar/MobileNav";
 
 import styles from "../Header/header.module.scss";
 import Logo from "../Header/Static/logo.png";
@@ -38,6 +39,7 @@ const Header = () => {
             />
           </div>
         </div>
+        {isOpen && <MobileNav />}
       </header>
     </>
   );

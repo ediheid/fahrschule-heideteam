@@ -1,36 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "../Navbar/desktop-navigation.module.scss";
+import styles from "../Navbar/mobile-navigation.module.scss";
 
 import { BsInfoCircle } from "react-icons/bs";
 
-const DesktopNav = () => {
-  // UseState
-  const [fixNav, setFixNav] = useState(false);
-
-  const stickyNav = () => {
-    // Set to stick once scroll passed height of header (8rem)
-    if (window.scrollY >= 80) {
-      setFixNav(true);
-    } else {
-      setFixNav(false);
-    }
-  };
-
-  // Event Listener for scroll and calling function
-  window.addEventListener("scroll", stickyNav);
-
+// ! Mobile Nav is exported to Header.js and opened on Hamburger menu toggle
+const MobileNav = () => {
   return (
     <>
-      <nav
-        // Change nav classes on scroll event listener
-        className={
-          fixNav
-            ? `${styles["nav-sticky"]} ${styles["desktop-nav-container"]}`
-            : styles["desktop-nav-container"]
-        }
-      >
+      <nav className={styles["dropdown-nav-container"]}>
+        {" "}
         <ul className={styles["nav-list"]}>
           {/* // ? Home */}
           <li>
@@ -131,4 +111,4 @@ const DesktopNav = () => {
   );
 };
 
-export default DesktopNav;
+export default MobileNav;
