@@ -12,6 +12,8 @@ const MobileNav = () => {
       <nav className={styles["dropdown-nav-container"]}>
         {" "}
         <ul className={styles["nav-list"]}>
+          <hr />
+
           {/* // ? Home */}
           <li>
             <Link
@@ -23,7 +25,7 @@ const MobileNav = () => {
             </Link>
           </li>
 
-          {/* <hr /> */}
+          <hr />
 
           {/* // ? Führerschein Classes */}
           <li>
@@ -36,6 +38,8 @@ const MobileNav = () => {
             </Link>
           </li>
 
+          <hr />
+
           {/* // ? Team */}
           <li>
             <Link
@@ -46,6 +50,8 @@ const MobileNav = () => {
               Team
             </Link>
           </li>
+
+          <hr />
 
           {/* // ? Preise */}
           <li>
@@ -58,6 +64,8 @@ const MobileNav = () => {
             </Link>
           </li>
 
+          <hr />
+
           {/* // ? Berufskraftfahrerqualifikation */}
           <li>
             <Link
@@ -68,6 +76,8 @@ const MobileNav = () => {
               Berufskraftfahrerqualifikation
             </Link>
           </li>
+
+          <hr />
 
           {/* // ? News */}
           <li>
@@ -80,6 +90,8 @@ const MobileNav = () => {
             </Link>
           </li>
 
+          <hr />
+
           {/* // ? Contact */}
           <li>
             <Link
@@ -90,6 +102,8 @@ const MobileNav = () => {
               Kontakt
             </Link>
           </li>
+
+          <hr />
 
           {/* // ! To remove when no longer needed */}
           {/* // Todo: Add Hashlink */}
@@ -107,6 +121,8 @@ const MobileNav = () => {
               Covid Info
             </Link>
           </li>
+
+          <hr />
         </ul>
       </nav>
     </>

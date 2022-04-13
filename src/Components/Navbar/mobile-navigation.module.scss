@@ -5,7 +5,7 @@
   top: 0;
   margin-top: 8rem;
   width: 100%;
-  padding: 5rem 0 5rem 0;
+  padding: 1rem 0 4rem 0;
 
   background-color: $white;
   overflow: hidden;
@@ -15,16 +15,84 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding-left: 3rem;
+  //   padding-left: 3rem;
+  padding: 0 3rem 0 3rem;
+
+  li {
+    padding: 1rem 0 1rem 0;
+    // Background AND nav-links will change on hover
+    &:active {
+      background-color: lighten($eggshell, 3%);
+
+      .nav-links {
+        color: $logo-green;
+        font-family: $montserrat-bold-font-family;
+      }
+    }
+  }
 }
 
 .nav-links {
   text-decoration: none;
   color: $mobile-nav-links;
-  font-family: $montserrat-semi-bold-font-family;
+  font-family: $montserrat-medium-font-family;
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
+  margin-left: 1rem;
 }
 
-// hr {
-// }
+.covid-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+
+  .nav-links {
+    margin-left: 0.6rem;
+  }
+
+  .info-icon {
+    margin-left: 0;
+  }
+}
+
+hr {
+  width: 100%;
+  height: 0.2rem;
+  background-color: lighten($eggshell, 3%);
+  border: none;
+  border-radius: 1rem;
+}
+
+// Media Queries
+
+// ? Large Tablet
+
+@include medium {
+  .dropdown-nav-container {
+    display: none;
+  }
+}
+
+// ? Small Desktop
+
+@include large {
+  .dropdown-nav-container {
+    display: none;
+  }
+}
+
+// ? Medium Desktop
+
+@include extra-large {
+  .dropdown-nav-container {
+    display: none;
+  }
+}
+
+// ? Large Desktop
+
+@include extra-extra-large {
+  .dropdown-nav-container {
+    display: none;
+  }
+}
