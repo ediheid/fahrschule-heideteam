@@ -14,96 +14,94 @@ const MobileNav = () => {
         <ul className={styles["nav-list"]}>
           <hr />
 
+          {/* Note: For mobile Links <li/> lives inside <Link/> to make sure full item is active and redirects to selected page - see in stylesheet .nav-list - li */}
+
           {/* // ? Home */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/"
-              alt="Link to landing page"
-            >
-              Home
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/"
+            alt="Link to landing page"
+          >
+            {" "}
+            <li>Home </li>
+          </Link>
 
           <hr />
 
           {/* // ? Führerschein Classes */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/klassen"
-              alt="Link to Führerschein Klassen page"
-            >
-              Führerschein Klassen
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/klassen"
+            alt="Link to Führerschein Klassen page"
+          >
+            <li> Führerschein Klassen</li>
+          </Link>
 
           <hr />
 
           {/* // ? Team */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/team"
-              alt="Link to team page"
-            >
-              Team
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/team"
+            alt="Link to team page"
+          >
+            <li> Team</li>
+          </Link>
 
           <hr />
 
           {/* // ? Preise */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/preise"
-              alt="Link to preise page"
-            >
-              Preise
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/preise"
+            alt="Link to preise page"
+          >
+            <li> Preise</li>
+          </Link>
 
           <hr />
 
           {/* // ? Berufskraftfahrerqualifikation */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/berufskraftfahrerqualifikation"
-              alt="Link to Berufskraftfahrerqualifikation page"
-            >
-              Berufskraftfahrerqualifikation
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/berufskraftfahrerqualifikation"
+            alt="Link to Berufskraftfahrerqualifikation page"
+          >
+            <li> Berufskraftfahrerqualifikation</li>
+          </Link>
 
           <hr />
 
           {/* // ? News */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/news"
-              alt="Link to news page"
-            >
-              News
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/news"
+            alt="Link to news page"
+          >
+            <li> News</li>
+          </Link>
 
           <hr />
 
           {/* // ? Contact */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/kontakt"
-              alt="Link to contact page"
-            >
-              Kontakt
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/kontakt"
+            alt="Link to contact page"
+          >
+            <li> Kontakt</li>
+          </Link>
 
           <hr />
+
+          {/* // Todo: Move li into link and make sure it functions the same way as the others */}
 
           {/* // ! To remove when no longer needed */}
           {/* // Todo: Add Hashlink */}
