@@ -1,0 +1,27 @@
+@import "../../Styling/global.scss";
+
+.desktop-nav-container {
+  background-color: $navbar;
+  height: 4.5rem;
+}
+
+.nav-list {
+  display: flex;
+}
+// Media Queries
+
+// ? Phone
+
+@include x-small {
+  .desktop-nav-container {
+    display: none;
+  }
+}
+
+// ? Large phone / small tablet
+
+@include small {
+  .desktop-nav-container {
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className={styles["header-container"]}>
+      <header className={styles["header-container"]}>
         {/* Logo / Link to Home */}
         <Link to="/">
           <img
@@ -38,7 +38,7 @@ const Header = () => {
             />
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };
