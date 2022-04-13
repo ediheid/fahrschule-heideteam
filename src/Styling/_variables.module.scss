@@ -2,6 +2,7 @@
 $dark-green: #1a6f5c;
 $logo-green: #26901b;
 $brighter-logo-green: #51bc58;
+$darker-green: #1a4f43;
 
 $blue: #244dd9;
 
@@ -12,7 +13,8 @@ $black: #000000;
 // ? Palette Variables
 $navbar: $dark-green;
 $nav-links: $eggshell;
-$headings-colour: darken($dark-green, 10%);
+$mobile-nav-links: $darker-green;
+$headings-colour: $darker-green;
 
 $green-button: $logo-green;
 $blue-button: $blue;

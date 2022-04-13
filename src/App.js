@@ -25,8 +25,8 @@ const App = () => {
         {/* // Todo: Nav will go here */}
         <Header />
         <DesktopNav />
-        {/* <MobileNav /> */}
-        <main>
+
+        <main style={{ overflow: "hidden" }}>
           <Routes>
             <Route path="/" exact element={<Home />} />
 

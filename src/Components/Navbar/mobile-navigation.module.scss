@@ -4,18 +4,27 @@
   position: absolute;
   top: 0;
   margin-top: 8rem;
-  width: 100vw;
-  padding: 5rem 0 5rem 3rem;
+  width: 100%;
+  padding: 5rem 0 5rem 0;
 
   background-color: $white;
+  overflow: hidden;
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
   list-style: none;
+  padding-left: 3rem;
 }
 
 .nav-links {
   text-decoration: none;
+  color: $mobile-nav-links;
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
 }
+
+// hr {
+// }
