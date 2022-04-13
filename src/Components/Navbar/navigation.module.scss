@@ -3,11 +3,41 @@
 .desktop-nav-container {
   background-color: $navbar;
   height: 4.5rem;
+
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
+  width: 100vw;
   display: flex;
+  justify-content: space-evenly;
+
+  li {
+    list-style: none;
+    letter-spacing: 0.04rem;
+  }
 }
+
+.nav-links {
+  text-decoration: none;
+
+  font-family: $montserrat-medium-font-family;
+  font-size: 1.3rem;
+  color: $nav-links;
+}
+
+.covid-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  padding-right: 0.5rem;
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+}
+
 // Media Queries
 
 // ? Phone

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import styles from "../Navbar/navigation.module.scss";
 
+import { BsInfoCircle } from "react-icons/bs";
+
 const DesktopNav = () => {
   return (
     <>
@@ -11,18 +13,18 @@ const DesktopNav = () => {
           {/* // ? Home */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/"
               alt="Link to landing page"
             >
-              Startseite
+              Home
             </Link>
           </li>
 
           {/* // ? Führerschein Classes */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/klassen"
               alt="Link to Führerschein Klassen page"
             >
@@ -33,7 +35,7 @@ const DesktopNav = () => {
           {/* // ? Team */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/team"
               alt="Link to team page"
             >
@@ -44,7 +46,7 @@ const DesktopNav = () => {
           {/* // ? Preise */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/preise"
               alt="Link to preise page"
             >
@@ -55,7 +57,7 @@ const DesktopNav = () => {
           {/* // ? Berufskraftfahrerqualifikation */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/berufskraftfahrerqualifikation"
               alt="Link to Berufskraftfahrerqualifikation page"
             >
@@ -66,7 +68,7 @@ const DesktopNav = () => {
           {/* // ? News */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/news"
               alt="Link to news page"
             >
@@ -77,7 +79,7 @@ const DesktopNav = () => {
           {/* // ? Contact */}
           <li>
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/kontakt"
               alt="Link to contact page"
             >
@@ -89,9 +91,12 @@ const DesktopNav = () => {
           {/* // Todo: Add Hashlink */}
           {/* // ! Currently links to section on News page */}
           {/* // ? Covid Info page */}
-          <li>
+          <li className={styles["covid-container"]}>
+            <BsInfoCircle
+              className={`${styles["nav-links"]} ${styles["info-icon"]}`}
+            />{" "}
             <Link
-              //   className="nav-links"
+              className={styles["nav-links"]}
               to="/news"
               alt="Link to covid infopage"
             >
