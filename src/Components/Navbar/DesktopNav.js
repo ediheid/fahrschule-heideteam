@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../Navbar/navigation.module.scss";
@@ -6,9 +6,31 @@ import styles from "../Navbar/navigation.module.scss";
 import { BsInfoCircle } from "react-icons/bs";
 
 const DesktopNav = () => {
+  // UseState
+  const [fixNav, setFixNav] = useState(false);
+
+  const stickyNav = () => {
+    // Set to stick once scroll passed height of header (8rem)
+    if (window.scrollY >= 80) {
+      setFixNav(true);
+    } else {
+      setFixNav(false);
+    }
+  };
+
+  // Event Listener for scroll and calling function
+  window.addEventListener("scroll", stickyNav);
+
   return (
     <>
-      <nav className={styles["desktop-nav-container"]}>
+      <nav
+        // Change nav classes on scroll event listener
+        className={
+          fixNav
+            ? `${styles["nav-sticky"]} ${styles["desktop-nav-container"]}`
+            : styles["desktop-nav-container"]
+        }
+      >
         <ul className={styles["nav-list"]}>
           {/* // ? Home */}
           <li>
