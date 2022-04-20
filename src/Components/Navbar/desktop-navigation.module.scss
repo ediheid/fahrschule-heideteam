@@ -30,18 +30,20 @@
 .nav-links {
   text-decoration: none;
 
-  font-family: $montserrat-medium-font-family;
-  font-size: 1.3rem;
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.5rem;
   color: $nav-links;
 
   &:active {
     font-family: $montserrat-bold-font-family;
+    color: $brighter-logo-green;
   }
 }
 
 @media (hover: hover) {
   .nav-links:hover {
     font-family: $montserrat-bold-font-family;
+    color: $brighter-logo-green;
   }
 }
 
@@ -69,6 +71,12 @@
 // ? Large phone / small tablet
 
 @include small {
+  .desktop-nav-container {
+    display: none;
+  }
+}
+
+@include medium {
   .desktop-nav-container {
     display: none;
   }
