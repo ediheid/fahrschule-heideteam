@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,42 +17,52 @@ import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikati
 import News from "./Views/News/News";
 import Kontakt from "./Views/Kontakt/Kontakt";
 
+// ? createContext variable
+export const AppContext = createContext();
+
 const App = () => {
+  // State Hooks to pass down via useContext
+  // Hamburger menu
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <>
-      <Router>
-        {/* // Todo: Scroll to top will go here */}
-        {/* // Todo: Nav will go here */}
-        <Header />
-        <DesktopNav />
+      {/* This is where context lives */}
+      <AppContext.Provider value={{ isNavOpen, setIsNavOpen }}>
+        <Router>
+          {/* // Todo: Scroll to top will go here */}
+          {/* // Todo: Nav will go here */}
+          <Header />
+          <DesktopNav />
 
-        <main style={{ overflow: "hidden" }}>
-          <Routes>
-            <Route path="/" exact element={<Home />} />
+          <main style={{ overflow: "hidden" }}>
+            <Routes>
+              <Route path="/" exact element={<Home />} />
 
-            <Route path="/klassen" exact element={<FscheinClasses />} />
+              <Route path="/klassen" exact element={<FscheinClasses />} />
 
-            <Route path="/team" exact element={<Team />} />
+              <Route path="/team" exact element={<Team />} />
 
-            <Route path="/preise" exact element={<Preise />} />
+              <Route path="/preise" exact element={<Preise />} />
 
-            <Route
-              path="/berufskraftfahrerqualifikation"
-              exact
-              element={<Berufskraftfahrerqualifikation />}
-            />
+              <Route
+                path="/berufskraftfahrerqualifikation"
+                exact
+                element={<Berufskraftfahrerqualifikation />}
+              />
 
-            <Route path="/news" exact element={<News />} />
+              <Route path="/news" exact element={<News />} />
 
-            <Route path="/kontakt" exact element={<Kontakt />} />
+              <Route path="/kontakt" exact element={<Kontakt />} />
 
-            {/* Redirects all unknown routes entered to home page view - Replaces Redirect in react-router-dom 6+ */}
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
-        </main>
+              {/* Redirects all unknown routes entered to home page view - Replaces Redirect in react-router-dom 6+ */}
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </main>
 
-        {/* // Todo: Footer will go here.. */}
-      </Router>
+          {/* // Todo: Footer will go here.. */}
+        </Router>
+      </AppContext.Provider>
     </>
   );
 };

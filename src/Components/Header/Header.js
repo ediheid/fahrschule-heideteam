@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../App";
+
 import { Link } from "react-router-dom";
 import MobileNav from "../Navbar/MobileNav";
 
@@ -9,7 +11,8 @@ import Phone from "./Phone";
 import { Sling as Hamburger } from "hamburger-react";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // State Context from App.js
+  const MobileNavContext = useContext(AppContext);
   return (
     <>
       <header className={styles["header-container"]}>
@@ -34,12 +37,12 @@ const Header = () => {
               label="Show menu"
               size={23}
               rounded
-              toggled={isOpen}
-              toggle={setIsOpen}
+              toggled={MobileNavContext.isNavOpen}
+              toggle={MobileNavContext.setIsNavOpen}
             />
           </div>
         </div>
-        {isOpen && <MobileNav />}
+        {MobileNavContext.isNavOpen && <MobileNav />}
       </header>
     </>
   );
