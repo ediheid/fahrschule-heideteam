@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import { Link } from "react-router-dom";
+import { AppContext } from "../../App";
 
 import styles from "../Navbar/mobile-navigation.module.scss";
 
@@ -7,6 +9,9 @@ import { BsInfoCircle } from "react-icons/bs";
 
 // ! Mobile Nav is exported to Header.js and opened on Hamburger menu toggle
 const MobileNav = () => {
+  // State Context from App.js
+  // onClick event set on links to close Nav dropdown
+  const MobileNavContext = useContext(AppContext);
   return (
     <>
       <nav className={styles["dropdown-nav-container"]}>
@@ -19,6 +24,7 @@ const MobileNav = () => {
           {/* // ? Home */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/"
             alt="Link to landing page"
@@ -32,6 +38,7 @@ const MobileNav = () => {
           {/* // ? Führerschein Classes */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/klassen"
             alt="Link to Führerschein Klassen page"
@@ -44,6 +51,7 @@ const MobileNav = () => {
           {/* // ? Team */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/team"
             alt="Link to team page"
@@ -56,6 +64,7 @@ const MobileNav = () => {
           {/* // ? Preise */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/preise"
             alt="Link to preise page"
@@ -68,6 +77,7 @@ const MobileNav = () => {
           {/* // ? Berufskraftfahrerqualifikation */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/berufskraftfahrerqualifikation"
             alt="Link to Berufskraftfahrerqualifikation page"
@@ -80,6 +90,7 @@ const MobileNav = () => {
           {/* // ? News */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/news"
             alt="Link to news page"
@@ -92,6 +103,7 @@ const MobileNav = () => {
           {/* // ? Contact */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/kontakt"
             alt="Link to contact page"
@@ -107,6 +119,7 @@ const MobileNav = () => {
           {/* // ? Covid Info page */}
 
           <Link
+            onClick={MobileNavContext.isNavOpen}
             className={styles["nav-links"]}
             to="/news"
             alt="Link to covid infopage"
