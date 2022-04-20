@@ -124,11 +124,16 @@ const MobileNav = () => {
             to="/news"
             alt="Link to covid infopage"
           >
-            <li className={styles["covid-container"]}>
+            <li className={`${styles["covid-container"]} `}>
               <BsInfoCircle
                 className={`${styles["nav-links"]} ${styles["info-icon"]}`}
               />{" "}
-              <span className={styles["covid-span"]}> Covid Info</span>
+              <span
+                className={`${styles["covid-span"]} ${styles["nav-links"]} `}
+              >
+                {" "}
+                Covid Info
+              </span>
             </li>
           </Link>
 

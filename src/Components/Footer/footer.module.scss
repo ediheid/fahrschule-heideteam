@@ -34,6 +34,8 @@
 .extra-links {
   &:active {
     color: $logo-green;
+
+    text-decoration: underline;
   }
 }
 
@@ -44,6 +46,8 @@
   .extra-links:hover {
     color: $logo-green;
     transform: scale(1.1);
+
+    text-decoration: underline;
   }
 }
 
@@ -86,6 +90,7 @@
   a {
     color: darken($footer-text, 20%);
     font-family: $montserrat-extra-bold-font-family;
+    text-decoration: none;
   }
 }
 

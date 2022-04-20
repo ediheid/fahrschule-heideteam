@@ -27,6 +27,16 @@
   margin: 0 0.8rem 0 0.5rem;
 
   z-index: 1000;
+
+  &:active {
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .hamburger-container:hover {
+    color: $dark-green;
+  }
 }
 
 .phone-container {
@@ -42,6 +52,18 @@
   color: lighten($logo-green, 5%);
   font-size: 1.6rem;
   margin-top: 0.4rem;
+
+  &:active {
+    font-size: 2rem;
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .phone-icon:hover {
+    font-size: 2rem;
+    color: $dark-green;
+  }
 }
 
 .phone-number {
@@ -50,6 +72,20 @@
   letter-spacing: 0.05rem;
   font-size: 1.2rem;
   margin-left: 1rem;
+
+  &:active {
+    text-decoration: underline;
+    font-family: $montserrat-bold-font-family;
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .phone-number:hover {
+    text-decoration: underline;
+    font-family: $montserrat-bold-font-family;
+    color: $dark-green;
+  }
 }
 
 // Media Queries

@@ -33,6 +33,23 @@
   }
 }
 
+@media (hover: hover) {
+  .nav-list li:hover {
+    background-color: lighten($eggshell, 3%);
+
+    color: $logo-green;
+    font-family: $montserrat-semi-bold-font-family;
+
+    .covid-span {
+      font-family: $montserrat-semi-bold-font-family;
+    }
+
+    .nav-links {
+      color: $logo-green;
+    }
+  }
+}
+
 .nav-links {
   text-decoration: none;
   color: $mobile-nav-links;
