@@ -19,6 +19,7 @@ import Kontakt from "./Views/Kontakt/Kontakt";
 import Footer from "./Components/Footer/Footer";
 import Impressum from "./Views/Impressum/Impressum";
 import Datenschutz from "./Views/DSGVO/Datenschutz";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 // ? createContext variable
 export const AppContext = createContext();
@@ -28,12 +29,19 @@ const App = () => {
   // Hamburger menu
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  // Scroll to top on browser refresh
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       {/* This is where context lives */}
       <AppContext.Provider value={{ isNavOpen, setIsNavOpen }}>
         <Router>
-          {/* // Todo: Scroll to top will go here */}
+          {/* Scrolls to top on routing */}
+          <ScrollToTop />
+
           {/* Mobile Nav lives inside Header */}
           <Header />
           <DesktopNav />
