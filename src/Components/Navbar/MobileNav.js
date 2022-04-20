@@ -101,24 +101,23 @@ const MobileNav = () => {
 
           <hr />
 
-          {/* // Todo: Move li into link and make sure it functions the same way as the others */}
-
           {/* // ! To remove when no longer needed */}
           {/* // Todo: Add Hashlink */}
           {/* // ! Currently links to section on News page */}
           {/* // ? Covid Info page */}
-          <li className={styles["covid-container"]}>
-            <BsInfoCircle
-              className={`${styles["nav-links"]} ${styles["info-icon"]}`}
-            />{" "}
-            <Link
-              className={styles["nav-links"]}
-              to="/news"
-              alt="Link to covid infopage"
-            >
-              Covid Info
-            </Link>
-          </li>
+
+          <Link
+            className={styles["nav-links"]}
+            to="/news"
+            alt="Link to covid infopage"
+          >
+            <li className={styles["covid-container"]}>
+              <BsInfoCircle
+                className={`${styles["nav-links"]} ${styles["info-icon"]}`}
+              />{" "}
+              <span className={styles["covid-span"]}> Covid Info</span>
+            </li>
+          </Link>
 
           <hr />
         </ul>

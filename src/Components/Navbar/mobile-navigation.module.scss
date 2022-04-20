@@ -15,18 +15,19 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  //   padding-left: 3rem;
   padding: 0 3rem 0 3rem;
 
   li {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 1rem;
     // Background AND nav-links will change on hover
     &:active {
       background-color: lighten($eggshell, 3%);
 
+      color: $logo-green;
+      font-family: $montserrat-semi-bold-font-family;
+
       .nav-links {
         color: $logo-green;
-        font-family: $montserrat-bold-font-family;
       }
     }
   }
@@ -38,13 +39,11 @@
   font-family: $montserrat-medium-font-family;
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
-  margin-left: 1rem;
 }
 
 .covid-container {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
 
   .nav-links {
     margin-left: 0.6rem;
@@ -53,6 +52,10 @@
   .info-icon {
     margin-left: 0;
   }
+}
+
+.covid-span {
+  margin-left: 0.5rem;
 }
 
 hr {
