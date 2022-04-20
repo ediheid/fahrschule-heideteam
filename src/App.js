@@ -16,6 +16,7 @@ import Preise from "./Views/Preise/Preise";
 import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikation/Berufskraftfahrerqualifikation";
 import News from "./Views/News/News";
 import Kontakt from "./Views/Kontakt/Kontakt";
+import Footer from "./Components/Footer/Footer";
 
 // ? createContext variable
 export const AppContext = createContext();
@@ -31,7 +32,7 @@ const App = () => {
       <AppContext.Provider value={{ isNavOpen, setIsNavOpen }}>
         <Router>
           {/* // Todo: Scroll to top will go here */}
-          {/* // Todo: Nav will go here */}
+          {/* Mobile Nav lives inside Header */}
           <Header />
           <DesktopNav />
 
@@ -60,7 +61,7 @@ const App = () => {
             </Routes>
           </main>
 
-          {/* // Todo: Footer will go here.. */}
+          <Footer />
         </Router>
       </AppContext.Provider>
     </>
