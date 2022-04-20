@@ -47,9 +47,10 @@ const Footer = () => {
         </a>
 
         {/* Designed and built by */}
-        <h4 className={styles["designed-by"]}>
+        <span className={styles["designed-by"]}>
           Website designed and developed by{" "}
           <a
+            className={styles["edith-website-link"]}
             href="https://www.edithsdev.com/"
             alt="Link to designer and  developers website"
             target="_blank"
@@ -58,7 +59,7 @@ const Footer = () => {
             {" "}
             Edith Heidmann
           </a>
-        </h4>
+        </span>
 
         {/* Copyright information */}
         <span className={styles["copyright"]}>
