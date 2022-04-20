@@ -17,6 +17,8 @@ import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikati
 import News from "./Views/News/News";
 import Kontakt from "./Views/Kontakt/Kontakt";
 import Footer from "./Components/Footer/Footer";
+import Impressum from "./Views/Impressum/Impressum";
+import Datenschutz from "./Views/DSGVO/Datenschutz";
 
 // ? createContext variable
 export const AppContext = createContext();
@@ -55,6 +57,10 @@ const App = () => {
               <Route path="/news" exact element={<News />} />
 
               <Route path="/kontakt" exact element={<Kontakt />} />
+
+              <Route path="/impressum" exact element={<Impressum />} />
+
+              <Route path="/datenschutz" exact element={<Datenschutz />} />
 
               {/* Redirects all unknown routes entered to home page view - Replaces Redirect in react-router-dom 6+ */}
               <Route path="*" element={<Navigate to="/" />} />

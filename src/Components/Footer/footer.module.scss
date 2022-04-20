@@ -6,5 +6,72 @@
 
   height: auto;
 
-  color: $eggshell;
+  color: $footer-text;
+  letter-spacing: 0.05rem;
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem 0 5rem 0;
+}
+
+.fahrschule-heading {
+  font-family: $montserrat-bold-font-family;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-links {
+  color: $footer-text;
+  text-decoration: none;
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.3rem;
+
+  margin-bottom: 1.3rem;
+}
+
+.address {
+  font-family: $montserrat-bold-font-family;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: $footer-text;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+.designed-by {
+  font-family: $montserrat-medium-font-family;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+
+  a {
+    color: darken($footer-text, 20%);
+    font-family: $montserrat-extra-bold-font-family;
+  }
+}
+
+.copyright {
+  font-family: $montserrat-medium-font-family;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.extra-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.4rem;
+
+  width: 60%;
+  max-width: 50rem;
+}
+
+.extra-links {
+  color: $footer-text;
+  text-decoration: none;
 }

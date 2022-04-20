@@ -1,28 +1,101 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../Footer/footer.module.scss";
 
 const Footer = () => {
+  //  Get date and year to pass into copyright
+  let currentTime = new Date();
+  let currentYear = currentTime.getFullYear();
+
   return (
     <footer className={styles["footer-container-element"]}>
       <div className={styles["footer-content-container"]}>
-        <h2>Fahrschule Heideteam</h2>
-        {/* // Todo: Add link to contact page */}
-        <h5>Kontakt</h5>
-        {/* // Todo: Add link to covid section */}
-        <h5>COVID-19</h5>
-        {/* // Todo: Is there a way to add this as a google maps link? */}
-        <h3> 01454 Radeberg - Pillnitzer Straße 8 </h3>
-        {/* // Todo: add link to portfolio */}
-        <h4>Website designed and built by Edith Heidmann</h4>
-        {/* // Todo: Setup auto changing year and use &copy */}
-        <span>© 2022 Fahrschule Heideteam GmbH</span>
+        {/* Heading */}
+        <h2 className={styles["fahrschule-heading"]}>Fahrschule Heideteam</h2>
 
+        {/* Contact Us link */}
+        {/* // Todo: what should 'contact us' be ing German? */}
+        <Link
+          className={styles["page-links"]}
+          to="/kontakt"
+          alt="Link to contact page"
+        >
+          {" "}
+          Kontakt
+        </Link>
+
+        {/* Covid news link*/}
+        <Link
+          className={styles["page-links"]}
+          to="/news"
+          alt="Link to covid information"
+        >
+          COVID-19
+        </Link>
+
+        {/* Address */}
+        <a
+          href="https://www.google.com/maps/place/Heideteam+Fahrschulgesellschaft/@51.10972,13.9174513,17z/data=!3m1!4b1!4m5!3m4!1s0x4709b5ff507ea5e9:0x3ec1a1955afef4e0!8m2!3d51.10972!4d13.91964"
+          alt="Link to google maps address"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles["address"]}
+        >
+          {" "}
+          01454 Radeberg - <br /> Pillnitzer Straße 8{" "}
+        </a>
+
+        {/* Designed and built by */}
+        <h4 className={styles["designed-by"]}>
+          Website designed and developed by{" "}
+          <a
+            href="https://www.edithsdev.com/"
+            alt="Link to designer and  developers website"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Edith Heidmann
+          </a>
+        </h4>
+
+        {/* Copyright information */}
+        <span className={styles["copyright"]}>
+          &copy; {currentYear} Fahrschule Heideteam GmbH
+        </span>
+
+        {/* Extra Links section */}
+        {/* // Todo: setup routing to pages */}
         {/* // ! Impressum etc links will go in this container side by side.. */}
-        <div>
-          <span>Impressum</span>
-          <span>DSGVO</span>
-          <span>About Us</span>
+        <div className={styles["extra-links-container"]}>
+          {/* Impressum */}
+          <Link
+            className={styles["extra-links"]}
+            to="/impressum"
+            alt="Link to impressum page"
+          >
+            Impressum
+          </Link>
+
+          {/* Datenschutz */}
+          <Link
+            className={styles["extra-links"]}
+            to="/datenschutz"
+            alt="Link to Datenschutz information"
+          >
+            DSGVO
+          </Link>
+
+          {/* Team */}
+          {/* // Todo: 'About us' in German? */}
+          <Link
+            className={styles["extra-links"]}
+            to="/team"
+            alt="Link to team page"
+          >
+            Team
+          </Link>
         </div>
       </div>
     </footer>
