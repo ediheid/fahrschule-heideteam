@@ -24,6 +24,7 @@
   text-align: center;
   color: $footer-text;
   letter-spacing: 0.03rem;
+  padding: 0 1rem 0 1rem;
 }
 
 // All clickable link elements - active and hover separate to avoid sticky state on mobile devices
@@ -92,8 +93,6 @@
   font-family: $montserrat-medium-font-family;
   font-size: 1.2rem;
   margin-bottom: 4rem;
-
-  padding: 0 1rem 0 1rem;
 }
 
 .extra-links-container {
