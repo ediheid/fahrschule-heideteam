@@ -33,6 +33,16 @@
   font-family: $montserrat-medium-font-family;
   font-size: 1.3rem;
   color: $nav-links;
+
+  &:active {
+    font-family: $montserrat-bold-font-family;
+  }
+}
+
+@media (hover: hover) {
+  .nav-links:hover {
+    font-family: $montserrat-bold-font-family;
+  }
 }
 
 .covid-container {
