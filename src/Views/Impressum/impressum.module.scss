@@ -50,6 +50,24 @@ p {
   max-width: 80rem;
 }
 
+.anchor-tags {
+  text-decoration: none;
+  color: $dark-green;
+  font-family: $roboto-medium-font-family;
+
+  &:active {
+    text-decoration: underline;
+    font-family: $roboto-bold-font-family;
+  }
+}
+
+@media (hover: hover) {
+  .anchor-tags:hover {
+    text-decoration: underline;
+    font-family: $roboto-bold-font-family;
+  }
+}
+
 // ? Media Queries
 
 @include medium {

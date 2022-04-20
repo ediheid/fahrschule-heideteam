@@ -26,17 +26,38 @@ const Impressum = () => {
           <h3 className={styles["sub-headings"]}>Kontakt:</h3>
 
           <span>
-            Tel: <span>+49 3528 2269934</span>
+            Tel:{" "}
+            <a
+              className={styles["anchor-tags"]}
+              href="tel:+49-3528-226-9934"
+              alt="Click to call tel"
+            >
+              +49 3528 226 9934{" "}
+            </a>
           </span>
 
           <br />
           <span>
-            Mobil: <span>+49 172 944 0174</span>
+            Mobil:{" "}
+            <a
+              className={styles["anchor-tags"]}
+              href="tel:+49-172-944-0174"
+              alt="Click to call mobile"
+            >
+              +49 172 944 0174
+            </a>
           </span>
 
           <br />
           <span>
-            E-mail: <span>info@fsheideteam.de</span>
+            E-mail:{" "}
+            <a
+              className={styles["anchor-tags"]}
+              href="mailto:info@fsheideteam.de"
+              alt="Email link to info at fs heideteam dot d e"
+            >
+              info@fsheideteam.de
+            </a>
           </span>
         </div>
 
@@ -64,12 +85,15 @@ const Impressum = () => {
 
           <span>
             Fahrschule: Landesamt für Straßenbau und Verkehr, Bautzner Str. 19a,
-            01099 Dresden <span>(poststelle@lasuv.sachsen.de)</span>{" "}
+            01099 Dresden{" "}
+            <a
+              className={styles["anchor-tags"]}
+              href="mailto:poststelle@lasuv.sachsen.de"
+              alt="Email link to poststelle at lasuv dot sachsen dot d e"
+            >
+              (poststelle@lasuv.sachsen.de)
+            </a>{" "}
           </span>
-
-          <br />
-
-          <span>Mietwagen: Landratsamt Bautzen</span>
 
           <br />
           <span>zuständige BG "Berufsgenossenschaft für Fahrzeughaltung"</span>
