@@ -8,16 +8,17 @@
   }
 }
 
-//  Small = Less than 768px - mobile devices
+//  Small = Less than 767px - mobile devices
 @mixin small {
-  @media (min-width: 577px) and (max-width: 768px) {
+  @media (min-width: 577px) and (max-width: 767px) {
     @content;
   }
 }
 
 //  Medium = Less than 992px - tablets
+// To include ipad
 @mixin medium {
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     @content;
   }
 }

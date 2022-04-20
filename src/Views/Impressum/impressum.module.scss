@@ -1,1 +1,165 @@
 @import "../../Styling/global.scss";
+
+.impressum-page-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+
+  font-family: $roboto-light-font-family;
+}
+
+.impressum-content-container {
+  width: 80%;
+  max-width: 120rem;
+  padding: 5rem;
+
+  margin: 0 0 5rem 0;
+
+  background-color: $white;
+}
+
+.main-headings {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+
+  &:nth-of-type(2) {
+    margin-top: 2rem;
+  }
+}
+
+.company-name-heading {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.sub-headings {
+  font-size: 1.3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+span,
+p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.paragraphs {
+  margin-bottom: 2rem;
+  max-width: 80rem;
+}
+
+// ? Media Queries
+
+@include medium {
+  .impressum-content-container {
+    // Todo. Only for larger screens
+
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  span,
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include large {
+  .impressum-content-container {
+    // Todo. Only for larger screens
+
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  span,
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include extra-large {
+  .impressum-content-container {
+    // Todo. Only for larger screens
+
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  span,
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@include extra-extra-large {
+  .impressum-content-container {
+    // Todo. Only for larger screens
+
+    margin: 5rem 0 15rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .company-name-heading {
+    font-size: 2.3rem;
+  }
+
+  .sub-headings {
+    font-size: 1.6rem;
+  }
+
+  span,
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
