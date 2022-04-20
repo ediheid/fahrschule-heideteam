@@ -113,7 +113,7 @@ const DesktopNav = () => {
           {/* // Todo: Add Hashlink */}
           {/* // ! Currently links to section on News page */}
           {/* // ? Covid Info page */}
-          <li className={styles["covid-container"]}>
+          {/* <li className={styles["covid-container"]}>
             <BsInfoCircle
               className={`${styles["nav-links"]} ${styles["info-icon"]}`}
             />{" "}
@@ -124,7 +124,20 @@ const DesktopNav = () => {
             >
               Covid Info
             </Link>
-          </li>
+          </li> */}
+
+          <Link
+            className={styles["nav-links"]}
+            to="/news"
+            alt="Link to covid infopage"
+          >
+            <li className={styles["covid-container"]}>
+              <BsInfoCircle
+                className={`${styles["nav-links"]} ${styles["info-icon"]}`}
+              />{" "}
+              Covid Info{" "}
+            </li>
+          </Link>
         </ul>
       </nav>
     </>
