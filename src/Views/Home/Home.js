@@ -2,6 +2,7 @@ import React from "react";
 
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
+import ExtraInfoSection from "./ExtraInfoSection";
 
 import styles from "../Home/home.module.scss";
 
@@ -30,6 +31,10 @@ const Home = () => {
       {/* // ? About Section*/}
 
       <AboutSection />
+
+      {/* // ? Extra Info Section */}
+
+      <ExtraInfoSection />
     </div>
   );
 };
