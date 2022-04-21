@@ -167,6 +167,10 @@
 }
 
 @include extra-extra-large {
+  .about-section {
+    padding: 12rem 0 12rem 0;
+  }
+
   .about-content-container {
     flex-direction: row;
   }
