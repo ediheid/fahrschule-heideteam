@@ -50,3 +50,18 @@
     @content;
   }
 }
+
+// ? Buttons
+
+@mixin dark-button {
+  background-color: $green-solid-button;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+
+  color: $button-text-light;
+  font-family: $button-font;
+
+  font-size: 1.5rem;
+}

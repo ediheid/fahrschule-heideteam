@@ -20,6 +20,11 @@ const Slideshow = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    // fade: true,
+    // cssEase: "linear",
+
+    // ! Not sure about pause or not?
+    pauseOnHover: true,
   };
 
   return (

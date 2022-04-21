@@ -16,11 +16,14 @@ $cream: #f2ebdc;
 $navbar: $dark-green;
 $nav-links: rgb(239, 236, 236);
 $mobile-nav-links: $darker-green;
-$headings-colour: $darker-green;
+$headings-colour: $dark-green;
+$main-font-green: $darker-green;
 $footer-text: $cream;
 
-$green-button: $logo-green;
+$green-solid-button: $dark-green;
 $blue-button: $blue;
+
+$button-text-light: $eggshell;
 
 // =================================================
 
@@ -61,6 +64,9 @@ $roboto-medium-italic-font-family: "Roboto Medium Italic", sans-serif;
 
 // ? Font Family Variables
 $main-font-font-family: $roboto-regular-font-family;
+$headings-font: $montserrat-semi-bold-font-family;
+$button-font: $montserrat-semi-bold-font-family;
 
 // ? Font Size Variables
-$headings-font-size: 5rem;
+$headings-font-size: 3rem;
+$paragraph-font-size-small: 1.4rem;

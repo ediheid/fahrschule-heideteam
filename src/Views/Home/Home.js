@@ -1,21 +1,35 @@
 import React from "react";
 
 import Slideshow from "../../Components/Slideshow/Slideshow";
+import AboutSection from "./AboutSection";
 
 import styles from "../Home/home.module.scss";
 
 const Home = () => {
   return (
     <div className={styles["home-page-container"]}>
-      <div className={styles["landing-view-container"]}>
+      {/* // ? Landing View section */}
+
+      <section className={styles["landing-view-container"]}>
         <Slideshow />
         <div className={styles["landing-view-text-area"]}>
-          {" "}
-          This will be the home page text
-        </div>
-      </div>
+          {/* <div className={styles["header-text-container"]}>
+            <span className={`${styles["header-text"]} ${styles["text-1"]}`}>
+              eure Fahrschule in
+            </span>
+            <span className={`${styles["header-text"]} ${styles["text-2"]}`}>
+              Radeberg und Umgebung
+            </span>
+          </div> */}
 
-      <div className={styles["about-section"]}>About section</div>
+          {/* // ! Maybe make this 'continue' */}
+          <button className={styles["more-button"]}>Mehr</button>
+        </div>
+      </section>
+
+      {/* // ? About Section*/}
+
+      <AboutSection />
     </div>
   );
 };
