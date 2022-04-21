@@ -144,6 +144,49 @@
 .extra-info-heading {
   width: 80%;
   max-width: 60rem;
+
+  margin-top: 3rem;
+}
+
+.extra-info-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin: 4rem 0 2rem 0;
+}
+
+.info-boxes {
+  display: grid;
+  grid-template-rows: 11rem 9rem;
+
+  width: 20rem;
+  height: 20rem;
+
+  margin: 2rem;
+
+  //   border: 2px solid red;
+}
+
+.info-icon {
+  //   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 7rem;
+  }
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+
+  h4 {
+    font-family: $headings-font;
+    font-size: 1.4rem;
+  }
 }
 
 // ? ALL Media queries
