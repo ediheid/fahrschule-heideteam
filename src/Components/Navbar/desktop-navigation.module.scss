@@ -8,6 +8,8 @@
   align-items: center;
 
   overflow: hidden;
+
+  z-index: 10000;
 }
 
 .nav-sticky {
@@ -35,14 +37,14 @@
   color: $nav-links;
 
   &:active {
-    font-family: $montserrat-bold-font-family;
+    // font-family: $montserrat-bold-font-family;
     color: $brighter-logo-green;
   }
 }
 
 @media (hover: hover) {
   .nav-links:hover {
-    font-family: $montserrat-bold-font-family;
+    // font-family: $montserrat-bold-font-family;
     color: $brighter-logo-green;
   }
 }
