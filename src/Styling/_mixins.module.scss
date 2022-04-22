@@ -67,7 +67,31 @@
 
   cursor: pointer;
 
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
   &:active {
     background-color: $logo-green;
+  }
+}
+
+@mixin light-button {
+  background-color: transparent;
+  border: 2px solid $logo-green;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+
+  color: $button-text-green;
+  font-family: $button-font;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  &:active {
+    background-color: $logo-green;
+    color: $button-text-light;
   }
 }

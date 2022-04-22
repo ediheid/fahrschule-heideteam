@@ -1,21 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../Home/home.module.scss";
 
 import medal from "../Home/Static/medal.png";
 import euro from "../Home/Static/euro.png";
 import drivingSchool from "../Home/Static/driving-school.png";
-import smile from "../Home/Static/smile.png";
+
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ExtraInfoSection = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
     <section className={styles["extra-info-section"]}>
-      <h2 className={`${styles["headings"]} ${styles["extra-info-heading"]}`}>
+      <h2
+        data-aos="fade-up"
+        className={`${styles["headings"]} ${styles["extra-info-heading"]}`}
+      >
         How we can help you achieve your driving goals
       </h2>
       <div className={styles["extra-info-content"]}>
         {/* // ? Box 1 */}
-        <div className={styles["info-boxes"]}>
+        <div data-aos="fade-up" className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={medal}
@@ -28,7 +40,7 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 2 */}
-        <div className={styles["info-boxes"]}>
+        <div data-aos="fade-up" className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={euro}
@@ -41,7 +53,7 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 3 */}
-        <div className={styles["info-boxes"]}>
+        <div data-aos="fade-up" className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={drivingSchool}
@@ -54,10 +66,10 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 4 */}
-        <div className={styles["info-boxes"]}>
+        <div data-aos="fade-up" className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
-              src={smile}
+              src={drivingSchool}
               alt="Smile icons created by Freepik - Flaticon- https://www.flaticon.com/free-icons/smile"
             ></img>
           </div>
@@ -66,6 +78,11 @@ const ExtraInfoSection = () => {
           </div>
         </div>
       </div>
+      <Link to="/klassen" alt="Link to Team page">
+        <button data-aos="fade-up" className={styles["light-button"]}>
+          Führerschein Klassen
+        </button>
+      </Link>
     </section>
   );
 };
