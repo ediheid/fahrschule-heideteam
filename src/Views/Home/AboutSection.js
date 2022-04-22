@@ -28,7 +28,9 @@ const AboutSection = () => {
           </p>
 
           <Link to="/team" alt="Link to Team page">
-            <button className={styles["dark-button"]}>Mehr übers Team</button>
+            <button className={styles["gradient-button-dark"]}>
+              Mehr übers Team
+            </button>
           </Link>
         </div>
 

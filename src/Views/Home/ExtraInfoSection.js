@@ -84,6 +84,8 @@ const ExtraInfoSection = () => {
           Führerschein Klassen
         </button>
       </Link>
+
+      <div className={styles["dividing-line"]}></div>
     </section>
   );
 };

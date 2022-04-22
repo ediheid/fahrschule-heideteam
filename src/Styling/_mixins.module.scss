@@ -53,26 +53,39 @@
 
 // ? Buttons
 
-@mixin dark-button {
-  background-color: $green-solid-button;
+@mixin gradient-button-dark {
+  background-image: linear-gradient(
+    to right,
+    $dark-green 0%,
+    lighten($dark-green, 12%) 51%,
+    $dark-green 100%
+  );
+
   border: none;
   outline: none;
   border-radius: 2rem;
-  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
 
   color: $button-text-light;
   font-family: $button-font;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
+  letter-spacing: 0.1rem;
   // text-transform: uppercase;
+
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
 
   cursor: pointer;
 
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
-  &:active {
-    background-color: $logo-green;
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
   }
 }
 
@@ -109,6 +122,29 @@
     color: #fff;
     text-decoration: none;
     transition: 1s;
+  }
+}
+
+@mixin dark-button {
+  background-color: $green-solid-button;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+
+  color: $button-text-light;
+  font-family: $button-font;
+
+  font-size: 1.5rem;
+  text-align: center;
+  // text-transform: uppercase;
+
+  cursor: pointer;
+
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  &:active {
+    background-color: $logo-green;
   }
 }
 
