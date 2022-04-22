@@ -182,6 +182,7 @@
 .info-text {
   display: flex;
   justify-content: center;
+  text-align: center;
 
   h4 {
     font-family: $headings-font;
@@ -189,14 +190,47 @@
   }
 }
 
-.light-button {
-  @include light-button;
+.gradient-button-light {
+  @include gradient-button-light;
 }
 
-@media (hover: hover) {
-  .light-button:hover {
-    background-color: $logo-green;
-    color: $button-text-light;
+// ? Berufskraftfahrerqualifikation Section
+
+.berufs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+
+  padding: 0 0 10rem 0;
+}
+
+.berufs-background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $brighter-logo-green;
+  width: 100%;
+  height: auto;
+
+  padding: 6rem 0 10rem 0;
+  margin: 5rem 0 0 0;
+}
+
+.berufs-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 50rem;
+
+  img {
+    width: 7rem;
   }
 }
 

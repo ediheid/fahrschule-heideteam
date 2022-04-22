@@ -6,6 +6,7 @@ import styles from "../Home/home.module.scss";
 import medal from "../Home/Static/medal.png";
 import euro from "../Home/Static/euro.png";
 import drivingSchool from "../Home/Static/driving-school.png";
+import handshake from "../Home/Static/partners.png";
 
 // AOS
 import Aos from "aos";
@@ -23,7 +24,7 @@ const ExtraInfoSection = () => {
         data-aos="fade-up"
         className={`${styles["headings"]} ${styles["extra-info-heading"]}`}
       >
-        How we can help you achieve your driving goals
+        Wir helfen Ihre Fahrziele zu erreichen
       </h2>
       <div className={styles["extra-info-content"]}>
         {/* // ? Box 1 */}
@@ -35,7 +36,7 @@ const ExtraInfoSection = () => {
             ></img>
           </div>
           <div className={styles["info-text"]}>
-            <h4>30+ Years of expertise</h4>
+            <h4>30+ Jahre Erfahrung</h4>
           </div>
         </div>
 
@@ -48,7 +49,7 @@ const ExtraInfoSection = () => {
             ></img>
           </div>
           <div className={styles["info-text"]}>
-            <h4>Competitive Prices</h4>
+            <h4>attraktive Preise</h4>
           </div>
         </div>
 
@@ -56,12 +57,12 @@ const ExtraInfoSection = () => {
         <div data-aos="fade-up" className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
-              src={drivingSchool}
-              alt=" Learn icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/driver"
+              src={handshake}
+              alt="Partners icons created by Kalashnyk - Flaticon - https://www.flaticon.com/free-icons/partners"
             ></img>
           </div>
           <div className={styles["info-text"]}>
-            <h4>Theory?</h4>
+            <h4>Kompetente und zuverlässige Leistung</h4>
           </div>
         </div>
 
@@ -74,12 +75,12 @@ const ExtraInfoSection = () => {
             ></img>
           </div>
           <div className={styles["info-text"]}>
-            <h4>7000+ Happy Students</h4>
+            <h4>7000+ erfolgreiche Fahrschüler*innen</h4>
           </div>
         </div>
       </div>
-      <Link to="/klassen" alt="Link to Team page">
-        <button data-aos="fade-up" className={styles["light-button"]}>
+      <Link data-aos="fade-up" to="/klassen" alt="Link to Team page">
+        <button className={styles["gradient-button-light"]}>
           Führerschein Klassen
         </button>
       </Link>

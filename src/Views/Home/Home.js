@@ -3,6 +3,7 @@ import React from "react";
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
 import ExtraInfoSection from "./ExtraInfoSection";
+import BerufsSection from "./BerufsSection";
 
 import styles from "../Home/home.module.scss";
 
@@ -35,6 +36,10 @@ const Home = () => {
       {/* // ? Extra Info Section */}
 
       <ExtraInfoSection />
+
+      {/* // ? Berufskraftfahrerqualifikation Section */}
+
+      <BerufsSection />
     </div>
   );
 };

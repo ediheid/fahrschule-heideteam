@@ -22,9 +22,9 @@ const AboutSection = () => {
           <h2 className={styles["headings"]}>Über Uns</h2>
           <p className={styles["about-paragraph"]}>
             Seit Mai 1990 haben unsere Fahrlehrer schon mehr als 7000
-            Fahrschüler aller Klassen ausgebildet. Wir helfen Ihnen gern wenn es
-            um den Erwerb, die Erweiterung oder auch um die "Wiederaktivierung"
-            der Fahrerlaubnis geht.
+            Fahrschüler*innen aller Klassen ausgebildet. Wir helfen Ihnen gern
+            wenn es um den Erwerb, die Erweiterung oder auch um die
+            "Wiederaktivierung" der Fahrerlaubnis geht.
           </p>
 
           <Link to="/team" alt="Link to Team page">
