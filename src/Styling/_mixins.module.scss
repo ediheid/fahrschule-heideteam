@@ -130,12 +130,12 @@
   border: none;
   outline: none;
   border-radius: 2rem;
-  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
 
   color: $button-text-light;
   font-family: $button-font;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
   // text-transform: uppercase;
 
@@ -148,28 +148,37 @@
   }
 }
 
-@mixin light-button {
-  background-color: $logo-green;
-  color: $button-text-light;
+@mixin transparent-button {
+  background-color: transparent;
+  color: $white;
+  // border: 2px solid $white;
 
-  // background-color: transparent;
-  // border: 2px solid $logo-green;
+  box-shadow: 0px 0px 0px 2px $white inset;
+
   outline: none;
   border: none;
   border-radius: 2rem;
-  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
 
-  // color: $button-text-green;
   font-family: $button-font;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 
   cursor: pointer;
 
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  // box-shadow: rgba(223, 221, 221, 0.1) 0px 4px 12px;
 
-  &:active {
-    background-color: $logo-green;
-    color: $button-text-light;
+  &:hover {
+    // background-color: $white;
+    color: $logo-green;
+
+    background-image: linear-gradient(
+      to right,
+      $white 0%,
+      $cream 51%,
+      $white 100%
+    );
+
+    transition: 1s;
   }
 }

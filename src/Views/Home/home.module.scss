@@ -246,6 +246,12 @@
   }
 }
 
+.berufs-button {
+  @include transparent-button;
+
+  margin-top: 6rem;
+}
+
 // ? ALL Media queries
 
 @include x-small {

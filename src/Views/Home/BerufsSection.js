@@ -43,6 +43,8 @@ const BerufsSection = () => {
             alt="Certificate icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/certificate"
           ></img>
         </div>
+
+        <button className={styles["berufs-button"]}>Mehr Information</button>
       </div>
     </section>
   );
