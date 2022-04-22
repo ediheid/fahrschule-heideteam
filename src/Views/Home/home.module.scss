@@ -12,6 +12,8 @@
   font-size: $headings-font-size;
 
   text-align: center;
+
+  padding: 0 2rem 0 2rem;
 }
 
 // ? Landing View
@@ -267,6 +269,8 @@
   margin-top: 6rem;
 }
 
+// ? Contact Section
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -276,7 +280,7 @@
   height: auto;
   width: 100%;
 
-  margin: 0 0 10rem 0;
+  margin: 9rem 0 14rem 0;
 }
 
 .contact-button {
@@ -284,14 +288,6 @@
 
   margin-top: 6rem;
 }
-
-.call-button {
-  @include gradient-button-light;
-
-  margin-top: 2rem;
-}
-
-// ? Contact Section
 
 // ? ALL Media queries
 
@@ -331,6 +327,10 @@
   .berufs-button {
     margin-top: 5rem;
   }
+
+  .contact-section {
+    margin: 11rem 0 16rem 0;
+  }
 }
 
 @include medium {
@@ -345,6 +345,10 @@
 
   .team-photo {
     margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 13rem 0 18rem 0;
   }
 }
 
@@ -361,6 +365,10 @@
   .team-photo {
     margin-top: 0;
   }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
 }
 
 @include extra-large {
@@ -375,6 +383,10 @@
 
   .team-photo {
     margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
   }
 }
 
@@ -394,5 +406,9 @@
 
   .team-photo {
     margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
   }
 }
