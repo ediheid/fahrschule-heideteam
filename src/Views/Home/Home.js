@@ -4,6 +4,7 @@ import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
 import ExtraInfoSection from "./ExtraInfoSection";
 import BerufsSection from "./BerufsSection";
+import ContactSection from "./ContactSection";
 
 import styles from "../Home/home.module.scss";
 
@@ -40,6 +41,10 @@ const Home = () => {
       {/* // ? Berufskraftfahrerqualifikation Section */}
 
       <BerufsSection />
+
+      {/* // ? Contact Section */}
+
+      <ContactSection />
     </div>
   );
 };
