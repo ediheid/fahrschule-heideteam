@@ -10,7 +10,7 @@ const Impressum = () => {
 
         <div>
           <h2 className={styles["company-name-heading"]}>
-            Heideteam Fahrschule GmbH
+            Heideteam Fahrschul GmbH
           </h2>
           <span className={styles["spans"]}>
             Pillnitzer Str. 8 - 01454 Radeberg
@@ -78,9 +78,9 @@ const Impressum = () => {
         {/*  // ! What is the sub-heading for this section? - Is it 'Registereintrag:'? */}
         <div>
           <h3 className={styles["sub-headings"]}>Registereintrag:</h3>
-          <span>
+          <span className={styles["spans"]}>
             {" "}
-            className={styles["spans"]} HR. B 1144 Dresden Amtsgericht Dresden
+            HR. B 1144 Dresden Amtsgericht Dresden
           </span>
           <br />
           <span className={styles["spans"]}> USt-Id Nr.: DE140207477 </span>

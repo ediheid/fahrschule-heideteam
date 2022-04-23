@@ -6,6 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import CookieConsent from "react-cookie-consent";
+
 // Views / Components
 import Home from "./Views/Home/Home";
 import Header from "./Components/Header/Header";
@@ -45,6 +47,12 @@ const App = () => {
           {/* Mobile Nav lives inside Header */}
           <Header />
           <DesktopNav />
+
+          {/*  // !! */}
+          {/* // Todo: Check if site uses cookies once finished.. https://www.cookiemetrix.com/ and generate new Datenschutz if necessary..  https://dsgvo-muster-datenschutzerklaerung.dg-datenschutz.de/?lang=en */}
+          {/* <CookieConsent debug={true} enableDeclineButton flipButtons>
+            Data Privacy Policy
+          </CookieConsent> */}
 
           <main style={{ overflow: "hidden" }}>
             <Routes>

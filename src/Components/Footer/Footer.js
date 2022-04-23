@@ -85,7 +85,7 @@ const Footer = () => {
             to="/datenschutz"
             alt="Link to Datenschutz information"
           >
-            DSGVO
+            Datenschutzerklärung
           </Link>
 
           {/* Team */}

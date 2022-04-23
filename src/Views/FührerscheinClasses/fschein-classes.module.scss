@@ -1,0 +1,140 @@
+@import "../../Styling/global.scss";
+
+.classes-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+
+  margin: 5rem 0 5rem 0;
+}
+
+.class-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  max-width: 80rem;
+
+  height: auto;
+  border-radius: 1rem;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.class-img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: cover;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.text-container {
+  height: 300px;
+}
+
+@include small {
+  .class-container {
+    max-width: 35rem;
+  }
+}
+
+@include medium {
+  .class-container {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .class-img {
+    width: 40%;
+
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+}
+
+@include large {
+  .class-container {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .class-img {
+    width: 40%;
+
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+}
+
+@include extra-large {
+  .class-container {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .class-img {
+    width: 40%;
+
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+}
+
+@include extra-extra-large {
+  .class-container {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .class-img {
+    width: 40%;
+
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+}
