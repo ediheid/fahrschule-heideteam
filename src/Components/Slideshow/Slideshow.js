@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";
 import Truck from "../Slideshow/Static/truck.png";
-import Car2 from "../Slideshow/Static/car2.png";
 
 import styles from "../Slideshow/slideshow.module.scss";
 
@@ -45,12 +44,6 @@ const Slideshow = () => {
         className={styles["slideshow-image"]}
         src={Truck}
         alt="Man Truck"
-      ></img>
-
-      <img
-        className={styles["slideshow-image"]}
-        src={Car2}
-        alt="Closeup of white car hood"
       ></img>
     </Slider>
   );
