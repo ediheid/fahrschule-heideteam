@@ -61,7 +61,7 @@
 }
 
 .subheadings {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.8rem;
   font-family: $roboto-regular-font-family;
 }
@@ -86,7 +86,8 @@
   li {
     margin-bottom: 1rem;
     font-family: $main-font-font-family;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 
@@ -266,5 +267,9 @@
     border-bottom-left-radius: 0;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+  }
+
+  .list-container {
+    width: 70%;
   }
 }

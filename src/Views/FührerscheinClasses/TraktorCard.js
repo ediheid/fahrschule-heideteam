@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
 import traktor from "../FührerscheinClasses/Static/tractor.png";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const TraktorCard = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["class-container"]}>
+    <div data-aos="fade-up" className={styles["class-container"]}>
       <div className={styles["img-container"]}>
         <img
           className={styles["class-img-right"]}

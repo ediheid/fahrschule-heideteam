@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 import bus from "../FührerscheinClasses/Static/bus.png";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // Todo: Need new image
 
 const BusCard = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["class-container"]}>
+    <div data-aos="fade-up" className={styles["class-container"]}>
       <div className={styles["img-container"]}>
         <img
           className={styles["class-img"]}

@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
 import lkw from "../FührerscheinClasses/Static/truck2.png";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // ! Right
 
 const LkwCard = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["class-container"]}>
+    <div data-aos="fade-up" className={styles["class-container"]}>
       <div className={styles["img-container"]}>
         <img
           className={styles["class-img-right"]}

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import TeamPhoto from "./Static/team2.png";
+import TeamPhoto from "./Static/team3.png";
 
 import styles from "../Home/home.module.scss";
 

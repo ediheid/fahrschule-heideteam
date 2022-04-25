@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
 import motorcycle from "../FührerscheinClasses/Static/motorcycle.png";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const MotorradCard = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["class-container"]}>
+    <div data-aos="fade-up" className={styles["class-container"]}>
       <div className={styles["img-container"]}>
         <img
           className={styles["class-img"]}
