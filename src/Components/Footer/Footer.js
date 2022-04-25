@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Copyright information */}
         <span className={styles["copyright"]}>
-          &copy; {currentYear} Fahrschule Heideteam GmbH
+          &copy; 2022 - {currentYear} Fahrschule Heideteam GmbH
         </span>
 
         {/* Extra Links section */}

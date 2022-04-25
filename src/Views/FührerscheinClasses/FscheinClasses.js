@@ -8,6 +8,7 @@ import PkwAnhaengerCard from "./PkwAnhaengerCard";
 import MotorradCard from "./MotorradCard";
 import LkwCard from "./LkwCard";
 import BusCard from "./BusCard";
+import TraktorCard from "./TraktorCard";
 
 // Every second card has the image to the right
 const FscheinClasses = () => {
@@ -20,22 +21,22 @@ const FscheinClasses = () => {
       {/* // ? PKW PLUS */}
       {/* // ! Right */}
       {/* // Todo: Need new image */}
-
       <PkwAnhaengerCard />
 
       {/* // ? Motorcycle */}
-
       <MotorradCard />
 
       {/* // ? LKW */}
       {/* // ! Right */}
-
       <LkwCard />
 
       {/* // ? Bus */}
       {/* // Todo: Need new image */}
-
       <BusCard />
+
+      {/* // ? Traktor */}
+      {/* // ! Right */}
+      <TraktorCard />
     </div>
   );
 };
