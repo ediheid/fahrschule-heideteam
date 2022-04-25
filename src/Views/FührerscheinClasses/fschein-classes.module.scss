@@ -55,18 +55,19 @@
   font-size: 3rem;
   letter-spacing: 0.1rem;
   margin: 4rem 0 2rem 0;
+  font-family: $roboto-bold-font-family;
 
   width: 80%;
 }
 
 .subheadings {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: $roboto-regular-font-family;
 }
 
 .headings,
 .subheadings {
-  font-family: $roboto-bold-font-family;
   color: $headings-colour;
   text-align: center;
 }
