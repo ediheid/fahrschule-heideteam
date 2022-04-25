@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
@@ -39,8 +40,19 @@ const FscheinClasses = () => {
               Gern verhelfen wir auch Menschen mit Handicap, gehörlosen und
               hörgeschädigten Menschen zum Führerschein.
             </li>
+            <h3 className={styles["subheadings"]}>Info</h3>
+            <li>
+              Mindestalter 18 Jahre / begleitetes Fahren 17 Jahre, mehrspurige
+              Kraftfahrzeuge bis zGM 3500 kg mit Anhänger 750 kg, bei Anhängern
+              über 750 kg beträgt die max. zGM des Zuges 3500 kg
+            </li>
           </ul>
-          <button className={styles["book-contact-button"]}>Book Now</button>
+          <Link to="/preise" alt="Link to price page">
+            <button className={styles["price-button"]}>Preise</button>
+          </Link>
+          <Link to="/kontakt" alt="Link to contact page">
+            <button className={styles["book-contact-button"]}>Book Now</button>
+          </Link>
         </div>
       </div>
       {/* // ? PKW PLUS */}
@@ -57,8 +69,39 @@ const FscheinClasses = () => {
         </div>
         <div className={styles["text-container"]}>
           {" "}
-          <h2>PKW und Anhänger</h2>
-          <p></p>
+          <h2 className={styles["headings"]}>
+            PKW + Anhänger{" "}
+            <span className={styles["class-letter"]}>(Klasse BE, B96)</span>
+          </h2>
+          <ul className={styles["list-container"]}>
+            <li>
+              Für Ihre Hobbies wie z.B. Pferdesport, für die Urlaubsreise mit
+              dem großen Wohnanhänger oder auch im Job ist es heute in vielen
+              Fällen notwendig, einen Führerschein der Klasse BE zu besitzen.
+              Wir machen Sie fit für das Fahren mit einem Hängerzug.
+            </li>
+
+            <h3 className={styles["subheadings"]}>BE Anhänger für PKW</h3>
+            <li>
+              Vorbesitz der Klasse B notwendig, Mindestalter 18 / 17 Jahre,
+              Fahrzeug der Klasse B mit Anhänger bis 3500 kg
+            </li>
+
+            <h3 className={styles["subheadings"]}>
+              Klasse B96 Anhänger für PKW
+            </h3>
+            <li>
+              Vorbesitz der Klasse B notwendig, Mindestalter 18 / 17 Jahre,
+              Fahrzeug der Klasse B mit Anhänger über 750 kg und einer zGM des
+              Zuges bis 4250 kg
+            </li>
+          </ul>
+          <Link to="/preise" alt="Link to price page">
+            <button className={styles["price-button"]}>Preise</button>
+          </Link>
+          <Link to="/kontakt" alt="Link to contact page">
+            <button className={styles["book-contact-button"]}>Book Now</button>
+          </Link>
         </div>
       </div>
       {/* // ? Motorcycle */}
@@ -70,8 +113,26 @@ const FscheinClasses = () => {
             src={motorcycle}
           ></img>
         </div>
-        <div className={styles["text-container"]}>Text box</div>
-        Führerschein Classes will go here
+        <div className={styles["text-container"]}>
+          {" "}
+          <h2 className={styles["headings"]}>
+            Motorrad <span className={styles["class-letter"]}>(Klasse A)</span>
+          </h2>
+          <ul className={styles["list-container"]}>
+            <li>
+              Nach dem Motto: "Biker lernen von Bikern!" Unsere
+              Motorradfahrlehrer schulen einen Großteil der Ausbildung vom
+              Motorrad aus. So lässt sich besser zeigen was ein Motorradfahrer
+              alles beherrschen muss.
+            </li>
+          </ul>
+          <Link to="/preise" alt="Link to price page">
+            <button className={styles["price-button"]}>Preise</button>
+          </Link>
+          <Link to="/kontakt" alt="Link to contact page">
+            <button className={styles["book-contact-button"]}>Book Now</button>
+          </Link>
+        </div>
       </div>
       {/* // ? LKW */}
       {/* // ! Right */}
@@ -84,8 +145,7 @@ const FscheinClasses = () => {
             src={bus}
           ></img>
         </div>
-        <div className={styles["text-container"]}>Text box</div>
-        Führerschein Classes will go here
+        <div className={styles["text-container"]}> </div>
       </div>
     </div>
   );

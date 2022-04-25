@@ -52,16 +52,27 @@
 }
 
 .headings {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin: 4rem 0 2rem 0;
+
+  width: 80%;
+}
+
+.subheadings {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.headings,
+.subheadings {
   font-family: $roboto-bold-font-family;
   color: $headings-colour;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-
-  margin: 3rem 0 2rem 0;
+  text-align: center;
 }
 
 .class-letter {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .list-container {
@@ -78,11 +89,20 @@
   }
 }
 
+.price-button {
+  @include gradient-button-light;
+  margin-top: 2.5rem;
+  //   height: 5rem;
+  //   padding: 0 2rem;
+}
+
 .book-contact-button {
   @include gradient-button-dark;
 
   margin: 2rem 0 5rem 0;
 }
+
+// ? Media Queries
 
 @include small {
   .class-container {
