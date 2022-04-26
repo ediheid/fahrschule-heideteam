@@ -22,6 +22,7 @@ import Footer from "./Components/Footer/Footer";
 import Impressum from "./Views/Impressum/Impressum";
 import Datenschutz from "./Views/DSGVO/Datenschutz";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import ToTopButton from "./Components/ToTopButton/ToTopButton";
 
 // ? createContext variable
 export const AppContext = createContext();
@@ -55,6 +56,9 @@ const App = () => {
           </CookieConsent> */}
 
           <main style={{ overflow: "hidden" }}>
+            {/* Displays scroll to top button once user has scrolled down the page // * (hamburger menu devices only) */}
+            <ToTopButton />
+
             <Routes>
               <Route path="/" exact element={<Home />} />
 
