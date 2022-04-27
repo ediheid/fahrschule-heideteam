@@ -339,11 +339,13 @@
 @include medium {
   .about-content-container {
     flex-direction: row;
+
+    width: 80%;
   }
 
   .about-text-container {
     width: 50%;
-    margin-right: 4rem;
+    margin-right: 6rem;
   }
 
   .team-photo {
@@ -359,6 +361,8 @@
 @include large {
   .about-content-container {
     flex-direction: row;
+
+    width: 80%;
   }
 
   .about-text-container {
