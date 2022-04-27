@@ -15,6 +15,16 @@ const Team = () => {
       // Img from import
       // Alt tag updates with name
       img: examplePhoto,
+      name: "Wolfgang Franke",
+      duties: "PKW / LKW / Bus",
+
+      back: "back test",
+    },
+    {
+      id: "2",
+      // Img from import
+      // Alt tag updates with name
+      img: examplePhoto,
       name: "Jörg Seeberger",
       duties: "PKW / Moped",
 
@@ -22,7 +32,7 @@ const Team = () => {
     },
 
     {
-      id: "2",
+      id: "3",
       img: examplePhoto,
       name: "TEST",
       duties: "TEST",
@@ -37,24 +47,7 @@ const Team = () => {
         <p>Longer about text will go here..</p>
         <h2>Meet the team</h2>
         <div className={styles["cards-container"]}>
-          <div className={styles["cards"]}>
-            <div className={styles["header-bg"]}>
-              {" "}
-              <img
-                src={examplePhoto}
-                alt="headshot"
-                className={styles["profile-photo"]}
-              ></img>
-            </div>
-
-            <div className={styles["text-container"]}>
-              <h4>Wolfgang Franke</h4>
-              <h5>PKW / LKW / Bus</h5>
-              <button>More</button>
-            </div>
-          </div>
-
-          {/*  Testing card mapping here */}
+          {/*  Cards are mapped below*/}
 
           <div>
             {cards.map((card) => (
