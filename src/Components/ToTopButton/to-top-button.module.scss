@@ -5,7 +5,7 @@
   bottom: 2rem;
   right: 2rem;
 
-  font-size: 3.5rem;
+  font-size: 3rem;
   background: transparent;
 
   cursor: pointer;
@@ -28,7 +28,15 @@
   }
 }
 
-// ? Media Queries - hide on larger screens where full navigation is shown
+// ? Media Queries -
+
+@include medium {
+  .back-to-top {
+    font-size: 3.5rem;
+  }
+}
+
+// ? (hide on larger screens where full navigation is shown)
 
 @include large {
   .back-to-top {
