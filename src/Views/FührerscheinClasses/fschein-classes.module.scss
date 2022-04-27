@@ -25,7 +25,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-// Class img AND class img right (for motorcycle)
+// Class img AND class img right (every 2nd)
 .class-img,
 .class-img-right {
   width: 100%;
@@ -247,8 +247,6 @@
 
   .class-img {
     height: 100%;
-
-    min-width: 35rem;
 
     object-position: center;
     object-fit: cover;
