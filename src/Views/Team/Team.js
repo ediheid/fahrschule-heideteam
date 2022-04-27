@@ -4,6 +4,7 @@ import styles from "../Team/team.module.scss";
 
 import FlipCard from "./Flipcard";
 
+// Import individual team photos
 import examplePhoto from "../Team/Static/example-headshot.png";
 
 const Team = () => {
@@ -11,18 +12,22 @@ const Team = () => {
   const cards = [
     {
       id: "1",
+      // Img from import
+      // Alt tag updates with name
+      img: examplePhoto,
       name: "Jörg Seeberger",
       duties: "PKW / Moped",
-      front: "Hover",
-      back: "back",
+
+      back: "back test",
     },
 
     {
       id: "2",
+      img: examplePhoto,
       name: "TEST",
       duties: "TEST",
-      front: "Hover",
-      back: "back",
+
+      back: "back test",
     },
   ];
 

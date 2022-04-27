@@ -117,23 +117,5 @@
   }
 }
 
-// ! Testing flipcard
-
-.flip-card-inner {
-  transform-style: preserve-3d;
-  transition: 0.5s linear 0.1s;
-  position: relative;
-  width: inherit;
-  height: inherit;
-
-  &.hover-trigger:hover {
-    transform: rotateY(180deg);
-  }
-
-  &.showBack {
-    transform: rotateY(180deg);
-  }
-}
-
 // !
 // Todo: Make smaller for extra extra small devices
