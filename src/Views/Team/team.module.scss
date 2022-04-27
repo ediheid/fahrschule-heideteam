@@ -11,6 +11,12 @@
   margin: 5rem 0 5rem 0;
 }
 
+.heading {
+  font-family: $headings-font;
+  font-size: $headings-font-size;
+  color: $main-font-green;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -18,11 +24,10 @@
 
   width: 80%;
 
-  margin-top: 10rem;
-
-  //   border: 2px solid red;
+  margin-top: 5rem;
 }
 
+// Both front and back
 .cards {
   display: flex;
   flex-direction: column;
@@ -34,8 +39,6 @@
 
   border-radius: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  //   border: 2px solid blue;
 }
 
 .header-bg {

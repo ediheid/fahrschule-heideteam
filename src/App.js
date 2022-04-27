@@ -40,7 +40,12 @@ const App = () => {
   return (
     <>
       {/* This is where context lives */}
-      <AppContext.Provider value={{ isNavOpen, setIsNavOpen }}>
+      <AppContext.Provider
+        value={{
+          isNavOpen,
+          setIsNavOpen,
+        }}
+      >
         <Router>
           {/* Scrolls to top on routing */}
           <ScrollToTop />

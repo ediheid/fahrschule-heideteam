@@ -10,6 +10,7 @@ import examplePhoto from "../Team/Static/example-headshot.png";
 const Team = () => {
   // Add individual card data here that will be mapped below
   const cards = [
+    // ? Wolli
     {
       id: "1",
       // Img from import
@@ -20,6 +21,8 @@ const Team = () => {
 
       back: "back test",
     },
+
+    // ? Jörg
     {
       id: "2",
       // Img from import
@@ -44,16 +47,15 @@ const Team = () => {
   return (
     <>
       <div className={styles["team-page-container"]}>
-        <p>Longer about text will go here..</p>
-        <h2>Meet the team</h2>
-        <div className={styles["cards-container"]}>
-          {/*  Cards are mapped below*/}
+        {/*  // Todo: Waiting for text */}
+        {/* <p>Longer about text will go here..</p> */}
+        <h2 className={styles["heading"]}>Meet the team</h2>
 
-          <div>
-            {cards.map((card) => (
-              <FlipCard key={card.id} card={card} />
-            ))}
-          </div>
+        <div className={styles["cards-container"]}>
+          {/*  Cards are mapped here from array - passed into FlipCard*/}
+          {cards.map((card) => (
+            <FlipCard key={card.id} card={card} />
+          ))}
         </div>
       </div>
     </>
