@@ -21,6 +21,7 @@ const MobileNav = () => {
 
   return (
     <>
+      {/* // Todo: Look into more settings for animation */}
       <motion.nav
         initial={animateFrom}
         animate={animateTo}

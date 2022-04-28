@@ -16,6 +16,8 @@
   font-size: 4rem;
   color: $main-font-green;
 
+  text-align: center;
+
   span {
     font-family: $montserrat-thin-font-family;
   }
@@ -25,7 +27,7 @@
   height: 0.4rem;
   width: 10rem;
   margin-top: 1rem;
-  background-color: $blue;
+  background-color: $dark-green;
 
   border-radius: 5rem;
 }
@@ -175,5 +177,13 @@
   }
 }
 
-// !
-// Todo: Make smaller for extra extra small devices
+//  Special Media Query for extra small devices
+@include extra-extra-small {
+  .cards {
+    width: 22rem;
+  }
+
+  .cards-back {
+    height: 40rem;
+  }
+}
