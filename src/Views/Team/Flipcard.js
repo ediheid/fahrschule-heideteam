@@ -15,7 +15,12 @@ const FlipCard = ({ card }) => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+    <ReactCardFlip
+      isFlipped={isFlipped}
+      flipDirection="horizontal"
+      //   flipSpeedBackToFront="0.6"
+      //   flipSpeedFrontToBack="0.2"
+    >
       {/* // ?Front Card */}
 
       <div className={styles["cards"]}>
@@ -37,9 +42,12 @@ const FlipCard = ({ card }) => {
 
       {/* // ? Back Card */}
 
-      <div className={styles["cards"]}>
-        This is the back of the card.
-        <button onClick={handleCardFlip}>Click to flip</button>
+      <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
+        <div className={styles["back-container"]}>
+          <p>{card.backInfoText}</p>
+        </div>
+
+        <button onClick={handleCardFlip}>Zurück</button>
       </div>
     </ReactCardFlip>
   );

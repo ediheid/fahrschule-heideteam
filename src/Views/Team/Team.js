@@ -19,7 +19,8 @@ const Team = () => {
       name: "Wolfgang Franke",
       duties: "PKW / LKW / Bus",
 
-      back: "back test",
+      backInfoText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla arcu nisl, eu pellentesque enim aliquam in. Etiam lobortis orci et eros dapibus lacinia. Vivamus quis lacinia massa, vitae dignissim elit. Curabitur ut magna efficitur metus hendrerit fermentum. Cras sed nunc ligula. Nunc a luctus ligula. Nam faucibus",
     },
 
     // ? Jörg
@@ -31,7 +32,8 @@ const Team = () => {
       name: "Jörg Seeberger",
       duties: "PKW / Moped",
 
-      back: "back test",
+      backInfoText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla arcu nisl, eu pellentesque enim aliquam in. Etiam lobortis orci et eros dapibus lacinia. Vivamus quis lacinia massa, vitae dignissim elit. Curabitur ut magna efficitur metus hendrerit fermentum. Cras sed nunc ligula. Nunc a luctus ligula. Nam faucibus",
     },
 
     {
@@ -40,7 +42,8 @@ const Team = () => {
       name: "TEST",
       duties: "TEST",
 
-      back: "back test",
+      backInfoText:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla arcu nisl, eu pellentesque enim aliquam in. Etiam lobortis orci et eros dapibus lacinia. Vivamus quis lacinia massa, vitae dignissim elit. Curabitur ut magna efficitur metus hendrerit fermentum. Cras sed nunc ligula. Nunc a luctus ligula. Nam faucibus",
     },
   ];
 
