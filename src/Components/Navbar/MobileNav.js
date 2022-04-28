@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 
+import { motion } from "framer-motion";
+
 import styles from "../Navbar/mobile-navigation.module.scss";
 
 import { BsInfoCircle } from "react-icons/bs";
@@ -13,9 +15,17 @@ const MobileNav = () => {
   // onClick event set on links to close Nav dropdown
   const MobileNavContext = useContext(AppContext);
 
+  // Animation rules for Framer-motion on dropdown container
+  const animateFrom = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
+
   return (
     <>
-      <nav className={styles["dropdown-nav-container"]}>
+      <motion.nav
+        initial={animateFrom}
+        animate={animateTo}
+        className={styles["dropdown-nav-container"]}
+      >
         {/* <nav
         className={
           !MobileNavContext.isNavOpen
@@ -146,7 +156,7 @@ const MobileNav = () => {
 
           <hr />
         </ul>
-      </nav>
+      </motion.nav>
     </>
   );
 };
