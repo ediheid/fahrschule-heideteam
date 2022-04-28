@@ -20,6 +20,7 @@ const AboutSection = () => {
       <div className={styles["about-content-container"]}>
         <div data-aos="fade-up" className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
+
           <p className={styles["about-paragraph"]}>
             Seit Mai 1990 haben unsere Fahrlehrer schon mehr als 7000
             Fahrschüler*innen aller Klassen ausgebildet. Wir helfen Ihnen gern
