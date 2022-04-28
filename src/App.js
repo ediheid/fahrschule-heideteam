@@ -32,9 +32,21 @@ const App = () => {
   // Hamburger menu
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  // Handles nav close if user clicks anywhere else
+  const closeNavOnClickAnywhere = () => {
+    setIsNavOpen(false);
+  };
+
   // Scroll to top on browser refresh
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+  };
+
+  // Closes mobile nav dropdown if it is open and the user scrolls down the page past 100px
+  window.onscroll = function () {
+    if (window.scrollY > 100) {
+      setIsNavOpen(false);
+    }
   };
 
   return (
@@ -44,6 +56,7 @@ const App = () => {
         value={{
           isNavOpen,
           setIsNavOpen,
+          closeNavOnClickAnywhere,
         }}
       >
         <Router>
@@ -60,7 +73,11 @@ const App = () => {
             Data Privacy Policy
           </CookieConsent> */}
 
-          <main style={{ overflow: "hidden" }}>
+          <main
+            // Handles nav close if user clicks anywhere on main content
+            onClick={closeNavOnClickAnywhere}
+            style={{ overflow: "hidden" }}
+          >
             {/* Displays scroll to top button once user has scrolled down the page // * (hamburger menu devices only) */}
             <ToTopButton />
 

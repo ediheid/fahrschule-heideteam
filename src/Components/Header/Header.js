@@ -16,12 +16,20 @@ const Header = () => {
   return (
     <>
       <header className={styles["header-container"]}>
+        {/* <header
+        className={
+          !MobileNavContext.isNavOpen
+            ? `${styles["header-container"]}`
+            : `${styles["header-fix"]}`
+        }
+      > */}
         {/* Logo / Link to Home */}
         <Link to="/">
           <img
             className={styles["logo-img-link"]}
             src={Logo}
             alt="Fahrschule Heideteam green logo and link to home page"
+            onClick={MobileNavContext.closeNavOnClickAnywhere}
           ></img>
         </Link>
 

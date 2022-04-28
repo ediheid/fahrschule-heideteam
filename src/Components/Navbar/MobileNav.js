@@ -12,10 +12,17 @@ const MobileNav = () => {
   // State Context from App.js
   // onClick event set on links to close Nav dropdown
   const MobileNavContext = useContext(AppContext);
+
   return (
     <>
       <nav className={styles["dropdown-nav-container"]}>
-        {" "}
+        {/* <nav
+        className={
+          !MobileNavContext.isNavOpen
+            ? `${styles["dropdown-nav-container"]}`
+            : `${styles["dropdown-fix"]}`
+        }
+      > */}{" "}
         <ul className={styles["nav-list"]}>
           <hr />
 
