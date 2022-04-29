@@ -14,25 +14,12 @@ const Home = () => {
       {/* // ? Landing View section */}
 
       <div className={styles["circle-div"]}>
-        <h2>Eure Fahrschule in Radeberg und Umgenbung..</h2>
+        <h2>Eure Fahrschule in Radeberg und Umgenbung!</h2>
       </div>
 
+      <div className={styles["smaller-circle"]}></div>
       <section className={styles["landing-view-container"]}>
         <Slideshow />
-
-        {/* <div className={styles["landing-view-text-area"]}> */}
-        {/* <div className={styles["header-text-container"]}>
-            <span className={`${styles["header-text"]} ${styles["text-1"]}`}>
-              eure Fahrschule in
-            </span>
-            <span className={`${styles["header-text"]} ${styles["text-2"]}`}>
-              Radeberg und Umgebung
-            </span>
-          </div> */}
-
-        {/* <div className={styles["header-text-container"]}>
-            <h1>Eure Fahrschule in Radeberg und Umgenbung</h1>
-          </div> */}
 
         {/* // ! Maybe make this 'continue' */}
         {/* <button className={styles["more-button"]}>Mehr</button> */}
