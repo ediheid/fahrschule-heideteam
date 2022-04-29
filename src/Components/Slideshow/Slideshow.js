@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";
-import Truck from "../Slideshow/Static/truck.png";
+import Truck from "../Slideshow/Static/truck2.png";
 
 import styles from "../Slideshow/slideshow.module.scss";
 
@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Slideshow = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 900,
     slidesToShow: 1,

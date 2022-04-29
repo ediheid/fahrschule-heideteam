@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
-import lkw from "../FührerscheinClasses/Static/truck2.png";
+import lkw from "../FührerscheinClasses/Static/truck.png";
 
 // AOS
 import Aos from "aos";
