@@ -6,6 +6,8 @@ import ExtraInfoSection from "./ExtraInfoSection";
 import BerufsSection from "./BerufsSection";
 import ContactSection from "./ContactSection";
 
+import road from "../Home/Static/road2.png";
+
 import styles from "../Home/home.module.scss";
 
 const Home = () => {
@@ -21,8 +23,10 @@ const Home = () => {
       <section className={styles["landing-view-container"]}>
         <Slideshow />
 
+        {/* // ! Decid if I want img or not */}
+        {/* <img className={styles["road-img"]} src={road}></img> */}
         {/* // ! Maybe make this 'continue' */}
-        {/* <button className={styles["more-button"]}>Mehr</button> */}
+        <button className={styles["more-button"]}>Mehr</button>
         {/* </div> */}
       </section>
 

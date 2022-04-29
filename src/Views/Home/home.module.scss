@@ -23,10 +23,23 @@
 // ? Landing View
 
 .landing-view-container {
+  position: relative;
   width: 100%;
   height: 100vh;
   //   background-color: $eggshell;
   background-color: $white;
+
+  .road-img {
+    position: absolute;
+    right: 10rem;
+    top: 60vh;
+
+    // opacity: 0.9;
+    // width: 15rem;
+    height: 40vh;
+
+    object-fit: contain;
+  }
 }
 
 .smaller-circle {
@@ -126,7 +139,6 @@
 
     position: absolute;
     right: -4.2rem;
-    bottom: -4rem;
   }
 }
 
