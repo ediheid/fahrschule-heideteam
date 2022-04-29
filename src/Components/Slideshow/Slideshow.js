@@ -1,6 +1,10 @@
 import React from "react";
 
 import Slider from "react-slick";
+
+// !Override of slick-carousel styling, all styles marked as !important to make sure they stick
+import "../Slideshow/dots.scss";
+
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";
 import Truck from "../Slideshow/Static/truck2.png";
@@ -14,13 +18,14 @@ const Slideshow = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 900,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    // fade: true,
-    // cssEase: "linear",
+    autoplaySpeed: 3000,
+
+    fade: true,
+    cssEase: "linear",
 
     // ! Not sure about pause or not?
     pauseOnHover: true,

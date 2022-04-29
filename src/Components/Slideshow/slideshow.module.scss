@@ -1,11 +1,11 @@
 @import "../../Styling/global.scss";
 
 .slideshow-image {
-  height: 90vh;
+  height: 75vh;
   width: 100vw;
   object-fit: cover;
 
   overflow: hidden;
 
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
