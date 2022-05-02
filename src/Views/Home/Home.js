@@ -26,39 +26,49 @@ const Home = () => {
           <div className={styles["circle-div"]}>
             <h2>Eure Fahrschule in Radeberg und Umgebung!</h2>
 
+            {/* <button className={styles["more-button"]}>Mehr</button> */}
             {/* <div className={styles["smaller-circle"]}></div> */}
           </div>
-
-          <button className={styles["more-button"]}>Mehr</button>
         </div>
 
         {/* // ! Maybe make this 'continue' */}
         <div className={styles["landing-extra-content-container"]}>
           <div className={styles["icons-container"]}>
-            <img
-              src={motorcycle}
-              alt="Scooter icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/scooter"
-            ></img>
+            {/* // ? Icons */}
+            <div className={styles["icon-circle-containers"]}>
+              <img
+                src={motorcycle}
+                alt="Scooter icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/scooter"
+              ></img>
+            </div>
 
-            <img
-              src={car}
-              alt="Car icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/car"
-            ></img>
+            <div className={styles["icon-circle-containers"]}>
+              <img
+                src={car}
+                alt="Car icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/car"
+              ></img>
+            </div>
 
-            <img
-              src={truck}
-              alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
-            ></img>
+            <div className={styles["icon-circle-containers"]}>
+              <img
+                src={truck}
+                alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
+              ></img>
+            </div>
 
-            <img
-              src={bus}
-              alt="Bus icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/bus"
-            ></img>
+            <div className={styles["icon-circle-containers"]}>
+              <img
+                src={bus}
+                alt="Bus icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/bus"
+              ></img>
+            </div>
 
-            <img
-              src={traktor}
-              alt="Traktor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/traktor"
-            ></img>
+            <div className={styles["icon-circle-containers"]}>
+              <img
+                src={traktor}
+                alt="Traktor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/traktor"
+              ></img>
+            </div>
           </div>
         </div>
       </section>

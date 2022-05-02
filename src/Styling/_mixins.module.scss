@@ -129,7 +129,7 @@
   background-image: linear-gradient(
     to right,
     $cream 0%,
-    lighten($eggshell, 15%) 51%,
+    $eggshell 51%,
     $cream 100%
   );
 
@@ -149,7 +149,7 @@
   transition: 1s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 20px rgb(109, 108, 108);
 
   cursor: pointer;
 

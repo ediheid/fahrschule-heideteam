@@ -24,7 +24,7 @@
         width: 20px !important;
         height: 20px !important;
         // font-family: $slick-font-family;
-        font-size: 2rem !important;
+        // font-size: 2rem !important;
 
         // line-height: 20px;
         text-align: center !important;
@@ -38,6 +38,66 @@
     &.slick-active button:before {
       color: $logo-green !important;
       opacity: 1 !important;
+    }
+  }
+}
+
+@include x-small {
+  li {
+    button {
+      &:before {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}
+
+@include small {
+  li {
+    button {
+      &:before {
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+}
+
+@include medium {
+  li {
+    button {
+      &:before {
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+}
+
+@include large {
+  li {
+    button {
+      &:before {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+}
+
+@include extra-large {
+  li {
+    button {
+      &:before {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+}
+
+@include extra-extra-large {
+  li {
+    button {
+      &:before {
+        font-size: 1.8rem !important;
+      }
     }
   }
 }
