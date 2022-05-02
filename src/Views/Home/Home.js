@@ -37,6 +37,7 @@ const Home = () => {
             {/* // ? Icons */}
             <div className={styles["icon-circle-containers"]}>
               <img
+                className={styles["landing-icon"]}
                 src={motorcycle}
                 alt="Scooter icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/scooter"
               ></img>
@@ -44,6 +45,7 @@ const Home = () => {
 
             <div className={styles["icon-circle-containers"]}>
               <img
+                className={styles["landing-icon"]}
                 src={car}
                 alt="Car icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/car"
               ></img>
@@ -51,6 +53,7 @@ const Home = () => {
 
             <div className={styles["icon-circle-containers"]}>
               <img
+                className={styles["landing-icon"]}
                 src={truck}
                 alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
               ></img>
@@ -58,6 +61,7 @@ const Home = () => {
 
             <div className={styles["icon-circle-containers"]}>
               <img
+                className={styles["landing-icon"]}
                 src={bus}
                 alt="Bus icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/bus"
               ></img>
@@ -65,6 +69,7 @@ const Home = () => {
 
             <div className={styles["icon-circle-containers"]}>
               <img
+                className={styles["landing-icon"]}
                 src={traktor}
                 alt="Traktor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/traktor"
               ></img>
