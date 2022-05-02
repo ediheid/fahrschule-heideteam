@@ -125,12 +125,12 @@
   }
 }
 
-@mixin gradient-button-blue {
+@mixin gradient-button-cream {
   background-image: linear-gradient(
     to right,
-    $blue 0%,
-    lighten($blue, 15%) 51%,
-    $blue 100%
+    $cream 0%,
+    lighten($eggshell, 15%) 51%,
+    $cream 100%
   );
 
   border: none;
@@ -138,7 +138,7 @@
   border-radius: 2rem;
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
 
-  color: $button-text-light;
+  color: $dark-green !important;
   font-family: $button-font;
 
   font-size: 1.6rem;

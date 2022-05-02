@@ -8,7 +8,6 @@ import ContactSection from "./ContactSection";
 
 import styles from "../Home/home.module.scss";
 
-import license from "../Home/Static/driver-license.png";
 import car from "../Home/Static/sedan.png";
 import motorcycle from "../Home/Static/motorcycle.png";
 import truck from "../Home/Static/truck.png";
@@ -25,22 +24,17 @@ const Home = () => {
 
         <div className={styles["overlay-container"]}>
           <div className={styles["circle-div"]}>
-            <h2>Eure Fahrschule in Radeberg und Umgenbung!</h2>
+            <h2>Eure Fahrschule in Radeberg und Umgebung!</h2>
 
             {/* <div className={styles["smaller-circle"]}></div> */}
           </div>
 
-          <button className={styles["more-button"]}>Find out more</button>
+          <button className={styles["more-button"]}>Mehr</button>
         </div>
 
         {/* // ! Maybe make this 'continue' */}
         <div className={styles["landing-extra-content-container"]}>
           <div className={styles["icons-container"]}>
-            {/* <img
-              src={license}
-              alt="Car icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/car"
-            ></img> */}
-
             <img
               src={motorcycle}
               alt="Scooter icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/scooter"
