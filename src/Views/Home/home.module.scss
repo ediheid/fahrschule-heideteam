@@ -24,48 +24,39 @@
 
 .landing-view-container {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+
   width: 100%;
   height: 100vh;
-  //   background-color: $eggshell;
-  background-color: $white;
-
-  .road-img {
-    position: absolute;
-    right: 10rem;
-    top: 60vh;
-
-    // opacity: 0.9;
-    // width: 15rem;
-    height: 40vh;
-
-    object-fit: contain;
-  }
 }
 
-.smaller-circle {
+.overlay-container {
   position: absolute;
-  top: 51vh;
-  left: 39rem;
+  height: 65vh;
+  width: 100%;
 
-  width: 25rem;
-  height: 25rem;
+  display: flex;
+  flex-direction: column;
 
-  background-color: $logo-green;
-  opacity: 0.7;
+  justify-content: center;
+}
 
-  border-radius: 50%;
+.more-button {
+  @include gradient-button-dark;
 
-  z-index: 9000;
+  align-self: center;
 
-  // box-shadow: rgba(38, 144, 27, 0.4) 5px 5px, rgba(38, 144, 27, 0.3) 10px 10px,
-  //   rgba(38, 144, 27, 0.2) 15px 15px, rgba(38, 144, 27, 0.1) 20px 20px,
-  //   rgba(38, 144, 27, 0.05) 25px 25px;
+  width: 20rem;
+
+  margin-top: -3rem;
+
+  z-index: 9005 !important;
 }
 
 .circle-div {
-  position: absolute;
-  top: 30vh;
-  left: 10rem;
+  margin: 0 0 0 10rem;
 
   display: flex;
   align-items: center;
@@ -73,6 +64,7 @@
 
   width: 45rem;
   height: 45rem;
+
   border-radius: 50%;
   background-color: rgba(26, 111, 92, 0.8);
 
@@ -82,7 +74,7 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-  z-index: 9001;
+  z-index: 9005 !important;
 
   h2 {
     position: relative;
@@ -141,6 +133,63 @@
     right: -4.2rem;
   }
 }
+
+.landing-extra-content-container {
+  display: flex;
+  justify-content: center;
+
+  height: 25vh;
+  width: 100vw;
+
+  overflow: hidden;
+
+  // border: 2px solid red;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // border: solid 2px red;
+
+  width: 80%;
+  max-width: 200rem;
+  height: auto;
+
+  img {
+    width: 8rem;
+    height: 8rem;
+
+    padding: 2rem;
+
+    &:last-child {
+      height: 6.5rem;
+      width: 6.5rem;
+    }
+  }
+}
+
+// .smaller-circle {
+//   position: absolute;
+//   bottom: 8rem;
+//   left: 65rem;
+
+//   width: 25rem;
+//   height: 25rem;
+
+//   background-color: $logo-green;
+//   opacity: 0.7;
+
+//   border-radius: 50%;
+
+//   z-index: 9000;
+
+//   // box-shadow: rgba(38, 144, 27, 0.4) 5px 5px, rgba(38, 144, 27, 0.3) 10px 10px,
+//   //   rgba(38, 144, 27, 0.2) 15px 15px, rgba(38, 144, 27, 0.1) 20px 20px,
+//   //   rgba(38, 144, 27, 0.05) 25px 25px;
+// }
 
 // ? About Section
 
