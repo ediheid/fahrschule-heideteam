@@ -75,19 +75,6 @@ const MobileNav = () => {
 
             <hr />
 
-            {/* // ? Preise */}
-
-            <Link
-              onClick={MobileNavContext.isNavOpen}
-              className={styles["nav-links"]}
-              to="/preise"
-              alt="Link to preise page"
-            >
-              <li> Preise</li>
-            </Link>
-
-            <hr />
-
             {/* // ? Berufskraftfahrerqualifikation */}
 
             <Link

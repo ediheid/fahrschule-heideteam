@@ -26,9 +26,6 @@ const Slideshow = () => {
 
     fade: true,
     cssEase: "linear",
-
-    // ! Not sure about pause or not?
-    pauseOnHover: true,
   };
 
   return (

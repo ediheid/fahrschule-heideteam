@@ -14,7 +14,6 @@ import Header from "./Components/Header/Header";
 import DesktopNav from "./Components/Navbar/DesktopNav";
 import FscheinClasses from "./Views/FührerscheinClasses/FscheinClasses";
 import Team from "./Views/Team/Team";
-import Preise from "./Views/Preise/Preise";
 import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikation/Berufskraftfahrerqualifikation";
 import News from "./Views/News/News";
 import Kontakt from "./Views/Kontakt/Kontakt";
@@ -87,8 +86,6 @@ const App = () => {
               <Route path="/klassen" exact element={<FscheinClasses />} />
 
               <Route path="/team" exact element={<Team />} />
-
-              <Route path="/preise" exact element={<Preise />} />
 
               <Route
                 path="/berufskraftfahrerqualifikation"

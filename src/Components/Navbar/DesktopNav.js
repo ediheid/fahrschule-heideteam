@@ -65,17 +65,6 @@ const DesktopNav = () => {
             </Link>
           </li>
 
-          {/* // ? Preise */}
-          <li>
-            <Link
-              className={styles["nav-links"]}
-              to="/preise"
-              alt="Link to preise page"
-            >
-              Preise
-            </Link>
-          </li>
-
           {/* // ? Berufskraftfahrerqualifikation */}
           <li>
             <Link
