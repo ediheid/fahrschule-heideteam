@@ -5,6 +5,7 @@ import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 import SubMenu from "./SubMenu";
 import KlasseA from "./KlasseA";
 import KlasseA1 from "./KlasseA1";
+import KlasseA2 from "./KlasseA2";
 
 // Card Components
 import PkwCard from "./PkwCard";
@@ -26,6 +27,9 @@ const FscheinClasses = () => {
 
       {/* Klasse A1 */}
       <KlasseA1 />
+
+      {/* Klasse A2 */}
+      <KlasseA2 />
     </div>
   );
 };

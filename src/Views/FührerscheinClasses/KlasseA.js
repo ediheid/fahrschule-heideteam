@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
-import A from "../FührerscheinClasses/Static/icon-a-v3.png";
+import A from "../FührerscheinClasses/Static/icon-a.png";
 
 const KlasseA = () => {
   return (
