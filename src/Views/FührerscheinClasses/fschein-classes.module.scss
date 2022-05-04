@@ -10,6 +10,7 @@
   margin: 0 0 5rem 0;
 }
 
+// Sub menu section
 .classes-sub-menu {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +51,103 @@
   .hashlink:hover {
     color: $logo-green;
     font-size: 1.7rem;
+  }
+}
+
+// Class section
+
+.class-section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20rem 0 10rem 0;
+}
+
+.class-heading-circle {
+  position: absolute;
+  top: -10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  height: 20rem;
+  background-color: $cream;
+  border-radius: 50%;
+}
+
+.class-icons {
+  width: 7rem;
+  height: 7rem;
+}
+
+.headings {
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+
+  color: $headings-colour;
+
+  font-family: $roboto-regular-font-family;
+}
+
+.section-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: auto;
+  min-height: 50rem;
+
+  background-color: lighten($eggshell, 4%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font-font-family;
+  font-size: 1.6rem;
+  color: $main-font-green;
+
+  width: 80%;
+  margin-top: 13rem;
+
+  h4 {
+    align-self: center;
+    font-size: 2.1rem;
+  }
+
+  ul {
+    margin: 3rem 0 0 0;
+    list-style: circle;
+
+    li {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  margin: 4rem 0 7rem 0;
+
+  h3 {
+    font-size: 2rem;
+    // text-decoration: overline;
+  }
+
+  ul {
+    list-style: none;
+    // text-align: center;
   }
 }
 
@@ -148,15 +246,6 @@
 //   // Todo: Still ned to find a solution for image object fit
 //   height: auto;
 //   min-height: 35rem;
-// }
-
-// .headings {
-//   font-size: 3rem;
-//   letter-spacing: 0.1rem;
-//   margin: 4rem 0 2rem 0;
-//   font-family: $roboto-bold-font-family;
-
-//   width: 80%;
 // }
 
 // .subheadings {
