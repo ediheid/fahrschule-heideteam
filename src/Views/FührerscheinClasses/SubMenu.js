@@ -8,10 +8,10 @@ const SubMenu = () => {
     <div className={styles["classes-sub-menu"]}>
       {/* // Todo: Hashlinks ready to setup to sections once implemented */}
       <ul>
-        <HashLink to="/" className={styles["hashlink"]}>
+        <HashLink to="/klassen#klasse-a" className={styles["hashlink"]}>
           <li>A</li>
         </HashLink>
-        <HashLink to="/" className={styles["hashlink"]}>
+        <HashLink to="/klassen#klasse-a1" className={styles["hashlink"]}>
           {" "}
           <li>A1</li>
         </HashLink>
