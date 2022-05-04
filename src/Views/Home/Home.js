@@ -46,6 +46,7 @@ const Home = () => {
               ihren Führerschein mit unserer Hilfe bestanden.
             </p>
 
+            {/* // * This paragraph is in the about us sub section on the leanding page */}
             {/* <p>
               Unser Team setzt sich zusammen aus einer Reihe von älteren
               Kollegen, mit sehr langer Berufserfahrung und jungen Kollegen,

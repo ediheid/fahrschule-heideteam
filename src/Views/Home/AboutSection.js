@@ -21,11 +21,17 @@ const AboutSection = () => {
         <div data-aos="fade-up" className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
 
-          <p className={styles["about-paragraph"]}>
+          {/* <p className={styles["about-paragraph"]}>
             Seit Mai 1990 haben unsere Fahrlehrer schon mehr als 7000
             Fahrschüler*innen aller Klassen ausgebildet. Wir helfen Ihnen gern
             wenn es um den Erwerb, die Erweiterung oder auch um die
             "Wiederaktivierung" der Fahrerlaubnis geht.
+          </p> */}
+
+          <p className={styles["about-paragraph"]}>
+            Unser Team setzt sich zusammen aus einer Reihe von älteren Kollegen,
+            mit sehr langer Berufserfahrung und jungen Kollegen, welche die
+            notwendige Frische ins Team mit bringen.
           </p>
 
           <Link to="/team" alt="Link to Team page">
