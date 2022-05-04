@@ -1,4 +1,6 @@
 import React from "react";
+import Zoom from "react-reveal/Bounce";
+import { HashLink } from "react-router-hash-link";
 
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
@@ -24,7 +26,12 @@ const Home = () => {
 
         <div className={styles["overlay-container"]}>
           <div className={styles["circle-div"]}>
-            <h2>Eure Fahrschule in Radeberg und Umgebung!</h2>
+            <h2>
+              {" "}
+              {/* <Zoom cascade right> */}
+              Eure Fahrschule in Radeberg und Umgebung!
+              {/* </Zoom> */}
+            </h2>
 
             {/* <div className={styles["smaller-circle"]}></div> */}
           </div>
@@ -32,7 +39,9 @@ const Home = () => {
 
         <div className={styles["landing-extra-content-container"]}>
           {/* // ! Button only visible on small devices */}
-          <button className={styles["more-button"]}>Mehr</button>
+          <HashLink to="/#about" className={styles["more-button"]}>
+            Mehr
+          </HashLink>
 
           {/* // ! Icons only visible on large devices */}
           <div className={styles["icons-container"]}>

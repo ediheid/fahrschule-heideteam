@@ -16,7 +16,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className={styles["about-section"]}>
+    <section className={styles["about-section"]} id="about">
       <div className={styles["about-content-container"]}>
         <div data-aos="fade-up" className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
