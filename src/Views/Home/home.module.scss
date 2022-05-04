@@ -43,18 +43,6 @@
   justify-content: center;
 }
 
-// .more-button {
-//   @include gradient-button-cream;
-
-//   position: absolute;
-//   bottom: 5rem;
-//   right: 1rem;
-
-//   width: 20rem;
-
-//   z-index: 9005 !important;
-// }
-
 .circle-div {
   position: relative;
   margin: 0 0 0 12rem;
@@ -145,11 +133,16 @@
   overflow: hidden;
 
   margin: 5rem 0 20rem 0;
-
-  // border: 2px solid red;
 }
 
-// !!! Hidden on mobile!
+// Small devices only
+.more-button {
+  @include gradient-button-dark;
+
+  width: 15rem;
+}
+
+//  Hidden on mobile!
 .icons-container {
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +156,7 @@
   height: auto;
 }
 
-// !!! Hidden on mobile!
+//  Hidden on mobile!
 .icon-circle-containers {
   display: flex;
   justify-content: center;
@@ -181,10 +174,10 @@
   width: 8rem;
   height: 8rem;
 
-  &:last-child {
-    height: 6.5rem;
-    width: 6.5rem;
-  }
+  // &:last-child {
+  //   height: 6.5rem;
+  //   width: 6.5rem;
+  // }
 }
 
 // .smaller-circle {
@@ -459,17 +452,17 @@
     height: 15rem;
 
     h2 {
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
 
-      margin: 1rem;
+      margin: 0 0 1rem 0;
     }
 
     h2::before {
       width: 2.5rem;
       height: 2.5rem;
 
-      left: -0.5rem;
+      left: 0.8rem;
       top: -1.5rem;
     }
 
@@ -478,14 +471,26 @@
       height: 2.5rem;
 
       position: absolute;
-      right: -1.3rem;
-      bottom: -1.5rem;
+      right: 0.5rem;
+      bottom: -2.6rem;
     }
   }
 
   // !!! Hidden on mobile!
   .icons-container > * {
     display: none;
+  }
+
+  // Small devices only - to center button
+  .landing-extra-content-container {
+    flex-direction: column;
+    align-items: center;
+
+    height: 20vh;
+
+    margin: 1rem 0 5rem 0;
+
+    overflow: hidden;
   }
 }
 
@@ -510,6 +515,57 @@
   .contact-section {
     margin: 11rem 0 16rem 0;
   }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 5rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  // !!! Hidden on mobile!
+  .icons-container > * {
+    display: none;
+  }
+
+  // Small devices only - to center button
+  .landing-extra-content-container {
+    flex-direction: column;
+    align-items: center;
+
+    height: 20vh;
+
+    margin: 1rem 0 5rem 0;
+
+    overflow: hidden;
+  }
 }
 
 @include medium {
@@ -531,6 +587,79 @@
 
   .contact-section {
     margin: 13rem 0 18rem 0;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 5rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    height: 25vh;
+
+    margin: 0 0 20rem 0;
+  }
+
+  .icons-container {
+    width: 90%;
+
+    margin-top: 2rem;
+    // border: solid 2px blue;
+  }
+
+  //  Hidden on mobile!
+  .icon-circle-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 11rem;
+    height: 11rem;
+
+    margin: 0.8rem;
+
+    background-color: rgba(242, 235, 220, 0.5);
+    border-radius: 50%;
+  }
+
+  // !!! Hidden on mobile!
+  .landing-icon {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  // !!! Only visible on small devices
+  .more-button {
+    display: none;
   }
 }
 
@@ -554,6 +683,75 @@
   .contact-section {
     margin: 15rem 0 20rem 0;
   }
+
+  .more-button {
+    display: none;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 6rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 5rem;
+      height: 5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 5rem;
+      height: 5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    height: 25vh;
+
+    margin: 0 0 20rem 0;
+  }
+
+  .icons-container {
+    width: 90%;
+  }
+
+  //  Hidden on mobile!
+  .icon-circle-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10rem;
+    height: 10rem;
+
+    margin: 0.8rem;
+
+    background-color: rgba(242, 235, 220, 0.5);
+    border-radius: 50%;
+  }
+
+  // !!! Hidden on mobile!
+  .landing-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
 }
 
 @include extra-large {
@@ -573,6 +771,72 @@
 
   .contact-section {
     margin: 15rem 0 20rem 0;
+  }
+
+  .circle-div {
+    margin: -5rem 0 0 6rem;
+    width: 30rem;
+    height: 30rem;
+
+    h2 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 5rem;
+      height: 5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 5rem;
+      height: 5rem;
+
+      position: absolute;
+      right: -0.5rem;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    height: 25vh;
+
+    margin: 0 0 20rem 0;
+  }
+
+  .icons-container {
+    width: 90%;
+  }
+
+  //  Hidden on mobile!
+  .icon-circle-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10rem;
+    height: 10rem;
+
+    // margin: 0.8rem;
+
+    background-color: rgba(242, 235, 220, 0.5);
+    border-radius: 50%;
+  }
+
+  // !!! Hidden on mobile!
+  .landing-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  // !!! Only visible on small devices
+  .more-button {
+    display: none;
   }
 }
 
@@ -597,5 +861,10 @@
 
   .contact-section {
     margin: 15rem 0 20rem 0;
+  }
+
+  // !!! Only visible on small devices
+  .more-button {
+    display: none;
   }
 }

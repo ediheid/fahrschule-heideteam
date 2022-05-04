@@ -12,7 +12,7 @@ import car from "../Home/Static/sedan.png";
 import motorcycle from "../Home/Static/motorcycle.png";
 import truck from "../Home/Static/truck.png";
 import bus from "../Home/Static/school-bus.png";
-import traktor from "../Home/Static/traktor.png";
+import tractor from "../Home/Static/tractor.png";
 
 const Home = () => {
   return (
@@ -26,13 +26,15 @@ const Home = () => {
           <div className={styles["circle-div"]}>
             <h2>Eure Fahrschule in Radeberg und Umgebung!</h2>
 
-            {/* <button className={styles["more-button"]}>Mehr</button> */}
             {/* <div className={styles["smaller-circle"]}></div> */}
           </div>
         </div>
 
-        {/* // ! Maybe make this 'continue' */}
         <div className={styles["landing-extra-content-container"]}>
+          {/* // ! Button only visible on small devices */}
+          <button className={styles["more-button"]}>Mehr</button>
+
+          {/* // ! Icons only visible on large devices */}
           <div className={styles["icons-container"]}>
             {/* // ? Icons */}
             <div className={styles["icon-circle-containers"]}>
@@ -70,8 +72,8 @@ const Home = () => {
             <div className={styles["icon-circle-containers"]}>
               <img
                 className={styles["landing-icon"]}
-                src={traktor}
-                alt="Traktor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/traktor"
+                src={tractor}
+                alt="Tractor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/tractor"
               ></img>
             </div>
           </div>
