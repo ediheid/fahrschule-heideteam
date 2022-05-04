@@ -38,14 +38,46 @@ const Home = () => {
         </div>
 
         <div className={styles["landing-extra-content-container"]}>
+          {/* // Todo: About text to be styled */}
+          <div className={styles["intro-text-container"]}>
+            <p>
+              Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid
+              dem haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich
+              ihren Führerschein mit unserer Hilfe bestanden.
+            </p>
+
+            {/* <p>
+              Unser Team setzt sich zusammen aus einer Reihe von älteren
+              Kollegen, mit sehr langer Berufserfahrung und jungen Kollegen,
+              welche die notwendige Frische ins Team mit bringen.
+            </p> */}
+            <p>
+              Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
+              Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es
+              notwendig erscheint, die Fähigkeiten und Fertigkeiten des Führens
+              von Fahrzeugen aufzufrischen bzw. wenn eine Beurteilung der
+              Fahrkompetenz nötig wird.
+            </p>
+            <p>
+              Des weiteren beschäftigen wir uns auch mit der Aus- und
+              Weiterbildung von Berufskraftfahrern im Bereich des Güter-
+              Personenverkehrs.
+            </p>
+            {/* <p>
+              Wie es unser Logo erkennen lässt - Mit uns haben Sie den Bogen
+              raus!
+            </p> */}
+          </div>
+
           {/* // ! Button only visible on small devices */}
-          <HashLink to="/#about" className={styles["more-button"]}>
-            Mehr
-          </HashLink>
+          <div className={styles["more-button-container"]}>
+            <HashLink to="/#about" className={styles["more-button"]}>
+              Mehr
+            </HashLink>
+          </div>
 
           {/* // ! Icons only visible on large devices */}
-          <div className={styles["icons-container"]}>
-            {/* // ? Icons */}
+          {/* <div className={styles["icons-container"]}>
             <div className={styles["icon-circle-containers"]}>
               <img
                 className={styles["landing-icon"]}
@@ -62,13 +94,16 @@ const Home = () => {
               ></img>
             </div>
 
-            <div className={styles["icon-circle-containers"]}>
+            <HashLink
+              to="/klassen#truck"
+              className={styles["icon-circle-containers"]}
+            >
               <img
                 className={styles["landing-icon"]}
                 src={truck}
                 alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
               ></img>
-            </div>
+            </HashLink>
 
             <div className={styles["icon-circle-containers"]}>
               <img
@@ -85,7 +120,7 @@ const Home = () => {
                 alt="Tractor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/tractor"
               ></img>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

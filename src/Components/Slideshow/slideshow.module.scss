@@ -10,14 +10,38 @@
   // margin-bottom: 2rem;
 }
 
-@include large {
+@include x-small {
+  .slideshow-image {
+    height: 35vh;
+  }
+}
+
+@include small {
+  .slideshow-image {
+    height: 50vh;
+  }
+}
+
+@include medium {
   .slideshow-image {
     height: 55vh;
   }
 }
 
+@include large {
+  .slideshow-image {
+    height: 45vh;
+  }
+}
+
 @include extra-large {
   .slideshow-image {
-    height: 55vh;
+    height: 45vh;
+  }
+}
+
+@include extra-extra-large {
+  .slideshow-image {
+    height: 60vh;
   }
 }

@@ -18,7 +18,8 @@ const LkwCard = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className={styles["class-container"]}>
+    // Id used for react-router Hashlink from main page
+    <div id="truck" data-aos="fade-up" className={styles["class-container"]}>
       <div className={styles["img-container"]}>
         <img
           className={styles["class-img-right"]}
