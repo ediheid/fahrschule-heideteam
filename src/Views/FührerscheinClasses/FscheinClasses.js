@@ -14,29 +14,31 @@ import TraktorCard from "./TraktorCard";
 const FscheinClasses = () => {
   return (
     <div className={styles["classes-page-container"]}>
+      <div className={styles["classes-sub-menu"]}></div>
+
       {/* // ? PKW */}
 
-      <PkwCard />
+      {/* <PkwCard /> */}
 
       {/* // ? PKW PLUS */}
       {/* // ! Right */}
       {/* // Todo: Need new image */}
-      <PkwAnhaengerCard />
+      {/* <PkwAnhaengerCard /> */}
 
       {/* // ? Motorcycle */}
-      <MotorradCard />
+      {/* <MotorradCard /> */}
 
       {/* // ? LKW */}
       {/* // ! Right */}
-      <LkwCard />
+      {/* <LkwCard /> */}
 
       {/* // ? Bus */}
       {/* // Todo: Need new image */}
-      <BusCard />
+      {/* <BusCard /> */}
 
       {/* // ? Traktor */}
       {/* // ! Right */}
-      <TraktorCard />
+      {/* <TraktorCard /> */}
     </div>
   );
 };

@@ -10,12 +10,6 @@ import ContactSection from "./ContactSection";
 
 import styles from "../Home/home.module.scss";
 
-import car from "../Home/Static/sedan.png";
-import motorcycle from "../Home/Static/motorcycle.png";
-import truck from "../Home/Static/truck.png";
-import bus from "../Home/Static/school-bus.png";
-import tractor from "../Home/Static/tractor.png";
-
 const Home = () => {
   return (
     <div className={styles["home-page-container"]}>
@@ -76,52 +70,6 @@ const Home = () => {
               Mehr
             </HashLink>
           </div>
-
-          {/* // ! Icons only visible on large devices */}
-          {/* <div className={styles["icons-container"]}>
-            <div className={styles["icon-circle-containers"]}>
-              <img
-                className={styles["landing-icon"]}
-                src={motorcycle}
-                alt="Scooter icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/scooter"
-              ></img>
-            </div>
-
-            <div className={styles["icon-circle-containers"]}>
-              <img
-                className={styles["landing-icon"]}
-                src={car}
-                alt="Car icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/car"
-              ></img>
-            </div>
-
-            <HashLink
-              to="/klassen#truck"
-              className={styles["icon-circle-containers"]}
-            >
-              <img
-                className={styles["landing-icon"]}
-                src={truck}
-                alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
-              ></img>
-            </HashLink>
-
-            <div className={styles["icon-circle-containers"]}>
-              <img
-                className={styles["landing-icon"]}
-                src={bus}
-                alt="Bus icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/bus"
-              ></img>
-            </div>
-
-            <div className={styles["icon-circle-containers"]}>
-              <img
-                className={styles["landing-icon"]}
-                src={tractor}
-                alt="Tractor icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/tractor"
-              ></img>
-            </div>
-          </div> */}
         </div>
       </section>
 
