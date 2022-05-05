@@ -66,7 +66,7 @@ const Home = () => {
 
           {/* // ! Button only visible on small devices */}
           <div className={styles["more-button-container"]}>
-            <HashLink to="/#about" className={styles["more-button"]}>
+            <HashLink smooth to="/#about" className={styles["more-button"]}>
               Mehr
             </HashLink>
           </div>
