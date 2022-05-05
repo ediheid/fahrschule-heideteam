@@ -43,14 +43,13 @@
   font-size: 1.5rem;
 
   &:active {
-    color: $logo-green;
+    color: $brighter-logo-green;
   }
 }
 
 @media (hover: hover) {
   .hashlink:hover {
-    color: $logo-green;
-    font-size: 1.7rem;
+    color: $brighter-logo-green;
   }
 }
 
@@ -77,7 +76,25 @@
 
   width: 20rem;
   height: 20rem;
-  background-color: $dark-green;
+
+  // background-color: $dark-green;
+
+  background-image: linear-gradient(
+    to right top,
+    #1a4f43,
+    #1a5548,
+    #1a5b4c,
+    #1a6151,
+    #1a6756,
+    #1a6756,
+    #1a6756,
+    #1a6756,
+    #1a6151,
+    #1a5b4c,
+    #1a5548,
+    #1a4f43
+  );
+
   border-radius: 50%;
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -123,6 +140,7 @@
   h4 {
     align-self: center;
     font-size: 2.1rem;
+    text-align: center;
   }
 
   ul {
@@ -133,6 +151,16 @@
       margin: 0 0 1rem 0;
     }
   }
+}
+
+// For classes that include differing rules within
+.list-heading-style {
+  list-style: square;
+}
+
+.divider {
+  background-color: $dark-green;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .price-section {

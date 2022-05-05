@@ -18,7 +18,7 @@ const SubMenu = () => {
         <HashLink to="/klassen#klasse-a2" className={styles["hashlink"]}>
           <li>A2</li>
         </HashLink>
-        <HashLink to="/" className={styles["hashlink"]}>
+        <HashLink to="/klassen#klasse-am" className={styles["hashlink"]}>
           {" "}
           <li>AM</li>
         </HashLink>

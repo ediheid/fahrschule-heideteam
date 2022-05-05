@@ -6,6 +6,7 @@ import SubMenu from "./SubMenu";
 import KlasseA from "./KlasseA";
 import KlasseA1 from "./KlasseA1";
 import KlasseA2 from "./KlasseA2";
+import KlasseAM from "./KlasseAm";
 
 // Card Components
 import PkwCard from "./PkwCard";
@@ -30,6 +31,9 @@ const FscheinClasses = () => {
 
       {/* Klasse A2 */}
       <KlasseA2 />
+
+      {/* Klasse AM */}
+      <KlasseAM />
     </div>
   );
 };
