@@ -2,35 +2,45 @@ import React from "react";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
-import C1 from "../FührerscheinClasses/Static/icon-c1.png";
+import C1E from "../FührerscheinClasses/Static/icon-c1e.png";
 
-const KlasseC1 = () => {
+const KlasseC1E = () => {
   return (
-    <section className={styles["class-section"]} id="klasse-c1">
+    <section className={styles["class-section"]} id="klasse-c1e">
       <div className={styles["class-heading-circle"]}>
         <img
           className={styles["class-icons"]}
-          src={C1}
+          src={C1E}
           alt="Trailer icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/trailer"
         ></img>
-        <h2 className={styles["headings"]}>Klasse C1</h2>
+        <h2 className={styles["headings"]}>Klasse C1E</h2>
       </div>
 
       <div className={styles["section-content-container"]}>
         <div className={styles["text-container"]}>
-          <h4>Fahrzeugart Mittlere Lkw</h4>
+          <h4>Fahrzeugart Mittlere Lastzüge bis max. 12.000 kg zG</h4>
           <ul>
             <li>
-              Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
-              und A - mit einer zulässigen Gesamtmasse{" "}
-              <b>von mehr als 3.500 kg aber nicht mehr als 7.500 kg</b>, die zur
-              Beförderung von nicht mehr als acht Personen außer dem
-              Fahrzeugführer ausgelegt und gebaut sind.
+              <b>
+                Kombinationen aus Kraftfahrzeugen der Klasse C1 und Anhänger
+              </b>{" "}
+              mit mehr als 750 kg zulässiger Gesamtmasse.
             </li>
 
             <li>
-              <b>Anhänger</b> mit einer zulässigen Gesamtmasse von nicht mehr
-              als 750 kg dürfen mitgeführt werden.
+              <b>
+                Kombination aus einem Kraftfahrzeug der Klasse B und einem
+                Anhänger
+              </b>
+              , dessen zulässige Gesamtmasse größer ist als 3.500 kg.
+            </li>
+
+            <li>
+              {" "}
+              <b>
+                Die zulässige Gesamtmasse der Kombination darf jeweils nicht
+                mehr als 12.000 kg betragen!{" "}
+              </b>
             </li>
 
             <li>
@@ -42,10 +52,10 @@ const KlasseC1 = () => {
             </li>
 
             <li>
-              Vorbesitz erforderlich: <b>Ja, Klasse B</b>
+              Vorbesitz erforderlich: <b>Ja, Klasse C1</b>
             </li>
             <li>
-              Beinhaltet Klasse: <b>keine</b>
+              Beinhaltet Klasse: <b>BE; D1E bei Besitz von D1</b>
             </li>
             <li>
               Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
@@ -81,4 +91,4 @@ const KlasseC1 = () => {
   );
 };
 
-export default KlasseC1;
+export default KlasseC1E;

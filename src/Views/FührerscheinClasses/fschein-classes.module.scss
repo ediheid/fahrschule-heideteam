@@ -213,6 +213,13 @@
   }
 }
 
+.email-link {
+  color: $blue;
+  &:active {
+    color: $logo-green;
+  }
+}
+
 // ? Media Queries
 
 @include x-small {
