@@ -54,15 +54,24 @@
 }
 
 // bg images
-.section-a {
-  background-image: url("../FührerscheinClasses/Static/motorcycle.png");
+.section-a,
+.section-b {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  // Todo: Restyle this?
   margin: 10rem 0 0 0;
 }
 
+.section-a {
+  background-image: url("../FührerscheinClasses/Static/motorcycle.png");
+}
+
+.section-b {
+  background-image: url("../FührerscheinClasses/Static/car-bg.png");
+}
 // Class section
 
 .class-section {

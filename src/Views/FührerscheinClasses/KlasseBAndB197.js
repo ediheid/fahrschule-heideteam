@@ -29,7 +29,7 @@ const KlasseB = () => {
               Fahrzeugführer ausgelegt und gebaut sind.
             </li>
 
-            <li className={styles["list-heading-style"]}>
+            <li>
               <b>Anhänger</b> dürfen mitgeführt werden, sofern:
             </li>
 
