@@ -7,6 +7,7 @@ import KlasseA from "./KlasseA";
 import KlasseA1 from "./KlasseA1";
 import KlasseA2 from "./KlasseA2";
 import KlasseAM from "./KlasseAm";
+import KlasseB from "./KlasseBAndB197";
 
 // Card Components
 import PkwCard from "./PkwCard";
@@ -23,17 +24,24 @@ const FscheinClasses = () => {
       {/* // Submenu with hashlinks to class sections */}
       <SubMenu />
 
-      {/* Klasse A */}
-      <KlasseA />
+      <div className={styles["section-a"]}>
+        {/* Klasse A */}
+        <KlasseA />
 
-      {/* Klasse A1 */}
-      <KlasseA1 />
+        {/* Klasse A1 */}
+        <KlasseA1 />
 
-      {/* Klasse A2 */}
-      <KlasseA2 />
+        {/* Klasse A2 */}
+        <KlasseA2 />
 
-      {/* Klasse AM */}
-      <KlasseAM />
+        {/* Klasse AM */}
+        <KlasseAM />
+      </div>
+
+      <div>
+        {/* Klasse B / B197 */}
+        <KlasseB />
+      </div>
     </div>
   );
 };

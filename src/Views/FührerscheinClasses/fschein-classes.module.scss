@@ -53,6 +53,16 @@
   }
 }
 
+// bg images
+.section-a {
+  background-image: url("../FührerscheinClasses/Static/motorcycle.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10rem 0 0 0;
+}
+
 // Class section
 
 .class-section {
@@ -109,6 +119,7 @@
   font-size: 2.3rem;
   letter-spacing: 0.1rem;
   text-align: center;
+  width: 80%;
 
   color: $cream;
 
@@ -130,6 +141,7 @@
 .text-container {
   display: flex;
   flex-direction: column;
+
   font-family: $main-font-font-family;
   font-size: 1.6rem;
   color: $main-font-green;
@@ -153,9 +165,14 @@
   }
 }
 
-// For classes that include differing rules within
+// For classes that include differing rules within lists
 .list-heading-style {
   list-style: square;
+}
+
+.list-style-none {
+  list-style: disc inside;
+  padding-left: 2rem;
 }
 
 .divider {

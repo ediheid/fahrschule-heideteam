@@ -22,7 +22,7 @@ const SubMenu = () => {
           {" "}
           <li>AM</li>
         </HashLink>
-        <HashLink to="/" className={styles["hashlink"]}>
+        <HashLink to="/klassen#klasse-b" className={styles["hashlink"]}>
           {" "}
           <li>B / B197</li>
         </HashLink>
