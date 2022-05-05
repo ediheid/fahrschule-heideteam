@@ -13,14 +13,7 @@ import KlasseC from "./KlasseC";
 import KlasseC1 from "./KlasseC1";
 import KlasseC1E from "./KlasseC1E";
 import KlasseCE from "./KlasseCE";
-
-// Card Components
-import PkwCard from "./PkwCard";
-import PkwAnhaengerCard from "./PkwAnhaengerCard";
-import MotorradCard from "./MotorradCard";
-import LkwCard from "./LkwCard";
-import BusCard from "./BusCard";
-import TraktorCard from "./TraktorCard";
+import KlasseD from "./KlasseD";
 
 // Every second card has the image to the right
 const FscheinClasses = () => {
@@ -66,6 +59,12 @@ const FscheinClasses = () => {
 
         {/* Klasse CE */}
         <KlasseCE />
+      </div>
+
+      {/* Section D */}
+      <div className={styles["section-d"]}>
+        {/* Klasse CE */}
+        <KlasseD />
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ const SubMenu = () => {
         <HashLink smooth to="/klassen#klasse-ce" className={styles["hashlink"]}>
           <li>CE</li>
         </HashLink>
-        <HashLink smooth to="/" className={styles["hashlink"]}>
+        <HashLink smooth to="/klassen#klasse-d" className={styles["hashlink"]}>
           <li>D</li>
         </HashLink>
         <HashLink smooth to="/" className={styles["hashlink"]}>

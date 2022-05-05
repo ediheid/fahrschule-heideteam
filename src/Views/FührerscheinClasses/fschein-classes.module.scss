@@ -56,7 +56,8 @@
 // bg images
 .section-a,
 .section-b,
-.section-c {
+.section-c,
+.section-d {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -76,6 +77,10 @@
 
 .section-c {
   background-image: url("../FührerscheinClasses/Static/truck.png");
+}
+
+.section-d {
+  background-image: url("../FührerscheinClasses/Static/bus.png");
 }
 
 // Class section
