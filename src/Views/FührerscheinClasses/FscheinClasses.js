@@ -8,6 +8,7 @@ import KlasseA1 from "./KlasseA1";
 import KlasseA2 from "./KlasseA2";
 import KlasseAM from "./KlasseAm";
 import KlasseB from "./KlasseBAndB197";
+import KlasseBE from "./KlasseBE";
 
 // Card Components
 import PkwCard from "./PkwCard";
@@ -41,6 +42,9 @@ const FscheinClasses = () => {
       <div>
         {/* Klasse B / B197 */}
         <KlasseB />
+
+        {/* Klasse BE */}
+        <KlasseBE />
       </div>
     </div>
   );
