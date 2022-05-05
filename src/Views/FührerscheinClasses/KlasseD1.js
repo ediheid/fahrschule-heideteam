@@ -2,28 +2,30 @@ import React from "react";
 
 import styles from "../FührerscheinClasses/fschein-classes.module.scss";
 
-import D from "../FührerscheinClasses/Static/icon-d.png";
+import D1 from "../FührerscheinClasses/Static/icon-d1.png";
 
-const KlasseD = () => {
+const KlasseD1 = () => {
   return (
-    <section className={styles["class-section"]} id="klasse-d">
+    <section className={styles["class-section"]} id="klasse-d1">
       <div className={styles["class-heading-circle"]}>
         <img
           className={styles["class-icons"]}
-          src={D}
+          src={D1}
           alt="Trailer icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/trailer"
         ></img>
-        <h2 className={styles["headings"]}>Klasse D</h2>
+        <h2 className={styles["headings"]}>Klasse D1</h2>
       </div>
 
       <div className={styles["section-content-container"]}>
         <div className={styles["text-container"]}>
-          <h4>Fahrzeugart Große Busse</h4>
+          <h4>Fahrzeugart Kleine Busse</h4>
           <ul>
             <li>
               Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
-              und A - die zur <b>Beförderung von mehr als acht Personen</b>{" "}
-              außer dem Fahrzeugführer ausgelegt und gebaut sind.
+              und A - die zur Beförderung von{" "}
+              <b>mehr als 8 aber nicht mehr als 16 Personen</b> außer dem
+              Fahrzeugführer ausgelegt und gebaut und nicht länger als 8 Meter
+              sind.
             </li>
 
             <li>
@@ -34,33 +36,16 @@ const KlasseD = () => {
             <li>Mindestalter:</li>
 
             <li className={styles["list-style-none"]}>
-              <b>24</b> Jahre
+              <b>21</b> Jahre bei Ausbildung zum Berufskraftfahrer.
             </li>
 
             <li className={styles["list-style-none"]}>
-              <b>23</b> Jahre nach beschleunigter Grundqualifikation.
-            </li>
-
-            <li className={styles["list-style-none"]}>
-              <b>21</b> Jahre nach erfolgter Grundqualifikation (umfangreiche
-              Prüfung bei der IHK) oder nach beschleunigter Grundqualifikation
-              (dann auf Linienverkehr bis 50 Kilometer Linienlänge beschränkt).
-            </li>
-
-            <li className={styles["list-style-none"]}>
-              <b>20</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufskraftfahrer oder Fachkraft im Fahrbetrieb.
-            </li>
-
-            <li className={styles["list-style-none"]}>
-              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb, auf
-              Linienverkehr bis 50 Kilometer Linienlänge beschränkt.
-            </li>
-
-            <li className={styles["list-style-none"]}>
-              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb ohne Fahrgäste.
+              <b>18</b> Jahre (nach vorheriger erfolgreicher
+              medizinisch-psychologischer Untersuchung). Außerdem muss der
+              Bewerber seit mindestens einem Jahr die Fahrerlaubnis Klasse B
+              besitzen. Von der Fahrerlaubnis darf nur bei Fahrten in
+              Deutschland Gebrauch gemacht werden, wenn diese im Rahmen der
+              Berufsausbildung stattfinden.
             </li>
 
             <li>
@@ -72,7 +57,7 @@ const KlasseD = () => {
             </li>
 
             <li>
-              Beinhaltet Klasse: <b>D1</b>
+              Beinhaltet Klasse: <b>keine</b>
             </li>
 
             <li>
@@ -91,7 +76,7 @@ const KlasseD = () => {
             <h3>Preisliste</h3>
             <ul>
               <li>
-                <b>TBD</b>
+                <b>Ausbildung bei uns nur auf spezielle Anfrage!</b>
               </li>
             </ul>
           </div>
@@ -101,4 +86,4 @@ const KlasseD = () => {
   );
 };
 
-export default KlasseD;
+export default KlasseD1;

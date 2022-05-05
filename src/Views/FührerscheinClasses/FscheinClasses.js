@@ -14,6 +14,7 @@ import KlasseC1 from "./KlasseC1";
 import KlasseC1E from "./KlasseC1E";
 import KlasseCE from "./KlasseCE";
 import KlasseD from "./KlasseD";
+import KlasseD1 from "./KlasseD1";
 
 // Every second card has the image to the right
 const FscheinClasses = () => {
@@ -63,8 +64,11 @@ const FscheinClasses = () => {
 
       {/* Section D */}
       <div className={styles["section-d"]}>
-        {/* Klasse CE */}
+        {/* Klasse D */}
         <KlasseD />
+
+        {/* Klasse D1 */}
+        <KlasseD1 />
       </div>
     </div>
   );
