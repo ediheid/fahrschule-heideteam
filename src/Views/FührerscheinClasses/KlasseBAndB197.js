@@ -33,12 +33,12 @@ const KlasseB = () => {
               <b>Anhänger</b> dürfen mitgeführt werden, sofern:
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               die zulässige Gesamtmasse des Anhängers 750 kg nicht übersteigt
               oder
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               die zulässige Gesamtmasse der Kombination nicht mehr als 3500 kg
               beträgt.
             </li>

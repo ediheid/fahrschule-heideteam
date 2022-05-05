@@ -57,7 +57,8 @@
 .section-a,
 .section-b,
 .section-c,
-.section-d {
+.section-d,
+.section-t {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,6 +82,10 @@
 
 .section-d {
   background-image: url("../FührerscheinClasses/Static/bus.png");
+}
+
+.section-t {
+  background-image: url("../FührerscheinClasses/Static/tractor.png");
 }
 
 // Class section
@@ -191,6 +196,11 @@
 }
 
 .list-style-none {
+  list-style: none;
+  padding-left: 3rem;
+}
+
+.list-style-disc {
   list-style: disc inside;
   padding-left: 2rem;
 }

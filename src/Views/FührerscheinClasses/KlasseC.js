@@ -34,11 +34,11 @@ const KlasseC = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>21</b> Jahre
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG oder
               Berufsaubildung
             </li>

@@ -33,32 +33,32 @@ const KlasseD = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>24</b> Jahre
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>23</b> Jahre nach beschleunigter Grundqualifikation.
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>21</b> Jahre nach erfolgter Grundqualifikation (umfangreiche
               Prüfung bei der IHK) oder nach beschleunigter Grundqualifikation
               (dann auf Linienverkehr bis 50 Kilometer Linienlänge beschränkt).
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>20</b> Jahre während oder nach Abschluss der Berufsausbildung
               zum Berufskraftfahrer oder Fachkraft im Fahrbetrieb.
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
               zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb, auf
               Linienverkehr bis 50 Kilometer Linienlänge beschränkt.
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
               zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb ohne Fahrgäste.
             </li>

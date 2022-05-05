@@ -46,13 +46,13 @@ const KlasseCE = () => {
 
             <li>Beinhaltet Klasse:</li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>C1E, BE, T;</b>
             </li>
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>D1E bei Besitz von Klasse D1;</b>
             </li>
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>DE bei Besitz von Klasse D</b>
             </li>
 

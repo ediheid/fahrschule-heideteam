@@ -35,11 +35,11 @@ const KlasseD1 = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>21</b> Jahre bei Ausbildung zum Berufskraftfahrer.
             </li>
 
-            <li className={styles["list-style-none"]}>
+            <li className={styles["list-style-disc"]}>
               <b>18</b> Jahre (nach vorheriger erfolgreicher
               medizinisch-psychologischer Untersuchung). Außerdem muss der
               Bewerber seit mindestens einem Jahr die Fahrerlaubnis Klasse B
