@@ -74,7 +74,7 @@ const KlasseC1E = () => {
             <ul>
               <li>
                 <b>
-                  Ausbildung bei uns nur auf speziell Anfrage!
+                  Ausbildung bei uns nur auf speziell Anfrage!{" "}
                   <a
                     className={styles["email-link"]}
                     href="mailto:w.franke@fsheideteam.de"

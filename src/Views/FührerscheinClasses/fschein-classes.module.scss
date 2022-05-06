@@ -240,6 +240,29 @@
   }
 }
 
+// Slideshow
+
+.slideshow-img-container {
+  width: 80vw;
+  height: auto;
+  // height: 30rem;
+
+  // background-color: #1a4f43;
+
+  margin: 5rem 0 5rem 0;
+}
+
+.slideshow-img {
+  width: auto;
+  height: 30rem;
+
+  border: solid white 3rem;
+
+  object-fit: contain;
+
+  margin-bottom: 10rem;
+}
+
 // ? Media Queries
 
 @include x-small {
