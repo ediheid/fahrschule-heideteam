@@ -52,6 +52,9 @@ const SubMenu = () => {
         <HashLink to="/klassen#klasse-t" className={styles["hashlink"]}>
           <li>T</li>
         </HashLink>
+        <HashLink to="/klassen#galerie" className={styles["hashlink"]}>
+          <li>Galerie</li>
+        </HashLink>
       </ul>
     </div>
   );
