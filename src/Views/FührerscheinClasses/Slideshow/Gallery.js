@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 import styles from "../fschein-classes.module.scss";
+import { RiCloseCircleFill } from "react-icons/ri";
+import { BiChevronsRight } from "react-icons/bi";
+import { BiChevronsLeft } from "react-icons/bi";
 
 // Images
 import img1 from "../Slideshow/Static/1.png";
@@ -43,17 +46,14 @@ const Gallery = () => {
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
 
-      // display: "flex",
-      // justifyContent: "center",
-      // alignItems: "center",
-
-      height: "50vh",
+      width: "80%",
+      maxWidth: "100rem",
       backgroundColor: "white",
       border: "none",
     },
   };
 
-  // const length = images.length;
+  const length = images.length;
 
   //
   const openModal = () => {
@@ -65,20 +65,20 @@ const Gallery = () => {
     setIsModalOpen(false);
   };
 
-  // const nextSlide = () => {
-  //   setCurrent(current === length - 1 ? 0 : current + 1);
-  // };
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
-  // const prevSlide = () => {
-  //   setCurrent(current === 0 ? length - 1 : current - 1);
-  // };
+  const previousSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
   // if (!Array.isArray(images) || images.length <= 0) {
   //   return null;
   // }
 
   return (
-    <div className={styles["slideshow-img-container"]} id="galerie">
+    <div className={styles["gallery-img-container"]} id="galerie">
       <h2 className={styles["gallery-heading"]}>Galerie</h2>
 
       {images.map((image) => {
@@ -100,12 +100,25 @@ const Gallery = () => {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <img
-          className={styles["modal-img"]}
-          src={images[current].img}
-          // Alt tag is in gallery view
-          alt=""
-        ></img>
+        <div className={styles["modal-content-container"]}>
+          <button onClick={closeModal} className={styles["close-modal-button"]}>
+            <RiCloseCircleFill />
+          </button>
+
+          <button onClick={nextSlide} className={styles["next-button"]}>
+            <BiChevronsRight />
+          </button>
+          <button onClick={previousSlide} className={styles["previous-button"]}>
+            <BiChevronsLeft />
+          </button>
+
+          <img
+            className={styles["modal-img"]}
+            src={images[current].img}
+            // Alt tag is in gallery view
+            alt=""
+          ></img>
+        </div>
       </Modal>
     </div>
   );

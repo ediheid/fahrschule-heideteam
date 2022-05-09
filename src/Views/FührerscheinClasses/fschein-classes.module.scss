@@ -242,7 +242,7 @@
 
 // Gallery
 
-.slideshow-img-container {
+.gallery-img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -282,10 +282,59 @@
   object-fit: cover;
 }
 
+.modal-content-container {
+  position: relative;
+}
+
 .modal-img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
+}
+
+.next-button,
+.previous-button,
+.close-modal-button {
+  position: absolute;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: $white;
+  font-size: 3.5rem;
+
+  cursor: pointer;
+}
+
+.next-button {
+  top: 45%;
+  right: 1rem;
+}
+
+.previous-button {
+  top: 45%;
+  left: 1rem;
+}
+
+.close-modal-button {
+  top: 1rem;
+  right: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
+}
+
+.close-modal-button * {
+  border-radius: 50%;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (hover: hover) {
+  .close-modal-button:hover {
+    color: $logo-green;
+  }
 }
 
 // ? Media Queries
