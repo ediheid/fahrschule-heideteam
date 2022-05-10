@@ -11,7 +11,7 @@ const KlasseC1 = () => {
         <img
           className={styles["class-icons"]}
           src={C1}
-          alt="Trailer icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/trailer"
+          alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
         ></img>
         <h2 className={styles["headings"]}>Klasse C1</h2>
       </div>
