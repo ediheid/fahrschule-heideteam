@@ -91,7 +91,15 @@ const KlasseD = () => {
             <h3>Preisliste</h3>
             <ul>
               <li>
-                <b>TBD</b>
+                <b>
+                  Ausbildung bei uns nur auf speziell Anfrage!{" "}
+                  <a
+                    className={styles["email-link"]}
+                    href="mailto:w.franke@fsheideteam.de"
+                  >
+                    (w.franke@fsheideteam.de)
+                  </a>
+                </b>
               </li>
             </ul>
           </div>
