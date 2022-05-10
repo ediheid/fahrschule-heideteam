@@ -280,6 +280,8 @@
   margin: 2.5rem;
 
   object-fit: cover;
+
+  cursor: pointer;
 }
 
 .modal-content-container {
@@ -309,11 +311,19 @@
 .next-button {
   top: 45%;
   right: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
 }
 
 .previous-button {
   top: 45%;
   left: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
 }
 
 .close-modal-button {
@@ -327,13 +337,15 @@
 
 .close-modal-button * {
   border-radius: 50%;
-
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 @media (hover: hover) {
-  .close-modal-button:hover {
-    color: $logo-green;
+  .close-modal-button:hover,
+  .next-button:hover,
+  .previous-button:hover {
+    color: $cream;
+    transform: scale(1.2);
   }
 }
 
@@ -380,12 +392,36 @@
     background-color: $white;
     padding: 2.5rem 0 2rem 0;
   }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 60vw;
+
+    object-fit: cover;
+  }
 }
 
 @include extra-large {
   .classes-sub-menu {
     background-color: $white;
     padding: 2.5rem 0 2rem 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 60vw;
+
+    object-fit: cover;
   }
 }
 
@@ -397,6 +433,11 @@
 
   .class-section {
     margin: 30rem 0 0 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
   }
 }
 

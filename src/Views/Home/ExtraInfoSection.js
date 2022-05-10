@@ -19,16 +19,13 @@ const ExtraInfoSection = () => {
   }, []);
 
   return (
-    <section className={styles["extra-info-section"]}>
-      <h2
-        data-aos="fade-up"
-        className={`${styles["headings"]} ${styles["extra-info-heading"]}`}
-      >
+    <section data-aos="fade-up" className={styles["extra-info-section"]}>
+      <h2 className={`${styles["headings"]} ${styles["extra-info-heading"]}`}>
         Wir helfen Ihre Fahrziele zu erreichen
       </h2>
       <div className={styles["extra-info-content"]}>
         {/* // ? Box 1 */}
-        <div data-aos="fade-up" className={styles["info-boxes"]}>
+        <div className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={medal}
@@ -41,7 +38,7 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 2 */}
-        <div data-aos="fade-up" className={styles["info-boxes"]}>
+        <div className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={euro}
@@ -54,7 +51,7 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 3 */}
-        <div data-aos="fade-up" className={styles["info-boxes"]}>
+        <div className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={handshake}
@@ -67,7 +64,7 @@ const ExtraInfoSection = () => {
         </div>
 
         {/* // ? Box 4 */}
-        <div data-aos="fade-up" className={styles["info-boxes"]}>
+        <div className={styles["info-boxes"]}>
           <div className={styles["info-icon"]}>
             <img
               src={drivingSchool}
@@ -79,7 +76,7 @@ const ExtraInfoSection = () => {
           </div>
         </div>
       </div>
-      <Link data-aos="fade-up" to="/klassen" alt="Link to Team page">
+      <Link to="/klassen" alt="Link to Team page">
         <button className={styles["gradient-button-light"]}>
           Führerschein Klassen
         </button>

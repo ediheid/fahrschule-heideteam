@@ -17,8 +17,8 @@ const AboutSection = () => {
 
   return (
     <section className={styles["about-section"]} id="about">
-      <div className={styles["about-content-container"]}>
-        <div data-aos="fade-up" className={styles["about-text-container"]}>
+      <div data-aos="fade-up" className={styles["about-content-container"]}>
+        <div className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
 
           {/* <p className={styles["about-paragraph"]}>
@@ -42,7 +42,6 @@ const AboutSection = () => {
         </div>
 
         <img
-          data-aos="fade-up"
           src={TeamPhoto}
           alt="The team"
           className={styles["team-photo"]}

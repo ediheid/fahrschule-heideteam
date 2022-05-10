@@ -18,23 +18,73 @@ import img8 from "../Slideshow/Static/8.png";
 import img9 from "../Slideshow/Static/9.png";
 import img10 from "../Slideshow/Static/10.png";
 import img11 from "../Slideshow/Static/11.png";
+import car from "../Slideshow/Static/car.png";
+import car2 from "../Slideshow/Static/car2.png";
+import car4 from "../Slideshow/Static/car4.png";
+import car5 from "../Slideshow/Static/car5.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [current, setCurrent] = useState(0);
 
   const images = [
-    { img: img1, id: 0, alt: "testing ojsdknfvasd vkjn" },
-    { img: img2, id: 1, alt: "testing ojsdknfvasd vkjn" },
-    { img: img3, id: 2, alt: "testing ojsdknfvasd vkjn" },
-    { img: img4, id: 3, alt: "testing ojsdknfvasd vkjn" },
-    { img: img5, id: 4, alt: "testing ojsdknfvasd vkjn" },
-    { img: img6, id: 5, alt: "testing ojsdknfvasd vkjn" },
-    { img: img7, id: 6, alt: "testing ojsdknfvasd vkjn" },
-    { img: img8, id: 7, alt: "testing ojsdknfvasd vkjn" },
-    { img: img9, id: 8, alt: "testing ojsdknfvasd vkjn" },
-    { img: img10, id: 9, alt: "testing ojsdknfvasd vkjn" },
-    { img: img11, id: 10, alt: "testing ojsdknfvasd vkjn" },
+    { img: img1, id: 0, alt: "Motorcycle with night sky background" },
+    {
+      img: img2,
+      id: 1,
+      alt: "Motorbikes outside garage with Heideteam Fahrschule sign above",
+    },
+    {
+      img: img3,
+      id: 2,
+      alt: "White car on obstacle course with water spraying",
+    },
+    { img: img4, id: 3, alt: "Front view of black Skoda" },
+    {
+      img: img5,
+      id: 4,
+      alt: "Black car with Fahrschule Heideteam logos in field",
+    },
+
+    {
+      img: car,
+      id: 5,
+      alt: "Close up of black car with Fahrschule Heideteam logos in field",
+    },
+    { img: car2, id: 6, alt: "Close up of hood of black car and SEAT logo" },
+    {
+      img: car4,
+      id: 7,
+      alt: "Side view of white car with Fahrschule Heideteam logos",
+    },
+    {
+      img: car5,
+      id: 8,
+      alt: "Side view of white car with Fahrschule Heideteam logos",
+    },
+
+    {
+      img: img6,
+      id: 9,
+      alt: "Side view of silver VW van with Fahrschule Heideteam logos",
+    },
+    {
+      img: img7,
+      id: 10,
+      alt: "Side view of silver VW van with Fahrschule Heideteam logos with trailer on the back",
+    },
+    { img: img8, id: 11, alt: "Grey fsd truck" },
+    {
+      img: img9,
+      id: 12,
+      alt: "Two semi trailers turning a corner on the road",
+    },
+    { img: img10, id: 13, alt: "Silver coach bus on country road" },
+    {
+      img: img11,
+      id: 14,
+      alt: "Tractor with wagon on the back driving on a country road",
+    },
   ];
 
   const customStyles = {
@@ -45,6 +95,10 @@ const Gallery = () => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
+
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
 
       width: "80%",
       maxWidth: "100rem",

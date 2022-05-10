@@ -14,12 +14,12 @@ const ContactSection = () => {
   }, []);
 
   return (
-    <section className={styles["contact-section"]}>
-      <h2 data-aos="fade-up" className={styles["headings"]}>
+    <section data-aos="fade-up" className={styles["contact-section"]}>
+      <h2 className={styles["headings"]}>
         Ready to book? Or still have questions?
       </h2>
 
-      <Link data-aos="fade-up" to="/kontakt" alt="Link to Kontakt page">
+      <Link to="/kontakt" alt="Link to Kontakt page">
         <button className={styles["contact-button"]}>Contact Us</button>
       </Link>
     </section>
