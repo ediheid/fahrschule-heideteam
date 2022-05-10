@@ -7,26 +7,27 @@ import { BiChevronsRight } from "react-icons/bi";
 import { BiChevronsLeft } from "react-icons/bi";
 
 // Images
-import img1 from "../Slideshow/Static/1.png";
-import img2 from "../Slideshow/Static/2.png";
-import img3 from "../Slideshow/Static/3.png";
-import img4 from "../Slideshow/Static/4.png";
-import img5 from "../Slideshow/Static/5.png";
-import img6 from "../Slideshow/Static/6.png";
-import img7 from "../Slideshow/Static/7.png";
-import img8 from "../Slideshow/Static/8.png";
-import img9 from "../Slideshow/Static/9.png";
-import img10 from "../Slideshow/Static/10.png";
-import img11 from "../Slideshow/Static/11.png";
-import car from "../Slideshow/Static/car.png";
-import car2 from "../Slideshow/Static/car2.png";
-import car4 from "../Slideshow/Static/car4.png";
-import car5 from "../Slideshow/Static/car5.png";
+import img1 from "../Gallery/Static/1.png";
+import img2 from "../Gallery/Static/2.png";
+import img3 from "../Gallery/Static/3.png";
+import img4 from "../Gallery/Static/4.png";
+import img5 from "../Gallery/Static/5.png";
+import img6 from "../Gallery/Static/6.png";
+import img7 from "../Gallery/Static/7.png";
+import img8 from "../Gallery/Static/8.png";
+import img9 from "../Gallery/Static/9.png";
+import img10 from "../Gallery/Static/10.png";
+import img11 from "../Gallery/Static/11.png";
+import car from "../Gallery/Static/car.png";
+import car2 from "../Gallery/Static/car2.png";
+import car4 from "../Gallery/Static/car4.png";
+import car5 from "../Gallery/Static/car5.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [current, setCurrent] = useState(0);
 
+  // id is used to set 'current' array index for modal
   const images = [
     { img: img1, id: 0, alt: "Motorcycle with night sky background" },
     {
@@ -107,17 +108,17 @@ const Gallery = () => {
     },
   };
 
-  const length = images.length;
-
-  //
+  // Handle open/close state of modal
   const openModal = () => {
-    console.log("TEST", images.id);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  // variable and functions to click through modal slideshow
+  const length = images.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -127,30 +128,26 @@ const Gallery = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  // if (!Array.isArray(images) || images.length <= 0) {
-  //   return null;
-  // }
-
   return (
     <div className={styles["gallery-img-container"]} id="galerie">
       <h2 className={styles["gallery-heading"]}>Galerie</h2>
 
+      {/* Map 'images' for gallery */}
       {images.map((image) => {
         return (
           <img
             src={image.img}
             alt={image.alt}
             className={styles["gallery-img"]}
-            // ! For modal..
-            //  Index for modal is set here with 'Current' state hook
+            //  Index for modal is set here with 'Current' state hook using the 'id'
             onClick={() => openModal(setCurrent(image.id))}
           ></img>
         );
       })}
 
+      {/* Modal */}
       <Modal
         isOpen={isModalOpen}
-        // onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
       >
@@ -162,6 +159,7 @@ const Gallery = () => {
           <button onClick={nextSlide} className={styles["next-button"]}>
             <BiChevronsRight />
           </button>
+
           <button onClick={previousSlide} className={styles["previous-button"]}>
             <BiChevronsLeft />
           </button>

@@ -16,7 +16,7 @@ import KlasseCE from "./KlasseCE";
 import KlasseD from "./KlasseD";
 import KlasseD1 from "./KlasseD1";
 import KlasseT from "./KlasseT";
-import Gallery from "./Slideshow/Gallery";
+import Gallery from "./Gallery/Gallery";
 
 // Every second card has the image to the right
 const FscheinClasses = () => {
