@@ -86,8 +86,7 @@ const KlasseT = () => {
             <ul>
               <li>
                 <b>
-                  Bitte wenden Sie sich bei einer Anfrage für diese
-                  Führerscheinklasse direkt an{" "}
+                  Ausbildung bei uns nur auf speziell Anfrage!{" "}
                   <a
                     className={styles["email-link"]}
                     href="mailto:j.seeberger@fsheideteam.de"
