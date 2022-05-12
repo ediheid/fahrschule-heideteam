@@ -7,83 +7,107 @@ import { BiChevronsRight } from "react-icons/bi";
 import { BiChevronsLeft } from "react-icons/bi";
 
 // Images
-import img1 from "../Gallery/Static/1.png";
-import img2 from "../Gallery/Static/2.png";
-import img3 from "../Gallery/Static/3.png";
-import img4 from "../Gallery/Static/4.png";
-import img5 from "../Gallery/Static/5.png";
-import img6 from "../Gallery/Static/6.png";
-import img7 from "../Gallery/Static/7.png";
-import img8 from "../Gallery/Static/8.png";
-import img9 from "../Gallery/Static/9.png";
-import img10 from "../Gallery/Static/10.png";
-import img11 from "../Gallery/Static/11.png";
+import motorbike from "../Gallery/Static/motorbike.png";
+import bikes from "../Gallery/Static/bikes.png";
+import course from "../Gallery/Static/obstacle-course.png";
+import car1 from "../Gallery/Static/car1.png";
+import car3 from "../Gallery/Static/car3.png";
+import van from "../Gallery/Static/van.png";
+import vanTrailer from "../Gallery/Static/van-trailer.png";
+import truck from "../Gallery/Static/truck.png";
+import semis from "../Gallery/Static/semis.png";
+import bus from "../Gallery/Static/bus.png";
+import tractor from "../Gallery/Static/tractor.png";
 import car from "../Gallery/Static/car.png";
 import car2 from "../Gallery/Static/car2.png";
 import car4 from "../Gallery/Static/car4.png";
 import car5 from "../Gallery/Static/car5.png";
+import d1 from "../Gallery/Static/d1.png";
+import am from "../Gallery/Static/am-1.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  // Current will be used to get set the image id from the index of the images array - set with onClick event for modal
   const [current, setCurrent] = useState(0);
 
-  // id is used to set 'current' array index for modal
   const images = [
-    { img: img1, id: 0, alt: "Motorcycle with night sky background" },
     {
-      img: img2,
+      img: motorbike,
       id: 1,
+      alt: "Motorcycle with night sky background",
+    },
+    {
+      img: am,
+      id: 2,
+      alt: "Front view of white dirt bike, class AM",
+    },
+    {
+      img: bikes,
+      id: 3,
       alt: "Motorbikes outside garage with Heideteam Fahrschule sign above",
     },
+
     {
-      img: img3,
-      id: 2,
+      img: course,
+      id: 4,
       alt: "White car on obstacle course with water spraying",
     },
-    { img: img4, id: 3, alt: "Front view of black Skoda" },
+    { img: car1, id: 5, alt: "Front view of black Skoda" },
     {
-      img: img5,
-      id: 4,
+      img: car3,
+      id: 6,
       alt: "Black car with Fahrschule Heideteam logos in field",
     },
 
     {
       img: car,
-      id: 5,
+      id: 7,
       alt: "Close up of black car with Fahrschule Heideteam logos in field",
     },
-    { img: car2, id: 6, alt: "Close up of hood of black car and SEAT logo" },
+    {
+      img: car2,
+      id: 8,
+      alt: "Close up of hood of black car and SEAT logo",
+    },
     {
       img: car4,
-      id: 7,
+      id: 9,
       alt: "Side view of white car with Fahrschule Heideteam logos",
     },
     {
       img: car5,
-      id: 8,
+      id: 10,
       alt: "Side view of white car with Fahrschule Heideteam logos",
     },
 
     {
-      img: img6,
-      id: 9,
+      img: van,
+      id: 11,
       alt: "Side view of silver VW van with Fahrschule Heideteam logos",
     },
+
     {
-      img: img7,
-      id: 10,
+      img: vanTrailer,
+      id: 12,
       alt: "Side view of silver VW van with Fahrschule Heideteam logos with trailer on the back",
     },
-    { img: img8, id: 11, alt: "Grey fsd truck" },
+
     {
-      img: img9,
-      id: 12,
+      img: d1,
+      id: 13,
+      alt: "Black mini bus for class D1",
+    },
+
+    { img: truck, id: 14, alt: "White truck" },
+    {
+      img: semis,
+      id: 15,
       alt: "Two semi trailers turning a corner on the road",
     },
-    { img: img10, id: 13, alt: "Silver coach bus on country road" },
+    { img: bus, id: 16, alt: "Silver coach bus on country road" },
     {
-      img: img11,
-      id: 14,
+      img: tractor,
+      id: 17,
       alt: "Tractor with wagon on the back driving on a country road",
     },
   ];
@@ -133,13 +157,22 @@ const Gallery = () => {
       <h2 className={styles["gallery-heading"]}>Galerie</h2>
 
       {/* Map 'images' for gallery */}
-      {images.map((image) => {
+      {images.map((image, index) => {
+        console.log("index", index);
+        console.log("Previous Id:", image.id);
+
+        // set image id to index number
+        image.id = index;
+
+        console.log("Updated Id:", image.id);
+
         return (
           <img
             src={image.img}
             alt={image.alt}
             className={styles["gallery-img"]}
-            //  Index for modal is set here with 'Current' state hook using the 'id'
+            key={image.id}
+            //  Index for modal is set here with 'Current' state hook using the index to set id
             onClick={() => openModal(setCurrent(image.id))}
           ></img>
         );
