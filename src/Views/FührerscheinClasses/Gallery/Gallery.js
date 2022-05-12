@@ -24,6 +24,7 @@ import car4 from "../Gallery/Static/car4.png";
 import car5 from "../Gallery/Static/car5.png";
 import d1 from "../Gallery/Static/d1.png";
 import am from "../Gallery/Static/am-1.png";
+import fsd from "../Gallery/Static/fsd.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -92,17 +93,17 @@ const Gallery = () => {
       alt: "Side view of silver VW van with Fahrschule Heideteam logos with trailer on the back",
     },
 
-    {
-      img: d1,
-      id: 13,
-      alt: "Black mini bus for class D1",
-    },
-
     { img: truck, id: 14, alt: "White truck" },
+    { img: fsd, id: 18, alt: "Grey fsd truck" },
     {
       img: semis,
       id: 15,
       alt: "Two semi trailers turning a corner on the road",
+    },
+    {
+      img: d1,
+      id: 13,
+      alt: "Black mini bus for class D1",
     },
     { img: bus, id: 16, alt: "Silver coach bus on country road" },
     {
@@ -158,13 +159,8 @@ const Gallery = () => {
 
       {/* Map 'images' for gallery */}
       {images.map((image, index) => {
-        console.log("index", index);
-        console.log("Previous Id:", image.id);
-
         // set image id to index number
         image.id = index;
-
-        console.log("Updated Id:", image.id);
 
         return (
           <img
