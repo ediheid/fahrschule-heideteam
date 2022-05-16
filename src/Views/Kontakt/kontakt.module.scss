@@ -56,7 +56,7 @@
   height: auto;
 
   font-size: 1.6rem;
-  border: solid 2px pink;
+  //   border: solid 2px pink;
 
   font-family: $main-font-font-family;
 
@@ -128,6 +128,23 @@
 
 // ? Media Queries
 
+@include small {
+  .info-container {
+    width: 40rem;
+    height: auto;
+  }
+
+  .map-container {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .contact-form-container {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+
 @include medium {
   .info-container {
     width: 40rem;
@@ -151,16 +168,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    margin-top: 8rem;
   }
 
   .info-container {
     width: 40rem;
-    height: auto;
+    height: 50rem;
   }
 
   .map-container {
     width: 40rem;
-    height: 30rem;
+    height: 50rem;
   }
 
   .contact-form-container {
@@ -175,21 +194,23 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    margin-top: 2rem;
   }
 
   .info-container {
     width: 50rem;
-    height: auto;
+    height: 50rem;
   }
 
   .map-container {
     width: 50rem;
-    height: 40rem;
+    height: 50rem;
   }
 
   .contact-form-container {
-    width: 50rem;
-    height: 40rem;
+    width: 150rem;
+    height: 50rem;
   }
 }
 
@@ -199,20 +220,39 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    margin-top: 10rem;
   }
 
   .info-container {
-    width: 50rem;
+    width: 60rem;
+    height: 50rem;
+  }
+
+  .map-container {
+    width: 60rem;
+    height: 50rem;
+  }
+
+  .contact-form-container {
+    width: 150rem;
+    height: 50rem;
+  }
+}
+
+@include extra-extra-small {
+  .info-container {
+    width: 20rem;
     height: auto;
   }
 
   .map-container {
-    width: 50rem;
-    height: 40rem;
+    width: 20rem;
+    height: 30rem;
   }
 
   .contact-form-container {
-    width: 50rem;
-    height: 40rem;
+    width: 20rem;
+    height: 30rem;
   }
 }
