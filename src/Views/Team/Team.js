@@ -5,7 +5,11 @@ import styles from "../Team/team.module.scss";
 import FlipCard from "./Flipcard";
 
 // Import individual team photos
-import examplePhoto from "../Team/Static/example-headshot.png";
+import wolli from "../Team/Static/wolli.png";
+import joerg from "../Team/Static/joerg.png";
+import jan from "../Team/Static/jan.png";
+import peter from "../Team/Static/peter.png";
+import michel from "../Team/Static/michel.png";
 
 // AOS
 import Aos from "aos";
@@ -24,7 +28,7 @@ const Team = () => {
       id: "1",
       // Img from import
       // Alt tag updates with name
-      img: examplePhoto,
+      img: wolli,
       name: "Wolfgang Franke",
       duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
 
@@ -40,7 +44,7 @@ const Team = () => {
       id: "2",
       // Img from import
       // Alt tag updates with name
-      img: examplePhoto,
+      img: joerg,
       name: "Jörg Seeberger",
       duties: "Geschäftsführer & Leiter der Ausbildung",
 
@@ -61,7 +65,7 @@ const Team = () => {
 
     {
       id: "3",
-      img: examplePhoto,
+      // img: examplePhoto,
       name: "Robby Mittag",
       duties: "Ausbilder auf Nutzfahrzeugen",
 
@@ -76,7 +80,7 @@ const Team = () => {
 
     {
       id: "3",
-      img: examplePhoto,
+      img: jan,
       name: "Jan Säuberlich",
       duties: "Ausbilder für PKW & Motorrad",
 
@@ -94,7 +98,7 @@ const Team = () => {
 
     {
       id: "3",
-      img: examplePhoto,
+      img: peter,
       name: "Peter Wildner",
       duties: "Ausbilder für PKW & Motorrad",
 
@@ -105,7 +109,7 @@ const Team = () => {
 
     {
       id: "3",
-      img: examplePhoto,
+      img: michel,
       name: "Michel Klein",
       duties: "aktueller Fahrlehreranwärter in Ausbildung für PKW",
 
@@ -116,18 +120,18 @@ const Team = () => {
 
     {
       id: "3",
-      img: examplePhoto,
+      // img: examplePhoto,
       name: "Nancy Köhler",
       duties: "die gute Seele im Büro (Organisation, Anmeldung etc.)",
 
       backInfoText1: "TBD",
     },
 
-    // ? Nancy
+    // ? Lanë
 
     {
       id: "3",
-      img: examplePhoto,
+      // img: examplePhoto,
       name: "Lanë",
       duties: "Büroschnuffi für Kundenbetreuung & Fahrlehrerüberwachung",
 

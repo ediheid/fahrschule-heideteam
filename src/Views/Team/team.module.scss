@@ -48,7 +48,7 @@
   flex-direction: column;
 
   width: 28rem;
-  height: 35rem;
+  height: 38rem;
 
   margin: 3rem;
 
@@ -105,8 +105,8 @@
   //   justify-content: flex-end;
   align-items: center;
 
-  width: 80%;
-  height: 22rem;
+  width: 85%;
+  height: 25rem;
 
   h4,
   h5 {
@@ -117,7 +117,7 @@
 
   h4 {
     font-size: 2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     color: $main-font-green;
 
     margin-top: 6.5rem;
@@ -126,17 +126,19 @@
   }
 
   h5 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: $dark-green;
 
     height: 3.3rem;
+
+    margin-bottom: 4.5rem;
   }
 
   button {
     @include gradient-button-light;
 
     padding: 1rem 2rem 1rem 2rem;
-    margin: 2rem 0 1.5rem 0;
+    // margin: 2rem 0 0.5rem 0;
   }
 }
 
