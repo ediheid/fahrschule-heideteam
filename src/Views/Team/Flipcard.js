@@ -44,7 +44,13 @@ const FlipCard = ({ card }) => {
 
       <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
         <div className={styles["back-container"]}>
-          <p>{card.backInfoText}</p>
+          <p>{card.backInfoText1}</p>
+          <br />
+          <p>{card.backInfoText2}</p>
+          <br />
+          <p>{card.backInfoText3}</p>
+          <br />
+          <p>{card.backInfoText4}</p>
         </div>
 
         <button onClick={handleCardFlip}>Zurück</button>
