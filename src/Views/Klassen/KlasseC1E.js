@@ -1,61 +1,62 @@
 import React from "react";
 
-import styles from "../FührerscheinClasses/fschein-classes.module.scss";
+import styles from "../Klassen/fschein-classes.module.scss";
 
-import CE from "../FührerscheinClasses/Static/icon-ce.png";
+import C1E from "../Klassen/Static/icon-c1e.png";
 
-const KlasseCE = () => {
+const KlasseC1E = () => {
   return (
-    <section className={styles["class-section"]} id="klasse-ce">
+    <section className={styles["class-section"]} id="klasse-c1e">
       <div className={styles["class-heading-circle"]}>
         <img
           className={styles["class-icons"]}
-          src={CE}
+          src={C1E}
           alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
         ></img>
-        <h2 className={styles["headings"]}>Klasse CE</h2>
+        <h2 className={styles["headings"]}>Klasse C1E</h2>
       </div>
 
       <div className={styles["section-content-container"]}>
         <div className={styles["text-container"]}>
-          <h4>Fahrzeugart Lastzüge</h4>
+          <h4>Fahrzeugart Mittlere Lastzüge bis max. 12.000 kg zG</h4>
           <ul>
             <li>
-              Kombinationen aus Kraftfahrzeugen der Klasse C und Anhängern mit
-              mehr als 750 kg zulässiger Gesamtmasse.
-            </li>
-
-            <li>Mindestalter:</li>
-
-            <li className={styles["list-style-none"]}>
-              <b>21</b> Jahre
-            </li>
-
-            <li className={styles["list-style-none"]}>
-              <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG oder
-              Berufsaubildung
+              <b>
+                Kombinationen aus Kraftfahrzeugen der Klasse C1 und Anhänger
+              </b>{" "}
+              mit mehr als 750 kg zulässiger Gesamtmasse.
             </li>
 
             <li>
-              Geltungsdauer: <b>befristet auf 5 Jahre</b>
+              <b>
+                Kombination aus einem Kraftfahrzeug der Klasse B und einem
+                Anhänger
+              </b>
+              , dessen zulässige Gesamtmasse größer ist als 3.500 kg.
             </li>
 
             <li>
-              Vorbesitz erforderlich: <b>Ja, Klasse C</b>
+              {" "}
+              <b>
+                Die zulässige Gesamtmasse der Kombination darf jeweils nicht
+                mehr als 12.000 kg betragen!{" "}
+              </b>
             </li>
 
-            <li>Beinhaltet Klasse:</li>
-
-            <li className={styles["list-style-disc"]}>
-              <b>C1E, BE, T;</b>
-            </li>
-            <li className={styles["list-style-disc"]}>
-              <b>D1E bei Besitz von Klasse D1;</b>
-            </li>
-            <li className={styles["list-style-disc"]}>
-              <b>DE bei Besitz von Klasse D</b>
+            <li>
+              Mindestalter: <b>18</b>
             </li>
 
+            <li>
+              Geltungsdauer: <b>5 Jahre</b>
+            </li>
+
+            <li>
+              Vorbesitz erforderlich: <b>Ja, Klasse C1</b>
+            </li>
+            <li>
+              Beinhaltet Klasse: <b>BE; D1E bei Besitz von D1</b>
+            </li>
             <li>
               Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
             </li>
@@ -90,4 +91,4 @@ const KlasseCE = () => {
   );
 };
 
-export default KlasseCE;
+export default KlasseC1E;

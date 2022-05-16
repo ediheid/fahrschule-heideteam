@@ -1,30 +1,29 @@
 import React from "react";
 
-import styles from "../FührerscheinClasses/fschein-classes.module.scss";
+import styles from "../Klassen/fschein-classes.module.scss";
 
-import C1 from "../FührerscheinClasses/Static/icon-c1.png";
+import C from "../Klassen/Static/icon-c.png";
 
-const KlasseC1 = () => {
+const KlasseC = () => {
   return (
-    <section className={styles["class-section"]} id="klasse-c1">
+    <section className={styles["class-section"]} id="klasse-c">
       <div className={styles["class-heading-circle"]}>
         <img
           className={styles["class-icons"]}
-          src={C1}
+          src={C}
           alt="Truck icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/truck"
         ></img>
-        <h2 className={styles["headings"]}>Klasse C1</h2>
+        <h2 className={styles["headings"]}>Klasse C</h2>
       </div>
 
       <div className={styles["section-content-container"]}>
         <div className={styles["text-container"]}>
-          <h4>Fahrzeugart Mittlere Lkw</h4>
+          <h4>Fahrzeugart Schwere Lkw</h4>
           <ul>
             <li>
               Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
-              und A - mit einer zulässigen Gesamtmasse{" "}
-              <b>von mehr als 3.500 kg aber nicht mehr als 7.500 kg</b>, die zur
-              Beförderung von nicht mehr als acht Personen außer dem
+              und A - mit einer zulässigen Gesamtmasse von mehr als 3.500 kg,
+              die zur Beförderung von nicht mehr als acht Personen außer dem
               Fahrzeugführer ausgelegt und gebaut sind.
             </li>
 
@@ -33,19 +32,26 @@ const KlasseC1 = () => {
               als 750 kg dürfen mitgeführt werden.
             </li>
 
-            <li>
-              Mindestalter: <b>18</b>
+            <li>Mindestalter:</li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>21</b> Jahre
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG oder
+              Berufsaubildung
             </li>
 
             <li>
-              Geltungsdauer: <b>5 Jahre</b>
+              Geltungsdauer: <b>befristet auf 5 Jahre</b>
             </li>
 
             <li>
               Vorbesitz erforderlich: <b>Ja, Klasse B</b>
             </li>
             <li>
-              Beinhaltet Klasse: <b>keine</b>
+              Beinhaltet Klasse: <b>C1</b>
             </li>
             <li>
               Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
@@ -81,4 +87,4 @@ const KlasseC1 = () => {
   );
 };
 
-export default KlasseC1;
+export default KlasseC;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../FührerscheinClasses/fschein-classes.module.scss";
+import styles from "../Klassen/fschein-classes.module.scss";
 
 import SubMenu from "./SubMenu";
 import KlasseA from "./KlasseA";

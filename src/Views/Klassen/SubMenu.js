@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 
-import styles from "../FührerscheinClasses/fschein-classes.module.scss";
+import styles from "../Klassen/fschein-classes.module.scss";
 
 const SubMenu = () => {
   return (

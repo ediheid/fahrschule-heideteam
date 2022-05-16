@@ -12,7 +12,7 @@ import CookieConsent from "react-cookie-consent";
 import Home from "./Views/Home/Home";
 import Header from "./Components/Header/Header";
 import DesktopNav from "./Components/Navbar/DesktopNav";
-import FscheinClasses from "./Views/FührerscheinClasses/FscheinClasses";
+import FscheinClasses from "./Views/Klassen/FscheinClasses";
 import Team from "./Views/Team/Team";
 import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikation/Berufskraftfahrerqualifikation";
 import News from "./Views/News/News";
