@@ -1,0 +1,85 @@
+@import "../../Styling/global.scss";
+
+.desktop-nav-container {
+  background-color: $navbar;
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  z-index: 10000;
+}
+
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-list {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+
+  li {
+    list-style: none;
+    letter-spacing: 0.04rem;
+  }
+}
+
+.nav-links {
+  text-decoration: none;
+
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.55rem;
+  color: $nav-links;
+
+  &:active {
+    // font-family: $montserrat-bold-font-family;
+    color: $brighter-logo-green;
+  }
+}
+
+@media (hover: hover) {
+  .nav-links:hover {
+    // font-family: $montserrat-bold-font-family;
+    color: $brighter-logo-green;
+  }
+}
+
+.covid-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  padding-right: 0.5rem;
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+}
+
+// Media Queries
+
+// ? Phone
+
+@include x-small {
+  .desktop-nav-container {
+    display: none;
+  }
+}
+
+// ? Large phone / small tablet
+
+@include small {
+  .desktop-nav-container {
+    display: none;
+  }
+}
+
+@include medium {
+  .desktop-nav-container {
+    display: none;
+  }
+}

@@ -8,16 +8,17 @@
   }
 }
 
-//  Small = Less than 768px - mobile devices
+//  Small = Less than 767px - mobile devices
 @mixin small {
-  @media (min-width: 577px) and (max-width: 768px) {
+  @media (min-width: 577px) and (max-width: 767px) {
     @content;
   }
 }
 
 //  Medium = Less than 992px - tablets
+// To include ipad
 @mixin medium {
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     @content;
   }
 }
@@ -47,5 +48,173 @@
 @mixin extra-extra-small {
   @media (max-width: 320px) {
     @content;
+  }
+}
+
+// ? Buttons
+
+@mixin gradient-button-dark {
+  background-image: linear-gradient(
+    to right,
+    $dark-green 0%,
+    lighten($dark-green, 12%) 51%,
+    $dark-green 100%
+  );
+
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+  color: $button-text-light;
+  font-family: $button-font;
+
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  // text-transform: uppercase;
+
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+
+  cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+  }
+}
+
+@mixin gradient-button-light {
+  background-image: linear-gradient(
+    to right,
+    $logo-green 0%,
+    $brighter-logo-green 51%,
+    $logo-green 100%
+  );
+
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+  color: $button-text-light;
+  font-family: $button-font;
+
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  // text-transform: uppercase;
+
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+
+  cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+  }
+}
+
+@mixin gradient-button-cream {
+  background-image: linear-gradient(
+    to right,
+    $cream 0%,
+    $eggshell 51%,
+    $cream 100%
+  );
+
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+  color: $dark-green !important;
+  font-family: $button-font;
+
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  // text-transform: uppercase;
+
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(109, 108, 108);
+
+  cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+  }
+}
+
+@mixin dark-button {
+  background-color: $green-solid-button;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+  color: $button-text-light;
+  font-family: $button-font;
+
+  font-size: 1.6rem;
+  text-align: center;
+  // text-transform: uppercase;
+
+  cursor: pointer;
+
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  &:active {
+    background-color: $logo-green;
+  }
+}
+
+@mixin transparent-button {
+  background-color: transparent;
+  color: $white;
+  // border: 2px solid $white;
+  box-shadow: 0px 0px 0px 2px $white inset;
+
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+
+  font-family: $button-font;
+
+  font-size: 1.6rem;
+
+  transition: 1s;
+  background-size: 200% auto;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $logo-green;
+    box-shadow: none;
+
+    background-image: linear-gradient(
+      to right,
+      $white 0%,
+      $cream 51%,
+      $white 100%
+    );
+
+    transition: 1s;
   }
 }

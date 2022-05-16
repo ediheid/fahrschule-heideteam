@@ -1,12 +1,222 @@
+@import "../../Styling/global.scss";
+
 .header-container {
   height: 8rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
 }
+
+// .header-fix {
+//   position: fixed;
+
+//   height: 8rem;
+//   width: 100vw;
+
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   overflow: hidden;
+
+//   z-index: 10000;
+//   background-color: $white;
+// }
 
 .logo-img-link {
   width: 10rem;
   margin-left: 0.8rem;
+}
+
+.header-right-content {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-container {
+  color: lighten($logo-green, 5%);
+
+  margin: 0 0.8rem 0 0.5rem;
+
+  z-index: 1000;
+
+  &:active {
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .hamburger-container:hover {
+    color: $dark-green;
+  }
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.phone-icon {
+  color: lighten($logo-green, 5%);
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+
+  &:active {
+    font-size: 2rem;
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .phone-icon:hover {
+    font-size: 2rem;
+    color: $dark-green;
+  }
+}
+
+.phone-number {
+  color: $logo-green;
+  font-family: $montserrat-semi-bold-font-family;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+
+  &:active {
+    text-decoration: underline;
+    font-family: $montserrat-bold-font-family;
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .phone-number:hover {
+    text-decoration: underline;
+    font-family: $montserrat-bold-font-family;
+    color: $dark-green;
+  }
+}
+
+// Media Queries
+
+// ? Phone
+
+@include x-small {
+  .phone-icon {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+  }
+
+  .phone-number {
+    display: none;
+  }
+}
+
+// ? Large phone / small tablet
+
+@include small {
+  .phone-icon {
+    font-size: 2rem;
+    margin-top: 0.2rem;
+  }
+
+  .phone-number {
+    display: none;
+  }
+}
+
+// ? Tablet
+
+@include medium {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  // .hamburger-container {
+  //   display: none;
+  // }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Small Desktop
+
+@include large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Medium Desktop
+
+@include extra-large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+}
+
+// ? Large Desktop
+
+@include extra-extra-large {
+  .header-right-content {
+    margin-right: 2.5rem;
+  }
+
+  .phone-icon {
+    font-size: 2rem;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .logo-img-link {
+    width: 13rem;
+    margin-left: 1rem;
+  }
 }

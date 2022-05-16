@@ -1,0 +1,442 @@
+@import "../../Styling/global.scss";
+
+.classes-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+
+  // margin: 0 0 5rem 0;
+
+  // background-color: $cream;
+}
+
+// Sub menu section
+.classes-sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+
+  height: auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 80%;
+    max-width: 100rem;
+
+    list-style: none;
+
+    li {
+      font-family: $montserrat-semi-bold-font-family;
+
+      margin: 1rem 2rem 1rem 2rem;
+    }
+  }
+}
+
+.hashlink {
+  color: $headings-colour;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  &:active {
+    color: $brighter-logo-green;
+  }
+}
+
+@media (hover: hover) {
+  .hashlink:hover {
+    color: $brighter-logo-green;
+  }
+}
+
+// bg images
+.section-a,
+.section-b,
+.section-c,
+.section-d,
+.section-t {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // // Todo: Restyle this?
+  // margin: 1.5rem 0 0 0;
+}
+
+.section-a {
+  // margin-top: 0;
+  background-image: url("../FührerscheinClasses/Static/motorcycle.png");
+}
+
+.section-b {
+  background-image: url("../FührerscheinClasses/Static/car-bg.png");
+}
+
+.section-c {
+  background-image: url("../FührerscheinClasses/Static/truck3.png");
+}
+
+.section-d {
+  background-image: url("../FührerscheinClasses/Static/bus.png");
+}
+
+.section-t {
+  padding-bottom: 20rem;
+  background-image: url("../FührerscheinClasses/Static/tractor.png");
+}
+
+// Class section
+
+.class-section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20rem 0 0 0;
+}
+
+.class-heading-circle {
+  position: absolute;
+  top: -10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  height: 20rem;
+
+  // background-color: $dark-green;
+
+  background-image: linear-gradient(
+    to right top,
+    #1a4f43,
+    #1a5548,
+    #1a5b4c,
+    #1a6151,
+    #1a6756,
+    #1a6756,
+    #1a6756,
+    #1a6756,
+    #1a6151,
+    #1a5b4c,
+    #1a5548,
+    #1a4f43
+  );
+
+  border-radius: 50%;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.class-icons {
+  width: 7rem;
+  height: 7rem;
+}
+
+.headings {
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 80%;
+
+  color: $cream;
+
+  font-family: $roboto-regular-font-family;
+}
+
+.section-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: auto;
+  min-height: 50rem;
+
+  background-color: lighten($eggshell, 4%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $main-font-font-family;
+  font-size: 1.6rem;
+  color: $main-font-green;
+
+  width: 80%;
+  margin-top: 13rem;
+
+  h4 {
+    align-self: center;
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  ul {
+    margin: 3rem 0 0 0;
+    list-style: circle;
+
+    li {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+// For classes that include differing rules within lists
+.list-heading-style {
+  list-style: square;
+}
+
+.list-style-none {
+  list-style: none;
+  padding-left: 3rem;
+}
+
+.list-style-disc {
+  list-style: disc inside;
+  padding-left: 2rem;
+}
+
+.divider {
+  background-color: $dark-green;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  margin: 4rem 0 7rem 0;
+
+  h3 {
+    font-size: 2rem;
+    // text-decoration: overline;
+  }
+
+  ul {
+    list-style: none;
+    // text-align: center;
+  }
+}
+
+.email-link {
+  color: $blue;
+  &:active {
+    color: $logo-green;
+  }
+}
+
+// Gallery
+
+.gallery-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 80vw;
+  height: auto;
+
+  // background-color: #1a4f43;
+
+  margin: 10rem 0 10rem 0;
+}
+
+.gallery-heading {
+  width: 100%;
+
+  color: $headings-colour;
+  font-family: $headings-font;
+  font-size: $headings-font-size;
+
+  text-align: center;
+
+  hyphens: auto;
+  word-wrap: break-word;
+
+  padding: 0 2rem 0 2rem;
+  margin: 0 0 5rem 0;
+}
+
+.gallery-img {
+  width: 30rem;
+  height: 30rem;
+
+  // border: solid white 3rem;
+  margin: 2.5rem;
+
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+.modal-content-container {
+  position: relative;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.next-button,
+.previous-button,
+.close-modal-button {
+  position: absolute;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: $white;
+  font-size: 3.5rem;
+
+  cursor: pointer;
+}
+
+.next-button {
+  top: 45%;
+  right: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
+}
+
+.previous-button {
+  top: 45%;
+  left: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
+}
+
+.close-modal-button {
+  top: 1rem;
+  right: 1rem;
+
+  &:active {
+    color: $logo-green;
+  }
+}
+
+.close-modal-button * {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media (hover: hover) {
+  .close-modal-button:hover,
+  .next-button:hover,
+  .previous-button:hover {
+    color: $cream;
+    transform: scale(1.2);
+  }
+}
+
+// ? Media Queries
+
+@include x-small {
+  .classes-sub-menu {
+    background-color: $darker-green;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .hashlink {
+    color: $cream;
+    text-decoration: none;
+  }
+}
+
+@include small {
+  .classes-sub-menu {
+    background-color: $darker-green;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .hashlink {
+    color: $cream;
+    text-decoration: none;
+  }
+}
+
+@include medium {
+  .classes-sub-menu {
+    background-color: $darker-green;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .hashlink {
+    color: $cream;
+    text-decoration: none;
+  }
+}
+
+@include large {
+  .classes-sub-menu {
+    background-color: $white;
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 60vw;
+
+    object-fit: cover;
+  }
+}
+
+@include extra-large {
+  .classes-sub-menu {
+    background-color: $white;
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+
+  .modal-content-container {
+    height: auto;
+    width: 60vw;
+
+    object-fit: cover;
+  }
+}
+
+@include extra-extra-large {
+  .classes-sub-menu {
+    background-color: $white;
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .class-section {
+    margin: 30rem 0 0 0;
+  }
+
+  .next-button,
+  .previous-button {
+    font-size: 4.5rem;
+  }
+}

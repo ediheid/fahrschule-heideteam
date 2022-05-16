@@ -1,0 +1,202 @@
+@import "../../Styling/global.scss";
+
+.team-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: auto;
+
+  margin: 8rem 0 5rem 0;
+}
+
+.heading {
+  font-family: $headings-font;
+  font-size: 4rem;
+  color: $main-font-green;
+
+  text-align: center;
+
+  span {
+    font-family: $montserrat-thin-font-family;
+  }
+}
+
+.heading-underline {
+  height: 0.4rem;
+  width: 10rem;
+  margin-top: 1rem;
+  background-color: $dark-green;
+
+  border-radius: 5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 80%;
+
+  margin: 5rem 0 30rem 0;
+}
+
+// Both front and back
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  width: 28rem;
+  height: 38rem;
+
+  margin: 3rem;
+
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+// Front card
+
+.header-bg {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  height: 13rem;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='280' height='140' preserveAspectRatio='none' viewBox='0 0 280 140'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='280' height='140' x='0' y='0' fill='rgba(24%2c 106%2c 59%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c85.337C16.933%2c84.583%2c33.569%2c83.274%2c48.977%2c76.209C66.169%2c68.326%2c86.347%2c60.194%2c93.244%2c42.583C100.124%2c25.016%2c86.142%2c6.675%2c83.527%2c-12.009C80.898%2c-30.787%2c91.039%2c-53.836%2c77.841%2c-67.45C64.514%2c-81.196%2c40.381%2c-69.582%2c22.123%2c-75.345C3.278%2c-81.293%2c-10.073%2c-102.894%2c-29.779%2c-101.418C-49.794%2c-99.919%2c-64.981%2c-82.863%2c-78.274%2c-67.825C-91.665%2c-52.675%2c-102.114%2c-35.085%2c-105.958%2c-15.234C-109.923%2c5.239%2c-110.521%2c27.631%2c-100.278%2c45.795C-90.304%2c63.483%2c-70.751%2c73.248%2c-51.861%2c80.697C-35.381%2c87.196%2c-17.697%2c86.125%2c0%2c85.337' fill='%23114b2a'%3e%3c/path%3e%3cpath d='M280 262.748C302.61 261.865 320.192 244.257 338.185 230.537 354.843 217.83499999999998 374.621 206.03199999999998 380.677 185.978 386.569 166.468 370.504 147.495 369.408 127.145 368.153 103.845 386.58299999999997 78.238 373.82 58.70399999999999 361.31600000000003 39.56699999999999 332.894 40.355999999999995 310.325 36.721999999999994 290.147 33.473 269.726 32.492999999999995 250.289 38.812 231.212 45.013999999999996 214.689 56.864999999999995 201.603 72.069 188.548 87.237 176.94 105.062 176.059 125.056 175.207 144.379 189.936 159.903 196.936 177.934 204.48399999999998 197.377 204.225 220.299 218.81900000000002 235.2 234.792 251.50900000000001 257.189 263.639 280 262.748' fill='%231f894c'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='280' height='140' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+  //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='280' height='140' preserveAspectRatio='none' viewBox='0 0 280 140'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3crect width='280' height='140' x='0' y='0' fill='rgba(36%2c 77%2c 217%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c85.337C16.933%2c84.583%2c33.569%2c83.274%2c48.977%2c76.209C66.169%2c68.326%2c86.347%2c60.194%2c93.244%2c42.583C100.124%2c25.016%2c86.142%2c6.675%2c83.527%2c-12.009C80.898%2c-30.787%2c91.039%2c-53.836%2c77.841%2c-67.45C64.514%2c-81.196%2c40.381%2c-69.582%2c22.123%2c-75.345C3.278%2c-81.293%2c-10.073%2c-102.894%2c-29.779%2c-101.418C-49.794%2c-99.919%2c-64.981%2c-82.863%2c-78.274%2c-67.825C-91.665%2c-52.675%2c-102.114%2c-35.085%2c-105.958%2c-15.234C-109.923%2c5.239%2c-110.521%2c27.631%2c-100.278%2c45.795C-90.304%2c63.483%2c-70.751%2c73.248%2c-51.861%2c80.697C-35.381%2c87.196%2c-17.697%2c86.125%2c0%2c85.337' fill='%231a379a'%3e%3c/path%3e%3cpath d='M280 262.748C302.61 261.865 320.192 244.257 338.185 230.537 354.843 217.83499999999998 374.621 206.03199999999998 380.677 185.978 386.569 166.468 370.504 147.495 369.408 127.145 368.153 103.845 386.58299999999997 78.238 373.82 58.70399999999999 361.31600000000003 39.56699999999999 332.894 40.355999999999995 310.325 36.721999999999994 290.147 33.473 269.726 32.492999999999995 250.289 38.812 231.212 45.013999999999996 214.689 56.864999999999995 201.603 72.069 188.548 87.237 176.94 105.062 176.059 125.056 175.207 144.379 189.936 159.903 196.936 177.934 204.48399999999998 197.377 204.225 220.299 218.81900000000002 235.2 234.792 251.50900000000001 257.189 263.639 280 262.748' fill='%23627fe5'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='280' height='140' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.profile-photo {
+  position: absolute;
+  bottom: -5rem;
+
+  background-color: $white;
+
+  border-radius: 50%;
+
+  width: 13rem;
+  height: 13rem;
+
+  border: 3px solid $white;
+
+  object-fit: cover;
+
+  // Todo: Decide if there should be box shadow or not
+  //   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+  //     rgba(255, 255, 255, 0.25) 0px -12px 30px,
+  //     rgba(255, 255, 255, 0.25) 0px 4px 6px,
+  //     rgba(255, 255, 255, 0.25) 0px 12px 13px,
+  //     rgba(255, 255, 255, 0.25) 0px -3px 5px;
+}
+
+.text-container {
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  //   justify-content: flex-end;
+  align-items: center;
+
+  width: 85%;
+  height: 25rem;
+
+  h4,
+  h5 {
+    font-family: $headings-font;
+
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: $main-font-green;
+
+    margin-top: 6.5rem;
+
+    text-transform: capitalize;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+    color: $dark-green;
+
+    height: 3.3rem;
+
+    margin-bottom: 4.5rem;
+  }
+
+  button {
+    @include gradient-button-light;
+
+    padding: 1rem 2rem 1rem 2rem;
+    // margin: 2rem 0 0.5rem 0;
+  }
+}
+
+//  Back Card
+
+.cards-back,
+.back-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-back {
+  button {
+    @include gradient-button-dark;
+
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 0 3.5rem 0;
+  }
+
+  height: auto;
+  // width: 30rem;
+  width: 70vw;
+
+  margin: 5rem;
+
+  // Slightly larger back card
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+}
+
+.back-container {
+  justify-content: center;
+
+  height: 80%;
+
+  width: 80%;
+
+  margin: 3rem 0 3rem 0;
+
+  p {
+    text-align: center;
+    font-family: $main-font-font-family;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: darken($darker-green, 10%);
+
+    margin-top: 2rem;
+  }
+}
+
+//  Special Media Query for extra small devices
+@include extra-extra-small {
+  .cards {
+    width: 22rem;
+  }
+
+  // .cards-back {
+  //   height: 40rem;
+  // }
+}

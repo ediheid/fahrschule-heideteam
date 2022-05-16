@@ -1,0 +1,710 @@
+@import "../../Styling/global.scss";
+
+// ? Full page
+
+.home-page-container {
+  position: relative;
+  width: 100vw;
+}
+
+.headings {
+  color: $headings-colour;
+  font-family: $headings-font;
+  font-size: $headings-font-size;
+
+  text-align: center;
+
+  hyphens: auto;
+  word-wrap: break-word;
+
+  padding: 0 2rem 0 2rem;
+}
+
+// ? Landing View
+
+.landing-view-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+}
+
+.overlay-container {
+  position: absolute;
+  height: 65vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.circle-div {
+  position: relative;
+  margin: 0 0 0 12rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45rem;
+  height: 45rem;
+
+  border-radius: 50%;
+  background-color: rgba(26, 111, 92, 0.8);
+
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  z-index: 9005 !important;
+
+  h2 {
+    position: relative;
+
+    text-align: center;
+    font-family: $roboto-bold-italic-font-family;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: $cream;
+
+    transform: rotate(-10deg);
+
+    margin: 3rem;
+
+    letter-spacing: 0.2rem;
+    text-shadow: 0px 11px 10px rgba(84, 83, 81, 0.8);
+  }
+
+  h2::before {
+    background-image: url("../Home/Static/quote.png");
+    background-size: contain;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    content: "";
+
+    position: absolute;
+    left: -7.2rem;
+    top: -4rem;
+
+    transform: rotate(180deg);
+  }
+
+  h2::after {
+    background-image: url("../Home/Static/quote.png");
+    background-size: contain;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    content: "";
+
+    position: absolute;
+    right: -4.2rem;
+  }
+}
+
+.landing-extra-content-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  align-self: center;
+
+  height: 50vh;
+  width: 80%;
+
+  margin: 0 0 10rem 0;
+}
+
+.intro-text-container {
+  font-family: $main-font-font-family;
+  color: $main-font-green;
+  text-align: center;
+
+  font-size: 1.3rem;
+
+  margin-top: 4rem;
+}
+
+.more-button-container {
+  margin-top: 5rem;
+}
+
+.more-button {
+  @include gradient-button-dark;
+
+  width: 15rem;
+
+  text-decoration: none;
+}
+
+// ? About Section
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+  background-color: $eggshell;
+
+  padding: 6rem 0 10rem 0;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  padding: 1rem 0 4rem 0;
+}
+
+.about-paragraph {
+  color: $main-font-green;
+  font-family: $main-font-font-family;
+
+  font-size: $paragraph-font-size-small;
+
+  max-width: 35rem;
+
+  text-align: center;
+  line-height: 2.5rem;
+
+  padding: 3rem 0 4.5rem 0;
+}
+
+.gradient-button-dark {
+  @include gradient-button-dark;
+}
+
+.team-photo {
+  width: 60%;
+  max-width: 65rem;
+
+  object-fit: contain;
+  border-radius: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+// ? Extra Info Section
+
+.extra-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+
+  padding: 10rem 0 10rem 0;
+}
+
+.extra-info-heading {
+  width: 80%;
+  max-width: 60rem;
+
+  margin-top: 3rem;
+}
+
+.extra-info-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin: 6rem 0 2rem 0;
+}
+
+.info-boxes {
+  display: grid;
+  grid-template-rows: 11rem 9rem;
+
+  width: 20rem;
+  height: 20rem;
+
+  margin: 2rem;
+}
+
+.info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 7rem;
+  }
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  h4 {
+    font-family: $headings-font;
+    font-size: 1.4rem;
+  }
+}
+
+.gradient-button-light {
+  @include gradient-button-light;
+}
+
+.dividing-line {
+  background-color: lighten($dark-green, 5%);
+  height: 0.25rem;
+  width: 80%;
+
+  margin: 15rem 0 0 0;
+}
+
+// ? Berufskraftfahrerqualifikation Section
+
+.berufs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+
+  padding: 0 0 10rem 0;
+  margin-top: -2rem;
+}
+
+.berufs-background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $brighter-logo-green;
+  width: 100%;
+  height: auto;
+
+  padding: 10rem 0 10rem 0;
+  margin: 11rem 0 0 0;
+}
+
+.berufs-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 80rem;
+
+  img {
+    width: 10rem;
+    padding: 2rem;
+  }
+}
+
+.berufs-text {
+  font-family: $montserrat-semi-bold-font-family;
+  color: $white;
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  text-align: center;
+
+  width: 80%;
+  max-width: 80rem;
+
+  margin: 6rem 0 0 0;
+}
+
+.berufs-button {
+  @include transparent-button;
+
+  margin-top: 6rem;
+}
+
+// ? Contact Section
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: auto;
+  width: 100%;
+
+  margin: 9rem 0 14rem 0;
+}
+
+.contact-button {
+  @include gradient-button-dark;
+
+  margin-top: 6rem;
+}
+
+// ? ALL Media queries
+
+@include x-small {
+  .berufs-icons-container {
+    img {
+      width: 7rem;
+      padding: 2rem;
+    }
+  }
+
+  .berufs-text {
+    font-size: 1.6rem;
+
+    margin-top: 4rem;
+  }
+
+  .berufs-button {
+    margin-top: 5rem;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 3rem 0 0 3rem;
+    width: 15rem;
+    height: 15rem;
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+
+      margin: 0 0 1rem 0;
+    }
+
+    h2::before {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      left: 0.8rem;
+      top: -1.5rem;
+    }
+
+    h2::after {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      position: absolute;
+      right: 0.5rem;
+      bottom: -2.6rem;
+    }
+  }
+}
+
+@include small {
+  .berufs-icons-container {
+    img {
+      width: 7rem;
+      padding: 2rem;
+    }
+  }
+
+  .berufs-text {
+    font-size: 1.6rem;
+
+    margin-top: 4rem;
+  }
+
+  .berufs-button {
+    margin-top: 5rem;
+  }
+
+  .contact-section {
+    margin: 11rem 0 16rem 0;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 5rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  .intro-text-container {
+    font-size: 1.7rem;
+
+    margin: 6.5rem 0 0 0;
+  }
+}
+
+@include medium {
+  .about-content-container {
+    flex-direction: row;
+
+    width: 80%;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 6rem;
+  }
+
+  .team-photo {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 13rem 0 18rem 0;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 5rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    margin: 0;
+  }
+
+  .intro-text-container {
+    font-size: 1.7rem;
+
+    margin: 4.5rem 0 0 0;
+  }
+}
+
+@include large {
+  .about-content-container {
+    flex-direction: row;
+
+    width: 80%;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 6rem;
+  }
+
+  .team-photo {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
+
+  .overlay-container {
+    justify-content: flex-start;
+  }
+
+  .circle-div {
+    margin: 5rem 0 0 6rem;
+    width: 25rem;
+    height: 25rem;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 4.5rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 5rem;
+      height: 5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 5rem;
+      height: 5rem;
+
+      position: absolute;
+      right: 0;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    margin: 0 0 10rem 0;
+  }
+
+  .intro-text-container {
+    font-size: 1.5rem;
+
+    margin: 4.5rem 0 0 0;
+  }
+}
+
+@include extra-large {
+  .about-content-container {
+    flex-direction: row;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 8rem;
+  }
+
+  .team-photo {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
+
+  .circle-div {
+    margin: -5rem 0 0 6rem;
+    width: 30rem;
+    height: 30rem;
+
+    h2 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+
+      margin: 0 1rem 1rem 1rem;
+    }
+
+    h2::before {
+      width: 5rem;
+      height: 5rem;
+
+      left: 0.8rem;
+      top: -2.5rem;
+    }
+
+    h2::after {
+      width: 5rem;
+      height: 5rem;
+
+      position: absolute;
+      right: -0.5rem;
+      bottom: -4.9rem;
+    }
+  }
+
+  .landing-extra-content-container {
+    margin: 0 0 5rem 0;
+  }
+
+  .intro-text-container {
+    font-size: 1.5rem;
+
+    margin: 5.5rem 0 0 0;
+  }
+}
+
+@include extra-extra-large {
+  .about-section {
+    padding: 12rem 0 12rem 0;
+  }
+
+  .about-content-container {
+    flex-direction: row;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 10rem;
+  }
+
+  .team-photo {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
+
+  .landing-extra-content-container {
+    margin: 0 0 5rem 0;
+  }
+
+  .intro-text-container {
+    font-size: 1.5rem;
+
+    margin: 5.5rem 0 0 0;
+  }
+}
+
+@include extra-extra-small {
+  .landing-extra-content-container {
+    margin: 0 0 20rem 0;
+  }
+}

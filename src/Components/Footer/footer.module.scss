@@ -1,0 +1,119 @@
+@import "../../Styling/global.scss";
+
+.footer-container-element {
+  width: 100vw;
+  background-color: $black;
+
+  height: auto;
+}
+
+.footer-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem 0 5rem 0;
+}
+
+// All Elements
+.fahrschule-heading,
+.address,
+.designed-by,
+.copyright,
+.page-links {
+  text-align: center;
+  color: $footer-text;
+  letter-spacing: 0.03rem;
+  padding: 0 1rem 0 1rem;
+}
+
+// All clickable link elements - active and hover separate to avoid sticky state on mobile devices
+.page-links,
+.address,
+.edith-website-link,
+.extra-links {
+  &:active {
+    color: $logo-green;
+
+    text-decoration: underline;
+  }
+}
+
+@media (hover: hover) {
+  .page-links:hover,
+  .address:hover,
+  .edith-website-link:hover,
+  .extra-links:hover {
+    color: $logo-green;
+    transform: scale(1.1);
+
+    text-decoration: underline;
+  }
+}
+
+.fahrschule-heading {
+  font-family: $roboto-bold-font-family;
+  font-size: 2.5rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 3rem;
+}
+
+.page-links {
+  text-decoration: none;
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+.page-links:nth-of-type(2) {
+  margin-bottom: 2.5rem;
+}
+
+.address {
+  font-family: $montserrat-bold-font-family;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-bottom: 3rem;
+
+  line-height: 2rem;
+}
+
+.designed-by {
+  font-family: $montserrat-medium-font-family;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  width: 60%;
+  max-width: 40rem;
+
+  line-height: 1.8rem;
+
+  a {
+    color: darken($footer-text, 20%);
+    font-family: $montserrat-extra-bold-font-family;
+    text-decoration: none;
+  }
+}
+
+.copyright {
+  font-family: $montserrat-medium-font-family;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.extra-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  font-family: $montserrat-semi-bold-font-family;
+  font-size: 1.45rem;
+
+  width: 60%;
+  max-width: 50rem;
+}
+
+.extra-links {
+  color: $footer-text;
+  text-decoration: none;
+  padding: 0 1rem 1rem 1rem;
+}

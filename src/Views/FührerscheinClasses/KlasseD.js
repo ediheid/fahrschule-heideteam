@@ -1,0 +1,112 @@
+import React from "react";
+
+import styles from "../FührerscheinClasses/fschein-classes.module.scss";
+
+import D from "../FührerscheinClasses/Static/icon-d.png";
+
+const KlasseD = () => {
+  return (
+    <section className={styles["class-section"]} id="klasse-d">
+      <div className={styles["class-heading-circle"]}>
+        <img
+          className={styles["class-icons"]}
+          src={D}
+          alt="Trailer icons created by Freepik - Flaticon - https://www.flaticon.com/free-icons/trailer"
+        ></img>
+        <h2 className={styles["headings"]}>Klasse D</h2>
+      </div>
+
+      <div className={styles["section-content-container"]}>
+        <div className={styles["text-container"]}>
+          <h4>Fahrzeugart Große Busse</h4>
+          <ul>
+            <li>
+              Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
+              und A - die zur <b>Beförderung von mehr als acht Personen</b>{" "}
+              außer dem Fahrzeugführer ausgelegt und gebaut sind.
+            </li>
+
+            <li>
+              <b>Anhänger</b> mit einer zulässigen Gesamtmasse von{" "}
+              <b>nicht mehr als 750 kg</b> dürfen mitgeführt werden.
+            </li>
+
+            <li>Mindestalter:</li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>24</b> Jahre
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>23</b> Jahre nach beschleunigter Grundqualifikation.
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>21</b> Jahre nach erfolgter Grundqualifikation (umfangreiche
+              Prüfung bei der IHK) oder nach beschleunigter Grundqualifikation
+              (dann auf Linienverkehr bis 50 Kilometer Linienlänge beschränkt).
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>20</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum Berufskraftfahrer oder Fachkraft im Fahrbetrieb.
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb, auf
+              Linienverkehr bis 50 Kilometer Linienlänge beschränkt.
+            </li>
+
+            <li className={styles["list-style-disc"]}>
+              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb ohne Fahrgäste.
+            </li>
+
+            <li>
+              Geltungsdauer: <b>befristet auf 5 Jahre</b>
+            </li>
+
+            <li>
+              Vorbesitz erforderlich: <b>Ja, Klasse B</b>
+            </li>
+
+            <li>
+              Beinhaltet Klasse: <b>D1</b>
+            </li>
+
+            <li>
+              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+            </li>
+            <li>
+              Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
+            </li>
+
+            <li>
+              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+            </li>
+          </ul>
+
+          <div className={styles["price-section"]}>
+            <h3>Preisliste</h3>
+            <ul>
+              <li>
+                <b>
+                  Ausbildung bei uns nur auf speziell Anfrage!{" "}
+                  <a
+                    className={styles["email-link"]}
+                    href="mailto:w.franke@fsheideteam.de"
+                  >
+                    (w.franke@fsheideteam.de)
+                  </a>
+                </b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default KlasseD;

@@ -1,0 +1,57 @@
+@import "../../Styling/global.scss";
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  font-size: 3rem;
+  background: transparent;
+
+  cursor: pointer;
+
+  border: none;
+
+  z-index: 5000;
+
+  color: $logo-green;
+
+  &:active {
+    color: $dark-green;
+  }
+}
+
+@media (hover: hover) {
+  .back-to-top:hover {
+    color: $dark-green;
+    transition: 0.1s ease-in-out;
+  }
+}
+
+// ? Media Queries -
+
+@include medium {
+  .back-to-top {
+    font-size: 3.5rem;
+  }
+}
+
+// ? (hide on larger screens where full navigation is shown)
+
+@include large {
+  .back-to-top {
+    display: none;
+  }
+}
+
+@include extra-large {
+  .back-to-top {
+    display: none;
+  }
+}
+
+@include extra-extra-large {
+  .back-to-top {
+    display: none;
+  }
+}
