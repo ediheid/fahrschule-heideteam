@@ -159,6 +159,12 @@
     margin: 0 0 3.5rem 0;
   }
 
+  height: auto;
+  // width: 30rem;
+  width: 70vw;
+
+  margin: 5rem;
+
   // Slightly larger back card
   transform: scale(1.1);
   transition: 0.5s ease-in;
@@ -171,11 +177,14 @@
 
   width: 80%;
 
+  margin: 3rem 0 3rem 0;
+
   p {
     text-align: center;
     font-family: $main-font-font-family;
-    font-size: 1.4rem;
-    color: $dark-green;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: darken($darker-green, 10%);
 
     margin-top: 2rem;
   }
@@ -187,7 +196,7 @@
     width: 22rem;
   }
 
-  .cards-back {
-    height: 40rem;
-  }
+  // .cards-back {
+  //   height: 40rem;
+  // }
 }
