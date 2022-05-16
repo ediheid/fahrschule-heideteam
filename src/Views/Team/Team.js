@@ -111,7 +111,7 @@ const Team = () => {
       id: "3",
       img: michel,
       name: "Michel Klein",
-      duties: "aktueller Fahrlehreranwärter in Ausbildung für PKW",
+      duties: "ktueller Fahrlehreranwärter in Ausbildung für PKW",
 
       backInfoText1: "TBD",
     },
@@ -122,7 +122,7 @@ const Team = () => {
       id: "3",
       // img: examplePhoto,
       name: "Nancy Köhler",
-      duties: "die gute Seele im Büro (Organisation, Anmeldung etc.)",
+      duties: "Die gute Seele im Büro (Organisation, Anmeldung etc.)",
 
       backInfoText1: "TBD",
     },
