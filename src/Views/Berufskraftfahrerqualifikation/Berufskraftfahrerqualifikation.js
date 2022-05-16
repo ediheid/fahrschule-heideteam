@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "../Berufskraftfahrerqualifikation/bkf.module.scss";
 
 import radio1 from "../Berufskraftfahrerqualifikation/Static/radio1.png";
-import radio2 from "../Berufskraftfahrerqualifikation/Static/radio2.png";
 import wheel1 from "../Berufskraftfahrerqualifikation/Static/wheel1.png";
-import wheel2 from "../Berufskraftfahrerqualifikation/Static/wheel2.png";
 import wheel3 from "../Berufskraftfahrerqualifikation/Static/wheel3.png";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Berufskraftfahrerqualifikation = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["bkf-page-container"]}>
+    <div data-aos="fade-up" className={styles["bkf-page-container"]}>
       {/* // Todo: What should the heading be? */}
-      <h2 className={styles["heading"]}>Bkf</h2>
+
+      <div className={styles["heading-container"]}>
+        <h2 className={styles["heading"]}>Bkf</h2>
+        <div className={styles["heading-underline"]}></div>
+      </div>
 
       <p className={styles["text"]}>
         {" "}
