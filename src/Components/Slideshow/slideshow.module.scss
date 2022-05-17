@@ -1,9 +1,15 @@
 @import "../../Styling/global.scss";
 
+// .slider-container {
+//   height: 90vh;
+//   width: 100vw;
+
+//   margin: 10rem;
+// }
+
 .slideshow-image {
-  height: 85vh;
-  width: 100vw;
-  object-fit: cover;
+  height: 50%;
+  width: 50%;
 
   overflow: hidden;
 

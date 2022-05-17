@@ -31,8 +31,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={styles["landing-extra-content-container"]}>
-          {/* // Todo: About text to be styled */}
+        {/* <div className={styles["landing-extra-content-container"]}>
+       
           <div className={styles["intro-text-container"]}>
             <p>
               Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid
@@ -40,12 +40,7 @@ const Home = () => {
               ihren Führerschein mit unserer Hilfe bestanden.
             </p>
 
-            {/* // * This paragraph is in the about us sub section on the leanding page */}
-            {/* <p>
-              Unser Team setzt sich zusammen aus einer Reihe von älteren
-              Kollegen, mit sehr langer Berufserfahrung und jungen Kollegen,
-              welche die notwendige Frische ins Team mit bringen.
-            </p> */}
+     
             <p>
               Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
               Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es
@@ -58,19 +53,16 @@ const Home = () => {
               Weiterbildung von Berufskraftfahrern im Bereich des Güter-
               Personenverkehrs.
             </p>
-            {/* <p>
-              Wie es unser Logo erkennen lässt - Mit uns haben Sie den Bogen
-              raus!
-            </p> */}
+       
           </div>
 
-          {/* // ! Button only visible on small devices */}
+       
           <div className={styles["more-button-container"]}>
             <HashLink smooth to="/#about" className={styles["more-button"]}>
               Mehr
             </HashLink>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* // ? About Section*/}
