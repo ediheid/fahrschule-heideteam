@@ -38,7 +38,7 @@
 
 .overlay-container {
   position: absolute;
-  height: 90vh;
+  height: 70vh;
   width: 100%;
 
   display: flex;
@@ -64,10 +64,11 @@
   min-width: 45rem;
   min-height: 45rem;
 
-  border: solid 3px $white;
+  // border: solid 3px $white;
 
   border-radius: 50%;
   background-color: rgba(26, 111, 92, 0.8);
+  // background-color: $dark-green;
 
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -84,7 +85,7 @@
     font-family: $roboto-bold-italic-font-family;
     font-size: 5rem;
     line-height: 6rem;
-    color: $cream;
+    color: $white;
 
     transform: rotate(-10deg);
 
