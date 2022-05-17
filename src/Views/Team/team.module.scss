@@ -164,16 +164,15 @@
     font-size: 1.7rem;
     // align-self: flex-start;
 
-    width: 28rem;
-    height: 38rem;
-
     // margin: -0.9rem 0 2rem 1.5rem;
 
     z-index: 500;
   }
 
   margin: 5rem;
+  width: 90vw;
 
+  height: auto;
   // Slightly larger back card
   // transform: scale(1.1);
   // transition: 0.5s ease-in;
@@ -182,10 +181,12 @@
 }
 
 .back-container {
-  overflow: scroll;
+  // overflow: scroll;
   // justify-content: center;
 
   margin: 3rem 0 3rem 0;
+
+  height: auto;
 
   p {
     text-align: center;

@@ -45,7 +45,7 @@ const FlipCard = ({ card }) => {
 
       {/* // ? Back Card */}
 
-      <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
+      <div className={styles["cards-back"]}>
         <div className={styles["back-container"]}>
           {/* Back to front of card button */}
 
