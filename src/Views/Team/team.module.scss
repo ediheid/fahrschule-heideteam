@@ -182,6 +182,7 @@
 }
 
 .back-container {
+  overflow: scroll !important;
   justify-content: center;
 
   height: 80%;
@@ -216,8 +217,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  overflow: scroll !important;
 
   width: 22rem;
   margin: 0 1rem 1rem 1rem;
