@@ -65,7 +65,7 @@ const FlipCard = ({ card }) => {
           {/* </div> */}
           {/* </div> */}
 
-          <span className={styles["scroll-for-more"]}>Scroll for more..</span>
+          {/* <span className={styles["scroll-for-more"]}>Scroll for more..</span> */}
           {/* <MdOutlineSwipe className={styles["swipe-icon"]} /> */}
         </div>
       </div>

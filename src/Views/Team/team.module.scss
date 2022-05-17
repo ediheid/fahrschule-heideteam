@@ -182,7 +182,7 @@
 }
 
 .back-container {
-  overflow: scroll !important;
+  overflow: scroll;
   justify-content: center;
 
   height: 80%;
@@ -212,27 +212,27 @@
 //   margin-top: -3rem;
 // }
 
-.back-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// .back-text-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
 
-  width: 22rem;
-  margin: 0 1rem 1rem 1rem;
+//   width: 22rem;
+//   margin: 0 1rem 1rem 1rem;
 
-  // border: solid red 2px;
-}
+//   // border: solid red 2px;
+// }
 
-.scroll-for-more {
-  font-family: $roboto-italic-font-family;
-  font-size: 1.2rem;
-  margin-bottom: -2.5rem;
+// .scroll-for-more {
+//   font-family: $roboto-italic-font-family;
+//   font-size: 1.2rem;
+//   margin-bottom: -2.5rem;
 
-  padding-top: 2rem;
+//   padding-top: 2rem;
 
-  color: $logo-green;
-}
+//   color: $logo-green;
+// }
 
 //  Special Media Query for extra small devices
 @include extra-extra-small {
