@@ -48,9 +48,21 @@ const Berufskraftfahrerqualifikation = () => {
       <span className={styles["text"]}> Liebe Grüße!</span>
 
       <div className={styles["gallery-section"]}>
-        <img className={styles["img"]} src={wheel1}></img>
-        <img className={styles["img"]} src={wheel3}></img>
-        <img className={styles["img"]} src={radio1}></img>
+        <img
+          className={styles["img"]}
+          src={wheel1}
+          alt="close up of truck steering wheel"
+        ></img>
+        <img
+          className={styles["img"]}
+          src={wheel3}
+          alt="close up of truck steering wheel"
+        ></img>
+        <img
+          className={styles["img"]}
+          src={radio1}
+          alt="close up of truck radio"
+        ></img>
       </div>
 
       <p className={styles["text"]}>

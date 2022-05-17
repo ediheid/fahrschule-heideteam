@@ -44,16 +44,20 @@ const FlipCard = ({ card }) => {
 
       <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
         <div className={styles["back-container"]}>
-          <p>{card.backInfoText1}</p>
-          <br />
-          <p>{card.backInfoText2}</p>
-          <br />
-          <p>{card.backInfoText3}</p>
-          <br />
-          <p>{card.backInfoText4}</p>
-        </div>
+          <div className={styles["scroll-container"]}>
+            <div className={styles["back-text-container"]}>
+              <p>{card.backInfoText1}</p>
+              <br />
+              <p>{card.backInfoText2}</p>
+              <br />
+              <p>{card.backInfoText3}</p>
+              <br />
+              <p>{card.backInfoText4}</p>
 
-        <button onClick={handleCardFlip}>Zurück</button>
+              <button onClick={handleCardFlip}>Zurück</button>
+            </div>
+          </div>
+        </div>
       </div>
     </ReactCardFlip>
   );
