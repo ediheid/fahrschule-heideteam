@@ -29,18 +29,22 @@ const Home = () => {
 
             {/* <div className={styles["smaller-circle"]}></div> */}
           </div>
+
+          <div className={styles["intro-text-container"]}>
+            <h2>Find out more about us!</h2>
+          </div>
         </div>
 
-        {/* <div className={styles["landing-extra-content-container"]}>
-       
-          <div className={styles["intro-text-container"]}>
-            <p>
+        <div className={styles["landing-extra-content-container"]}>
+          {/* <div className={styles["intro-text-container"]}>
+            <h2>Find out more about us!</h2>
+
+            {/* <p>
               Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid
               dem haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich
               ihren Führerschein mit unserer Hilfe bestanden.
             </p>
 
-     
             <p>
               Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
               Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es
@@ -52,17 +56,15 @@ const Home = () => {
               Des weiteren beschäftigen wir uns auch mit der Aus- und
               Weiterbildung von Berufskraftfahrern im Bereich des Güter-
               Personenverkehrs.
-            </p>
-       
-          </div>
+            </p> */}
+          {/* </div> */}
 
-       
-          <div className={styles["more-button-container"]}>
+          {/* <div className={styles["more-button-container"]}>
             <HashLink smooth to="/#about" className={styles["more-button"]}>
               Mehr
             </HashLink>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </section>
 
       {/* // ? About Section*/}

@@ -8,10 +8,12 @@
 // }
 
 .slideshow-image {
-  height: 50%;
-  width: 50%;
+  height: 90vh;
+  width: 100vw;
 
   overflow: hidden;
+
+  object-fit: cover;
 
   // margin-bottom: 2rem;
 }
