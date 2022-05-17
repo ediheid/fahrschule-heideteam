@@ -31,7 +31,12 @@ const Home = () => {
           </div>
 
           <div className={styles["intro-text-container"]}>
-            <h2>Find out more about us!</h2>
+            {/* <h2 className={styles["landing-intro-heading"]}>
+              Find out more about us!
+            </h2> */}
+
+            <button className={styles["button-1"]}>Explore</button>
+            <button className={styles["button-2"]}>Klassen</button>
           </div>
         </div>
 
