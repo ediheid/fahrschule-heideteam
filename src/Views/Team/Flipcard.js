@@ -67,9 +67,9 @@ const FlipCard = ({ card }) => {
           {/* <MdOutlineSwipe className={styles["swipe-icon"]} /> */}
         </div>
 
-        {/* <button onClick={handleCardFlip}>
+        <button onClick={handleCardFlip}>
           <RiArrowGoBackLine />
-        </button> */}
+        </button>
       </div>
     </ReactCardFlip>
   );
