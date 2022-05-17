@@ -48,9 +48,7 @@ const FlipCard = ({ card }) => {
       <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
         <div className={styles["back-container"]}>
           {/* Back to front of card button */}
-          <button onClick={handleCardFlip}>
-            <RiArrowGoBackLine />
-          </button>
+
           {/* <div className={styles["scroll-container"]}> */}
           {/* <div className={styles["back-text-container"]}> */}
           <p>{card.backInfoText1}</p>
@@ -68,6 +66,10 @@ const FlipCard = ({ card }) => {
           {/* <span className={styles["scroll-for-more"]}>Scroll for more..</span> */}
           {/* <MdOutlineSwipe className={styles["swipe-icon"]} /> */}
         </div>
+
+        {/* <button onClick={handleCardFlip}>
+          <RiArrowGoBackLine />
+        </button> */}
       </div>
     </ReactCardFlip>
   );
