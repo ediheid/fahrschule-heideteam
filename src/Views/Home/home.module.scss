@@ -95,32 +95,32 @@
     text-shadow: 0px 11px 10px rgba(84, 83, 81, 0.8);
   }
 
-  h2::before {
-    background-image: url("../Home/Static/quote.png");
-    background-size: contain;
-    display: inline-block;
-    width: 8rem;
-    height: 8rem;
-    content: "";
+  // h2::before {
+  //   background-image: url("../Home/Static/quote.png");
+  //   background-size: contain;
+  //   display: inline-block;
+  //   width: 8rem;
+  //   height: 8rem;
+  //   content: "";
 
-    position: absolute;
-    left: -7.2rem;
-    top: -4rem;
+  //   position: absolute;
+  //   left: -7.2rem;
+  //   top: -4rem;
 
-    transform: rotate(180deg);
-  }
+  //   transform: rotate(180deg);
+  // }
 
-  h2::after {
-    background-image: url("../Home/Static/quote.png");
-    background-size: contain;
-    display: inline-block;
-    width: 8rem;
-    height: 8rem;
-    content: "";
+  // h2::after {
+  //   background-image: url("../Home/Static/quote.png");
+  //   background-size: contain;
+  //   display: inline-block;
+  //   width: 8rem;
+  //   height: 8rem;
+  //   content: "";
 
-    position: absolute;
-    right: -4.2rem;
-  }
+  //   position: absolute;
+  //   right: -4.2rem;
+  // }
 }
 
 .landing-extra-content-container {
@@ -165,8 +165,10 @@
 .button-1,
 .button-2 {
   padding: 1rem 1.8rem 1rem 1.8rem !important;
-
+  text-decoration: none;
   box-shadow: 0 0 10px rgb(109, 108, 108) !important;
+
+  cursor: pointer;
 }
 
 .button-1 {
@@ -423,39 +425,39 @@
   }
 
   .overlay-container {
-    height: 70vh;
+    height: 75vh;
   }
 
   .circle-div {
     // margin: 3rem 0 0 3rem;
-    width: 20rem;
-    height: 20rem;
-    min-width: 20rem;
-    min-height: 20rem;
+    width: 21rem;
+    height: 21rem;
+    min-width: 21rem;
+    min-height: 21rem;
 
     h2 {
       font-size: 2.5rem;
       line-height: 3rem;
 
-      margin: 0 0 1rem 0;
+      margin: 1rem 1rem 1.5rem 1rem;
     }
 
-    h2::before {
-      width: 2.5rem;
-      height: 2.5rem;
+    // h2::before {
+    //   width: 3.5rem;
+    //   height: 3.5rem;
 
-      left: 0.8rem;
-      top: -1.5rem;
-    }
+    //   left: 0.1rem;
+    //   top: -2.5rem;
+    // }
 
-    h2::after {
-      width: 2.5rem;
-      height: 2.5rem;
+    // h2::after {
+    //   width: 3.5rem;
+    //   height: 3.5rem;
 
-      position: absolute;
-      right: 0.5rem;
-      bottom: -2.6rem;
-    }
+    //   position: absolute;
+    //   right: 0.1rem;
+    //   bottom: -3.6rem;
+    // }
   }
 }
 

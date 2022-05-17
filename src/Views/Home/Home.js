@@ -1,6 +1,7 @@
 import React from "react";
 import Zoom from "react-reveal/Bounce";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
@@ -35,8 +36,12 @@ const Home = () => {
               Find out more about us!
             </h2> */}
 
-            <button className={styles["button-1"]}>Explore</button>
-            <button className={styles["button-2"]}>Klassen</button>
+            <HashLink smooth to="/#about" className={styles["button-1"]}>
+              Explore
+            </HashLink>
+            <Link smooth to="/klassen" className={styles["button-2"]}>
+              Klassen
+            </Link>
           </div>
         </div>
 
