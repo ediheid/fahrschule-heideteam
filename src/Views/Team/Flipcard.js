@@ -4,6 +4,9 @@ import ReactCardFlip from "react-card-flip";
 
 import styles from "../Team/team.module.scss";
 
+import { RiArrowGoBackLine } from "react-icons/ri";
+import { MdOutlineSwipe } from "react-icons/md";
+
 const FlipCard = ({ card }) => {
   // Flip state
   const [isFlipped, setIsFlipped] = useState(false);
@@ -44,6 +47,10 @@ const FlipCard = ({ card }) => {
 
       <div className={`${styles["cards"]} ${styles["cards-back"]}`}>
         <div className={styles["back-container"]}>
+          {/* Back to front of card button */}
+          <button onClick={handleCardFlip}>
+            <RiArrowGoBackLine />
+          </button>
           <div className={styles["scroll-container"]}>
             <div className={styles["back-text-container"]}>
               <p>{card.backInfoText1}</p>
@@ -54,9 +61,12 @@ const FlipCard = ({ card }) => {
               <br />
               <p>{card.backInfoText4}</p>
 
-              <button onClick={handleCardFlip}>Zurück</button>
+              {/* <button onClick={handleCardFlip}>Zurück</button> */}
             </div>
           </div>
+
+          <span className={styles["scroll-for-more"]}>Scroll for more..</span>
+          {/* <MdOutlineSwipe className={styles["swipe-icon"]} /> */}
         </div>
       </div>
     </ReactCardFlip>

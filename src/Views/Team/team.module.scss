@@ -155,8 +155,18 @@
   button {
     @include gradient-button-dark;
 
-    padding: 1rem 2rem 1rem 2rem;
-    margin: 0 0 3.5rem 0;
+    padding: 1.3rem 1rem 0.8rem 1rem;
+    // margin: 0 0 3.5rem 0;
+
+    // background: none;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    align-self: flex-start;
+
+    margin: -0.9rem 0 2rem 1.5rem;
+
+    z-index: 500;
   }
 
   width: 28rem;
@@ -167,6 +177,8 @@
   // Slightly larger back card
   transform: scale(1.1);
   transition: 0.5s ease-in;
+
+  background-color: rgba(167, 167, 167, 0.2);
 }
 
 .back-container {
@@ -197,6 +209,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: -3rem;
 }
 
 .back-text-container {
@@ -206,9 +220,19 @@
   justify-content: center;
 
   width: 22rem;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 1rem 1rem;
 
   // border: solid red 2px;
+}
+
+.scroll-for-more {
+  font-family: $roboto-italic-font-family;
+  font-size: 1.2rem;
+  margin-bottom: -2.5rem;
+
+  padding-top: 2rem;
+
+  color: $logo-green;
 }
 
 //  Special Media Query for extra small devices
@@ -217,7 +241,11 @@
     width: 22rem;
   }
 
-  // .cards-back {
-  //   height: 40rem;
-  // }
+  .scroll-container {
+    width: 21rem;
+  }
+
+  .back-text-container {
+    width: 18rem;
+  }
 }
