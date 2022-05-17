@@ -38,7 +38,7 @@
 
 .overlay-container {
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
 
   display: flex;
@@ -85,11 +85,11 @@
     font-family: $roboto-bold-italic-font-family;
     font-size: 5rem;
     line-height: 6rem;
-    color: $white;
+    color: $cream;
 
     transform: rotate(-10deg);
 
-    margin: 3rem;
+    margin: 4rem;
 
     letter-spacing: 0.2rem;
     text-shadow: 0px 11px 10px rgba(84, 83, 81, 0.8);
@@ -423,7 +423,7 @@
   }
 
   .overlay-container {
-    height: 90vh;
+    height: 70vh;
   }
 
   .circle-div {
