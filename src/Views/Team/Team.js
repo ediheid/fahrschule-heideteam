@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import styles from "../Team/team.module.scss";
 
-import FlipCard from "./Flipcard";
+import TeamCard from "./TeamCards";
 
 // Import individual team photos
 import wolli from "../Team/Static/wolli.png";
@@ -152,7 +152,7 @@ const Team = () => {
       <div className={styles["cards-container"]}>
         {/*  Cards are mapped here from array - passed into FlipCard*/}
         {cards.map((card) => (
-          <FlipCard key={card.id} card={card} />
+          <TeamCard key={card.id} card={card} />
         ))}
       </div>
     </div>
