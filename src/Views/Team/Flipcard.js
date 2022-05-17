@@ -5,7 +5,7 @@ import ReactCardFlip from "react-card-flip";
 import styles from "../Team/team.module.scss";
 
 import { RiArrowGoBackLine } from "react-icons/ri";
-import { MdOutlineSwipe } from "react-icons/md";
+// import { MdOutlineSwipe } from "react-icons/md";
 
 const FlipCard = ({ card }) => {
   // Flip state
