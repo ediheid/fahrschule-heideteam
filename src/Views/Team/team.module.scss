@@ -201,23 +201,23 @@
   }
 }
 
-.scroll-container {
-  overflow: scroll !important;
+// .scroll-container {
+//   width: 27rem;
 
-  width: 27rem;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-top: -3rem;
-}
+//   margin-top: -3rem;
+// }
 
 .back-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  overflow: scroll !important;
 
   width: 22rem;
   margin: 0 1rem 1rem 1rem;

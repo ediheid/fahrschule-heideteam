@@ -51,19 +51,19 @@ const FlipCard = ({ card }) => {
           <button onClick={handleCardFlip}>
             <RiArrowGoBackLine />
           </button>
-          <div className={styles["scroll-container"]}>
-            <div className={styles["back-text-container"]}>
-              <p>{card.backInfoText1}</p>
-              <br />
-              <p>{card.backInfoText2}</p>
-              <br />
-              <p>{card.backInfoText3}</p>
-              <br />
-              <p>{card.backInfoText4}</p>
+          {/* <div className={styles["scroll-container"]}> */}
+          <div className={styles["back-text-container"]}>
+            <p>{card.backInfoText1}</p>
+            <br />
+            <p>{card.backInfoText2}</p>
+            <br />
+            <p>{card.backInfoText3}</p>
+            <br />
+            <p>{card.backInfoText4}</p>
 
-              {/* <button onClick={handleCardFlip}>Zurück</button> */}
-            </div>
+            {/* <button onClick={handleCardFlip}>Zurück</button> */}
           </div>
+          {/* </div> */}
 
           <span className={styles["scroll-for-more"]}>Scroll for more..</span>
           {/* <MdOutlineSwipe className={styles["swipe-icon"]} /> */}
