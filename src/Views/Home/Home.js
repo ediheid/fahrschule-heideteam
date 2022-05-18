@@ -1,5 +1,10 @@
 import React from "react";
-import Zoom from "react-reveal/Bounce";
+import Bounce from "react-reveal/Bounce";
+import Zoom from "react-reveal/Zoom";
+import Flip from "react-reveal/Flip";
+import LightSpeed from "react-reveal/LightSpeed";
+import Tada from "react-reveal/Tada";
+
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
@@ -20,9 +25,7 @@ const Home = () => {
         <div className={styles["heading-content-container"]}>
           <h2>
             {" "}
-            {/* <Zoom cascade right> */}
-            Eure Fahrschule in Radeberg und Umgebung!
-            {/* </Zoom> */}
+            <Bounce left>Eure Fahrschule in Radeberg und Umgebung!</Bounce>
           </h2>
 
           <div className={styles["button-container"]}>
