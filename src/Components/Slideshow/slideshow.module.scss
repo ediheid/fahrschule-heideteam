@@ -44,14 +44,8 @@
   }
 }
 
-@include extra-large {
+@include extra-extra-large {
   .slideshow-image {
-    height: 60vh;
+    height: 73vh;
   }
 }
-
-// @include extra-extra-large {
-//   .slideshow-image {
-//     height: 60vh;
-//   }
-// }
