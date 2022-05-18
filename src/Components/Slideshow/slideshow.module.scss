@@ -35,18 +35,14 @@
 @include medium {
   .slideshow-image {
     height: 75vh;
-
-    margin-bottom: 2.5rem;
   }
 }
 
-// @include large {
-//   .slideshow-image {
-//     height: 80vh;
-
-//     margin-bottom: 5.5rem;
-//   }
-// }
+@include large {
+  .slideshow-image {
+    height: 80vh;
+  }
+}
 
 // @include extra-large {
 //   .slideshow-image {

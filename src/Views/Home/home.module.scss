@@ -434,3 +434,18 @@
     margin-top: 3.5rem;
   }
 }
+
+@include large {
+  .heading-content-container {
+    margin: 5rem 0 5rem 0;
+
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .button-container {
+    margin-top: 3.5rem;
+  }
+}
