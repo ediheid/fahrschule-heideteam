@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import Roll from "react-reveal/Fade";
 
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { AppContext } from "../../App";
 
 import styles from "../Navbar/mobile-navigation.module.scss";
@@ -72,6 +73,19 @@ const MobileNav = () => {
             >
               <li> Team</li>
             </Link>
+
+            <hr />
+
+            {/* // ? About */}
+            <li>
+              <HashLink
+                className={styles["nav-links"]}
+                to="/#about"
+                alt="Link to team page"
+              >
+                Über Uns
+              </HashLink>
+            </li>
 
             <hr />
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import styles from "../Navbar/desktop-navigation.module.scss";
 
@@ -63,6 +64,17 @@ const DesktopNav = () => {
             >
               Team
             </Link>
+          </li>
+
+          {/* // ? About */}
+          <li>
+            <HashLink
+              className={styles["nav-links"]}
+              to="/#about"
+              alt="Link to team page"
+            >
+              Über Uns
+            </HashLink>
           </li>
 
           {/* // ? Berufskraftfahrerqualifikation */}
