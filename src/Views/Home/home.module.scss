@@ -494,55 +494,109 @@
 
 // ? ALL Media queries
 
+@include x-small {
+  .berufs-icons-container {
+    img {
+      width: 7rem;
+      padding: 2rem;
+    }
+  }
+
+  .berufs-text {
+    font-size: 1.6rem;
+
+    margin-top: 4rem;
+  }
+
+  .berufs-button {
+    margin-top: 5rem;
+  }
+}
+
 @include small {
   .heading-content-container {
-    // height: 15vh;
-    // margin: 2rem 0 3rem 0;
-    // padding-bottom: 2rem;
-
     h2 {
       font-size: 3.5rem;
       line-height: 4.5rem;
     }
   }
 
-  // .button-container {
-  //   margin-top: 3.5rem;
-  // }
+  .berufs-icons-container {
+    img {
+      width: 7rem;
+      padding: 2rem;
+    }
+  }
+
+  .berufs-text {
+    font-size: 1.6rem;
+
+    margin-top: 4rem;
+  }
+
+  .berufs-button {
+    margin-top: 5rem;
+  }
+
+  .contact-section {
+    margin: 11rem 0 16rem 0;
+  }
 }
 
 @include medium {
   .heading-content-container {
-    // height: 15vh;
-    // margin: 2rem 0 3rem 0;
-    // padding-bottom: 2rem;
-
     h2 {
       font-size: 4.5rem;
     }
   }
 
-  // .button-container {
-  //   margin-top: 3.5rem;
-  // }
+  .about-content-container {
+    flex-direction: row;
+
+    width: 80%;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 6rem;
+  }
+
+  .team-photo {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 13rem 0 18rem 0;
+  }
 }
 
 @include large {
   .heading-content-container {
-    // height: 15vh;
-    // margin: 5rem 0 3rem 0;
-    // padding-bottom: 0;
-
     h2 {
       font-size: 4.5rem;
-
-      // line-height: 4.5rem;
     }
   }
 
-  // .button-container {
-  //   margin-top: 3.5rem;
-  // }
+  .about-content-container {
+    flex-direction: row;
+
+    width: 80%;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 6rem;
+  }
+
+  .team-photo {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
 }
 
 @include extra-large {
@@ -554,33 +608,53 @@
     h2 {
       font-size: 5.5rem;
     }
-
-    // h2 {
-    //   margin-bottom: 1rem;
-    // }
   }
 
-  // .button-container {
-  //   bottom: 15rem;
-  // }
+  .about-content-container {
+    flex-direction: row;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 8rem;
+  }
+
+  .team-photo {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
 }
 
 @include extra-extra-large {
   .heading-content-container {
-    // height: 15vh;
-    // margin: 2rem 0 2rem 0;
-    // padding-bottom: 0;
-
     h2 {
       font-size: 5.5rem;
     }
   }
 
-  // .button-container {
-  //   margin-top: 3.5rem;
-  // }
+  .about-section {
+    padding: 12rem 0 12rem 0;
+  }
 
-  // .button-container {
-  //   bottom: 6rem;
-  // }
+  .about-content-container {
+    flex-direction: row;
+  }
+
+  .about-text-container {
+    width: 50%;
+    margin-right: 10rem;
+  }
+
+  .team-photo {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .contact-section {
+    margin: 15rem 0 20rem 0;
+  }
 }
