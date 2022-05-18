@@ -103,11 +103,6 @@
     letter-spacing: 0.2rem;
     text-shadow: 0px 11px 10px rgba(84, 83, 81, 0.5);
   }
-
-  p {
-    font-family: $main-font-font-family;
-    font-size: 1.5rem;
-  }
 }
 
 .button-container {
@@ -447,5 +442,11 @@
 
   .button-container {
     margin-top: 3.5rem;
+  }
+}
+
+@include extra-large {
+  .heading-content-container {
+    margin-top: 3rem;
   }
 }

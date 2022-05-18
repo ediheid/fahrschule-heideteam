@@ -44,11 +44,11 @@
   }
 }
 
-// @include extra-large {
-//   .slideshow-image {
-//     height: 45vh;
-//   }
-// }
+@include extra-large {
+  .slideshow-image {
+    height: 60vh;
+  }
+}
 
 // @include extra-extra-large {
 //   .slideshow-image {

@@ -35,7 +35,7 @@ const Home = () => {
             </HashLink>
           </div>
 
-          {/* <p>
+          {/* <p className={styles["heading-area-paragraph"]}>
             Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid dem
             haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich ihren
             Führerschein mit unserer Hilfe bestanden.
