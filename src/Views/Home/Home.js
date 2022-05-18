@@ -17,25 +17,47 @@ const Home = () => {
       {/* // ? Landing View section */}
 
       <section className={styles["landing-view-container"]}>
-        <Slideshow />
+        <div className={styles["heading-content-container"]}>
+          <h2>
+            {" "}
+            {/* <Zoom cascade right> */}
+            Eure Fahrschule in Radeberg und Umgebung!
+            {/* </Zoom> */}
+          </h2>
 
-        <div className={styles["overlay-container"]}>
-          <div className={styles["circle-div"]}>
-            <h2>
-              {" "}
-              {/* <Zoom cascade right> */}
-              Eure Fahrschule in Radeberg und Umgebung!
-              {/* </Zoom> */}
-            </h2>
-
-            {/* <div className={styles["smaller-circle"]}></div> */}
+          <div className={styles["button-container"]}>
+            <HashLink
+              smooth
+              to="/#about"
+              className={styles["more-about-button"]}
+            >
+              Mehr über uns
+            </HashLink>
           </div>
 
-          <div className={styles["intro-text-container"]}>
-            {/* <h2 className={styles["landing-intro-heading"]}>
-              Find out more about us!
-            </h2> */}
+          {/* <p>
+            Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid dem
+            haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich ihren
+            Führerschein mit unserer Hilfe bestanden.
+          </p> */}
 
+          {/* <div>
+            <HashLink smooth to="/#about" className={styles["button-1"]}>
+              Explore
+            </HashLink>
+            <Link smooth to="/klassen" className={styles["button-2"]}>
+              Klassen
+            </Link>
+          </div> */}
+
+          {/* <div className={styles["smaller-circle"]}></div> */}
+        </div>
+
+        <Slideshow />
+
+        {/* <div className={styles["overlay-container"]}>
+          <div className={styles["intro-text-container"]}>
+         
             <HashLink smooth to="/#about" className={styles["button-1"]}>
               Explore
             </HashLink>
@@ -43,7 +65,7 @@ const Home = () => {
               Klassen
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles["landing-extra-content-container"]}>
           {/* <div className={styles["intro-text-container"]}>

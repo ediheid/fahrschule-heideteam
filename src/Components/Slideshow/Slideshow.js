@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 
 // !Override of slick-carousel styling, all styles marked as !important to make sure they stick
-// import "../Slideshow/dots.scss";
+import "../Slideshow/dots.scss";
 
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";

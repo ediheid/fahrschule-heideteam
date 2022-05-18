@@ -8,14 +8,16 @@
 // }
 
 .slideshow-image {
-  height: 75vh;
+  // margin-top: 20rem;
+
+  height: 65vh;
   width: 100vw;
 
   overflow: hidden;
 
   object-fit: cover;
 
-  margin-bottom: 2rem;
+  // margin-bottom: 2.2rem;
 }
 
 // @include x-small {
@@ -30,17 +32,21 @@
 //   }
 // }
 
-// @include medium {
-//   .slideshow-image {
-//     height: 55vh;
-//   }
-// }
+@include medium {
+  .slideshow-image {
+    height: 85vh;
 
-// @include large {
-//   .slideshow-image {
-//     height: 45vh;
-//   }
-// }
+    margin-bottom: 2.5rem;
+  }
+}
+
+@include large {
+  .slideshow-image {
+    height: 80vh;
+
+    margin-bottom: 5.5rem;
+  }
+}
 
 // @include extra-large {
 //   .slideshow-image {

@@ -3,12 +3,12 @@
 // ? Dots
 
 .slick-dots {
-  bottom: 4rem !important;
+  top: 6rem !important;
   background-color: transparent !important;
   z-index: 80000 !important;
 
   li {
-    // margin: 0 1.5rem 0 1.5rem !important;
+    margin: 0 1.5rem 0 1.5rem !important;
 
     button {
       &:hover,
