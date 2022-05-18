@@ -92,18 +92,19 @@
     //   36%,
     //   75% {
     //     color: #ffe6ff;
-    //     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    //       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    //       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    //     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem $brighter-logo-green,
+    //       -0.2rem 0.1rem 1rem $brighter-logo-green,
+    //       0.2rem 0.1rem 1rem $brighter-logo-green, 0 -0.5rem 2rem $logo-green,
+    //       0 0.5rem 3rem $logo-green;
     //   }
     //   28%,
     //   33% {
-    //     color: #ff65bd;
+    //     color: $brighter-logo-green;
     //     text-shadow: none;
     //   }
     //   82%,
     //   97% {
-    //     color: #ff2483;
+    //     color: $logo-green;
     //     text-shadow: none;
     //   }
     // }
@@ -118,14 +119,15 @@
 
     // @keyframes shine {
     //   0% {
-    //     color: #6b1839;
+    //     color: $darker-green;
     //     text-shadow: none;
     //   }
     //   100% {
     //     color: #ffe6ff;
-    //     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    //       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    //       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    //     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem $brighter-logo-green,
+    //       -0.2rem 0.1rem 1rem $brighter-logo-green,
+    //       0.2rem 0.1rem 1rem $brighter-logo-green, 0 -0.5rem 2rem $logo-green,
+    //       0 0.5rem 3rem $logo-green;
     //   }
     // }
 
@@ -254,37 +256,6 @@
     //     opacity: 1;
     //   }
     // }
-
-    // display: flex;
-    // align-items: center;
-
-    // text-align: center;
-    // font-family: $roboto-bold-italic-font-family;
-    // font-size: 3.5rem;
-    // line-height: 3.5rem;
-    // color: $main-font-green;
-
-    // padding: 3rem 1rem 3rem 1rem;
-    // // height: 10rem;
-
-    // top: -150px;
-
-    // background-image: linear-gradient(
-    //   to right,
-    //   $cream 0%,
-    //   $eggshell 51%,
-    //   $cream 100%
-    // );
-    // border-radius: 1rem;
-
-    // background-color: none;
-    // word-break: normal;
-
-    // width: 80%;
-    // max-width: 150rem;
-
-    // letter-spacing: 0.2rem;
-    // text-shadow: 0px 11px 10px rgba(84, 83, 81, 0.5);
   }
 }
 
