@@ -34,7 +34,7 @@ const Home = () => {
               to="/#about"
               className={styles["more-about-button"]}
             >
-              Mehr über uns
+              Explore
             </HashLink>
           </div>
         </div>

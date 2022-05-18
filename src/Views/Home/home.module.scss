@@ -30,7 +30,9 @@
 
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
+
+  // To match .slideshow image height - across all media queries to make sure there is no gap with whitespace
+  height: 90vh;
 }
 
 .heading-content-container {
@@ -260,12 +262,9 @@
 }
 
 .button-container {
-  // position: absolute;
-
-  // bottom: 8.5rem;
   display: flex;
   justify-content: center;
-  // margin: 2rem 0 0 0;
+
   width: 80%;
 }
 
@@ -275,8 +274,6 @@
   text-decoration: none;
   width: fit-content;
   padding: 1rem 2rem 1rem 2rem;
-
-  // box-shadow: none !important;
 }
 
 // ? About Section
@@ -291,7 +288,7 @@
   height: auto;
   background-color: $eggshell;
 
-  padding: 6rem 0 10rem 0;
+  padding: 10rem 0 15rem 0;
 }
 
 .about-content-container {
@@ -322,7 +319,15 @@
   text-align: center;
   line-height: 2.5rem;
 
-  padding: 3rem 0 4.5rem 0;
+  padding: 1.5rem 0 1rem 0;
+
+  &:nth-of-type(1) {
+    margin-top: 3rem;
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 4rem;
+  }
 }
 
 .gradient-button-dark {
@@ -550,20 +555,9 @@
     }
   }
 
-  .about-content-container {
-    flex-direction: row;
-
-    width: 80%;
-  }
-
-  .about-text-container {
-    width: 50%;
-    margin-right: 6rem;
-  }
-
   .team-photo {
-    width: 40%;
-    margin-top: 0;
+    width: 70%;
+    margin-top: 2rem;
   }
 
   .contact-section {
@@ -578,20 +572,9 @@
     }
   }
 
-  .about-content-container {
-    flex-direction: row;
-
-    width: 80%;
-  }
-
-  .about-text-container {
-    width: 50%;
-    margin-right: 6rem;
-  }
-
   .team-photo {
-    width: 40%;
-    margin-top: 0;
+    width: 80%;
+    margin-top: 2rem;
   }
 
   .contact-section {
@@ -600,28 +583,19 @@
 }
 
 @include extra-large {
-  .heading-content-container {
-    // height: 15vh;
-    // margin: 2rem 0 2rem 0;
-    // padding-bottom: 0;
+  .landing-view-container {
+    height: 85vh;
+  }
 
+  .heading-content-container {
     h2 {
       font-size: 5.5rem;
     }
   }
 
-  .about-content-container {
-    flex-direction: row;
-  }
-
-  .about-text-container {
-    width: 50%;
-    margin-right: 8rem;
-  }
-
   .team-photo {
-    width: 50%;
-    margin-top: 0;
+    width: 90%;
+    margin-top: 2rem;
   }
 
   .contact-section {
@@ -630,6 +604,10 @@
 }
 
 @include extra-extra-large {
+  .landing-view-container {
+    height: 88vh;
+  }
+
   .heading-content-container {
     h2 {
       font-size: 5.5rem;
@@ -637,21 +615,12 @@
   }
 
   .about-section {
-    padding: 12rem 0 12rem 0;
-  }
-
-  .about-content-container {
-    flex-direction: row;
-  }
-
-  .about-text-container {
-    width: 50%;
-    margin-right: 10rem;
+    padding: 15rem 0 20rem 0;
   }
 
   .team-photo {
-    width: 50%;
-    margin-top: 0;
+    width: 100%;
+    margin-top: 2rem;
   }
 
   .contact-section {

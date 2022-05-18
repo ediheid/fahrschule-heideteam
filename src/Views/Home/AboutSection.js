@@ -21,38 +21,35 @@ const AboutSection = () => {
         <div className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
 
-          {/* <p className={styles["about-paragraph"]}>
-            Seit Mai 1990 haben unsere Fahrlehrer schon mehr als 7000
-            Fahrschüler*innen aller Klassen ausgebildet. Wir helfen Ihnen gern
-            wenn es um den Erwerb, die Erweiterung oder auch um die
-            "Wiederaktivierung" der Fahrerlaubnis geht.
-          </p> */}
-
           <p className={styles["about-paragraph"]}>
-            Unser Team setzt sich zusammen aus einer Reihe von älteren Kollegen,
-            mit sehr langer Berufserfahrung und jungen Kollegen, welche die
-            notwendige Frische ins Team mit bringen.
+            Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid dem
+            haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich ihren
+            Führerschein mit unserer Hilfe bestanden. Unser Team setzt sich
+            zusammen aus einer Reihe von älteren Kollegen, mit sehr langer
+            Berufserfahrung und jungen Kollegen, welche die notwendige Frische
+            ins Team mit bringen.
           </p>
 
-          {/* <p>
-              Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid
-              dem haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich
-              ihren Führerschein mit unserer Hilfe bestanden.
-            </p>
+          <p className={styles["about-paragraph"]}>
+            Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
+            Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es notwendig
+            erscheint, die Fähigkeiten und Fertigkeiten des Führens von
+            Fahrzeugen aufzufrischen bzw. wenn eine Beurteilung der
+            Fahrkompetenz nötig wird.
+          </p>
+          <p className={styles["about-paragraph"]}>
+            Des weiteren beschäftigen wir uns auch mit der Aus- und
+            Weiterbildung von Berufskraftfahrern im Bereich des Güter-
+            Personenverkehrs.
+          </p>
 
-            <p>
-              Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
-              Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es
-              notwendig erscheint, die Fähigkeiten und Fertigkeiten des Führens
-              von Fahrzeugen aufzufrischen bzw. wenn eine Beurteilung der
-              Fahrkompetenz nötig wird.
-            </p>
-            <p>
-              Des weiteren beschäftigen wir uns auch mit der Aus- und
-              Weiterbildung von Berufskraftfahrern im Bereich des Güter-
-              Personenverkehrs.
-            </p> */}
-          {/* </div> */}
+          <p className={styles["about-paragraph"]}>
+            Bereich des Güter- Personenverkehrs.
+          </p>
+
+          <p className={styles["about-paragraph"]}>
+            Wie es unser Logo erkennen lässt - Mit uns haben Sie den Bogen raus!
+          </p>
 
           <Link to="/team" alt="Link to Team page">
             <button className={styles["gradient-button-dark"]}>
