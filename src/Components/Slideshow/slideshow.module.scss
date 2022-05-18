@@ -1,7 +1,7 @@
 @import "../../Styling/global.scss";
 
 .slideshow-image {
-  height: 65vh;
+  height: 70vh;
   width: 100vw;
 
   overflow: hidden;
@@ -9,6 +9,12 @@
   object-fit: cover;
 
   // margin-bottom: 2.2rem;
+}
+
+@include small {
+  .slideshow-image {
+    height: 75vh;
+  }
 }
 
 @include medium {
@@ -19,7 +25,13 @@
 
 @include large {
   .slideshow-image {
-    height: 80vh;
+    height: 70vh;
+  }
+}
+
+@include extra-large {
+  .slideshow-image {
+    height: 65vh;
   }
 }
 

@@ -40,9 +40,11 @@
   justify-content: center;
 
   width: 100vw;
-  height: 35vh;
+  height: 20vh;
 
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0 1rem 0;
+
+  padding-bottom: 2rem;
 
   background-color: $white;
 
@@ -51,8 +53,8 @@
   h2 {
     text-align: center;
     font-family: $roboto-bold-italic-font-family;
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
     color: $dark-green;
 
     width: 80%;
@@ -66,7 +68,7 @@
 .button-container {
   display: flex;
   justify-content: center;
-  margin: 2.8rem 0 0 0;
+  margin: 2rem 0 0 0;
   width: 80%;
 }
 
@@ -295,9 +297,28 @@
 
 // ? ALL Media queries
 
+@include small {
+  .heading-content-container {
+    height: 15vh;
+    margin: 2rem 0 3rem 0;
+    padding-bottom: 2rem;
+
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .button-container {
+    margin-top: 3.5rem;
+  }
+}
+
 @include medium {
   .heading-content-container {
-    margin: 5rem 0 5rem 0;
+    height: 15vh;
+    margin: 2rem 0 3rem 0;
+    padding-bottom: 2rem;
 
     h2 {
       font-size: 3.5rem;
@@ -312,11 +333,14 @@
 
 @include large {
   .heading-content-container {
-    margin: 5rem 0 5rem 0;
+    height: 15vh;
+    margin: 5rem 0 3rem 0;
+    padding-bottom: 0;
 
     h2 {
       font-size: 3.5rem;
-      line-height: 4.5rem;
+
+      // line-height: 4.5rem;
     }
   }
 
@@ -327,17 +351,24 @@
 
 @include extra-large {
   .heading-content-container {
-    margin-top: 3rem;
+    height: 15vh;
+    margin: 2rem 0 2rem 0;
+    padding-bottom: 0;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
   }
 }
 
 @include extra-extra-large {
   .heading-content-container {
-    margin: 5rem 0 5rem 0;
+    height: 15vh;
+    margin: 2rem 0 2rem 0;
+    padding-bottom: 0;
 
     h2 {
       font-size: 3.5rem;
-      line-height: 4.5rem;
     }
   }
 
