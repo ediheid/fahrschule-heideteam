@@ -1,15 +1,6 @@
 @import "../../Styling/global.scss";
 
-// .slider-container {
-//   height: 90vh;
-//   width: 100vw;
-
-//   margin: 10rem;
-// }
-
 .slideshow-image {
-  // margin-top: 20rem;
-
   height: 65vh;
   width: 100vw;
 
@@ -19,18 +10,6 @@
 
   // margin-bottom: 2.2rem;
 }
-
-// @include x-small {
-//   .slideshow-image {
-//     height: 35vh;
-//   }
-// }
-
-// @include small {
-//   .slideshow-image {
-//     height: 50vh;
-//   }
-// }
 
 @include medium {
   .slideshow-image {
