@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "../Klassen/fschein-classes.module.scss";
 
@@ -26,10 +26,19 @@ import Truck from "../Team/MobileImageComponents/Truck";
 import Bus from "../Team/MobileImageComponents/Bus";
 import Tractor from "../Team/MobileImageComponents/Tractor";
 
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // Every second card has the image to the right
 const FscheinClasses = () => {
+  // AOS functionality
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
+
   return (
-    <div className={styles["classes-page-container"]}>
+    <div data-aos="fade-up" className={styles["classes-page-container"]}>
       {/* // Submenu with hashlinks to class sections */}
       <SubMenu />
 
