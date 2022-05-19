@@ -56,24 +56,6 @@
   }
 }
 
-// !! Testing for mobile...
-
-@media (pointer: coarse) {
-  .section-a,
-  .section-b,
-  .section-c,
-  .section-d,
-  .section-t {
-    background-attachment: fixed !important;
-    background-repeat: repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
-
-    // // Todo: Restyle this?
-    // margin: 1.5rem 0 0 0;
-  }
-}
-
 // bg images
 .section-a,
 .section-b,
@@ -378,6 +360,20 @@
   .hashlink {
     color: $cream;
     text-decoration: none;
+  }
+
+  .section-a,
+  .section-b,
+  .section-c,
+  .section-d,
+  .section-t {
+    // background-attachment: scroll;
+    background-size: contain;
+    width: 100vw;
+    background-repeat: repeat;
+
+    // // Todo: Restyle this?
+    // margin: 1.5rem 0 0 0;
   }
 }
 
