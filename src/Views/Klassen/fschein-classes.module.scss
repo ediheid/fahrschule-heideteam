@@ -368,13 +368,9 @@
   .section-d,
   .section-t {
     // background-attachment: scroll;
-    background-size: cover;
-    // width: 100vw;
-    top: 0;
-    left: 0;
+    background-size: contain;
 
-    // // Todo: Restyle this?
-    // margin: 1.5rem 0 0 0;
+    width: 100%;
   }
 }
 
