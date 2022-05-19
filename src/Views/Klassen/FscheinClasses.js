@@ -28,7 +28,7 @@ import Gallery from "./Gallery/Gallery";
 
 const FscheinClasses = () => {
   return (
-    <div data-aos="fade-up" className={styles["classes-page-container"]}>
+    <div className={styles["classes-page-container"]}>
       {/* // Submenu with hashlinks to class sections */}
       <SubMenu />
 

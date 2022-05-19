@@ -394,6 +394,7 @@
   .sticky-menu {
     position: fixed;
     top: 0;
+
     transition: 0.3s ease-in-out;
     z-index: 50000;
   }
@@ -516,8 +517,9 @@
 
   .sticky-menu {
     position: fixed;
-    transition: 0.3s ease-in-out;
-    z-index: 50000;
+    top: 4.5rem;
+    // transition: 0.3s ease-in-out;
+    z-index: 500000;
   }
 
   .class-section {

@@ -23,6 +23,7 @@ const SubMenu = () => {
     <div
       // Fixed menu is set on all devices except for small, x-small and extra-extra-small
       className={
+        // styles["classes-sub-menu"]
         fixMenu
           ? ` ${styles["sticky-menu"]} ${styles["classes-sub-menu"]}`
           : styles["classes-sub-menu"]
