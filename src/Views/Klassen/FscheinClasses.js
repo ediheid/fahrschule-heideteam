@@ -18,6 +18,14 @@ import KlasseD1 from "./KlasseD1";
 import KlasseT from "./KlasseT";
 import Gallery from "./Gallery/Gallery";
 
+// Mobile bg image Components
+
+import Motorbike from "../Team/MobileImageComponents/Motorbike";
+import Car from "../Team/MobileImageComponents/Car";
+import Truck from "../Team/MobileImageComponents/Truck";
+import Bus from "../Team/MobileImageComponents/Bus";
+import Tractor from "../Team/MobileImageComponents/Tractor";
+
 // Every second card has the image to the right
 const FscheinClasses = () => {
   return (
@@ -27,23 +35,41 @@ const FscheinClasses = () => {
 
       {/* Section A */}
       <div className={styles["section-a"]}>
-        {/* Klasse A */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Motorbike />
+
+        {/* // ? Klasse A */}
         <KlasseA />
 
-        {/* Klasse A1 */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Motorbike />
+
+        {/* // ? Klasse A1 */}
         <KlasseA1 />
 
-        {/* Klasse A2 */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Motorbike />
+
+        {/* // ? Klasse A2 */}
         <KlasseA2 />
 
-        {/* Klasse AM */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Motorbike />
+
+        {/* // ? Klasse AM */}
         <KlasseAM />
       </div>
 
       {/* Section B */}
       <div className={styles["section-b"]}>
-        {/* Klasse B / B197 */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Car />
+
+        {/*  // ? Klasse B / B197 */}
         <KlasseB />
+
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Car />
 
         {/* Klasse BE */}
         <KlasseBE />
@@ -51,31 +77,52 @@ const FscheinClasses = () => {
 
       {/* Section C */}
       <div className={styles["section-c"]}>
-        {/* Klasse C */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Truck />
+
+        {/* // ? Klasse C */}
         <KlasseC />
 
-        {/* Klasse C1 */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Truck />
+
+        {/* // ? Klasse C1 */}
         <KlasseC1 />
 
-        {/* Klasse C1E */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Truck />
+
+        {/* // ? Klasse C1E */}
         <KlasseC1E />
 
-        {/* Klasse CE */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Truck />
+
+        {/* // ? Klasse CE */}
         <KlasseCE />
       </div>
 
       {/* Section D */}
       <div className={styles["section-d"]}>
-        {/* Klasse D */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Bus />
+
+        {/* // ? Klasse D */}
         <KlasseD />
 
-        {/* Klasse D1 */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Bus />
+
+        {/* // ? Klasse D1 */}
         <KlasseD1 />
       </div>
 
       {/* Section T */}
       <div className={styles["section-t"]}>
-        {/* Klasse T */}
+        {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
+        <Tractor />
+
+        {/* // ? Klasse T */}
         <KlasseT />
       </div>
 

@@ -56,6 +56,14 @@
   }
 }
 
+.mobile-bg-img {
+  object-fit: cover;
+
+  height: 22rem;
+  width: 100vw;
+  margin-bottom: -20rem;
+}
+
 // bg images
 .section-a,
 .section-b,
@@ -69,28 +77,6 @@
 
   // // Todo: Restyle this?
   // margin: 1.5rem 0 0 0;
-}
-
-.section-a {
-  // margin-top: 0;
-  background-image: url("../Klassen/Static/motorcycle.png");
-}
-
-.section-b {
-  background-image: url("../Klassen/Static/car-bg.png");
-}
-
-.section-c {
-  background-image: url("../Klassen/Static/truck3.png");
-}
-
-.section-d {
-  background-image: url("../Klassen/Static/bus.png");
-}
-
-.section-t {
-  padding-bottom: 20rem;
-  background-image: url("../Klassen/Static/tractor.png");
 }
 
 // Class section
@@ -361,21 +347,6 @@
     color: $cream;
     text-decoration: none;
   }
-
-  .section-a,
-  .section-b,
-  .section-c,
-  .section-d,
-  .section-t {
-    // background-attachment: scroll;
-    background-size: cover;
-
-    width: 100%;
-    max-width: 100%;
-
-    height: 100%;
-    max-height: 100%;
-  }
 }
 
 @include small {
@@ -433,6 +404,32 @@
 
     object-fit: cover;
   }
+
+  .mobile-bg-img {
+    display: none;
+  }
+
+  .section-a {
+    // margin-top: 0;
+    background-image: url("../Klassen/Static/motorcycle.png");
+  }
+
+  .section-b {
+    background-image: url("../Klassen/Static/car-bg.png");
+  }
+
+  .section-c {
+    background-image: url("../Klassen/Static/truck3.png");
+  }
+
+  .section-d {
+    background-image: url("../Klassen/Static/bus.png");
+  }
+
+  .section-t {
+    padding-bottom: 20rem;
+    background-image: url("../Klassen/Static/tractor.png");
+  }
 }
 
 @include extra-large {
@@ -459,6 +456,32 @@
 
     object-fit: cover;
   }
+
+  .mobile-bg-img {
+    display: none;
+  }
+
+  .section-a {
+    // margin-top: 0;
+    background-image: url("../Klassen/Static/motorcycle.png");
+  }
+
+  .section-b {
+    background-image: url("../Klassen/Static/car-bg.png");
+  }
+
+  .section-c {
+    background-image: url("../Klassen/Static/truck3.png");
+  }
+
+  .section-d {
+    background-image: url("../Klassen/Static/bus.png");
+  }
+
+  .section-t {
+    padding-bottom: 20rem;
+    background-image: url("../Klassen/Static/tractor.png");
+  }
 }
 
 @include extra-extra-large {
@@ -481,5 +504,31 @@
   .next-button,
   .previous-button {
     font-size: 4.5rem;
+  }
+
+  .mobile-bg-img {
+    display: none;
+  }
+
+  .section-a {
+    // margin-top: 0;
+    background-image: url("../Klassen/Static/motorcycle.png");
+  }
+
+  .section-b {
+    background-image: url("../Klassen/Static/car-bg.png");
+  }
+
+  .section-c {
+    background-image: url("../Klassen/Static/truck3.png");
+  }
+
+  .section-d {
+    background-image: url("../Klassen/Static/bus.png");
+  }
+
+  .section-t {
+    padding-bottom: 20rem;
+    background-image: url("../Klassen/Static/tractor.png");
   }
 }
