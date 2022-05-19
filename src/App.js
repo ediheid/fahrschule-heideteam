@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 
 import CookieConsent from "react-cookie-consent";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // Views / Components
 import Home from "./Views/Home/Home";
@@ -47,6 +50,12 @@ const App = () => {
       setIsNavOpen(false);
     }
   };
+
+  // AOS functionality
+  // Aos can be used on any element in the App
+  const AosFunction = useEffect(() => {
+    Aos.init({ duration: 1000, once: false });
+  }, []);
 
   return (
     <>

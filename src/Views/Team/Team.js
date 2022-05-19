@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import styles from "../Team/team.module.scss";
 
@@ -11,16 +11,7 @@ import jan from "../Team/Static/jan.png";
 import peter from "../Team/Static/peter.png";
 import michel from "../Team/Static/michel.png";
 
-// AOS
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const Team = () => {
-  // AOS functionality
-  useEffect(() => {
-    Aos.init({ duration: 1000, once: false });
-  }, []);
-
   // Add individual card data here that will be mapped below
   // Alt tag updates with name
   const cards = [

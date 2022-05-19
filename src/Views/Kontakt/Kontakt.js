@@ -1,17 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import styles from "../Kontakt/kontakt.module.scss";
 
-// AOS
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const Kontakt = () => {
-  // AOS functionality
-  useEffect(() => {
-    Aos.init({ duration: 1000, once: false });
-  }, []);
-
   return (
     <div data-aos="fade-up" className={styles["contact-page-container"]}>
       <div className={styles["heading-container"]}>

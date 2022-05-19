@@ -1,12 +1,7 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
-import Zoom from "react-reveal/Zoom";
-import Flip from "react-reveal/Flip";
-import LightSpeed from "react-reveal/LightSpeed";
-import Tada from "react-reveal/Tada";
 
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import AboutSection from "./AboutSection";
