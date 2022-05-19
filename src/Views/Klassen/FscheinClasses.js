@@ -20,13 +20,12 @@ import Gallery from "./Gallery/Gallery";
 
 // Mobile bg image Components
 
-import Motorbike from "../Team/MobileImageComponents/Motorbike";
-import Car from "../Team/MobileImageComponents/Car";
-import Truck from "../Team/MobileImageComponents/Truck";
-import Bus from "../Team/MobileImageComponents/Bus";
-import Tractor from "../Team/MobileImageComponents/Tractor";
+// import Motorbike from "../Team/MobileImageComponents/Motorbike";
+// import Car from "../Team/MobileImageComponents/Car";
+// import Truck from "../Team/MobileImageComponents/Truck";
+// import Bus from "../Team/MobileImageComponents/Bus";
+// import Tractor from "../Team/MobileImageComponents/Tractor";
 
-// Every second card has the image to the right
 const FscheinClasses = () => {
   return (
     <div data-aos="fade-up" className={styles["classes-page-container"]}>
@@ -36,25 +35,25 @@ const FscheinClasses = () => {
       {/* Section A */}
       <div className={styles["section-a"]}>
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Motorbike />
+        {/* <Motorbike className={styles["mobile-img-components"]} /> */}
 
         {/* // ? Klasse A */}
         <KlasseA />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Motorbike />
+        {/* <Motorbike /> */}
 
         {/* // ? Klasse A1 */}
         <KlasseA1 />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Motorbike />
+        {/* <Motorbike /> */}
 
         {/* // ? Klasse A2 */}
         <KlasseA2 />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Motorbike />
+        {/* <Motorbike /> */}
 
         {/* // ? Klasse AM */}
         <KlasseAM />
@@ -63,13 +62,13 @@ const FscheinClasses = () => {
       {/* Section B */}
       <div className={styles["section-b"]}>
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Car />
+        {/* <Car /> */}
 
         {/*  // ? Klasse B / B197 */}
         <KlasseB />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Car />
+        {/* <Car /> */}
 
         {/* Klasse BE */}
         <KlasseBE />
@@ -78,25 +77,25 @@ const FscheinClasses = () => {
       {/* Section C */}
       <div className={styles["section-c"]}>
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Truck />
+        {/* <Truck /> */}
 
         {/* // ? Klasse C */}
         <KlasseC />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Truck />
+        {/* <Truck /> */}
 
         {/* // ? Klasse C1 */}
         <KlasseC1 />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Truck />
+        {/* <Truck /> */}
 
         {/* // ? Klasse C1E */}
         <KlasseC1E />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Truck />
+        {/* <Truck /> */}
 
         {/* // ? Klasse CE */}
         <KlasseCE />
@@ -105,13 +104,13 @@ const FscheinClasses = () => {
       {/* Section D */}
       <div className={styles["section-d"]}>
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Bus />
+        {/* <Bus /> */}
 
         {/* // ? Klasse D */}
         <KlasseD />
 
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Bus />
+        {/* <Bus /> */}
 
         {/* // ? Klasse D1 */}
         <KlasseD1 />
@@ -120,7 +119,7 @@ const FscheinClasses = () => {
       {/* Section T */}
       <div className={styles["section-t"]}>
         {/* Mobile background img component - desktop images are set in style sheet as fixed background images */}
-        <Tractor />
+        {/* <Tractor /> */}
 
         {/* // ? Klasse T */}
         <KlasseT />

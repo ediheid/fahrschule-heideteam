@@ -1,13 +1,13 @@
-import React from "react";
+// import React from "react";
 
-import styles from "../../Klassen/fschein-classes.module.scss";
+// import styles from "../../Klassen/fschein-classes.module.scss";
 
-import truck from "../../Klassen/Static/truck3.png";
+// import truck from "../../Klassen/Static/truck3.png";
 
-const Truck = () => {
-  return (
-    <img className={styles["mobile-bg-img"]} alt="Truck" src={truck}></img>
-  );
-};
+// const Truck = () => {
+//   return (
+//     <img className={styles["mobile-bg-img"]} alt="Truck" src={truck}></img>
+//   );
+// };
 
-export default Truck;
+// export default Truck;
