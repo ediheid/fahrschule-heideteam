@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 import styles from "../Klassen/fschein-classes.module.scss";
 
 const SubMenu = () => {
+  // UseState
+  const [fixMenu, setFixMenu] = useState(false);
+
+  const stickyMenu = () => {
+    // Set to stick once scroll passed height of header (8rem) on all devices except for small, x-small and extra-extra-small
+    if (window.scrollY >= 80) {
+      setFixMenu(true);
+    } else {
+      setFixMenu(false);
+    }
+  };
+
+  // Event Listener for scroll and calling function
+  window.addEventListener("scroll", stickyMenu);
+
   return (
-    <div className={styles["classes-sub-menu"]}>
+    <div
+      // Fixed menu is set on all devices except for small, x-small and extra-extra-small
+      className={
+        fixMenu
+          ? ` ${styles["sticky-menu"]} ${styles["classes-sub-menu"]}`
+          : styles["classes-sub-menu"]
+      }
+    >
       {/* // Todo: Hashlinks ready to setup to sections once implemented */}
       <ul>
         <HashLink to="/klassen#klasse-a" className={styles["hashlink"]}>

@@ -381,6 +381,13 @@
     padding: 1rem 0 1rem 0;
   }
 
+  .sticky-menu {
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 50000;
+  }
+
   .hashlink {
     color: $cream;
     text-decoration: none;
@@ -391,6 +398,13 @@
   .classes-sub-menu {
     background-color: $white;
     padding: 2.5rem 0 2rem 0;
+  }
+
+  .sticky-menu {
+    position: fixed;
+    top: 4.5rem;
+    transition: 0.3s ease-in-out;
+    z-index: 50000;
   }
 
   .next-button,
@@ -412,6 +426,13 @@
     padding: 2.5rem 0 2rem 0;
   }
 
+  .sticky-menu {
+    position: fixed;
+    top: 4.5rem;
+    transition: 0.3s ease-in-out;
+    z-index: 50000;
+  }
+
   .next-button,
   .previous-button {
     font-size: 4.5rem;
@@ -429,6 +450,13 @@
   .classes-sub-menu {
     background-color: $white;
     padding: 2.5rem 0 2rem 0;
+  }
+
+  .sticky-menu {
+    position: fixed;
+    top: 4.5rem;
+    transition: 0.3s ease-in-out;
+    z-index: 50000;
   }
 
   .class-section {
