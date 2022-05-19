@@ -8,9 +8,6 @@ import {
 
 import CookieConsent from "react-cookie-consent";
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 // Views / Components
 import Home from "./Views/Home/Home";
 import Header from "./Components/Header/Header";
@@ -50,12 +47,6 @@ const App = () => {
       setIsNavOpen(false);
     }
   };
-
-  // AOS functionality
-  // Aos can be used on any element in the App
-  const AosFunction = useEffect(() => {
-    Aos.init({ duration: 1000, once: false });
-  }, []);
 
   return (
     <>
