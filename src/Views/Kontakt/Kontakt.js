@@ -35,7 +35,15 @@ const Kontakt = () => {
           </a>
 
           <h5>Sowie nach Vereinbarung oder per Mail:</h5>
-          <span>Insert email here!!!</span>
+          <span>
+            {" "}
+            <a
+              className={styles["email-link"]}
+              href="mailto:info@fsheideteam.de"
+            >
+              info@fsheideteam.de
+            </a>
+          </span>
 
           {/*  Directions */}
           <h5>Lagebeschreibung:</h5>

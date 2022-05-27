@@ -87,7 +87,8 @@
 }
 
 .address,
-.phone-number {
+.phone-number,
+.email-link {
   color: $logo-green;
   text-decoration: none;
   font-family: $roboto-medium-font-family;
@@ -107,6 +108,12 @@
 
 @media (hover: hover) {
   .phone-number:hover {
+    color: $brighter-logo-green;
+  }
+}
+
+@media (hover: hover) {
+  .email-link:hover {
     color: $brighter-logo-green;
   }
 }

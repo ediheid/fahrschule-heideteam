@@ -76,15 +76,6 @@ const Team = () => {
       name: "Nancy Köhler",
       duties: "Die gute Seele im Büro (Organisation, Anmeldung etc.)",
     },
-
-    // ? Lanë
-
-    {
-      id: "3",
-      // img: examplePhoto,
-      name: "Lanë",
-      duties: "Büroschnuffi für Kundenbetreuung & Fahrlehrerüberwachung",
-    },
   ];
 
   return (
