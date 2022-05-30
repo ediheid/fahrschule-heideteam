@@ -25,7 +25,7 @@ const Berufskraftfahrerqualifikation = () => {
       </p>
       <p className={styles["text"]}>
         {" "}
-        Fragen Sie uns! Wir können Ihnen helfen diese Befähigung zu erlangen.
+        Fragen Sie uns! Wir können Ihnen helfen.
       </p>
       <span className={styles["text"]}>
         {" "}
@@ -36,7 +36,6 @@ const Berufskraftfahrerqualifikation = () => {
           w.franke@fsheideteam.de
         </a>
       </span>
-      <span className={styles["text"]}> Liebe Grüße!</span>
 
       <div className={styles["gallery-section"]}>
         <img
@@ -57,7 +56,7 @@ const Berufskraftfahrerqualifikation = () => {
       </div>
 
       <p className={styles["text"]}>
-        Des weiteren muss man seine Qualifikation aller fünf Jahre wieder
+        Des weiteren muss man diese Qualifikation aller fünf Jahre wieder
         auffrischen und sein Wissen auf den neuesten Stand bringen.
       </p>
       <p className={styles["text"]}>
