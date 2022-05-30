@@ -13,29 +13,23 @@ const AboutSection = () => {
           <h2 className={styles["headings"]}>Über Uns</h2>
 
           <p className={styles["about-paragraph"]}>
-            Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seid dem
+            Unsere Fahrschule wurde 1990 in Radeberg/Dresden gegründet. Seitdem
             haben viele Fahrschüler in allen Fahrzeugklassen erfolgreich ihren
             Führerschein mit unserer Hilfe bestanden. Unser Team setzt sich
-            zusammen aus einer Reihe von älteren Kollegen, mit sehr langer
+            zusammen aus einer Reihe von älteren Kollegen mit sehr langer
             Berufserfahrung und jungen Kollegen, welche die notwendige Frische
-            ins Team mit bringen.
+            ins Team bringen.
           </p>
 
           <p className={styles["about-paragraph"]}>
-            Auch bei der Umschreibung ausländischer Führerscheine, Neu – und
+            Bei der Umschreibung ausländischer Führerscheine, Neu – und
             Wiedererteilungen helfen wir gern weiter. Ebenso, wenn es notwendig
             erscheint, die Fähigkeiten und Fertigkeiten des Führens von
-            Fahrzeugen aufzufrischen bzw. wenn eine Beurteilung der
-            Fahrkompetenz nötig wird.
+            Fahrzeugen aufzufrischen bzw. die Fahrkompetenz neu zu beurteilen.
           </p>
           <p className={styles["about-paragraph"]}>
-            Des weiteren beschäftigen wir uns auch mit der Aus- und
-            Weiterbildung von Berufskraftfahrern im Bereich des Güter-
-            Personenverkehrs.
-          </p>
-
-          <p className={styles["about-paragraph"]}>
-            Bereich des Güter- Personenverkehrs.
+            Des weiteren beschäftigen wir uns mit der Aus- und Weiterbildung von
+            Berufskraftfahrern im Bereich des Güter- Personenverkehrs.
           </p>
 
           <p className={styles["about-paragraph"]}>
