@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "./ContactForm";
 
 import styles from "../Kontakt/kontakt.module.scss";
 
@@ -82,7 +83,7 @@ const Kontakt = () => {
 
         {/* Contact form */}
         <div className={styles["contact-form-container"]}>
-          Contact form will go here
+          <ContactForm></ContactForm>
         </div>
       </div>
     </div>
