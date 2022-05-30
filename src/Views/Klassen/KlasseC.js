@@ -34,13 +34,15 @@ const KlasseC = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>21</b> Jahre
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>21</b> Jahre
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG oder
-              Berufsaubildung
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG
+              oder Berufsaubildung
             </li>
 
             <li>
@@ -54,14 +56,14 @@ const KlasseC = () => {
               Beinhaltet Klasse: <b>C1</b>
             </li>
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 
