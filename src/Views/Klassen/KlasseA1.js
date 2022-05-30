@@ -50,7 +50,7 @@ const KlasseA1 = () => {
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
             <li>
-              Achtung die Ausbildung für die Schlüsselzahl B196 (A1 mit
+              Achtung: Die Ausbildung für die Schlüsselzahl B196 (A1 mit
               Vorbesitz B – verkürzte Ausbildung) bieten wir in unserer
               Fahrschule <b>nicht</b> an!
             </li>
