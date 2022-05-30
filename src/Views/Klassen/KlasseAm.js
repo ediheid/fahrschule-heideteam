@@ -20,7 +20,7 @@ const KlasseAM = () => {
         <div className={styles["text-container"]}>
           <h4>Zweirädrige und Dreirädrige Kraftfahrzeuge</h4>
           <ul>
-            <li className={styles["list-heading-style"]}>
+            <li>
               Leichte zweirädrige Kraftfahrzeuge der Klasse L1e-B nach Artikel 4
               Absatz 2 Buchstabe a der Verordnung (EU) Nr. 168/2013 des
               Europäischen Parlaments und des Rates vom 15. Januar 2013 über die
@@ -28,53 +28,74 @@ const KlasseAM = () => {
               vierrädrigen Fahrzeugen mit:
             </li>
 
-            <li>Hubraum max. 50 cm3</li>
+            <li className={styles["sub-list"]}> - Hubraum max. 50 cm3</li>
 
-            <li>bbH max. 45 km/h</li>
+            <li className={styles["sub-list"]}> - bbH max. 45 km/h</li>
 
-            <li>Leistung max. 4 kW</li>
+            <li className={styles["sub-list"]}> - Leistung max. 4 kW</li>
 
-            <li className={styles["list-heading-style"]}>
-              dreirädrige Kleinkrafträder der Klasse L2e nach Artikel 4 Absatz 2
+            <li>
+              Dreirädrige Kleinkrafträder der Klasse L2e nach Artikel 4 Absatz 2
               Buchstabe b der Verordnung (EU) Nr. 168/2013 des Europäischen
               Parlaments und des Rates vom 15. Januar 2013 über die Genehmigung
               und Marktüberwachung von zwei- oder dreirädrigen und vierrädrigen
               Fahrzeugen mit:
             </li>
 
-            <li>Hubraum max. 50 cm3 bei Fremdzündungsmotor</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - Hubraum max. 50 cm3 bei Fremdzündungsmotor
+            </li>
 
-            <li>Hubraum max. 500 cm3 bei Selbstzündungsmotor</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - Hubraum max. 500 cm3 bei Selbstzündungsmotor
+            </li>
 
-            <li>bbH max. 45 km/h</li>
+            <li className={styles["sub-list"]}> - bbH max. 45 km/h</li>
 
-            <li>Leistung max. 4 kW</li>
+            <li className={styles["sub-list"]}> - Leistung max. 4 kW</li>
 
-            <li>Leermasse max. 270 kg</li>
+            <li className={styles["sub-list"]}> - Leermasse max. 270 kg</li>
 
-            <li>nicht mehr als 2 Sitzplätze</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - nicht mehr als 2 Sitzplätze
+            </li>
 
-            <li className={styles["list-heading-style"]}>
-              leichte vierrädrige Kraftfahrzeuge der Klasse L6e nach Artikel 4
+            <li>
+              Leichte vierrädrige Kraftfahrzeuge der Klasse L6e nach Artikel 4
               Absatz 2 Buchstabe f der Verordnung (EU) Nr. 168/2013 des
               Europäischen Parlaments und des Rates vom 15. Januar 2013 über die
               Genehmigung und Marktüberwachung von zwei- oder dreirädrigen und
               vierrädrigen Fahrzeugen mit:
             </li>
 
-            <li>Hubraum max. 50 cm3 bei Fremdzündungsmotor</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - Hubraum max. 50 cm3 bei Fremdzündungsmotor
+            </li>
 
-            <li>Hubraum max. 500 cm3 bei Selbstzündungsmotor</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - Hubraum max. 500 cm3 bei Selbstzündungsmotor
+            </li>
 
-            <li>bbH max. 45 km/h</li>
+            <li className={styles["sub-list"]}> - bbH max. 45 km/h</li>
 
-            <li>Leermasse max. 425 kg</li>
+            <li className={styles["sub-list"]}> - Leermasse max. 425 kg</li>
 
-            <li>nicht mehr als 2 Sitzplätze</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - nicht mehr als 2 Sitzplätze
+            </li>
 
-            <li>Leistung max. 6 kW</li>
+            <li className={styles["sub-list"]}> - Leistung max. 6 kW</li>
 
-            <li>Leistung max. 4 kW bei Straßen-Quads</li>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - Leistung max. 4 kW bei Straßen-Quads
+            </li>
 
             <hr className={styles["divider"]} />
 
