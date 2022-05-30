@@ -34,9 +34,13 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
+
   const submit = () => {
-    if (name && email && message) {
-      // TODO - send mail
+    if (
+      name.length >= 1 &&
+      message.length >= 5 &&
+      /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
+    ) {
       const serviceId = "smtptest";
       const templateId = "template_uxle599";
       const userId = "IWEqaF6H3Jvyjj0MT";
@@ -46,24 +50,26 @@ const ContactForm = () => {
         message,
       };
 
+      //   const isValidEmail = (email) => {
+      //     const regex =
+      //       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      //     return regex.test(String(email).toLowerCase());
+      //   };
+
       emailjs
         .send(serviceId, templateId, templateParams, userId)
         .then((response) => console.log(response))
         .then((error) => console.log(error));
-      // !! End area
       setName("");
       setEmail("");
       setMessage("");
+      // Clears form after successful submit
       setEmailSent(true);
     } else {
       alert("Please fill in all fields.");
     }
   };
-  const isValidEmail = (email) => {
-    const regex =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regex.test(String(email).toLowerCase());
-  };
+
   return (
     <div id="contact-form">
       <input
@@ -84,9 +90,9 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
       <button onClick={submit}>Send Message</button>
-      <span className={emailSent ? "visible" : null}>
+      {/* <span className={emailSent ? "visible" : null}>
         Thank you for your message, we will be in touch in no time!
-      </span>
+      </span> */}
     </div>
   );
 };
