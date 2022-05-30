@@ -27,13 +27,15 @@ const KlasseCE = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-none"]}>
-              <b>21</b> Jahre
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>21</b> Jahre
             </li>
 
-            <li className={styles["list-style-none"]}>
-              <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG oder
-              Berufsaubildung
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> Jahre bei Grundqualifikation §4 Abs. 1 Nr. 1 BKrFQG
+              oder Berufsaubildung
             </li>
 
             <li>
@@ -46,25 +48,28 @@ const KlasseCE = () => {
 
             <li>Beinhaltet Klasse:</li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>C1E, BE, T;</b>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>C1E, BE, T;</b>
             </li>
-            <li className={styles["list-style-disc"]}>
-              <b>D1E bei Besitz von Klasse D1;</b>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>D1E bei Besitz von Klasse D1;</b>
             </li>
-            <li className={styles["list-style-disc"]}>
-              <b>DE bei Besitz von Klasse D</b>
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>DE bei Besitz von Klasse D</b>
             </li>
 
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 
