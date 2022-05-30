@@ -21,7 +21,7 @@ const KlasseAM = () => {
           <h4>Zweirädrige und Dreirädrige Kraftfahrzeuge</h4>
           <ul>
             <li>
-              Leichte zweirädrige Kraftfahrzeuge der Klasse L1e-B nach Artikel 4
+              leichte zweirädrige Kraftfahrzeuge der Klasse L1e-B nach Artikel 4
               Absatz 2 Buchstabe a der Verordnung (EU) Nr. 168/2013 des
               Europäischen Parlaments und des Rates vom 15. Januar 2013 über die
               Genehmigung und Marktüberwachung von zwei- oder dreirädrigen und
@@ -35,7 +35,7 @@ const KlasseAM = () => {
             <li className={styles["sub-list"]}> - Leistung max. 4 kW</li>
 
             <li>
-              Dreirädrige Kleinkrafträder der Klasse L2e nach Artikel 4 Absatz 2
+              dreirädrige Kleinkrafträder der Klasse L2e nach Artikel 4 Absatz 2
               Buchstabe b der Verordnung (EU) Nr. 168/2013 des Europäischen
               Parlaments und des Rates vom 15. Januar 2013 über die Genehmigung
               und Marktüberwachung von zwei- oder dreirädrigen und vierrädrigen
@@ -64,7 +64,7 @@ const KlasseAM = () => {
             </li>
 
             <li>
-              Leichte vierrädrige Kraftfahrzeuge der Klasse L6e nach Artikel 4
+              leichte vierrädrige Kraftfahrzeuge der Klasse L6e nach Artikel 4
               Absatz 2 Buchstabe f der Verordnung (EU) Nr. 168/2013 des
               Europäischen Parlaments und des Rates vom 15. Januar 2013 über die
               Genehmigung und Marktüberwachung von zwei- oder dreirädrigen und
