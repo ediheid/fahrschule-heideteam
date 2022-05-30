@@ -1,5 +1,4 @@
 import React from "react";
-import Bounce from "react-reveal/Bounce";
 
 import { HashLink } from "react-router-hash-link";
 
@@ -18,10 +17,7 @@ const Home = () => {
 
       <section className={styles["landing-view-container"]}>
         <div className={styles["heading-content-container"]}>
-          <h2>
-            {" "}
-            <Bounce left>Eure Fahrschule in Radeberg und Umgebung!</Bounce>
-          </h2>
+          <h2> Eure Fahrschule in Radeberg und Umgebung!</h2>
 
           <div className={styles["button-container"]}>
             <HashLink
