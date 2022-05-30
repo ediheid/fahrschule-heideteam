@@ -14,26 +14,6 @@ const Footer = () => {
         {/* Heading */}
         <h2 className={styles["fahrschule-heading"]}>Fahrschule Heideteam</h2>
 
-        {/* Contact Us link */}
-        {/* // Todo: what should 'contact us' be ing German? */}
-        <Link
-          className={styles["page-links"]}
-          to="/kontakt"
-          alt="Link to contact page"
-        >
-          {" "}
-          Kontakt
-        </Link>
-
-        {/* Covid news link*/}
-        <Link
-          className={styles["page-links"]}
-          to="/news"
-          alt="Link to covid information"
-        >
-          COVID-19
-        </Link>
-
         {/* Address */}
         <a
           href="https://www.google.com/maps/place/Heideteam+Fahrschulgesellschaft/@51.10972,13.9174513,17z/data=!3m1!4b1!4m5!3m4!1s0x4709b5ff507ea5e9:0x3ec1a1955afef4e0!8m2!3d51.10972!4d13.91964"
