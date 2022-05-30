@@ -31,11 +31,14 @@ const ContactForm = () => {
   //   );
   // !! To incorporate later....
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  let [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
   const submit = () => {
+    // Set email to lowercase
+    email = email.toLowerCase();
+
     if (
       name.length >= 1 &&
       message.length >= 5 &&
@@ -49,12 +52,6 @@ const ContactForm = () => {
         email,
         message,
       };
-
-      //   const isValidEmail = (email) => {
-      //     const regex =
-      //       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      //     return regex.test(String(email).toLowerCase());
-      //   };
 
       emailjs
         .send(serviceId, templateId, templateParams, userId)
