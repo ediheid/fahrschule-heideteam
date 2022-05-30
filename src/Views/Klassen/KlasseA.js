@@ -27,15 +27,24 @@ const KlasseA = () => {
             </li>
             <li>
               <b>Dreirädrige Kraftfahrzeuge</b> mit einer Motorleistung von mehr
-              als 15 kW Mindestalter: <b>24</b> Jahre
+              als 15 kW
             </li>
-            <li>
-              <b>20</b> Jahre nach mindestens zweijährigem Vorbesitz der Klasse
-              A2
+
+            <li>Mindestalter:</li>
+
+            <li className={styles["sub-list"]}>
+              - <b>24</b> Jahre
             </li>
-            <li>
-              <b>21</b> Jahre für dreirädrige Kraftfahrzeuge der Klasse A
+
+            <li className={styles["sub-list"]}>
+              - <b>20</b> Jahre nach mindestens zweijährigem Vorbesitz der
+              Klasse A2
             </li>
+
+            <li className={styles["sub-list"]}>
+              - <b>21</b> Jahre für dreirädrige Kraftfahrzeuge der Klasse A
+            </li>
+
             <li>
               Geltungsdauer: <b>ohne Befristung</b>
             </li>
@@ -52,9 +61,7 @@ const KlasseA = () => {
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
             <li>
-              <b>
-                Bei uns lernen Motorradfahrer von erfahrenen Motorradfahrern.
-              </b>
+              Bei uns lernen Motorradfahrer von erfahrenen Motorradfahrern.
             </li>
           </ul>
 
