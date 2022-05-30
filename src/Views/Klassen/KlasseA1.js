@@ -26,7 +26,7 @@ const KlasseA1 = () => {
               11 kW, Verhältnis Leistung zu Leermasse: maximal 0,1 kW / kg
             </li>
             <li>
-              Dreirädrige Kraftfahrzeuge mit mehr als 50 cm3 und einer
+              dreirädrige Kraftfahrzeuge mit mehr als 50 cm3 und einer
               bauartbedingten Höchstgeschwindigkeit von mehr als 45 km/h mit
               einer Leistung bis 15 kW
             </li>
