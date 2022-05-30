@@ -46,8 +46,7 @@
 }
 
 .info-container,
-.map-container,
-.contact-form-container {
+.map-container {
   margin: 3rem;
 }
 
@@ -126,13 +125,6 @@
   height: 20rem;
 }
 
-.contact-form-container {
-  width: 30rem;
-  height: 20rem;
-
-  border: solid 2px pink;
-}
-
 // ? Media Queries
 
 @include small {
@@ -145,11 +137,6 @@
     width: 40rem;
     height: 30rem;
   }
-
-  .contact-form-container {
-    width: 40rem;
-    height: 30rem;
-  }
 }
 
 @include medium {
@@ -159,11 +146,6 @@
   }
 
   .map-container {
-    width: 40rem;
-    height: 30rem;
-  }
-
-  .contact-form-container {
     width: 40rem;
     height: 30rem;
   }
@@ -188,11 +170,6 @@
     width: 40rem;
     height: 50rem;
   }
-
-  .contact-form-container {
-    width: 40rem;
-    height: 30rem;
-  }
 }
 
 @include extra-large {
@@ -212,11 +189,6 @@
 
   .map-container {
     width: 50rem;
-    height: 50rem;
-  }
-
-  .contact-form-container {
-    width: 150rem;
     height: 50rem;
   }
 }

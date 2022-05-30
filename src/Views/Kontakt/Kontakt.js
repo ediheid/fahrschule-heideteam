@@ -82,9 +82,8 @@ const Kontakt = () => {
         ></iframe>
 
         {/* Contact form */}
-        <div className={styles["contact-form-container"]}>
-          <ContactForm></ContactForm>
-        </div>
+
+        <ContactForm />
       </div>
     </div>
   );
