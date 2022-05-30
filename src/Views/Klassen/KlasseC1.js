@@ -22,8 +22,8 @@ const KlasseC1 = () => {
           <ul>
             <li>
               Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
-              und A - mit einer zulässigen Gesamtmasse{" "}
-              <b>von mehr als 3.500 kg aber nicht mehr als 7.500 kg</b>, die zur
+              und A - mit einer zulässigen Gesamtmasse von
+              <b> mehr als 3.500 kg aber nicht mehr als 7.500 kg</b>, die zur
               Beförderung von nicht mehr als acht Personen außer dem
               Fahrzeugführer ausgelegt und gebaut sind.
             </li>
@@ -48,14 +48,14 @@ const KlasseC1 = () => {
               Beinhaltet Klasse: <b>keine</b>
             </li>
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 
