@@ -29,19 +29,21 @@ const KlasseD1 = () => {
             </li>
 
             <li>
-              <b>Anhänger</b> mit einer zulässigen Gesamtmasse von{" "}
-              <b>nicht mehr als 750 kg</b> dürfen mitgeführt werden.
+              <b>Anhänger</b> mit einer zulässigen Gesamtmasse von nicht mehr
+              als 750 kg dürfen mitgeführt werden.
             </li>
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>21</b> Jahre bei Ausbildung zum Berufskraftfahrer.
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>21</b>, bei Ausbildung zum Berufskraftfahrer.
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>18</b> Jahre (nach vorheriger erfolgreicher
-              medizinisch-psychologischer Untersuchung). Außerdem muss der
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> (nach vorheriger erfolgreicher
+              medizinisch-psychologischer Untersuchung) Außerdem muss der
               Bewerber seit mindestens einem Jahr die Fahrerlaubnis Klasse B
               besitzen. Von der Fahrerlaubnis darf nur bei Fahrten in
               Deutschland Gebrauch gemacht werden, wenn diese im Rahmen der
@@ -61,14 +63,14 @@ const KlasseD1 = () => {
             </li>
 
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 

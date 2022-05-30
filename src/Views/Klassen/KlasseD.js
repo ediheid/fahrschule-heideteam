@@ -24,7 +24,7 @@ const KlasseD = () => {
               <b>Kraftfahrzeuge</b> - ausgenommen Kraftfahrzeuge der Klassen AM,
               A1, A2 und A - die zur
               <b> Beförderung von mehr als acht Personen</b> außer dem
-              Fahrzeugführer ausgelegt und gebaut sind
+              Fahrzeugführer ausgelegt und gebaut sind.
             </li>
 
             <li>
