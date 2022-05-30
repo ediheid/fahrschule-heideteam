@@ -21,12 +21,12 @@ const KlasseA = () => {
           <h4> Fahrzeugart Schwere Krafträder</h4>
           <ul>
             <li>
-              <b>„Schwere“ Krafträder </b> (Zweiräder, auch mit Beiwagen) mit
+              <b>„schwere“ Krafträder </b> (Zweiräder, auch mit Beiwagen) mit
               einem Hubraum von mehr als 50 cm3 und einer bauartbedingten
               Höchstgeschwindigkeit von mehr als 45 km/h
             </li>
             <li>
-              <b>Dreirädrige Kraftfahrzeuge</b> mit einer Motorleistung von mehr
+              <b>dreirädrige Kraftfahrzeuge</b> mit einer Motorleistung von mehr
               als 15 kW
             </li>
 
