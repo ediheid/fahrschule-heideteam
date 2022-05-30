@@ -21,9 +21,13 @@ const KlasseT = () => {
           <h4>Traktorführerschein</h4>
           <ul>
             <li>
-              Fahrzeugart Landwirtschaftliche Zugmaschinen über 40 km/h bis 60
-              km/h; landwirtschaftliche, selbstfahrende Arbeitsmaschinen oder
-              selbstfahrende Futtermischwagen
+              Fahrzeugart{" "}
+              <b>
+                Landwirtschaftliche Zugmaschinen über 40 km/h bis 60 km/h;
+                landwirtschaftliche, selbstfahrende Arbeitsmaschinen oder
+                selbstfahrende Futtermischwagen
+              </b>
+              .
             </li>
 
             <li className={styles["list-style-none"]}>
@@ -53,12 +57,14 @@ const KlasseT = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>16</b> für bbH 40 km/h
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>16</b> für bbH 40 km/h
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>18</b> für bbH 60 km/h
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> für bbH 60 km/h
             </li>
 
             <li>
