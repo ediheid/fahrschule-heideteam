@@ -24,8 +24,8 @@ const KlasseBE = () => {
               Kombinationen aus Kraftfahrzeugen der Klasse B (Pkw oder leichter
               Lkw) und Anhänger mit einer zulässigen Gesamtmasse von mehr als
               750 kg und einer zulässigen Gesamtmasse der Kombination von mehr
-              als 3.500 kg. Die zulässige Gesamtmasse des Anhängers ist auf
-              3.500 kg begrenzt.
+              als 3.500 kg Die zulässige Gesamtmasse des Anhängers ist auf 3.500
+              kg begrenzt.
             </li>
 
             <li>
@@ -33,7 +33,7 @@ const KlasseBE = () => {
             </li>
 
             <li>
-              beim Begleiteten Fahren <b>17</b>
+              beim Begleiteten Fahren: <b>17</b>
             </li>
 
             <li>
@@ -53,11 +53,14 @@ const KlasseBE = () => {
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
-            <li>unser Fahrzeug VW T5 (Schaltung) + Anhänger</li>
+            <li>
+              Wir bieten die BE auf einem Fahrzeug VW T5 (<b>Schaltung</b>) +
+              Anhänger an.
+            </li>
 
             <li>
-              <b>ACHTUNG</b> – die „Klasse B 96“ bieten wir nicht zur Ausbildung
-              an! Hierbei handelt es sich <b>nicht</b> um eine
+              <b>ACHTUNG</b> – die „Klasse B 96“ bieten wir <b>nicht</b> zur
+              Ausbildung an! Hierbei handelt es sich nicht um eine
               Führerscheinklasse sondern nur um die Eintragung einer
               Schlüsselzahl!
             </li>
