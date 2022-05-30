@@ -33,13 +33,15 @@ const KlasseB = () => {
               <b>Anhänger</b> dürfen mitgeführt werden, sofern:
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              die zulässige Gesamtmasse des Anhängers 750 kg nicht übersteigt
+            <li className={styles["sub-list"]}>
+              {" "}
+              - die zulässige Gesamtmasse des Anhängers 750 kg nicht übersteigt
               oder
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              die zulässige Gesamtmasse der Kombination nicht mehr als 3500 kg
+            <li className={styles["sub-list"]}>
+              {" "}
+              - die zulässige Gesamtmasse der Kombination nicht mehr als 3500 kg
               beträgt.
             </li>
 
@@ -48,7 +50,7 @@ const KlasseB = () => {
             </li>
 
             <li>
-              beim Begleiteten Fahren <b>17</b>
+              beim Begleiteten Fahren: <b>17</b>
             </li>
 
             <li>
@@ -69,7 +71,8 @@ const KlasseB = () => {
             </li>
 
             <li>
-              unsere Fahrzeuge: SKODA Fabia/Oktavia/ Karoq - Mitsubishi – VW T5
+              unsere Fahrzeuge: SKODA Fabia/ Oktavia/ Karoq - MITSUBISHI – SEAT
+              - VW T5
             </li>
           </ul>
 
