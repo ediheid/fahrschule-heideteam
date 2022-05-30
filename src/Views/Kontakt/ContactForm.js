@@ -31,8 +31,10 @@ const ContactForm = () => {
   //   );
   // !! To incorporate later....
   const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
   let [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
   const [emailSent, setEmailSent] = useState(false);
 
   const submit = () => {
@@ -41,15 +43,19 @@ const ContactForm = () => {
 
     if (
       name.length >= 1 &&
+      lastname.length >= 1 &&
       message.length >= 5 &&
+      subject.length >= 2 &&
       /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
     ) {
-      const serviceId = "smtptest";
+      const serviceId = "HeideteamSmtp";
       const templateId = "template_uxle599";
       const userId = "IWEqaF6H3Jvyjj0MT";
       const templateParams = {
         name,
+        lastname,
         email,
+        subject,
         message,
       };
 
@@ -58,7 +64,9 @@ const ContactForm = () => {
         .then((response) => console.log(response))
         .then((error) => console.log(error));
       setName("");
+      setLastname("");
       setEmail("");
+      setSubject("");
       setMessage("");
       // Clears form after successful submit
       setEmailSent(true);
@@ -71,18 +79,35 @@ const ContactForm = () => {
     <div id="contact-form">
       <input
         type="text"
-        placeholder="Your Name"
+        placeholder="Vorname"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
+
+      <input
+        type="text"
+        placeholder="Nachname"
+        value={lastname}
+        onChange={(e) => setLastname(e.target.value)}
+      />
+
       <input
         type="email"
-        placeholder="Your email address"
+        placeholder="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
+
+      <input
+        type="text"
+        placeholder="Thema"
+        value={subject}
+        onChange={(e) => setSubject(e.target.value)}
+      />
+
       <textarea
-        placeholder="Your message"
+        type="text"
+        placeholder="Schreiben Sie ihre Nachricht hier"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>

@@ -17,7 +17,7 @@ const Home = () => {
 
       <section className={styles["landing-view-container"]}>
         <div className={styles["heading-content-container"]}>
-          <h2> Eure Fahrschule in Radeberg und Umgebung!</h2>
+          <h2> Ihre Fahrschule in Radeberg und Umgebung!</h2>
 
           <div className={styles["button-container"]}>
             <HashLink
