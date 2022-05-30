@@ -21,9 +21,10 @@ const KlasseD = () => {
           <h4>Fahrzeugart Große Busse</h4>
           <ul>
             <li>
-              Kraftfahrzeuge - ausgenommen Kraftfahrzeuge der Klassen AM, A1, A2
-              und A - die zur <b>Beförderung von mehr als acht Personen</b>{" "}
-              außer dem Fahrzeugführer ausgelegt und gebaut sind.
+              <b>Kraftfahrzeuge</b> - ausgenommen Kraftfahrzeuge der Klassen AM,
+              A1, A2 und A - die zur
+              <b> Beförderung von mehr als acht Personen</b> außer dem
+              Fahrzeugführer ausgelegt und gebaut sind
             </li>
 
             <li>
@@ -33,34 +34,41 @@ const KlasseD = () => {
 
             <li>Mindestalter:</li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>24</b> Jahre
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>24</b> Jahre
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>23</b> Jahre nach beschleunigter Grundqualifikation.
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>23</b> Jahre nach beschleunigter Grundqualifikation.
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>21</b> Jahre nach erfolgter Grundqualifikation (umfangreiche
-              Prüfung bei der IHK) oder nach beschleunigter Grundqualifikation
-              (dann auf Linienverkehr bis 50 Kilometer Linienlänge beschränkt).
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>21</b> Jahre nach erfolgter Grundqualifikation (umfangreiche
+              Prüfung ` bei der IHK) oder nach beschleunigter Grundqualifikation
+              (dann auf ` Linienverkehr bis 50 Kilometer Linienlänge beschränkt)
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>20</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufskraftfahrer oder Fachkraft im Fahrbetrieb.
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>20</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum ` Berufskraftfahrer oder Fachkraft im Fahrbetrieb
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb, auf
-              Linienverkehr bis 50 Kilometer Linienlänge beschränkt.
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum ` Berufskraftfahrer oder Fachkraft im Fahrbetrieb, auf
+              Linienverkehr bis ` 50 Kilometer Linienlänge beschränkt
             </li>
 
-            <li className={styles["list-style-disc"]}>
-              <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
-              zum Berufkraftfahrer oder Fachkraft im Fahrbetrieb ohne Fahrgäste.
+            <li className={styles["sub-list"]}>
+              {" "}
+              - <b>18</b> Jahre während oder nach Abschluss der Berufsausbildung
+              zum ` Berufskraftfahrer oder Fachkraft im Fahrbetrieb ohne
+              Fahrgäste.
             </li>
 
             <li>
@@ -76,14 +84,14 @@ const KlasseD = () => {
             </li>
 
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 
@@ -92,7 +100,7 @@ const KlasseD = () => {
             <ul>
               <li>
                 <b>
-                  Ausbildung bei uns nur auf speziell Anfrage!{" "}
+                  DE- Ausbildung auf Anfrage möglich.{" "}
                   <a
                     className={styles["email-link"]}
                     href="mailto:w.franke@fsheideteam.de"
