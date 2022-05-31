@@ -1,9 +1,17 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-// import { init } from "emailjs-com";
-// init("user_id");
 
 import styles from "./contact-form.module.scss";
+
+import { init } from "emailjs-com";
+init("userId");
+
+// import "dotenv/config";
+// require("dotenv").config();
+
+let SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+let TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+let USER_ID = process.env.REACT_APP_USER_ID;
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -26,9 +34,9 @@ const ContactForm = () => {
       subject.length >= 2 &&
       /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
     ) {
-      const serviceId = "HeideteamSmtp";
-      const templateId = "template_uxle599";
-      const userId = "IWEqaF6H3Jvyjj0MT";
+      let serviceId = SERVICE_ID;
+      let templateId = TEMPLATE_ID;
+      let userId = USER_ID;
       const templateParams = {
         name,
         lastname,
@@ -72,6 +80,7 @@ const ContactForm = () => {
             placeholder="Vorname"
             value={name}
             name="fistname"
+            maxLength="50"
             onChange={(e) => setName(e.target.value)}
           />
 
@@ -84,6 +93,7 @@ const ContactForm = () => {
             placeholder="Nachname"
             value={lastname}
             name="lastname"
+            maxLength="50"
             onChange={(e) => setLastname(e.target.value)}
           />
 
@@ -96,6 +106,7 @@ const ContactForm = () => {
             placeholder="Email"
             value={email}
             name="email"
+            maxLength="50"
             onChange={(e) => setEmail(e.target.value)}
           />
 
@@ -108,6 +119,7 @@ const ContactForm = () => {
             placeholder="Thema"
             value={subject}
             name="subject"
+            maxLength="50"
             onChange={(e) => setSubject(e.target.value)}
           />
 
@@ -120,6 +132,7 @@ const ContactForm = () => {
             placeholder="Schreiben Sie ihre Nachricht hier"
             value={message}
             name="message"
+            maxLength="800"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <button type="submit" onClick={submit}>
