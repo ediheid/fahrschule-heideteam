@@ -85,6 +85,8 @@
   padding: 1rem 0.5rem 1rem 0.5rem;
   font-size: 1.5rem;
 
+  background-color: lighten($eggshell, 5%);
+
   &::placeholder {
     font-family: $roboto-light-italic-font-family;
     letter-spacing: 0.1rem;
