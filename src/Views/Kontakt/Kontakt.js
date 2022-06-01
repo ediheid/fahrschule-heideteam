@@ -56,7 +56,7 @@ const Kontakt = () => {
           {/* Opening and lesson times */}
           <h5>Öffnungszeiten:</h5>
           <span>
-            Mittwoch 16.00 bis 18.00 Uhr
+            Mittwoch 15.00 bis 18.00 Uhr
             <br />
             sowie nach Vereinbarung
           </span>
