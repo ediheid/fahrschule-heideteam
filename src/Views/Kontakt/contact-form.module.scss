@@ -15,6 +15,8 @@
 .form-heading {
   // margin: 1rem 0 3rem 0;
 
+  align-self: center;
+
   font-size: 2.3rem;
   text-align: center;
 
@@ -23,6 +25,8 @@
 }
 
 .heading-underline {
+  align-self: center;
+
   height: 0.4rem;
   width: 10rem;
   background-color: $dark-green;
@@ -35,15 +39,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   height: auto;
 
-  // Same settings as map and text container in kontakt.mosule.scss
-  margin: 3rem;
+  // Same settings as map and text container in kontakt.module.scss
+  // margin: 3rem;
   width: 30rem;
 
   background-color: white;
-  padding: 5rem 0 2rem 0;
+  // padding: 5rem 5rem 2rem 5rem;
 
   border-radius: 0.5rem;
   box-shadow: rgba(26, 79, 67, 0.24) 0px 3px 8px;
@@ -53,19 +58,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 
   width: 100%;
 
-  margin: 3rem;
+  // margin: 3rem;
   font-family: $main-font-font-family;
   color: $main-font-green;
-}
-
-// This will be used for larger screens
-.input-label-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
 }
 
 .contact-form-label {
@@ -95,7 +94,7 @@
   &:active {
     .contact-form-input:hover {
       border-bottom: solid 2px $brighter-logo-green;
-      border-radius: 0.3rem;
+      // border-radius: 0.3rem;
       background-color: lighten($eggshell, 3%);
       font-size: 1.6rem;
     }
@@ -126,22 +125,44 @@
 
 // ? Media Queries
 
+@include x-small {
+  .contact-form-container {
+    height: auto;
+
+    padding: 6rem 3rem 6rem 3rem;
+  }
+
+  .heading-underline {
+    margin-bottom: 4rem;
+  }
+
+  .contact-form-input {
+    width: 85%;
+  }
+
+  .submit-button {
+    margin-top: 3rem;
+  }
+}
+
 @include small {
   .contact-form-container {
     width: 40rem;
     height: auto;
+
+    padding: 8rem 3rem 8rem 3rem;
   }
 
-  .input-label-wrapper {
-    width: 100%;
+  .heading-underline {
+    margin-bottom: 5rem;
   }
 
   .contact-form-input {
-    width: 50%;
+    width: 85%;
   }
 
-  .text-container {
-    width: 85%;
+  .submit-button {
+    margin-top: 5rem;
   }
 }
 
@@ -150,48 +171,19 @@
     width: 60rem;
     height: auto;
 
-    padding-left: 5rem;
-  }
-
-  .form-heading {
-    width: 90%;
-    margin-left: -5rem;
+    padding: 8rem 5rem 8rem 5rem;
   }
 
   .heading-underline {
-    margin-left: -5rem;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    padding: 5rem 5rem 3rem 5rem;
-
-    // justify-content: center;
-    // align-items: center;
-  }
-
-  .form-heading {
-    padding-top: 3rem;
-  }
-
-  .input-label-wrapper {
-    width: 50%;
-
-    &:nth-of-type(5) {
-      width: 100%;
-      margin-top: 2rem;
-    }
-    &:nth-of-type(6) {
-      width: 100%;
-      margin-left: -3rem;
-      margin-top: 3rem;
-    }
+    margin-bottom: 5rem;
   }
 
   .contact-form-input {
-    width: 70%;
+    width: 91%;
+  }
+
+  .submit-button {
+    margin-top: 5rem;
   }
 }
 
@@ -200,48 +192,19 @@
     width: 60rem;
     height: auto;
 
-    padding-left: 5rem;
-  }
-
-  .form-heading {
-    width: 90%;
-    margin-left: -5rem;
+    padding: 10rem 5rem 7rem 5rem;
   }
 
   .heading-underline {
-    margin-left: -5rem;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    padding: 5rem 5rem 3rem 5rem;
-
-    // justify-content: center;
-    // align-items: center;
-  }
-
-  .form-heading {
-    padding-top: 3rem;
-  }
-
-  .input-label-wrapper {
-    width: 50%;
-
-    &:nth-of-type(5) {
-      width: 100%;
-      margin-top: 2rem;
-    }
-    &:nth-of-type(6) {
-      width: 100%;
-      margin-left: -3rem;
-      margin-top: 3rem;
-    }
+    margin-bottom: 5rem;
   }
 
   .contact-form-input {
-    width: 70%;
+    width: 91%;
+  }
+
+  .submit-button {
+    margin-top: 5rem;
   }
 }
 
@@ -250,48 +213,19 @@
     width: 60rem;
     height: auto;
 
-    padding-left: 5rem;
-  }
-
-  .form-heading {
-    width: 90%;
-    margin-left: -5rem;
+    padding: 10rem 5rem 8rem 5rem;
   }
 
   .heading-underline {
-    margin-left: -5rem;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    padding: 5rem 5rem 3rem 5rem;
-
-    // justify-content: center;
-    // align-items: center;
-  }
-
-  .form-heading {
-    padding-top: 3rem;
-  }
-
-  .input-label-wrapper {
-    width: 50%;
-
-    &:nth-of-type(5) {
-      width: 100%;
-      margin-top: 2rem;
-    }
-    &:nth-of-type(6) {
-      width: 100%;
-      margin-left: -3rem;
-      margin-top: 3rem;
-    }
+    margin-bottom: 5rem;
   }
 
   .contact-form-input {
-    width: 70%;
+    width: 91%;
+  }
+
+  .submit-button {
+    margin-top: 5rem;
   }
 }
 
@@ -300,48 +234,19 @@
     width: 60rem;
     height: auto;
 
-    padding-left: 5rem;
-  }
-
-  .form-heading {
-    width: 90%;
-    margin-left: -5rem;
+    padding: 10rem 5rem 8rem 5rem;
   }
 
   .heading-underline {
-    margin-left: -5rem;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    padding: 5rem 5rem 3rem 5rem;
-
-    // justify-content: center;
-    // align-items: center;
-  }
-
-  .form-heading {
-    padding-top: 3rem;
-  }
-
-  .input-label-wrapper {
-    width: 50%;
-
-    &:nth-of-type(5) {
-      width: 100%;
-      margin-top: 2rem;
-    }
-    &:nth-of-type(6) {
-      width: 100%;
-      margin-left: -3rem;
-      margin-top: 3rem;
-    }
+    margin-bottom: 5rem;
   }
 
   .contact-form-input {
-    width: 70%;
+    width: 91%;
+  }
+
+  .submit-button {
+    margin-top: 5rem;
   }
 }
 
@@ -350,14 +255,8 @@
     width: 20rem;
     height: auto;
   }
-}
 
-@include extra-extra-small {
   .contact-form-input {
-    width: 75%;
-  }
-
-  .submit-button {
-    width: 70%;
+    width: 83%;
   }
 }
