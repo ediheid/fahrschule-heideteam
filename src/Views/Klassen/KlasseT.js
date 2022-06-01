@@ -96,6 +96,8 @@ const KlasseT = () => {
                   <a
                     className={styles["email-link"]}
                     href="mailto:j.seeberger@fsheideteam.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     (j.seeberger@fsheideteam.de)
                   </a>

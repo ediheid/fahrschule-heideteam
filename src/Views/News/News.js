@@ -12,7 +12,17 @@ const News = () => {
       form */}
       <div>
         Bitte informieren Sie sich in unserem Büro (jeweils mittwochs von 15.00
-        - 18.00 Uhr) oder jederzeit per Mail unter info@fsheideteam.de.
+        - 18.00 Uhr) oder jederzeit per Mail
+        <a
+          href="mailto:info@fsheideteam.de"
+          alt="email link to info"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          unter info@fsheideteam.de
+        </a>
+        .
       </div>
       <div>
         Aus organisatorischen Gründen können wir zum jetzigen Zeitpunkt die

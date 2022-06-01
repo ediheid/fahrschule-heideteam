@@ -57,6 +57,8 @@ const Impressum = () => {
               className={styles["anchor-tags"]}
               href="mailto:info@fsheideteam.de"
               alt="Email link to info at fs heideteam dot d e"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               info@fsheideteam.de
             </a>
@@ -97,6 +99,8 @@ const Impressum = () => {
               className={styles["anchor-tags"]}
               href="mailto:poststelle@lasuv.sachsen.de"
               alt="Email link to poststelle at lasuv dot sachsen dot d e"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               (poststelle@lasuv.sachsen.de)
             </a>{" "}
