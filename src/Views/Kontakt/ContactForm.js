@@ -71,77 +71,90 @@ const ContactForm = () => {
         <div className={styles["heading-underline"]}></div>
 
         <form className={styles["contact-form"]}>
-          <label className={styles["contact-form-label"]} htmlFor="fistname">
-            Vorname
-          </label>
-          <input
-            className={styles["contact-form-input"]}
-            type="text"
-            placeholder="Ihr Vorname"
-            value={name}
-            name="fistname"
-            maxLength="50"
-            onChange={(e) => setName(e.target.value)}
-          />
+          <div className={styles["input-label-wrapper"]}>
+            <label className={styles["contact-form-label"]} htmlFor="fistname">
+              Vorname
+            </label>
+            <input
+              className={styles["contact-form-input"]}
+              type="text"
+              placeholder="Ihr Vorname"
+              value={name}
+              name="fistname"
+              maxLength="50"
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
 
-          <label className={styles["contact-form-label"]} htmlFor="lastname">
-            Nachname
-          </label>
-          <input
-            className={styles["contact-form-input"]}
-            type="text"
-            placeholder="Ihr Nachname"
-            value={lastname}
-            name="lastname"
-            maxLength="50"
-            onChange={(e) => setLastname(e.target.value)}
-          />
+          <div className={styles["input-label-wrapper"]}>
+            <label className={styles["contact-form-label"]} htmlFor="lastname">
+              Nachname
+            </label>
+            <input
+              className={styles["contact-form-input"]}
+              type="text"
+              placeholder="Ihr Nachname"
+              value={lastname}
+              name="lastname"
+              maxLength="50"
+              onChange={(e) => setLastname(e.target.value)}
+            />
+          </div>
 
-          <label className={styles["contact-form-label"]} htmlFor="email">
-            E-mail
-          </label>
-          <input
-            className={styles["contact-form-input"]}
-            type="email"
-            placeholder="deine E-mail"
-            value={email}
-            name="email"
-            maxLength="50"
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <div className={styles["input-label-wrapper"]}>
+            <label className={styles["contact-form-label"]} htmlFor="email">
+              E-mail
+            </label>
+            <input
+              className={styles["contact-form-input"]}
+              type="email"
+              placeholder="deine E-mail"
+              value={email}
+              name="email"
+              maxLength="50"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-          <label className={styles["contact-form-label"]} htmlFor="subject">
-            Subject
-          </label>
-          <input
-            className={styles["contact-form-input"]}
-            type="text"
-            placeholder="Thema"
-            value={subject}
-            name="subject"
-            maxLength="50"
-            onChange={(e) => setSubject(e.target.value)}
-          />
+          <div className={styles["input-label-wrapper"]}>
+            <label className={styles["contact-form-label"]} htmlFor="subject">
+              Subject
+            </label>
+            <input
+              className={styles["contact-form-input"]}
+              type="text"
+              placeholder="Thema"
+              value={subject}
+              name="subject"
+              maxLength="50"
+              onChange={(e) => setSubject(e.target.value)}
+            />
+          </div>
 
-          <label className={styles["contact-form-label"]} htmlFor="message">
-            Nachricht
-          </label>
-          <textarea
-            className={`${styles["contact-form-input"]} ${styles["text-container"]}`}
-            type="text"
-            placeholder="Schreiben Sie ihre Nachricht hier"
-            value={message}
-            name="message"
-            // maxLength="800"
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button
-            className={styles["submit-button"]}
-            type="submit"
-            onClick={submit}
-          >
-            Nachricht senden
-          </button>
+          <div className={styles["input-label-wrapper"]}>
+            <label className={styles["contact-form-label"]} htmlFor="message">
+              Nachricht
+            </label>
+            <textarea
+              className={`${styles["contact-form-input"]} ${styles["text-container"]}`}
+              type="text"
+              placeholder="Schreiben Sie ihre Nachricht hier"
+              value={message}
+              name="message"
+              // maxLength="800"
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+          </div>
+
+          <div className={styles["input-label-wrapper"]}>
+            <button
+              className={styles["submit-button"]}
+              type="submit"
+              onClick={submit}
+            >
+              Nachricht senden
+            </button>
+          </div>
           {/* <span className={emailSent ? "visible" : null}>
         Thank you for your message, we will be in touch in no time!
       </span> */}

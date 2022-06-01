@@ -61,6 +61,13 @@
   color: $main-font-green;
 }
 
+// This will be used for larger screens
+.input-label-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
 .contact-form-label {
   margin: 0 0 1rem 2rem;
   font-size: 1.6rem;
@@ -113,33 +120,217 @@
     width: 40rem;
     height: auto;
   }
+
+  .input-label-wrapper {
+    width: 100%;
+  }
+
+  .contact-form-input {
+    width: 50%;
+  }
+
+  .text-container {
+    width: 85%;
+  }
 }
 
 @include medium {
   .contact-form-container {
-    width: 40rem;
+    width: 60rem;
     height: auto;
+
+    padding-left: 5rem;
+  }
+
+  .form-heading {
+    width: 90%;
+    margin-left: -5rem;
+  }
+
+  .heading-underline {
+    margin-left: -5rem;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 5rem 5rem 3rem 5rem;
+
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .form-heading {
+    padding-top: 3rem;
+  }
+
+  .input-label-wrapper {
+    width: 50%;
+
+    &:nth-of-type(5) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    &:nth-of-type(6) {
+      width: 100%;
+      margin-left: -3rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .contact-form-input {
+    width: 70%;
   }
 }
 
 @include large {
   .contact-form-container {
-    width: 40rem;
+    width: 60rem;
     height: auto;
+
+    padding-left: 5rem;
+  }
+
+  .form-heading {
+    width: 90%;
+    margin-left: -5rem;
+  }
+
+  .heading-underline {
+    margin-left: -5rem;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 5rem 5rem 3rem 5rem;
+
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .form-heading {
+    padding-top: 3rem;
+  }
+
+  .input-label-wrapper {
+    width: 50%;
+
+    &:nth-of-type(5) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    &:nth-of-type(6) {
+      width: 100%;
+      margin-left: -3rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .contact-form-input {
+    width: 70%;
   }
 }
 
 @include extra-large {
   .contact-form-container {
-    width: 50rem;
+    width: 60rem;
     height: auto;
+
+    padding-left: 5rem;
+  }
+
+  .form-heading {
+    width: 90%;
+    margin-left: -5rem;
+  }
+
+  .heading-underline {
+    margin-left: -5rem;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 5rem 5rem 3rem 5rem;
+
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .form-heading {
+    padding-top: 3rem;
+  }
+
+  .input-label-wrapper {
+    width: 50%;
+
+    &:nth-of-type(5) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    &:nth-of-type(6) {
+      width: 100%;
+      margin-left: -3rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .contact-form-input {
+    width: 70%;
   }
 }
 
 @include extra-extra-large {
   .contact-form-container {
-    width: 50rem;
+    width: 60rem;
     height: auto;
+
+    padding-left: 5rem;
+  }
+
+  .form-heading {
+    width: 90%;
+    margin-left: -5rem;
+  }
+
+  .heading-underline {
+    margin-left: -5rem;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 5rem 5rem 3rem 5rem;
+
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .form-heading {
+    padding-top: 3rem;
+  }
+
+  .input-label-wrapper {
+    width: 50%;
+
+    &:nth-of-type(5) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    &:nth-of-type(6) {
+      width: 100%;
+      margin-left: -3rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .contact-form-input {
+    width: 70%;
   }
 }
 
@@ -147,5 +338,15 @@
   .contact-form-container {
     width: 20rem;
     height: auto;
+  }
+}
+
+@include extra-extra-small {
+  .contact-form-input {
+    width: 75%;
+  }
+
+  .submit-button {
+    width: 70%;
   }
 }
