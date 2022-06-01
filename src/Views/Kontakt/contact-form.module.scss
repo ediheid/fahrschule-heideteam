@@ -91,6 +91,15 @@
     font-family: $roboto-light-italic-font-family;
     letter-spacing: 0.1rem;
   }
+
+  &:active {
+    .contact-form-input:hover {
+      border-bottom: solid 2px $brighter-logo-green;
+      border-radius: 0.3rem;
+      background-color: lighten($eggshell, 3%);
+      font-size: 1.6rem;
+    }
+  }
 }
 
 @media (hover: hover) {
