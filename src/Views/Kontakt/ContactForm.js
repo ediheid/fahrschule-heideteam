@@ -77,7 +77,7 @@ const ContactForm = () => {
           <input
             className={styles["contact-form-input"]}
             type="text"
-            placeholder="Vorname"
+            placeholder="Ihr Vorname"
             value={name}
             name="fistname"
             maxLength="50"
@@ -90,7 +90,7 @@ const ContactForm = () => {
           <input
             className={styles["contact-form-input"]}
             type="text"
-            placeholder="Nachname"
+            placeholder="Ihr Nachname"
             value={lastname}
             name="lastname"
             maxLength="50"
@@ -98,12 +98,12 @@ const ContactForm = () => {
           />
 
           <label className={styles["contact-form-label"]} htmlFor="email">
-            Email
+            E-mail
           </label>
           <input
             className={styles["contact-form-input"]}
             type="email"
-            placeholder="Email"
+            placeholder="deine E-mail"
             value={email}
             name="email"
             maxLength="50"
@@ -132,10 +132,14 @@ const ContactForm = () => {
             placeholder="Schreiben Sie ihre Nachricht hier"
             value={message}
             name="message"
-            maxLength="800"
+            // maxLength="800"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button type="submit" onClick={submit}>
+          <button
+            className={styles["submit-button"]}
+            type="submit"
+            onClick={submit}
+          >
             Nachricht senden
           </button>
           {/* <span className={emailSent ? "visible" : null}>
