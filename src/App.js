@@ -17,7 +17,6 @@ import DesktopNav from "./Components/Navbar/DesktopNav";
 import FscheinClasses from "./Views/Klassen/FscheinClasses";
 import Team from "./Views/Team/Team";
 import Berufskraftfahrerqualifikation from "./Views/Berufskraftfahrerqualifikation/Berufskraftfahrerqualifikation";
-import News from "./Views/News/News";
 import Kontakt from "./Views/Kontakt/Kontakt";
 import Footer from "./Components/Footer/Footer";
 import Impressum from "./Views/Impressum/Impressum";
@@ -118,8 +117,6 @@ const App = () => {
                 exact
                 element={<Berufskraftfahrerqualifikation />}
               />
-
-              <Route path="/news" exact element={<News />} />
 
               <Route path="/kontakt" exact element={<Kontakt />} />
 

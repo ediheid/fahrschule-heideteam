@@ -99,7 +99,7 @@ const KlasseT = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    (j.seeberger@fsheideteam.de)
+                    j.seeberger@fsheideteam.de
                   </a>
                 </b>
               </li>

@@ -52,19 +52,20 @@
 
 .anchor-tags {
   text-decoration: none;
-  color: $logo-green;
+  color: $dark-green;
 
   &:active {
     text-decoration: underline;
-    color: $brighter-logo-green;
+    color: $logo-green;
+    font-family: $roboto-bold-font-family;
   }
 }
 
 @media (hover: hover) {
   .anchor-tags:hover {
     text-decoration: underline;
-    text-decoration: underline;
-    color: $brighter-logo-green;
+    color: $logo-green;
+    font-family: $roboto-bold-font-family;
   }
 }
 

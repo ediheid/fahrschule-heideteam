@@ -237,8 +237,20 @@
 
 .email-link {
   color: $blue;
+  font-family: $roboto-light-font-family;
+
   &:active {
     color: $logo-green;
+
+    font-family: $roboto-bold-font-family;
+  }
+}
+
+@media (hover: hover) {
+  .email-link:hover {
+    color: $logo-green;
+
+    font-family: $roboto-bold-font-family;
   }
 }
 

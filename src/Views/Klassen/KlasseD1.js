@@ -86,7 +86,7 @@ const KlasseD1 = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    (w.franke@fsheideteam.de)
+                    w.franke@fsheideteam.de
                   </a>
                 </b>
               </li>

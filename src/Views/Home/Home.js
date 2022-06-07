@@ -7,6 +7,7 @@ import AboutSection from "./AboutSection";
 import ExtraInfoSection from "./ExtraInfoSection";
 import BerufsSection from "./BerufsSection";
 import ContactSection from "./ContactSection";
+import News from "./News";
 
 import styles from "../Home/home.module.scss";
 
@@ -44,6 +45,10 @@ const Home = () => {
       {/* // ? Berufskraftfahrerqualifikation Section */}
 
       <BerufsSection />
+
+      {/* // ? News and Covid Info section */}
+
+      <News />
 
       {/* // ? Contact Section */}
 
