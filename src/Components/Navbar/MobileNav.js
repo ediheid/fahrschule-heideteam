@@ -104,14 +104,15 @@ const MobileNav = () => {
 
             {/* // ? News */}
 
-            <Link
+            <HashLink
               onClick={MobileNavContext.isNavOpen}
               className={styles["nav-links"]}
-              to="/news"
+              smooth
+              to="/#news"
               alt="Link to news page"
             >
               <li> News</li>
-            </Link>
+            </HashLink>
 
             <hr />
 
@@ -133,10 +134,11 @@ const MobileNav = () => {
             {/* // ! Currently links to section on News page */}
             {/* // ? Covid Info page */}
 
-            <Link
+            <HashLink
               onClick={MobileNavContext.isNavOpen}
               className={styles["nav-links"]}
-              to="/news"
+              smooth
+              to="/#news"
               alt="Link to covid infopage"
             >
               <li className={`${styles["covid-container"]} `}>
@@ -150,7 +152,7 @@ const MobileNav = () => {
                   Covid Info
                 </span>
               </li>
-            </Link>
+            </HashLink>
 
             <hr />
           </ul>

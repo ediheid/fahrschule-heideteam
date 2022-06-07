@@ -90,13 +90,14 @@ const DesktopNav = () => {
 
           {/* // ? News */}
           <li>
-            <Link
+            <HashLink
               className={styles["nav-links"]}
-              to="/news"
+              smooth
+              to="/#news"
               alt="Link to news page"
             >
               News
-            </Link>
+            </HashLink>
           </li>
 
           {/* // ? Contact */}
@@ -127,9 +128,10 @@ const DesktopNav = () => {
             </Link>
           </li> */}
 
-          <Link
+          <HashLink
             className={styles["nav-links"]}
-            to="/news"
+            smooth
+            to="/#news"
             alt="Link to covid infopage"
           >
             <li className={styles["covid-container"]}>
@@ -138,7 +140,7 @@ const DesktopNav = () => {
               />{" "}
               Covid Info{" "}
             </li>
-          </Link>
+          </HashLink>
         </ul>
       </nav>
     </>

@@ -4,10 +4,8 @@ import styles from "../Home/home.module.scss";
 
 const News = () => {
   return (
-    <section data-aos="fade-up" className={styles["news-section"]}>
-      <h2 className={styles["headings"]} id="news">
-        News
-      </h2>
+    <section data-aos="fade-up" className={styles["news-section"]} id="news">
+      <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
         <p className={styles["news-paragraphs"]}>
@@ -27,8 +25,7 @@ const News = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-            info@fsheideteam.de
+            <br /> info@fsheideteam.de
           </a>
           .
         </p>
