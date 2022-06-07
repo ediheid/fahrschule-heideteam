@@ -1,6 +1,6 @@
 // Global styles are imported at the top of each stylesheet
 
-// @import "./variables.module";
+@import "./variables.module";
 // @use "./mixins.module";
 // @use "./reset.module";
 // @use "./fonts.scss";
@@ -13,3 +13,18 @@
 // @import "../Views/Impressum/impressum.module.scss";
 // @import "../Views/DSGVO/datenschutz.module.scss";
 // @import "../Components/Slideshow/slideshow.module.scss";
+
+.privacy-consent-text {
+  font-size: 1.4rem;
+  color: $main-font-green;
+  font-family: $main-font-font-family;
+  //   width: 80%;
+}
+
+.privacy-policy-link {
+  color: $logo-green;
+  font-size: 1.6rem;
+  font-family: $main-font-font-family;
+  padding-left: 0.5rem;
+  //   text-decoration: none;
+}

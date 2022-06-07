@@ -4,9 +4,11 @@ import {
   Route,
   Routes,
   Navigate,
+  Link,
 } from "react-router-dom";
 
 import CookieConsent from "react-cookie-consent";
+import styles from "../src/Styling/app.module.scss";
 
 // Views / Components
 import Home from "./Views/Home/Home";
@@ -79,6 +81,31 @@ const App = () => {
           >
             {/* Displays scroll to top button once user has scrolled down the page // * (hamburger menu devices only) */}
             <ToTopButton />
+
+            <CookieConsent
+              location="bottom"
+              buttonText="Got it!"
+              z-index="2000"
+              // cookieName="myAwesomeCookieName2"
+              style={{ background: "#f2f2f2" }}
+              buttonStyle={{
+                color: "#f2f2f2",
+                fontSize: "15px",
+                background: "#1a6f5c",
+                padding: "10px 20px 10px 20px",
+                borderRadius: "5px",
+              }}
+              expires={150}
+            >
+              <span className={styles["privacy-consent-text"]}>
+                By using our site, you agree to our
+              </span>
+
+              <Link className={styles["privacy-policy-link"]} to="/datenschutz">
+                {" "}
+                Privacy Policy.
+              </Link>
+            </CookieConsent>
 
             <Routes>
               <Route path="/" exact element={<Home />} />
