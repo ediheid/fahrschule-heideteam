@@ -86,14 +86,13 @@ const App = () => {
               location="bottom"
               buttonText="Got it!"
               // cookieName="myAwesomeCookieName2"
-              style={{ background: "#f2f2f2" }}
+              style={{ background: "#f2f2f2", zIndex: "20000" }}
               buttonStyle={{
                 color: "#f2f2f2",
                 fontSize: "15px",
                 background: "#1a6f5c",
                 padding: "10px 20px 10px 20px",
                 borderRadius: "5px",
-                zIndex: "2000",
               }}
               expires={150}
             >
