@@ -70,6 +70,7 @@ const DesktopNav = () => {
           <li>
             <HashLink
               className={styles["nav-links"]}
+              smooth
               to="/#about"
               alt="Link to team page"
             >
