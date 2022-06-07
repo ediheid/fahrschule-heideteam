@@ -86,7 +86,7 @@ const App = () => {
               location="bottom"
               buttonText="Got it!"
               // cookieName="myAwesomeCookieName2"
-              style={{ background: "#f2f2f2", zIndex: "20000" }}
+              style={{ background: "#f2f2f2", zIndex: "100000" }}
               buttonStyle={{
                 color: "#f2f2f2",
                 fontSize: "15px",
