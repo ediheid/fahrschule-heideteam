@@ -11,6 +11,7 @@ const TeamCard = ({ card }) => {
           src={card.img}
           alt={`Headshot of ${card.name}`}
           className={styles["profile-photo"]}
+          // Custom styling for Nancy's photo - object position: top
           id={styles[card.customStyle]}
         ></img>
       </div>
