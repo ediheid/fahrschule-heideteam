@@ -11,6 +11,7 @@ import jan from "../Team/Static/jan.png";
 import peter from "../Team/Static/peter.png";
 import michel from "../Team/Static/michel.png";
 import robby from "../Team/Static/robby.png";
+import nancy from "../Team/Static/nancy.png";
 
 const Team = () => {
   // Add individual card data here that will be mapped below
@@ -72,9 +73,10 @@ const Team = () => {
 
     {
       id: "3",
-      // img: examplePhoto,
+      img: nancy,
       name: "Nancy Köhler",
       duties: "Die gute Seele im Büro (Organisation, Anmeldung etc.)",
+      customStyle: "custom-style",
     },
   ];
 

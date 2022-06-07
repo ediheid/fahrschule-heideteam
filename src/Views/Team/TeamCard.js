@@ -11,6 +11,7 @@ const TeamCard = ({ card }) => {
           src={card.img}
           alt={`Headshot of ${card.name}`}
           className={styles["profile-photo"]}
+          id={styles[card.customStyle]}
         ></img>
       </div>
 

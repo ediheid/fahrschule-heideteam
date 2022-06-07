@@ -89,6 +89,11 @@
   object-fit: cover;
 }
 
+// Custom style for Nancy - passed in via id in TeamCard.js and object in Team.js
+#custom-style {
+  object-position: top;
+}
+
 .text-container {
   align-self: center;
 
