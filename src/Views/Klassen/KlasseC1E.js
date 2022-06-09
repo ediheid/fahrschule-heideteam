@@ -30,9 +30,9 @@ const KlasseC1E = () => {
             <li>
               <b>
                 Kombination aus einem Kraftfahrzeug der Klasse B und einem
-                Anhänger
+                Anhänger,
               </b>
-              , dessen zulässige Gesamtmasse größer ist als 3.500 kg.
+              dessen zulässige Gesamtmasse größer ist als 3.500 kg.
             </li>
 
             <li>
@@ -58,14 +58,14 @@ const KlasseC1E = () => {
               Beinhaltet Klasse: <b>BE; D1E bei Besitz von D1</b>
             </li>
             <li>
-              Sehvermögen: <b>Augenärztliches Zeugnis/Gutachten</b>
+              Sehvermögen: <b>augenärztliches Zeugnis/Gutachten</b>
             </li>
             <li>
               Erste Hilfe: <b>Erste-Hilfe-Kurs</b>
             </li>
 
             <li>
-              Sonstige Unterlagen: <b>Ärztliches Zeugnis</b>
+              Sonstige Unterlagen: <b>ärztliches Zeugnis</b>
             </li>
           </ul>
 
