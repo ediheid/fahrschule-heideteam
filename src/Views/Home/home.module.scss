@@ -82,11 +82,16 @@
 
     font-size: 3rem;
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem $brighter-logo-green,
+    // text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem $brighter-logo-green,
+    //   -0.2rem 0.1rem 1rem $brighter-logo-green,
+    //   0.2rem 0.1rem 1rem $brighter-logo-green, 0 -0.5rem 2rem $logo-green,
+    //   0 0.5rem 3rem $logo-green;
+
+    // ! Test to see if it seems less blurry
+    text-shadow: 0 0 0.1rem #ffe6ff, 0 0 1.5rem $brighter-logo-green,
       -0.2rem 0.1rem 1rem $brighter-logo-green,
       0.2rem 0.1rem 1rem $brighter-logo-green, 0 -0.5rem 2rem $logo-green,
       0 0.5rem 3rem $logo-green;
-    animation: shine 2s forwards, flicker 3s infinite;
   }
 }
 
