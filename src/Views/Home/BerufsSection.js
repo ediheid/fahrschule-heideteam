@@ -12,16 +12,13 @@ import bus from "../Home/Static/bus.png";
 const BerufsSection = () => {
   return (
     <section className={styles["berufs-section"]}>
-      <h2
-        data-aos="fade-up"
-        className={`${styles["headings"]} ${styles["extra-info-heading"]}`}
-      >
+      <h2 className={`${styles["headings"]} ${styles["extra-info-heading"]}`}>
         {/* // ! Can this word be broken like this? */}
         Wir bieten auch Berufskraftfahrer- qualifikation an
       </h2>
 
       <div className={styles["berufs-background-container"]}>
-        <div data-aos="fade-up" className={styles["berufs-icons-container"]}>
+        <div className={styles["berufs-icons-container"]}>
           <img
             src={classroom}
             alt="Teacher icons created by Nikita Golubev - Flaticon - https://www.flaticon.com/free-icons/teacher"
@@ -42,13 +39,12 @@ const BerufsSection = () => {
           ></img>
         </div>
 
-        <p data-aos="fade-up" className={styles["berufs-text"]}>
+        <p className={styles["berufs-text"]}>
           Entsprechend des EU-Berufskraftfahrer-Qualifikationsgesetzes führen
           wir die Weiterbildung von LKW- und Busfahrern durch
         </p>
 
         <Link
-          data-aos="fade-up"
           to="/berufskraftfahrerqualifikation"
           alt="Link to Berufskraftfahrerqualifikation page"
         >

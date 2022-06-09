@@ -8,7 +8,7 @@ import styles from "../Home/home.module.scss";
 const AboutSection = () => {
   return (
     <section className={styles["about-section"]} id="about">
-      <div data-aos="fade-up" className={styles["about-content-container"]}>
+      <div className={styles["about-content-container"]}>
         <div className={styles["about-text-container"]}>
           <h2 className={styles["headings"]}>Über Uns</h2>
 

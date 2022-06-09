@@ -82,7 +82,7 @@ const Team = () => {
   ];
 
   return (
-    <div data-aos="fade-up" className={styles["team-page-container"]}>
+    <div className={styles["team-page-container"]}>
       {/*  // Todo: Waiting for text */}
       {/* <p>Longer about text will go here..</p> */}
       <h2 className={styles["heading"]}>

@@ -4,7 +4,7 @@ import styles from "../Home/home.module.scss";
 
 const News = () => {
   return (
-    <section data-aos="fade-up" className={styles["news-section"]} id="news">
+    <section className={styles["news-section"]} id="news">
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>

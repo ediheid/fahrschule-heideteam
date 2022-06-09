@@ -10,7 +10,7 @@ import handshake from "../Home/Static/partners.png";
 
 const ExtraInfoSection = () => {
   return (
-    <section data-aos="fade-up" className={styles["extra-info-section"]}>
+    <section className={styles["extra-info-section"]}>
       <h2 className={`${styles["headings"]} ${styles["extra-info-heading"]}`}>
         Wir helfen Ihre Fahrziele zu erreichen
       </h2>

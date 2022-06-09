@@ -8,7 +8,7 @@ import wheel3 from "../Berufskraftfahrerqualifikation/Static/wheel3.png";
 
 const Berufskraftfahrerqualifikation = () => {
   return (
-    <div data-aos="fade-up" className={styles["bkf-page-container"]}>
+    <div className={styles["bkf-page-container"]}>
       {/* // Todo: What should the heading be? */}
 
       <div className={styles["heading-container"]}>

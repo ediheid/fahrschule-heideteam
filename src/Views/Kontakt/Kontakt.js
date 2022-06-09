@@ -5,7 +5,7 @@ import styles from "../Kontakt/kontakt.module.scss";
 
 const Kontakt = () => {
   return (
-    <div data-aos="fade-up" className={styles["contact-page-container"]}>
+    <div className={styles["contact-page-container"]}>
       <div className={styles["heading-container"]}>
         <h2 className={styles["heading"]}>Kontakt</h2>
         <div className={styles["heading-underline"]}></div>
