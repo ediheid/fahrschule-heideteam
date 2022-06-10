@@ -87,16 +87,24 @@
 
 .address,
 .phone-number,
-.email-link {
+.email-link,
+.form-hashlink {
   color: $logo-green;
   text-decoration: none;
   font-family: $roboto-medium-font-family;
+
+  display: block;
 
   font-size: 1.8rem;
 
   &:active {
     color: $brighter-logo-green;
   }
+}
+
+.form-hashlink {
+  margin-top: 1rem;
+  text-decoration: underline !important;
 }
 
 @media (hover: hover) {
@@ -113,6 +121,12 @@
 
 @media (hover: hover) {
   .email-link:hover {
+    color: $brighter-logo-green;
+  }
+}
+
+@media (hover: hover) {
+  .form-hashlink:hover {
     color: $brighter-logo-green;
   }
 }

@@ -98,6 +98,20 @@
       background-color: lighten($eggshell, 3%);
     }
   }
+
+  // Disable from on successful submit
+  &:disabled {
+    background-color: $eggshell;
+    border: none;
+    &::placeholder {
+      color: $white;
+    }
+    &:hover,
+    &:active {
+      background-color: $eggshell;
+      border: none;
+    }
+  }
 }
 
 @media (hover: hover) {

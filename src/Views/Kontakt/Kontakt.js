@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 import ContactForm from "../Kontakt/ContactForm";
 
 import styles from "../Kontakt/kontakt.module.scss";
@@ -45,6 +46,13 @@ const Kontakt = () => {
               info@fsheideteam.de
             </a>
           </span>
+          <HashLink
+            smooth
+            to="/kontakt#form"
+            className={styles["form-hashlink"]}
+          >
+            Or click here to fill out our contact form.
+          </HashLink>
 
           {/*  Directions */}
           <h5>Lagebeschreibung:</h5>
