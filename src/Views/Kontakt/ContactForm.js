@@ -68,7 +68,7 @@ const ContactForm = () => {
       setSubjectError(false);
       setMessageError(false);
 
-      // Clears form after successful submit
+      // Clears AND disables form after successful submit
       setEmailSent(true);
       // ! Error handling
     } else {
@@ -91,7 +91,6 @@ const ContactForm = () => {
       // Message
       message.length < 4 ? setMessageError(true) : setMessageError(false);
 
-      // ? And alert! - which will be a toast
       // alert(
       //   "Please make sure to fill in all fields correctly before submitting."
       // );
