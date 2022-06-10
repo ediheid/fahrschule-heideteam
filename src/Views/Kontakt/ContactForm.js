@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 import styles from "./contact-form.module.scss";
@@ -56,12 +56,18 @@ const ContactForm = () => {
         .send(serviceId, templateId, templateParams, userId)
         .then((response) => console.log(response))
         .then((error) => console.log(error));
+      // Reset form
       setName("");
       setLastname("");
       setEmail("");
       setSubject("");
       setMessage("");
+      setNameError(false);
+      setLastNameError(false);
       setEmailError(false);
+      setSubjectError(false);
+      setMessageError(false);
+
       // Clears form after successful submit
       setEmailSent(true);
       // ! Error handling
@@ -86,9 +92,9 @@ const ContactForm = () => {
       message.length < 4 ? setMessageError(true) : setMessageError(false);
 
       // ? And alert! - which will be a toast
-      alert(
-        "Please make sure to fill in all fields correctly before submitting."
-      );
+      // alert(
+      //   "Please make sure to fill in all fields correctly before submitting."
+      // );
     }
   };
 
@@ -106,7 +112,12 @@ const ContactForm = () => {
             Vorname
           </label>
           {/* Error handler */}
-          {nameError ? <span> * Please fill in your first name</span> : null}
+          {nameError ? (
+            <span className={styles["error-message"]}>
+              {" "}
+              * Please fill in your first name
+            </span>
+          ) : null}
           <input
             className={styles["contact-form-input"]}
             type="text"
@@ -123,7 +134,12 @@ const ContactForm = () => {
             Nachname
           </label>
           {/* Error handler */}
-          {lastNameError ? <span> * Please fill in your last name</span> : null}
+          {lastNameError ? (
+            <span className={styles["error-message"]}>
+              {" "}
+              * Please fill in your last name
+            </span>
+          ) : null}
           <input
             className={styles["contact-form-input"]}
             type="text"
@@ -141,7 +157,10 @@ const ContactForm = () => {
           </label>
           {/* Error handler */}
           {emailError ? (
-            <span> * Please fill in a valid email address</span>
+            <span className={styles["error-message"]}>
+              {" "}
+              * Please enter a valid email address
+            </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
@@ -160,7 +179,10 @@ const ContactForm = () => {
           </label>
           {/* Error handler */}
           {subjectError ? (
-            <span> * Please fill in the subject field</span>
+            <span className={styles["error-message"]}>
+              {" "}
+              * Please fill in the subject field
+            </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
@@ -179,7 +201,10 @@ const ContactForm = () => {
           </label>
           {/* Error handler */}
           {messageError ? (
-            <span> * Please fill in the message field</span>
+            <span className={styles["error-message"]}>
+              {" "}
+              * Please fill in the message field
+            </span>
           ) : null}
           <textarea
             className={`${styles["contact-form-input"]} ${styles["text-container"]}`}
@@ -193,21 +218,21 @@ const ContactForm = () => {
             disabled={emailSent}
           ></textarea>
 
-          <button
-            className={styles["submit-button"]}
-            type="submit"
-            onClick={submit}
-          >
-            Nachricht senden
-          </button>
-
-          {/*  Message on successful send! */}
-          {emailSent === true ? (
-            <span>
+          {/* Conditional render of Button or thank you message based on sent state */}
+          {emailSent === false ? (
+            <button
+              className={styles["submit-button"]}
+              type="submit"
+              onClick={submit}
+            >
+              Nachricht senden
+            </button>
+          ) : (
+            <span className={styles["sent-message-notification"]}>
               {" "}
               Thank you for your message, we will be in touch in no time!
             </span>
-          ) : null}
+          )}
         </form>
       </div>
     </section>

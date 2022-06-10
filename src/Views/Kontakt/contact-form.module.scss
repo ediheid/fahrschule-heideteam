@@ -123,6 +123,25 @@
   }
 }
 
+.error-message {
+  color: $error-red;
+  font-family: $main-font-font-family;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 2rem;
+}
+
+.sent-message-notification {
+  color: $main-font-green;
+  font-family: $main-font-font-family;
+  font-size: 2rem;
+  text-align: center;
+
+  width: 60%;
+  align-self: center;
+
+  margin-top: 3rem;
+}
+
 .text-container {
   resize: none;
   height: 10rem;
