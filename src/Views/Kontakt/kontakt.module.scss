@@ -141,6 +141,12 @@
 
 // ? Media Queries
 
+@include x-small {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
 @include small {
   .info-container {
     width: 40rem;
@@ -248,5 +254,9 @@
   .contact-form-container {
     width: 20rem;
     height: 30rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
   }
 }
