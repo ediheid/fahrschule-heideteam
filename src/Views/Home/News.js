@@ -18,7 +18,7 @@ const News = () => {
       form */}
         <p className={styles["news-paragraphs"]}>
           Bitte informieren Sie sich in unserem Büro (jeweils mittwochs von
-          15.00 - 18.00 Uhr) oder jederzeit per Mail unter :
+          15.00 - 18.00 Uhr) oder jederzeit per Mail unter:
           <a
             className={styles["email-link"]}
             href="mailto:info@fsheideteam.de"
@@ -63,7 +63,7 @@ const News = () => {
           Es bestehen keine aktuellen Einschränkungen.
         </p>
       </div>
-      <div className={styles["dividing-line"]}></div>
+      {/* <div className={styles["dividing-line"]}></div> */}
     </section>
   );
 };

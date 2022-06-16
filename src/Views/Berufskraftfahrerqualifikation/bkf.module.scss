@@ -114,8 +114,8 @@
   }
 }
 
-// @include x-small {
-//   .heading {
-//     font-size: 2.5rem;
-//   }
-// }
+@include x-small {
+  .heading {
+    font-size: 3rem;
+  }
+}
