@@ -322,7 +322,7 @@
   height: auto;
   width: 100%;
 
-  margin: 9rem 0 14rem 0;
+  margin: 15rem 0 14rem 0;
 }
 
 .news-content {
@@ -339,9 +339,13 @@
 }
 
 .news-paragraphs {
-  line-height: 2.5rem;
+  line-height: 3rem;
 
   padding: 1.5rem 0 1rem 0;
+
+  font-family: $montserrat-bold-font-family;
+
+  // font-size: 2rem;
 }
 
 .covid-heading {
@@ -354,6 +358,15 @@
   &:active {
     font-family: $roboto-bold-font-family;
   }
+}
+
+.news-contact-button-container {
+  margin: 2rem 0 2rem 0;
+}
+
+.news-contact-button {
+  @include gradient-button-dark;
+  text-decoration: none;
 }
 
 @media (hover: hover) {

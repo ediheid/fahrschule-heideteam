@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import styles from "../Home/home.module.scss";
 
@@ -29,6 +30,13 @@ const News = () => {
           </a>
           .
         </p>
+
+        <div className={styles["news-contact-button-container"]}>
+          <Link smooth to="/kontakt" className={styles["news-contact-button"]}>
+            Kontakt
+          </Link>
+        </div>
+
         <p className={styles["news-paragraphs"]}>
           Aus organisatorischen Gründen können wir zum jetzigen Zeitpunkt die
           theoretische Ausbildung (Grundstoff) nur in den Ferien - als

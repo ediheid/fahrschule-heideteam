@@ -23,7 +23,7 @@ const Home = () => {
           <div className={styles["button-container"]}>
             <HashLink
               smooth
-              to="/#about"
+              to="/#news"
               className={styles["more-about-button"]}
             >
               Los Gehts!
@@ -33,6 +33,10 @@ const Home = () => {
 
         <Slideshow />
       </section>
+
+      {/* // ? News and Covid Info section */}
+
+      <News />
 
       {/* // ? About Section*/}
 
@@ -45,10 +49,6 @@ const Home = () => {
       {/* // ? Berufskraftfahrerqualifikation Section */}
 
       <BerufsSection />
-
-      {/* // ? News and Covid Info section */}
-
-      <News />
 
       {/* // ? Contact Section */}
 
