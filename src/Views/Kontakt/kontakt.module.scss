@@ -62,7 +62,7 @@
   color: $main-font-green;
 
   h3 {
-    margin: 1rem 0 3rem 0;
+    margin: -1rem 0 2rem 0;
     font-size: 2.3rem;
   }
 
@@ -176,7 +176,7 @@
   }
 
   .info-container {
-    width: 40rem;
+    width: auto;
     height: 50rem;
   }
 
@@ -197,7 +197,7 @@
   }
 
   .info-container {
-    width: 50rem;
+    width: auto;
     height: 50rem;
   }
 
@@ -218,8 +218,9 @@
   }
 
   .info-container {
-    width: 60rem;
+    width: auto;
     height: 50rem;
+    margin-right: 15rem;
   }
 
   .map-container {
