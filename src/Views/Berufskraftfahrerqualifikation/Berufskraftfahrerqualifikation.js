@@ -12,7 +12,7 @@ const Berufskraftfahrerqualifikation = () => {
       {/* // Todo: What should the heading be? */}
 
       <div className={styles["heading-container"]}>
-        <h2 className={styles["heading"]}>Bkf</h2>
+        <h2 className={styles["heading"]}>Berufskraftfahrer</h2>
         <div className={styles["heading-underline"]}></div>
       </div>
 

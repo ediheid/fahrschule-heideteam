@@ -51,7 +51,7 @@ const Kontakt = () => {
             to="/kontakt#form"
             className={styles["form-hashlink"]}
           >
-            Or click here to fill out our contact form.
+            Klicken Sie hier für das Kontaktformular
           </HashLink>
 
           {/*  Directions */}

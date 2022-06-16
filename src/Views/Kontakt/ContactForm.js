@@ -91,9 +91,9 @@ const ContactForm = () => {
       // Message
       message.length < 4 ? setMessageError(true) : setMessageError(false);
 
-      // alert(
-      //   "Please make sure to fill in all fields correctly before submitting."
-      // );
+      alert(
+        `Bitte gehen Sie sicher, dass alle Felder korrekt ausgefüllt sind, bevor Sie "Nachricht senden" klicken.`
+      );
     }
   };
 
@@ -101,9 +101,7 @@ const ContactForm = () => {
     <section className={styles["contact-form-section"]} id="form">
       <div className={styles["contact-form-container"]} id="contact-form">
         <form className={styles["contact-form"]}>
-          <h3 className={styles["form-heading"]}>
-            Schreib <b>uns</b>
-          </h3>
+          <h3 className={styles["form-heading"]}>Schreiben Sie uns</h3>
 
           <div className={styles["heading-underline"]}></div>
 
@@ -114,13 +112,13 @@ const ContactForm = () => {
           {nameError ? (
             <span className={styles["error-message"]}>
               {" "}
-              * Please fill in your first name
+              * Ungültige Eingabe
             </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
             type="text"
-            placeholder="Ihr Vorname"
+            // placeholder="Ihr Vorname"
             value={name}
             name="fistname"
             maxLength="50"
@@ -130,19 +128,19 @@ const ContactForm = () => {
           />
 
           <label className={styles["contact-form-label"]} htmlFor="lastname">
-            Nachname
+            Name
           </label>
           {/* Error handler */}
           {lastNameError ? (
             <span className={styles["error-message"]}>
               {" "}
-              * Please fill in your last name
+              * Ungültige Eingabe
             </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
             type="text"
-            placeholder="Ihr Nachname"
+            // placeholder="Ihr Nachname"
             value={lastname}
             name="lastname"
             maxLength="50"
@@ -152,19 +150,19 @@ const ContactForm = () => {
           />
 
           <label className={styles["contact-form-label"]} htmlFor="email">
-            E-mail
+            E-Mail
           </label>
           {/* Error handler */}
           {emailError ? (
             <span className={styles["error-message"]}>
               {" "}
-              * Please enter a valid email address
+              * Ungültige E-Mail-Adresse
             </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
             type="email"
-            placeholder="deine E-mail"
+            placeholder="Ihre E-Mail-Adresse"
             value={email}
             name="email"
             maxLength="50"
@@ -174,19 +172,19 @@ const ContactForm = () => {
           />
 
           <label className={styles["contact-form-label"]} htmlFor="subject">
-            Subject
+            Betreff
           </label>
           {/* Error handler */}
           {subjectError ? (
             <span className={styles["error-message"]}>
               {" "}
-              * Please fill in the subject field
+              * Bitte geben Sie einen Betreff an
             </span>
           ) : null}
           <input
             className={styles["contact-form-input"]}
             type="text"
-            placeholder="Thema"
+            placeholder="Ihr Betreff"
             value={subject}
             name="subject"
             maxLength="50"
@@ -202,7 +200,7 @@ const ContactForm = () => {
           {messageError ? (
             <span className={styles["error-message"]}>
               {" "}
-              * Please fill in the message field
+              * Bitte geben Sie Ihren Text hier ein
             </span>
           ) : null}
           <textarea
@@ -211,7 +209,6 @@ const ContactForm = () => {
             placeholder="Schreiben Sie ihre Nachricht hier"
             value={message}
             name="message"
-            // maxLength="800"
             onChange={(e) => setMessage(e.target.value)}
             // Disable on successful submit
             disabled={emailSent}
@@ -229,7 +226,9 @@ const ContactForm = () => {
           ) : (
             <span className={styles["sent-message-notification"]}>
               {" "}
-              Thank you for your message, we will be in touch in no time!
+              Vielen Dank für Ihre Nachricht!
+              <br />
+              <span>Wir beantworten Ihre Anfrage schnellstmöglich.</span>
             </span>
           )}
         </form>

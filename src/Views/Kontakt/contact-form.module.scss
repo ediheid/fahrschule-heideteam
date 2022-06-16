@@ -133,13 +133,17 @@
 .sent-message-notification {
   color: $logo-green;
   font-family: $main-font-font-family;
-  font-size: 2rem;
+  font-size: 2.8rem;
   text-align: center;
 
-  width: 60%;
+  width: 100%;
   align-self: center;
 
   margin-top: 3rem;
+
+  span {
+    font-size: 2.3rem;
+  }
 }
 
 .text-container {
@@ -175,6 +179,14 @@
   .submit-button {
     margin-top: 3rem;
   }
+
+  .sent-message-notification {
+    font-size: 2rem;
+
+    span {
+      font-size: 1.7rem;
+    }
+  }
 }
 
 @include small {
@@ -195,6 +207,13 @@
 
   .submit-button {
     margin-top: 5rem;
+  }
+  .sent-message-notification {
+    font-size: 2.5rem;
+
+    span {
+      font-size: 2rem;
+    }
   }
 }
 
