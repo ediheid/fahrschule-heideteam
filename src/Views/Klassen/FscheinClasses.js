@@ -20,11 +20,11 @@ import Gallery from "./Gallery/Gallery";
 
 // Mobile bg image Components
 
-import Motorbike from "../Team/MobileImageComponents/Motorbike";
-import Car from "../Team/MobileImageComponents/Car";
-import Truck from "../Team/MobileImageComponents/Truck";
-import Bus from "../Team/MobileImageComponents/Bus";
-import Tractor from "../Team/MobileImageComponents/Tractor";
+import Motorbike from "../Klassen/MobileImageComponents/Motorbike";
+import Car from "../Klassen/MobileImageComponents/Car";
+import Truck from "../Klassen/MobileImageComponents/Truck";
+import Bus from "../Klassen/MobileImageComponents/Bus";
+import Tractor from "../Klassen/MobileImageComponents/Tractor";
 
 const FscheinClasses = () => {
   return (

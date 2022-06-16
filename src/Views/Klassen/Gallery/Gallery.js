@@ -14,7 +14,6 @@ import car1 from "../Gallery/Static/car1.png";
 import car3 from "../Gallery/Static/car3.png";
 import van from "../Gallery/Static/van.png";
 import vanTrailer from "../Gallery/Static/van-trailer.png";
-import truck from "../Gallery/Static/truck.png";
 import semis from "../Gallery/Static/semis.png";
 import bus from "../Gallery/Static/bus.png";
 import tractor from "../Gallery/Static/tractor.png";
@@ -93,7 +92,8 @@ const Gallery = () => {
       alt: "Side view of silver VW van with Fahrschule Heideteam logos with trailer on the back",
     },
 
-    { img: truck, id: 14, alt: "White truck" },
+    // { img: truck, id: 14, alt: "White truck" },
+
     { img: fsd, id: 18, alt: "Grey fsd truck" },
     {
       img: semis,
