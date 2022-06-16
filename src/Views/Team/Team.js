@@ -87,7 +87,7 @@ const Team = () => {
       {/* <p>Longer about text will go here..</p> */}
       <h2 className={styles["heading"]}>
         {" "}
-        <span>Meet the</span> Team
+        <span>Unser</span> Team
       </h2>
       <div className={styles["heading-underline"]}></div>
 

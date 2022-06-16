@@ -83,7 +83,7 @@ const App = () => {
 
             <CookieConsent
               location="bottom"
-              buttonText="Got it!"
+              buttonText="Einverstanden"
               // cookieName="myAwesomeCookieName2"
               style={{ background: "#f2f2f2", zIndex: "100000" }}
               buttonStyle={{
@@ -96,13 +96,15 @@ const App = () => {
               expires={150}
             >
               <span className={styles["privacy-consent-text"]}>
-                By using our site, you agree to our
+                Mit der Benutzung unserer Website stimmen Sie der
               </span>
 
               <Link className={styles["privacy-policy-link"]} to="/datenschutz">
                 {" "}
-                Privacy Policy.
+                DSGVO
               </Link>
+
+              <span className={styles["privacy-consent-text"]}> zu.</span>
             </CookieConsent>
 
             <Routes>

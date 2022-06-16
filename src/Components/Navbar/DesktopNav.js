@@ -139,7 +139,7 @@ const DesktopNav = () => {
               <BsInfoCircle
                 className={`${styles["nav-links"]} ${styles["info-icon"]}`}
               />{" "}
-              Covid Info{" "}
+              Corona Info{" "}
             </li>
           </HashLink>
         </ul>

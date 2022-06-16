@@ -26,7 +26,7 @@ const Home = () => {
               to="/#about"
               className={styles["more-about-button"]}
             >
-              Explore
+              Los Gehts!
             </HashLink>
           </div>
         </div>

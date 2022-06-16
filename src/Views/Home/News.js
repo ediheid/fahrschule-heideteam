@@ -49,10 +49,10 @@ const News = () => {
           className={`${styles["headings"]} ${styles["covid-heading"]}`}
           id="covid"
         >
-          Covid Info
+          Corona Info
         </h2>
         <p className={styles["news-paragraphs"]}>
-          Keine aktuellen Einschränkungen.
+          Es bestehen keine aktuellen Einschränkungen.
         </p>
       </div>
       <div className={styles["dividing-line"]}></div>

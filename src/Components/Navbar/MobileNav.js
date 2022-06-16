@@ -149,7 +149,7 @@ const MobileNav = () => {
                   className={`${styles["covid-span"]} ${styles["nav-links"]} `}
                 >
                   {" "}
-                  Covid Info
+                  Corona Info
                 </span>
               </li>
             </HashLink>
