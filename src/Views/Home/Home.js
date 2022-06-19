@@ -26,7 +26,7 @@ const Home = () => {
               to="/#news"
               className={styles["more-about-button"]}
             >
-              Los Gehts!
+              Los geht's!
             </HashLink>
           </div>
         </div>
