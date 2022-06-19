@@ -31,9 +31,9 @@ const Kontakt = () => {
 
           {/* Phone */}
           <h5>Telefon: </h5>
-          <a href="tel:+49-3528-226-9934" alt="Click to call">
+          <a href="tel:+49-172-944-0174" alt="Click to call">
             {" "}
-            <span className={styles["phone-number"]}> +49 3528 226 9934</span>
+            <span className={styles["phone-number"]}> +49 172 944 0174</span>
           </a>
 
           <h5>Sowie nach Vereinbarung oder per Mail:</h5>
