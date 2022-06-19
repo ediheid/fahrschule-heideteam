@@ -75,8 +75,8 @@ const Team = () => {
       id: "3",
       img: nancy,
       name: "Nancy Köhler",
-      duties: "Die gute Seele im Büro (Organisation, Anmeldung etc.)",
-      // Custom style for object position
+      duties: "Die gute Seele im Büro Organisation & Anmeldung",
+      // ! Custom style for object position
       customStyle: "custom-style",
     },
   ];
