@@ -58,8 +58,8 @@ const Berufskraftfahrerqualifikation = () => {
       </div>
 
       <p className={styles["text"]}>
-        Des weiteren muss man diese Qualifikation aller fünf Jahre wieder
-        auffrischen und sein Wissen auf den neuesten Stand bringen.
+        Die Qualifikation muss man alle fünf Jahre wieder auffrischen und sein
+        Wissen auf den neuesten Stand bringen.
       </p>
       <p className={styles["text"]}>
         Auch hier können wir Ihnen helfen und bieten Weiterbildungen gemäß dem
