@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../../Klassen/fschein-classes.module.scss";
 
-import truck from "../../Klassen/Gallery/Static/fsd.png";
+import truck from "../../Klassen/Static/truck-bg.png";
 
 const Truck = () => {
   return (
