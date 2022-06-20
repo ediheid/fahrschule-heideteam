@@ -7,7 +7,7 @@ import "../Slideshow/dots.scss";
 
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";
-import Truck from "../Slideshow/Static/truck2.png";
+import Truck from "../Slideshow/Static/blue-truck.png";
 
 import styles from "../Slideshow/slideshow.module.scss";
 
@@ -35,17 +35,15 @@ const Slideshow = () => {
         src={Car}
         alt="Black car with Hedidteam logo"
       ></img>
-
       <img
         className={styles["slideshow-image"]}
         src={Motorcycle}
         alt="Motorcycle at night"
       ></img>
-
       <img
         className={styles["slideshow-image"]}
         src={Truck}
-        alt="Man Truck"
+        alt="Trailer truck created by aleksandarlittlewolf - www.freepik.com"
       ></img>
     </Slider>
   );
