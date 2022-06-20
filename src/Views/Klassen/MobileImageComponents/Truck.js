@@ -6,7 +6,11 @@ import truck from "../../Klassen/Static/truck-bg.png";
 
 const Truck = () => {
   return (
-    <img className={styles["mobile-bg-img"]} alt="Truck" src={truck}></img>
+    <img
+      className={styles["mobile-bg-img"]}
+      alt="Truck driver created by aleksandarlittlewolf - www.freepik.com"
+      src={truck}
+    ></img>
   );
 };
 
