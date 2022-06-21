@@ -17,20 +17,20 @@ const Team = () => {
   // Add individual card data here that will be mapped below
   // Alt tag updates with name
   const cards = [
-    // ? Wolli
-    {
-      id: "1",
-      img: wolli,
-      name: "Wolfgang Franke",
-      duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
-    },
-
     // ? Jörg
     {
-      id: "2",
+      id: "1",
       img: joerg,
       name: "Jörg Seeberger",
       duties: "Geschäftsführer & Leiter der Ausbildung",
+    },
+
+    // ? Wolli
+    {
+      id: "2",
+      img: wolli,
+      name: "Wolfgang Franke",
+      duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
     },
 
     // ? Robby
