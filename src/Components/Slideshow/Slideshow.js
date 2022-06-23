@@ -43,7 +43,8 @@ const Slideshow = () => {
       <img
         className={styles["slideshow-image"]}
         src={Truck}
-        alt="Trailer truck created by aleksandarlittlewolf - www.freepik.com"
+        // alt="Trailer truck created by aleksandarlittlewolf - www.freepik.com"
+        alt="Grey MAN truck"
       ></img>
     </Slider>
   );
