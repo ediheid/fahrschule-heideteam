@@ -71,9 +71,9 @@ const Kontakt = () => {
 
           <h5>Unterrichtszeiten:</h5>
           <span>
-            Mittwoch 18.00 bis 21.00 Uhr
+            zeitlich feste Kurse
             <br />
-            sowie nach Vereinbarung
+            und nach Vereinbarung
           </span>
         </div>
 
