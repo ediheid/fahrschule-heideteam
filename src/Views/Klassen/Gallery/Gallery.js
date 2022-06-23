@@ -23,7 +23,6 @@ import car4 from "../Gallery/Static/car4.png";
 import car5 from "../Gallery/Static/car5.png";
 import d1 from "../Gallery/Static/d1.png";
 import am from "../Gallery/Static/am-1.png";
-import whiteTruck from "../Gallery/Static/truck.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -94,7 +93,7 @@ const Gallery = () => {
 
     // { img: truck, id: 14, alt: "White truck" },
 
-    { img: whiteTruck, id: 18, alt: "White truck" },
+    // { img: whiteTruck, id: 18, alt: "White truck" },
     {
       img: semis,
       id: 15,

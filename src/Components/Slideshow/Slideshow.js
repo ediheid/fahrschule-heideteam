@@ -7,7 +7,7 @@ import "../Slideshow/dots.scss";
 
 import Car from "../Slideshow/Static/car.png";
 import Motorcycle from "../Slideshow/Static/motorcycle.png";
-import Truck from "../Slideshow/Static/blue-truck.png";
+import Truck from "../Slideshow/Static/new-grey-truck.png";
 
 import styles from "../Slideshow/slideshow.module.scss";
 
