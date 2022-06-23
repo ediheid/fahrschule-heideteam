@@ -135,7 +135,7 @@ const Gallery = () => {
       alignItems: "center",
 
       width: "80%",
-      maxWidth: "100rem",
+      maxWidth: "60rem",
       backgroundColor: "white",
       border: "none",
     },
