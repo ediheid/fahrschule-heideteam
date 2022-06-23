@@ -23,6 +23,9 @@ import car4 from "../Gallery/Static/car4.png";
 import car5 from "../Gallery/Static/car5.png";
 import d1 from "../Gallery/Static/d1.png";
 import am from "../Gallery/Static/am-1.png";
+import whiteTruck from "../Gallery/Static/new-white-truck.png";
+import greyTruck from "../Gallery/Static/new-grey-truck.png";
+import blackTruck from "../Gallery/Static/new-black-truck.png";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -93,17 +96,23 @@ const Gallery = () => {
 
     // { img: truck, id: 14, alt: "White truck" },
 
-    // { img: whiteTruck, id: 18, alt: "White truck" },
-    {
-      img: semis,
-      id: 15,
-      alt: "Two semi trailers turning a corner on the road",
-    },
+    { img: whiteTruck, id: 18, alt: "White Mercedes truck" },
+
+    { img: greyTruck, id: 19, alt: "Grey MAN truck" },
+    { img: blackTruck, id: 19, alt: "Black Volvo truck" },
+
     {
       img: d1,
       id: 13,
       alt: "Black mini bus for class D1",
     },
+
+    {
+      img: semis,
+      id: 15,
+      alt: "Two semi trailers turning a corner on the road",
+    },
+
     { img: bus, id: 16, alt: "Silver coach bus on country road" },
     {
       img: tractor,
