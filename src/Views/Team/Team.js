@@ -31,6 +31,8 @@ const Team = () => {
       img: wolli,
       name: "Wolfgang Franke",
       duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
+      phoneNumber: "+49-175-457-8321",
+      displayNumber: "+49 175 457 8321",
     },
 
     // ? Robby

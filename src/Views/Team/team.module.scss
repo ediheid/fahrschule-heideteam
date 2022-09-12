@@ -43,13 +43,14 @@
   margin: 5rem 0 30rem 0;
 }
 
-// Both front and back
 .cards {
+  // Position relative for phone number placement
+  position: relative;
   display: flex;
   flex-direction: column;
 
   width: 28rem;
-  height: 35rem;
+  height: 37rem;
 
   margin: 3rem;
 
@@ -120,8 +121,30 @@
   h5 {
     font-size: 1.7rem;
     color: $dark-green;
-    height: 3.3rem;
-    margin-bottom: 4.5rem;
+    // height: 3.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .phone-number {
+    position: absolute;
+    bottom: 3.5rem;
+    color: $logo-green;
+    font-family: $roboto-medium-font-family;
+    text-underline-offset: 0.8rem;
+    display: block;
+
+    font-size: 1.3rem;
+
+    &:active {
+      color: $brighter-logo-green;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .phone-number:hover {
+    color: $brighter-logo-green;
+    font-family: $roboto-bold-font-family;
   }
 }
 

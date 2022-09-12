@@ -19,6 +19,17 @@ const TeamCard = ({ card }) => {
       <div className={styles["text-container"]}>
         <h4>{card.name}</h4>
         <h5>{card.duties}</h5>
+
+        {/* Phone */}
+
+        <a
+          className={styles["phone-number"]}
+          href={`tel:${card.phoneNumber}`}
+          alt="Click to call"
+        >
+          {" "}
+          <span>{card.displayNumber}</span>
+        </a>
       </div>
     </div>
   );
