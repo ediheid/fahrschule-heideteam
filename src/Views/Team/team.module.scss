@@ -127,7 +127,7 @@
 
   .phone-number {
     position: absolute;
-    bottom: 3.5rem;
+    bottom: 3.2rem;
     color: $logo-green;
     font-family: $roboto-medium-font-family;
     text-underline-offset: 0.8rem;
@@ -152,6 +152,7 @@
 @include extra-extra-small {
   .cards {
     width: 22rem;
+    height: 39rem;
   }
 
   .heading {

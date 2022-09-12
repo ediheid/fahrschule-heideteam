@@ -23,6 +23,8 @@ const Team = () => {
       img: joerg,
       name: "Jörg Seeberger",
       duties: "Geschäftsführer & Leiter der Ausbildung",
+      phoneNumber: "+49-172-944-0174",
+      displayNumber: "+49 172 944 0174",
     },
 
     // ? Wolli
@@ -31,8 +33,8 @@ const Team = () => {
       img: wolli,
       name: "Wolfgang Franke",
       duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
-      phoneNumber: "+49-175-457-8321",
-      displayNumber: "+49 175 457 8321",
+      phoneNumber: "+49-172-796-1932",
+      displayNumber: "+49 172 796 1932",
     },
 
     // ? Robby
@@ -42,6 +44,8 @@ const Team = () => {
       img: robby,
       name: "Robby Mittag",
       duties: "Ausbilder auf Nutzfahrzeugen",
+      phoneNumber: " +49-152-3406-6464",
+      displayNumber: " +49 152 3406 6464",
     },
 
     // ? Jan
@@ -51,6 +55,8 @@ const Team = () => {
       img: jan,
       name: "Jan Säuberlich",
       duties: "Ausbilder für PKW & Motorrad",
+      phoneNumber: "+49-152-2931-2230",
+      displayNumber: "+49 152 2931 2230",
     },
 
     // ? Peter
@@ -60,6 +66,8 @@ const Team = () => {
       img: peter,
       name: "Peter Wildner",
       duties: "Ausbilder für PKW & Motorrad",
+      phoneNumber: "+49-174-914-3710",
+      displayNumber: "+49 174 914 3710",
     },
 
     // ? Michel
@@ -69,6 +77,8 @@ const Team = () => {
       img: michel,
       name: "Michel Klein",
       duties: "Aktueller Fahrlehreranwärter in Ausbildung für PKW",
+      phoneNumber: "+49-176-3694-6690",
+      displayNumber: "+49 176 3694 6690",
     },
 
     // ? Nancy
@@ -80,6 +90,8 @@ const Team = () => {
       duties: "Die gute Seele im Büro Organisation & Anmeldung",
       // ! Custom style for object position
       customStyle: "custom-style",
+      phoneNumber: "+49-173-289-8009",
+      displayNumber: "+49 173 289 8009",
     },
   ];
 

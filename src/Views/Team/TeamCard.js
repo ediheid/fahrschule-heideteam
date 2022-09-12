@@ -21,7 +21,6 @@ const TeamCard = ({ card }) => {
         <h5>{card.duties}</h5>
 
         {/* Phone */}
-
         <a
           className={styles["phone-number"]}
           href={`tel:${card.phoneNumber}`}
