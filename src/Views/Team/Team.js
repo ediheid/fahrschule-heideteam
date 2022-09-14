@@ -55,8 +55,8 @@ const Team = () => {
       img: jan,
       name: "Jan Säuberlich",
       duties: "Ausbilder für PKW & Motorrad",
-      phoneNumber: "+49-152-2931-2230",
-      displayNumber: "+49 152 2931 2230",
+      phoneNumber: "+49-152-2931-2236",
+      displayNumber: "+49 152 2931 2236",
     },
 
     // ? Peter
