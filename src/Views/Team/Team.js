@@ -76,7 +76,7 @@ const Team = () => {
       id: "3",
       img: michel,
       name: "Michel Klein",
-      duties: "Aktueller Fahrlehreranwärter in Ausbildung für PKW",
+      duties: "Ausbilder für PKW",
       phoneNumber: "+49-176-3694-6690",
       displayNumber: "+49 176 3694 6690",
     },
