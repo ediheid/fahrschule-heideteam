@@ -38,6 +38,29 @@ const News = () => {
         </div>
 
         <p className={styles["news-paragraphs"]}>
+          Der nãchste LKW Lehrgang wird am 16.01.2023 starten. <br />
+          Die Anmeldung beginnt am 01.12.2022 bitte telefonisch bei{" "}
+          <a
+            className={styles["email-link"]}
+            href="tel:+49-172-7961932"
+            alt="Click to call"
+          >
+            {" "}
+            <span>Herrn Franke </span>
+          </a>
+          oder
+          <a
+            className={styles["email-link"]}
+            href="tel:+49-152-3406-6464"
+            alt="Click to call"
+          >
+            {" "}
+            <span> Herr Mittag</span>
+          </a>{" "}
+          zwecks Absprache eines Termins Bzw. Beratung melden.
+        </p>
+
+        <p className={styles["news-paragraphs"]}>
           Aus organisatorischen Gründen können wir zum jetzigen Zeitpunkt die
           theoretische Ausbildung (Grundstoff) nur in den Ferien - als
           Feriencrashkurs - anbieten.
