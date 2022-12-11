@@ -55,8 +55,9 @@ const Team = () => {
       img: jan,
       name: "Jan Säuberlich",
       duties: "Ausbilder für PKW & Motorrad",
-      phoneNumber: "+49-152-2931-2236",
-      displayNumber: "+49 152 2931 2236",
+      phoneNumber: "+49-172-145-8149",
+      displayNumber: "+49 172 145 8149",
+     
     },
 
     // ? Peter
@@ -68,17 +69,6 @@ const Team = () => {
       duties: "Ausbilder für PKW & Motorrad",
       phoneNumber: "+49-174-914-3710",
       displayNumber: "+49 174 914 3710",
-    },
-
-    // ? Michel
-
-    {
-      id: "3",
-      img: michel,
-      name: "Michel Klein",
-      duties: "Ausbilder für PKW",
-      phoneNumber: "+49-176-3694-6690",
-      displayNumber: "+49 176 3694 6690",
     },
 
     // ? Nancy

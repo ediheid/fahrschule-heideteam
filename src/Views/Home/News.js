@@ -9,6 +9,12 @@ const News = () => {
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
+
+<p className={styles["news-paragraphs"]}>Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
+akzeptiert.
+<br/>
+Bar Zahlungen können nicht mehr angenommen werden.</p>
+
         <p className={styles["news-paragraphs"]}>
           Im Augenblick ist es nicht möglich, kurzfristig in eine
           Führerscheinausbildung (vorrangig Klasse B und alle A-Klassen) zu

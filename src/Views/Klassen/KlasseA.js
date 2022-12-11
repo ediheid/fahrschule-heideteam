@@ -68,19 +68,18 @@ const KlasseA = () => {
           <div className={styles["price-section"]}>
             <h3>Preisliste</h3>
             <ul>
-              <li>Grundbetrag: 350 €</li>
-              <li>Übungsfahrt: 60 €</li>
               <li>
-                Sonderfahrten (mind. 5X Überlandfahrt 4x autobahnfahrt
-                3xNachtfahrt) pro 45 Minuten 70 €
-              </li>
-
-              <br />
-              <li>
-                <b>Vorstellen zu Theoretischen Prüfung 50 €</b>
-              </li>
-              <li>
-                <b>Vorstellen zur praktischen Prüfung 160 €</b>
+                <b>
+                  Bei uns nur auf speziell Anfrage!{" "}
+                  <a
+                    className={styles["email-link"]}
+                    href="mailto:info@fsheideteam.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    info@fsheideteam.de
+                  </a>
+                </b>
               </li>
             </ul>
           </div>
