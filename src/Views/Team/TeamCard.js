@@ -29,6 +29,17 @@ const TeamCard = ({ card }) => {
           {" "}
           <span>{card.displayNumber}</span>
         </a>
+
+        {/* Email */}
+        <a
+            className={styles["email-link"]}
+            href={`mailto:${card.email}`}
+            alt="email link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+         <span>{card.email}</span>
+          </a>
       </div>
     </div>
   );
