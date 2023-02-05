@@ -355,10 +355,6 @@
 
 .email-link {
   color: $blue;
-
-  &:active {
-    font-family: $roboto-bold-font-family;
-  }
 }
 
 .news-contact-button-container {
@@ -373,8 +369,6 @@
 @media (hover: hover) {
   .email-link:hover {
     color: $logo-green;
-
-    font-family: $roboto-bold-font-family;
   }
 }
 
