@@ -44,8 +44,8 @@ Bar Zahlungen können nicht mehr angenommen werden.</p>
         </div>
 
         <p className={styles["news-paragraphs"]}>
-          Der nãchste LKW Lehrgang wird am 02.05.2023 starten. <br />
-          Die Anmeldung beginnt am 01.12.2022 bitte telefonisch bei{" "}
+        Der nächste LKW Lehrgang wird am 05.09.2023 17 Uhr beginnen. <br />
+        Anmeldung ist ab sofort möglich. <br/> Bitte telefonisch bei{" "}
           <a
             className={styles["email-link"]}
             href="tel:+49-172-7961932"
