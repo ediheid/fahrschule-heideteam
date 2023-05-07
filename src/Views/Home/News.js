@@ -10,39 +10,30 @@ const News = () => {
 
       <div className={styles["news-content"]}>
         <p className={styles["news-paragraphs"]}>
-          Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
-          akzeptiert.
+          Unser nächster THEORIE-KURS findet vom 08.07.2023 – 15.07.2023 statt.
           <br />
-          Bar Zahlungen können nicht mehr angenommen werden.
+          Ort: Pillnitzer Straße 8, 01454 Radeberg
+          <br />
+          Zeit: jeweils von 9.00 – 12.00 Uhr
+          <br />
+          Teilnehmerzahl: max. 15
         </p>
-
         <p className={styles["news-paragraphs"]}>
-          Im Augenblick ist es nicht möglich, kurzfristig in eine
-          Führerscheinausbildung (vorrangig Klasse B und alle A-Klassen) zu
-          starten.
+          <b style={{ textDecoration: 'underline' }}> !! ACHTUNG !! </b>
+          <br />
+          ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
+          Ersterwerb.
+          <br />
+          ° Keine A-Klassen!
+          <br />
+          ° Aus gesetzlichen und organisatorischen Gründen ist es nur möglich,
+          Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
+          Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
+          Jahre (bei BF17 - 17 Jahre) alt werden.
+          <br />
+          ° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
+          gegeben.
         </p>
-        {/* // Todo: instead of putting the email here, put a hashlink to the contact
-      form */}
-        <p className={styles["news-paragraphs"]}>
-          Bitte informieren Sie sich in unserem Büro (jeweils mittwochs von
-          15.00 - 18.00 Uhr) oder jederzeit per Mail unter:
-          <a
-            className={styles["email-link"]}
-            href="mailto:info@fsheideteam.de"
-            alt="email link to info"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <br /> info@fsheideteam.de
-          </a>
-          .
-        </p>
-
-        <div className={styles["news-contact-button-container"]}>
-          <Link smooth to="/kontakt" className={styles["news-contact-button"]}>
-            Kontakt
-          </Link>
-        </div>
 
         <p className={styles["news-paragraphs"]}>
           Der nächste LKW Lehrgang wird am 05.09.2023 17 Uhr beginnen. <br />
@@ -78,35 +69,45 @@ const News = () => {
           für Theorie und Praxis (DEKRA) kommt.
         </p>
 
+
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 08.07.2023 – 15.07.2023 statt.
+          Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
+          akzeptiert.
           <br />
-          Ort: Pillnitzer Straße 8, 01454 Radeberg
-          <br />
-          Zeit: jeweils von 9.00 – 12.00 Uhr
-          <br />
-          Teilnehmerzahl: max. 15
+          Bar Zahlungen können nicht mehr angenommen werden.
         </p>
+
         <p className={styles["news-paragraphs"]}>
-          <b style={{textDecoration: 'underline'}}> !! ACHTUNG !! </b>
-          <br />
-          ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
-          Ersterwerb.
-          <br />
-          ° Keine A-Klassen!
-          <br />
-          ° Aus gesetzlichen und organisatorischen Gründen ist es nur möglich,
-          Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
-          Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
-          Jahre (bei BF17 - 17 Jahre) alt werden.
-          <br />
-          ° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
-          gegeben.
+          Im Augenblick ist es nicht möglich, kurzfristig in eine
+          Führerscheinausbildung (vorrangig Klasse B und alle A-Klassen) zu
+          starten.
+        </p>
+        {/* // Todo: instead of putting the email here, put a hashlink to the contact
+      form */}
+        <p className={styles["news-paragraphs"]}>
+          Bitte informieren Sie sich in unserem Büro (jeweils mittwochs von
+          15.00 - 18.00 Uhr) oder jederzeit per Mail unter:
+          <a
+            className={styles["email-link"]}
+            href="mailto:info@fsheideteam.de"
+            alt="email link to info"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <br /> info@fsheideteam.de
+          </a>
+          .
         </p>
 
         <p className={styles["news-paragraphs"]}>
           Zum Abklären weiterer Fragen sprechen Sie uns einfach an!
         </p>
+
+        <div className={styles["news-contact-button-container"]}>
+          <Link smooth to="/kontakt" className={styles["news-contact-button"]}>
+            Kontakt
+          </Link>
+        </div>
 
         {/* // Section ================ */}
         <h2
