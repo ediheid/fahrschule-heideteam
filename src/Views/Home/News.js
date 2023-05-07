@@ -9,11 +9,12 @@ const News = () => {
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
-
-<p className={styles["news-paragraphs"]}>Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
-akzeptiert.
-<br/>
-Bar Zahlungen können nicht mehr angenommen werden.</p>
+        <p className={styles["news-paragraphs"]}>
+          Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
+          akzeptiert.
+          <br />
+          Bar Zahlungen können nicht mehr angenommen werden.
+        </p>
 
         <p className={styles["news-paragraphs"]}>
           Im Augenblick ist es nicht möglich, kurzfristig in eine
@@ -44,8 +45,8 @@ Bar Zahlungen können nicht mehr angenommen werden.</p>
         </div>
 
         <p className={styles["news-paragraphs"]}>
-        Der nächste LKW Lehrgang wird am 05.09.2023 17 Uhr beginnen. <br />
-        Anmeldung ist ab sofort möglich. <br/> Bitte telefonisch bei{" "}
+          Der nächste LKW Lehrgang wird am 05.09.2023 17 Uhr beginnen. <br />
+          Anmeldung ist ab sofort möglich. <br /> Bitte telefonisch bei{" "}
           <a
             className={styles["email-link"]}
             href="tel:+49-172-7961932"
@@ -75,6 +76,32 @@ Bar Zahlungen können nicht mehr angenommen werden.</p>
           Bitte bedenken Sie auch, dass es im Moment zu sehr langen Wartezeiten
           bei den Behörden (Fahrerlaubnisbehörde) und auch bei Prüfungsterminen
           für Theorie und Praxis (DEKRA) kommt.
+        </p>
+
+        <p className={styles["news-paragraphs"]}>
+          Unser nächster THEORIE-KURS findet vom 08.07.2023 – 15.07.2023 statt.
+          <br />
+          Ort: Pillnitzer Straße 8, 01454 Radeberg
+          <br />
+          Zeit: jeweils von 9.00 – 12.00 Uhr
+          <br />
+          Teilnehmerzahl: max. 15
+        </p>
+        <p className={styles["news-paragraphs"]}>
+          <b style={{textDecoration: 'underline'}}> !! ACHTUNG !! </b>
+          <br />
+          ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
+          Ersterwerb.
+          <br />
+          ° Keine A-Klassen!
+          <br />
+          ° Aus gesetzlichen und organisatorischen Gründen ist es nur möglich,
+          Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
+          Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
+          Jahre (bei BF17 - 17 Jahre) alt werden.
+          <br />
+          ° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
+          gegeben.
         </p>
 
         <p className={styles["news-paragraphs"]}>
