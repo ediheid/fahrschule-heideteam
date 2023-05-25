@@ -9,6 +9,12 @@ const News = () => {
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
+        <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
+          Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
+          Klasse B/B f17) findet am Montag den 05.06. - 17:30 Uhr in unserem
+          Büro statt.
+        </p>
+
         <p className={styles["news-paragraphs"]}>
           Unser nächster THEORIE-KURS findet vom 08.07.2023 – 15.07.2023 statt.
           <br />
@@ -19,7 +25,7 @@ const News = () => {
           Teilnehmerzahl: max. 15
         </p>
         <p className={styles["news-paragraphs"]}>
-          <b style={{ textDecoration: 'underline' }}> !! ACHTUNG !! </b>
+          <b style={{ textDecoration: "underline" }}> !! ACHTUNG !! </b>
           <br />
           ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
           Ersterwerb.
@@ -30,8 +36,7 @@ const News = () => {
           Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
           Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
           Jahre (bei BF17 - 17 Jahre) alt werden.
-          <br />
-          ° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
+          <br />° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
           gegeben.
         </p>
 
@@ -68,7 +73,6 @@ const News = () => {
           bei den Behörden (Fahrerlaubnisbehörde) und auch bei Prüfungsterminen
           für Theorie und Praxis (DEKRA) kommt.
         </p>
-
 
         <p className={styles["news-paragraphs"]}>
           Ab 01.01.2023 werden nur noch Kartenzahlung oder Banküberweisungen
