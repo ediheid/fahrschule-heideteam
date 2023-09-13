@@ -57,8 +57,8 @@ const Team = () => {
       img: jan,
       name: "Jan Säuberlich",
       duties: "Ausbilder für PKW & Motorrad",
-      phoneNumber: "+49-172-145-8149",
-      displayNumber: "+49 172 145 8149",
+      phoneNumber: "+49-172-145-6549",
+      displayNumber: "+49 172 145 6549",
       email: 'j.saeuberlich@fsheideteam.de'
     },
 
