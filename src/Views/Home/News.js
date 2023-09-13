@@ -11,7 +11,7 @@ const News = () => {
       <div className={styles["news-content"]}>
         <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
           Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
-          Klasse B/B f17) findet am Samstag den 16.09. - 12:00 Uhr in unserem
+          Klasse B/B f17) findet am Montag den 25.09. - 18:30 Uhr in unserem
           Büro statt.
         </p>
 
@@ -36,8 +36,6 @@ const News = () => {
           Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
           Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
           Jahre (bei BF17 - 17 Jahre) alt werden.
-          <br />° Info zur Anmeldung: Datum und Uhrzeit werden in Kürze bekannt
-          gegeben.
         </p>
 
         <p className={styles["news-paragraphs"]}>
