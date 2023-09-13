@@ -11,12 +11,12 @@ const News = () => {
       <div className={styles["news-content"]}>
         <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
           Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
-          Klasse B/B f17) findet am Montag den 05.06. - 17:30 Uhr in unserem
+          Klasse B/B f17) findet am Samstag den 16.09. - 12:00 Uhr in unserem
           Büro statt.
         </p>
 
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 08.07.2023 – 15.07.2023 statt.
+          Unser nächster THEORIE-KURS findet vom 07.10.2023 – 14.10.2023 statt.
           <br />
           Ort: Pillnitzer Straße 8, 01454 Radeberg
           <br />
@@ -41,9 +41,9 @@ const News = () => {
         </p>
 
         <p className={styles["news-paragraphs"]}>
-          Der nächste LKW Lehrgang wird am 05.09.2023 17 Uhr beginnen. <br />
+          Der nächste LKW Lehrgang wird am 15.01.2024 17 Uhr beginnen. <br />
           Anmeldung ist ab sofort möglich. <br /> Bitte telefonisch bei{" "}
-          <a
+          {/* <a
             className={styles["email-link"]}
             href="tel:+49-172-7961932"
             alt="Click to call"
@@ -51,7 +51,7 @@ const News = () => {
             {" "}
             <span>Herrn Franke </span>
           </a>
-          oder
+          oder */}
           <a
             className={styles["email-link"]}
             href="tel:+49-152-3406-6464"
