@@ -10,19 +10,19 @@ const News = () => {
 
       <div className={styles["news-content"]}>
         <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
-          Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
-          Klasse B/B f17) findet am Montag den 25.09. - 18:30 Uhr in unserem
-          Büro statt.
+          Die persönliche Anmeldung für den unten stehenden Ferienkurs (Klassen
+          AM/A1/B) findet am Dienstag, den 02.01.2024 - 17.30 Uhr in unserem
+          Büro statt. Eine Voranmeldung per Mail oder Anruf ist NICHT möglich!
         </p>
 
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 07.10.2023 – 14.10.2023 statt.
+          Unser nächster THEORIE-KURS findet vom 10.02.2024 – 17.02.2024 statt.
           <br />
           Ort: Pillnitzer Straße 8, 01454 Radeberg
           <br />
-          Zeit: jeweils von 9.00 – 12.00 Uhr
+          Zeit: jeweils von 9.00 – 12.00 Uhr (Sonntag findet kein Unterricht statt.)
           <br />
-          Teilnehmerzahl: max. 15
+          Teilnehmerzahl: max. 13 (Klasse B) // max. 4 (Klasse AM/A1)
         </p>
         <p className={styles["news-paragraphs"]}>
           <b style={{ textDecoration: "underline" }}> !! ACHTUNG !! </b>
@@ -31,10 +31,9 @@ const News = () => {
           Ersterwerb.
           <br />
           ° Keine A-Klassen!
-          <br />
-          ° Aus gesetzlichen und organisatorischen Gründen ist es nur möglich,
-          Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das 18.
-          Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
+          <br />° Aus gesetzlichen und organisatorischen Gründen ist es nur
+          möglich, Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das
+          18. Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
           Jahre (bei BF17 - 17 Jahre) alt werden.
         </p>
 
