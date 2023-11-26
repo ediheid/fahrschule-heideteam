@@ -28,9 +28,7 @@ const News = () => {
           <b style={{ textDecoration: "underline" }}> !! ACHTUNG !! </b>
           <br />
           ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
-          Ersterwerb.
-          <br />
-          ° Keine A-Klassen!
+          Ersterwerb.       
           <br />° Aus gesetzlichen und organisatorischen Gründen ist es nur
           möglich, Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das
           18. Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
