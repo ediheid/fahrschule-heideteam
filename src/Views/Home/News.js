@@ -9,44 +9,9 @@ const News = () => {
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
-        <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
-          Die persönliche Anmeldung für den unten stehenden Ferienkurs (Klassen
-          AM/A1/B) findet am Dienstag, den 02.01.2024 - 17.30 Uhr in unserem
-          Büro statt. Eine Voranmeldung per Mail oder Anruf ist NICHT möglich!
-        </p>
-
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 10.02.2024 – 17.02.2024 statt.
-          <br />
-          Ort: Pillnitzer Straße 8, 01454 Radeberg
-          <br />
-          Zeit: jeweils von 9.00 – 12.00 Uhr (Sonntag findet kein Unterricht statt.)
-          <br />
-          Teilnehmerzahl: max. 13 (Klasse B) // max. 4 (Klasse AM/A1)
-        </p>
-        <p className={styles["news-paragraphs"]}>
-          <b style={{ textDecoration: "underline" }}> !! ACHTUNG !! </b>
-          <br />
-          ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
-          Ersterwerb.       
-          <br />° Aus gesetzlichen und organisatorischen Gründen ist es nur
-          möglich, Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das
-          18. Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
-          Jahre (bei BF17 - 17 Jahre) alt werden.
-        </p>
-
-        <p className={styles["news-paragraphs"]}>
-          Der nächste LKW Lehrgang wird am 15.01.2024 17 Uhr beginnen. <br />
+          Der nächste LKW Lehrgang wird am 13.05.2024 17 Uhr beginnen. <br />
           Anmeldung ist ab sofort möglich. <br /> Bitte telefonisch bei{" "}
-          {/* <a
-            className={styles["email-link"]}
-            href="tel:+49-172-7961932"
-            alt="Click to call"
-          >
-            {" "}
-            <span>Herrn Franke </span>
-          </a>
-          oder */}
           <a
             className={styles["email-link"]}
             href="tel:+49-152-3406-6464"

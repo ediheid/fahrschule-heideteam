@@ -24,18 +24,7 @@ const Team = () => {
       duties: "Geschäftsführer & Leiter der Ausbildung",
       phoneNumber: "+49-172-944-0174",
       displayNumber: "+49 172 944 0174",
-      email: 'j.seeberger@fsheideteam.de'
-    },
-
-    // ? Wolli
-    {
-      id: "2",
-      img: wolli,
-      name: "Wolfgang Franke",
-      duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
-      phoneNumber: "+49-172-796-1932",
-      displayNumber: "+49 172 796 1932",
-      email: 'w.franke@fsheideteam.de'
+      email: "j.seeberger@fsheideteam.de",
     },
 
     // ? Robby
@@ -44,10 +33,10 @@ const Team = () => {
       id: "3",
       img: robby,
       name: "Robby Mittag",
-      duties: "Ausbilder auf Nutzfahrzeugen",
+      duties: "Prokurist der Fahrschul GmbH & Ausbilder auf Nutzfahrzeugen",
       phoneNumber: " +49-152-3406-6464",
       displayNumber: " +49 152 3406 6464",
-      email: 'r.mittag@fsheideteam.de'
+      email: "r.mittag@fsheideteam.de",
     },
 
     // ? Jan
@@ -59,7 +48,7 @@ const Team = () => {
       duties: "Ausbilder für PKW & Motorrad",
       phoneNumber: "+49-172-145-6549",
       displayNumber: "+49 172 145 6549",
-      email: 'j.saeuberlich@fsheideteam.de'
+      email: "j.saeuberlich@fsheideteam.de",
     },
 
     // ? Peter
@@ -73,6 +62,17 @@ const Team = () => {
       displayNumber: "+49 174 914 3710",
     },
 
+    // ? Wolli
+    {
+      id: "2",
+      img: wolli,
+      name: "Wolfgang Franke",
+      duties: "Ausbilder auf Nutzfahrzeugen",
+      phoneNumber: "+49-172-796-1932",
+      displayNumber: "+49 172 796 1932",
+      email: "w.franke@fsheideteam.de",
+    },
+
     // ? Nancy
 
     {
@@ -84,7 +84,7 @@ const Team = () => {
       customStyle: "custom-style",
       phoneNumber: "+49-173-289-8009",
       displayNumber: "+49 173 289 8009",
-      email: 'n.koehler@fsheideteam.de'
+      email: "n.koehler@fsheideteam.de",
     },
   ];
 

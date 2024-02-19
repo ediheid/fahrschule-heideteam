@@ -73,7 +73,7 @@ const Impressum = () => {
           </span>
           <br />
           <span className={styles["spans"]}>
-            Einzelprokura: Wolfgang Franke
+            Einzelprokura: Robby Mittag
           </span>
         </div>
 
