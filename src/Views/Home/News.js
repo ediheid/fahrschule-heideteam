@@ -23,6 +23,40 @@ const News = () => {
           zwecks Absprache eines Termins Bzw. Beratung melden.
         </p>
 
+        {/* // ! start */}
+
+        <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
+          Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
+          Klasse B/BF 17) findet am Mittwoch, den 22.05.2024 um 18:00 Uhr in
+          unserem Büro statt.
+        </p>
+
+        <p className={styles["news-paragraphs"]}>
+          Unser nächster THEORIE-KURS findet vom 21.06.2024 – 28.06.2024
+          statt.(außer Sonntag)
+          <br />
+          Zeit: jeweils von 9.00 – 12.00 Uhr
+          <br />
+          Ort: Pillnitzer Straße 8, 01454 Radeberg
+          <br />
+          Teilnehmerzahl: max. 15
+        </p>
+
+        <p className={styles["news-paragraphs"]}>
+          <b style={{ textDecoration: "underline" }}> !! ACHTUNG !! </b>
+          <br />
+          ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
+          Ersterwerb.
+          <br />
+          ° Keine A-Klassen!
+          <br />° Aus gesetzlichen und organisatorischen Gründen ist es nur
+          möglich, Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das
+          18. Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
+          Jahre (bei BF17 - 17 Jahre) alt werden.
+        </p>
+
+        {/* // ! finish */}
+
         <p className={styles["news-paragraphs"]}>
           Aus organisatorischen Gründen können wir zum jetzigen Zeitpunkt die
           theoretische Ausbildung (Grundstoff) nur in den Ferien - als
