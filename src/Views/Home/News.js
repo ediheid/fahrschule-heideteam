@@ -9,7 +9,8 @@ const News = () => {
       <h2 className={styles["headings"]}>News</h2>
 
       <div className={styles["news-content"]}>
-        <p className={styles["news-paragraphs"]}>
+        {/* // ! Commented out <p> is for the truck course, when it comes back */}
+        {/* <p className={styles["news-paragraphs"]}>
           Der nächste LKW Lehrgang wird am 13.05.2024 17 Uhr beginnen. <br />
           Anmeldung ist ab sofort möglich. <br /> Bitte telefonisch bei{" "}
           <a
@@ -21,25 +22,25 @@ const News = () => {
             <span> Herr Mittag</span>
           </a>{" "}
           zwecks Absprache eines Termins Bzw. Beratung melden.
-        </p>
+        </p> */}
 
         {/* // ! start */}
 
         <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
           Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
-          Klasse B/BF 17) findet am Mittwoch, den 22.05.2024 um 18:00 Uhr in
+          Klasse B/BF 17) findet am Mittwoch, den 25.09.2024 um 18:00 Uhr in
           unserem Büro statt.
         </p>
 
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 21.06.2024 – 28.06.2024
+          Unser nächster THEORIE-KURS findet vom 11.10.2024 – 18.10.2024
           statt.(außer Sonntag)
           <br />
           Zeit: jeweils von 9.00 – 12.00 Uhr
           <br />
           Ort: Pillnitzer Straße 8, 01454 Radeberg
           <br />
-          Teilnehmerzahl: max. 15
+          Teilnehmerzahl: max. 12
         </p>
 
         <p className={styles["news-paragraphs"]}>
