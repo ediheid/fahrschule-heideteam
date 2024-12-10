@@ -26,21 +26,62 @@ const News = () => {
 
         {/* // ! start */}
 
-        <p style={{ color: "red" }} className={styles["news-paragraphs"]}>
-          Die Anmeldung für den unten stehenden Ferienkurs (ausschließlich
-          Klasse B/BF 17) findet am Mittwoch, den 25.09.2024 um 18:00 Uhr in
-          unserem Büro statt.
-        </p>
-
+        <h3>
+          <b style={{ textDecoration: "underline" }}>
+            {" "}
+            FÜR DIE KLASSEN B/ BF17/AM/A1:{" "}
+          </b>
+        </h3>
         <p className={styles["news-paragraphs"]}>
-          Unser nächster THEORIE-KURS findet vom 11.10.2024 – 18.10.2024
-          statt.(außer Sonntag)
+          <span style={{ color: "red" }}>
+            Die persönliche Anmeldung für den Ferienkurs in den Klassen
+            B/BF17/AM/A1 findet am Mittwoch, den 08.01.2024 um 17.30 Uhr in
+            unserem Büro statt.
+            <br />° Eine Voranmeldung per Mail oder Anruf ist nicht möglich.
+          </span>
           <br />
-          Zeit: jeweils von 9.00 – 12.00 Uhr
+          Unser nächster THEORIE-KURS für die Klassen B/ BF17 sowie AM/ A1
+          findet vom 21.02.2025 - 28.02.2025 statt.
+          <br />
+          Zeit: jeweils von 9.00 – 12.00 Uhr // Am Sonntag, den 23.02.2025
+          findet kein Unterricht statt.
           <br />
           Ort: Pillnitzer Straße 8, 01454 Radeberg
           <br />
-          Teilnehmerzahl: max. 12
+          Teilnehmerzahl: max. 12 (Klasse B) // max. 6 (Klasse AM/A1)
+          <br />
+          ° Wir bitten zu beachten, dass eine zwingende Teilnahme an allen
+          Unterrichtstagen zu gewährleisten ist.
+          <br />° Ausnahmen sind aus organisatorischen Gründen nicht zu
+          realisieren.
+        </p>
+
+        <h3>
+          <b style={{ textDecoration: "underline" }}>FÜR DIE KLASSEN A/A2:</b>
+        </h3>
+
+        <p className={styles["news-paragraphs"]}>
+          <span style={{ color: "red" }}>
+            Die persönliche Anmeldung für den Kurs in den Klassen A/A2 findet am
+            Montag, den 15.01.2025 um 17.30 Uhr in unserem Büro statt.
+            <br />° Eine Voranmeldung per Mail oder Anruf ist nicht möglich.
+          </span>
+          <br />
+          Unser nächster THEORIE-KURS für die Klassen A/A2 findet am 10.02.2025
+          + 12.02.2025 + 14.02.2025 (jeweils abends) + 15.02.2025 (vormittags)
+          statt.
+          <br />
+          Zeit: Grundstoff jeweils 18.00 Uhr // A-Spezifik (15.02.2025): 9.00
+          Uhr
+          <br />
+          Ort: Pillnitzer Straße 8, 01454 Radeberg
+          <br />
+          Teilnehmerzahl: max. 10
+          <br />
+          ° Wir bitten zu beachten, dass eine zwingende Teilnahme an allen
+          Unterrichtstagen zu gewährleisten ist.
+          <br />° Ausnahmen sind aus organisatorischen Gründen nicht zu
+          realisieren.
         </p>
 
         <p className={styles["news-paragraphs"]}>
