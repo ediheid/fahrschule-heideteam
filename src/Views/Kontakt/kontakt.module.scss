@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 5rem 0 0 0;
 }
 
@@ -20,9 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
-
   margin-bottom: 3rem;
 }
 
@@ -30,10 +27,8 @@
   font-family: $headings-font;
   font-size: 4rem;
   color: $main-font-green;
-
   text-align: center;
   width: 100%;
-
   margin-bottom: 0.5rem;
 }
 
@@ -41,7 +36,6 @@
   height: 0.4rem;
   width: 10rem;
   background-color: $dark-green;
-
   border-radius: 5rem;
 }
 
@@ -55,7 +49,6 @@
   height: auto;
 
   font-size: 1.6rem;
-  //   border: solid 2px pink;
 
   font-family: $main-font-font-family;
 
@@ -105,6 +98,14 @@
 .form-hashlink {
   margin-top: 1rem;
   text-decoration: underline !important;
+}
+
+.invoice-contact-text {
+  padding-top: 0.5rem;
+}
+
+.invoice-contact-text > :first-child {
+margin-bottom: .5rem;
 }
 
 @media (hover: hover) {

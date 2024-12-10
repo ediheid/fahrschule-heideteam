@@ -75,6 +75,33 @@ const Kontakt = () => {
             <br />
             und nach Vereinbarung
           </span>
+
+          {/* Invoice contact */}
+          {/* empty heading for spacing */}
+          <h5>
+            Bitte senden Sie Ihre, an uns gerichteten Rechnungen per Mail:
+          </h5>
+          <span>
+            {" "}
+            <a
+              className={styles["email-link"]}
+              href="mailto:invoice@fsheideteam.de"
+            >
+              invoice@fsheideteam.de
+            </a>
+          </span>
+
+          <div className={styles["invoice-contact-text"]}>
+            <p>
+              Wir bitten Sie, Ihre Rechnungen an uns bevorzugt im ZUGFeRD-Format
+              zu übersenden.
+            </p>
+            <p>
+              {" "}
+              In Ausnahmefällen können die Rechnungen auch im PDF-Format
+              übersandt werden.
+            </p>
+          </div>
         </div>
 
         {/* Map */}
@@ -90,7 +117,6 @@ const Kontakt = () => {
         ></iframe>
 
         {/* Contact form */}
-
         <ContactForm />
       </div>
     </div>
