@@ -63,7 +63,7 @@ const News = () => {
         <p className={styles["news-paragraphs"]}>
           <span style={{ color: "red" }}>
             Die persönliche Anmeldung für den Kurs in den Klassen A/A2 findet am
-            Montag, den 15.01.2025 um 17.30 Uhr in unserem Büro statt.
+            Mittwoch, den 15.01.2025 um 17.30 Uhr in unserem Büro statt.
             <br />° Eine Voranmeldung per Mail oder Anruf ist nicht möglich.
           </span>
           <br />
@@ -89,8 +89,6 @@ const News = () => {
           <br />
           ° Der Crashkurs gilt ausschließlich für die Klasse B bzw. BF17 als
           Ersterwerb.
-          <br />
-          ° Keine A-Klassen!
           <br />° Aus gesetzlichen und organisatorischen Gründen ist es nur
           möglich, Anmeldungen entgegenzunehmen für Fahrschüler/innen, die das
           18. Lebensjahr bereits erreicht haben oder im nächsten halben Jahr 18
