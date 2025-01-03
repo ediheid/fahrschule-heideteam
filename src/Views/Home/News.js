@@ -35,7 +35,7 @@ const News = () => {
         <p className={styles["news-paragraphs"]}>
           <span style={{ color: "red" }}>
             Die persönliche Anmeldung für den Ferienkurs in den Klassen
-            B/BF17/AM/A1 findet am Mittwoch, den 08.01.2024 um 17.30 Uhr in
+            B/BF17/AM/A1 findet am Mittwoch, den 08.01.2025 um 17.30 Uhr in
             unserem Büro statt.
             <br />° Eine Voranmeldung per Mail oder Anruf ist nicht möglich.
           </span>
